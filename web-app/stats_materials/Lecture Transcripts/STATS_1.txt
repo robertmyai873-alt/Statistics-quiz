@@ -1,0 +1,1601 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Oh, yeah. Yeah, yeah. All right.
+
+Yeah. It's been a long time. There you go.
+
+Oh, yes. You.
+
+Guys! Good afternoon.
+
+Nice to see many of you again. For the second day in a row, who wasn't, uh, getting up early enough for multi-agent systems yesterday.
+
+Anyone willing to, uh. And so I saw you all.
+
+Okay. Um. Well, welcome. Uh, now have a bit of, uh, afternoon class today.
+
+Our schedule moves around a bit, uh, with where this class is and our multi-agent system.
+
+So keep an eye on your time. Edit. Uh, since you all got to see me yesterday, I will share a bit more of an introduction,
+
+and I won't have you all introduce all the interesting things about yourselves that you shared yesterday.
+
+Um, but we are going to do a similar format to what we had in multi-agent systems with talking about the course expectations.
+
+And I will mention that we are using our in our studio for exercises in class,
+
+and you will also use those in the practical sessions that we'll talk about.
+
+And we're going to get into some stats already today.
+
+Uh, so we're going to go over some probability basics and how that informs, uh, some of the things that we are doing with statistics.
+
+Now, you all have passed that one. So hopefully you're excited for learning some more stats your second semester in a row after a break.
+
+So I didn't kind of go over my background, uh, with you all yesterday.
+
+So you can see a bit here about maybe how I ended up teaching stats, uh, courses here in our program.
+
+So I did my undergraduate originally in psychology, uh,
+
+with a master's in human factors and systems before focusing on cognitive science and modelling and simulation for my PhD.
+
+So essentially these are quite quantitative.
+
+The focussed areas, especially some of the postdocs that I did and what I found often was no matter what I was trying to research,
+
+I there wasn't always the right tools yet for answering the research question.
+
+So I needed to learn some new types of quantitative methodologies to answer some research questions.
+
+And I mentioned a bit yesterday that I study complex systems approaches to teamwork.
+
+And that also involves being able to use advanced, uh, statistical methods.
+
+So this course, you know, builds on your foundational knowledge in stats one, which we're going to quiz you on in a minute.
+
+Um, and it will form the basis for how you understand things in machine learning in your next semester, for example.
+
+So really critical stuff here for you to, to learn to evaluate, uh, any of the science that's out there related to cognitive science in AI.
+
+But now you have a bit more context. And these were, uh, some of my former supervisors focusing on team cognition or quantitative psychology.
+
+Uh, so you might have a bit of a better context of kind of where my background comes from and why I actually really enjoy to teach this course.
+
+I'm going to turn it over now to the teaching team.
+
+Does it work?
+
+Hello, I am Sasha, I, I'm a third year PhD student and I've been involved in the practical sessions of this course, uh, for two years already.
+
+So this is going to be third year. So I'm going to be, uh, in charge of the practical sessions, uh,
+
+which we are also trying to change a bit and make them a bit more engaging and interesting.
+
+So I hope that that works out nicely. And, uh, yeah.
+
+So my name is Barbara, and I am a master's student in cognitive science in AI.
+
+And I'll be there during the practicals to help you with any questions if I'm smart enough for them.
+
+Barbara, how long have you helped to a start? Well, um, one semester before.
+
+Yeah, yeah. So also stats one other courses, but yeah, for statistics, just one semester.
+
+So thank you. Thank you both. And I'm looking forward to working with you both this semester.
+
+And I hope you all will enjoy, uh, the practical sessions with them as well.
+
+I believe so, yeah.
+
+And I will say more about the structure of those in a minute. And you can also add on to that.
+
+Um, so like with multi-agent systems,
+
+I often almost every time will have some kind of quiz questions for you to get started with to activate your prior knowledge,
+
+see what you did in terms of prepping for, uh, the current, uh, lecture.
+
+And these are not necessarily getting to know you questions.
+
+Just like yesterday. There will be some stats one questions on here.
+
+I'm curious to see if you remember anything back from that class.
+
+Is it, uh, is it working or. Yeah.
+
+I don't see the number going up, so, uh, it says I'm.
+
+Yeah. Let me refresh. Um, maybe I need, uh.
+
+Okay. Not working on my end.
+
+You know, I got used to that enthusiasm. There it is. Yeah. A lot of the emojis that go welcome.
+
+We're waiting for anyone else before we go for the first one.
+
+All right. Let's see. So generally what are some things that you learned and statistics for CSI one.
+
+These will show up. On here, I believe so let's keep it mature.
+
+You forgot. That's okay. You did learn some, ah, bit of programming.
+
+Chi square test. Nothing. Um.
+
+That's, uh. Too bad. Someone had a rock bottom from stats.
+
+Maybe we can turn you around with stats to. Some t tests, some Anova, the mean p values z test distributions.
+
+ChatGPT helped you out. The median.
+
+A lot of are okay. I'm going to go on to the next one.
+
+All right. So if I measure your knowledge, the entire class of statistics before and at the end of the course.
+
+And if I wanted to see if your stats knowledge improved, what test would you use to make this comparison?
+
+If you want to. So he provides.
+
+Provide. Yeah, that would be kind of cool, right?
+
+I could just give you all the exam now and then. Uh, you could take the exam again at the end and see.
+
+Haven't tried that one before, but, uh. Maybe if you pass it on right away, you don't even have to take the course.
+
+All right. Last chance to, uh, put in your answer. Uh, I'm not sure what happened there.
+
+Well, let's go over here. Yeah. So majority of you that answered got this one right.
+
+Anyone? Why is it paired samples? Anyone want to remember why it's paired samples?
+
+A lot of you did so. Yeah.
+
+Thank you. Because you're comparing this same stuff to before a certain amount after a certain amount.
+
+So different points of time or different influence points on the same subject.
+
+Exactly. Yeah. So if we had we had independent samples here.
+
+Right. So maybe if I was comparing this course to a different course then there would be independent samples.
+
+But this is comparing your score right now to your score at at the end.
+
+Right. So it is a paired sample. Some of you said Chi square or correlation?
+
+No one said a nova. If we wanted to add in some other factors of like.
+
+Maybe if how many times you've taken stats to.
+
+I wanted to see if there was an influence of those who are repeating the course versus those who are taking the first time,
+
+and we could create some different groups and we could test that with a factorial Anova.
+
+So what you should remember hopefully here is that a lot of what you covered in stats, one was really about comparing means, right?
+
+When we're comparing at least, uh, two groups and different types of t-test, uh, to multiple groups with Anova,
+
+and we're going to build on that in quite some ways that I'll talk about, uh, a bit more later.
+
+So what about Bonferroni correction? And you want to remember when you might use the.
+
+And I see this all the time on theses too. Students should use the Bonferroni correction.
+
+But maybe they forget. Oh.
+
+Yeah. Just like.
+
+Got ten more seconds for your last chance to put something in here.
+
+There you go. All right.
+
+Oh, it's a tricky one here.
+
+Okay, so the correct answer is controlling for multiple comparisons.
+
+If you if you recall, if we're doing a bunch of t-test, for example, then we are going to inflate our chance of making one of those type one errors.
+
+So we could correct, uh, essentially our p value, a threshold in order to account for that.
+
+A lot of you said non-normal.
+
+If your dependent variable is non-normal, then we actually might want to think about doing a nonparametric statistical test.
+
+You learn some of those like the Wilcoxon signed rank test.
+
+Um, if you put heterogeneity of variance, that's an important assumption of some analyses.
+
+So good that maybe that looked familiar to you. But in this case, uh, this is the only, uh, correct answer.
+
+And I think I have just one more. So what do you hope to gain from stats two besides credits or a passing grade?
+
+Let's assume that you all get those. That would be great, right? All right.
+
+Already going with some immature, uh, answers.
+
+Uh. Might have to put some filters on this next time.
+
+So some people want to understand our better.
+
+Some people still want their credits. Someone's skills. They want to get smart.
+
+They want to be loved by their parents. Tremendous statistics knowledge.
+
+I still am working on trying to get that myself. Stats.
+
+Skills. More sleep.
+
+You know, sleep might actually help you learn better, especially if you're struggling to get it right now.
+
+Okay. Well, let's, uh, talk a bit about, uh, expectations again.
+
+I'm going to say you ought to read the syllabus. I did set up the original stats one classes, but it has migrated a bit to some different structure.
+
+So keep in mind that some things for how stats one run are similar, but some things will be different.
+
+I'll try to emphasise some of those here today.
+
+Um, but uh, yeah, it can be easy to kind of think that it's running in the same way,
+
+but you can see a bit of your, our distribution here like we talked about yesterday for multi-agent systems.
+
+So time in lecture, time in practical sessions, time for reading.
+
+Hopefully you still read. Uh time for practising with ah that will help your ah skills.
+
+Time for completing practical assignments. Um, actually, maybe I might correct that later.
+
+And then preparing for exams. So maybe you're where you actually spend your time.
+
+Looks something more like. Like that. Um.
+
+But what's important to me is trying to help you think about how to get the most from the course.
+
+I asked some of you yesterday, you know what helps you learn?
+
+And some said you're not sure or you had some particular strategies as developing cognitive and AI scientist.
+
+It is good to keep an eye on the science of how you learn.
+
+That's a very cognitively oriented domain. There's a nice paper here that I often refer to about, uh, sort of effective learning techniques.
+
+You can take a look here, because it does say a lot of things that maybe you can try out if you feel like,
+
+oh, I didn't do as well last semester as I'd like to have done.
+
+Um, but I structure the course based on sort of evidence based practices.
+
+So I expect that you read the required text prior to coming to class.
+
+Reading is challenging. Uh, for the material we have here, it's not too bad, but, uh, engaging with it,
+
+trying to understand that that effort that you put in really helps you to learn.
+
+Of course, you can just get an easy summary from any large language model you use.
+
+But actually the research is showing that when you struggle, you know, the more you struggle to get something, the more it actually sticks.
+
+And for those of you who said you forgot everything from, uh, stats one, maybe you need to struggle a bit more.
+
+Um, so we're going to have some pre class quizzes.
+
+There's going to be lectures. I hope you will show up and participate in lectures.
+
+There will be in-class exercises as well. You should check your understanding.
+
+If you don't understand something, interrupt me.
+
+Raise your hand. Talk to me on the break. Post on the discussion board.
+
+We're going to have practical sessions with exercises and you should also, you know, reflect on what those solutions to those look like.
+
+And there's extra material built in here because I'm enthusiastic about this topic.
+
+So some swirl learner tutorials that are paired with each of the modules and some optional open stats Lab stuff,
+
+and I'll show you just sort of how to orient yourself toward all of this in just a moment.
+
+Uh, we use this textbook for some of the modules, and we have other materials that are uploaded on canvas for other modules.
+
+So this is a bit of a, an assembly of different materials to make up this course.
+
+So keep an eye on what the readings are all swap over to canvas real quick.
+
+So you can see, uh, on the syllabus page if you scroll down.
+
+You can see each of our weeks and you can see the sort of these are optional tutorials that are built into the swirl art package that you can, uh,
+
+you can load also from the modules, uh, there'll be a practical session covering these materials,
+
+and you'll see the associated practical exercise do for those.
+
+So you got a general topic and you have the required reading uh, for those.
+
+And then you can of course find those. Further up in the syllabus as well as the content.
+
+Uh. So here in the syllabus. And in the modules.
+
+And also slides should be up before lecture.
+
+I'll say that again because if they're not, let me know. It's this one of.
+
+That should be. Can you all access the slides before?
+
+Yeah. Okay. Any questions for a sort of canvas set up how to find what's what's expected for you, what to read.
+
+I know it's not the most fun going over the logistics part, but if I don't, you will have questions, I assume.
+
+We have four main learning objectives for this class. Right.
+
+So I want you to understand basic probability and sampling theory,
+
+how these have anything to do with the statistics that you're going to run and what they how they relate to a hypothesis, null hypothesis testing.
+
+And then we're going to go through sort of three types of tests.
+
+So correlations linear regression and linear mixed effects.
+
+The course goes from relatively simple hopefully refresher material to more complex material by the very end.
+
+So the last module that we have is on uh, mixed effects growth curve models.
+
+We'll get into why we're doing that later. But I find that that's a busy period, right?
+
+By the end of the semester, that's when a lot of your projects are due.
+
+Um, you're getting ready for exams, but that is the hardest part of the course.
+
+So, uh, it will show up on the exam.
+
+Do not, uh, neglect to kind of put in the effort toward the end as well.
+
+And I'll say more on that soon. So for the lectures.
+
+I don't like to just talk at you all the time. I like to interact with you, share a bit of information in a lecture.
+
+I give you some time to work on an exercise, go around and and talk with you and see how it's going.
+
+A bit like I did yesterday in multi-agent systems. Uh, so we'll probably have some lecture with exercises and a break and lecture with exercises,
+
+and we'll, we'll have some kind of structure like this as it goes.
+
+I kind of skipped ahead to going to canvas, but you can see all of the information for the course is on there.
+
+If you have questions directly to me, please message through canvas so I know what course you're asking questions about.
+
+But of course you can, uh, talk in person to.
+
+So what can you expect for your grade? Your final exam makes up a majority of your grade.
+
+It should be something like a multiple choice test with constructed response.
+
+So this will be fill in the blank. You can expect that there will be kind of lower level knowledge based questions.
+
+And there will also be uh, are outputs, uh, where you have to interpret, uh, the output there.
+
+Um. You don't have to do the programming yourself on the exam, but you definitely do during practical exercises,
+
+and I really encourage you to make sure to learn to do those analyses so that you can now do them in the future.
+
+We have practical sessions. So this is different than how things are structured in stats one.
+
+We have 11 in-person practical sessions. You all should be attributed to one and your schedule, right?
+
+Uh, we have. We should have two.
+
+Uh, during these sessions, we make the exercises available, and there will be a password that you need to include in there.
+
+Uh, we're encouraging you to show up to the sessions to do the exercises.
+
+There's ten total. There's actually, uh, practical exercise zero that you will do this week just to learn the format.
+
+That one doesn't count. Um, but they're due at the end of each of these in-person sessions.
+
+There's no resets or submissions, but we have a leniency policy.
+
+So as long as you do eight out of ten of these, you'll get four points.
+
+Uh, and if you do less than that, you know, your grade for this 20% is scaled relative to that.
+
+But as I mentioned earlier, the last two have the most difficult material,
+
+and you might be inclined to just do the first eight, but that will really disadvantage you for the exam.
+
+So they need to be you cannot just skip the last two.
+
+You can miss some earlier in the semester. You don't have to tell me about it or anything like that if you just don't have to.
+
+As long as they're not the last two, but you have eight full points, if not, no problems.
+
+So we'll just check that you actually complete these and we'll say more about this in the practical sessions.
+
+Did I miss anything? Sasha. No.
+
+Okay. And then again, there's these recommended exercises in learner.
+
+You don't have to do those. But if you're one of those people that said you really want to get better at AR or stats, that's just a bit of a bonus.
+
+Okay. So questions. I'm not going to say much about this, but you use canvas.
+
+Ask questions in class. Ask questions during the practical sessions.
+
+We make all of this time and resources available for you, to help you to learn, to give you the resources to learn, should you choose to do that.
+
+Okay. Any questions? I think we'll get.
+
+Into kind of where we're going in the course, but I just want to pause for a second.
+
+Okay. So this is a figure from Andy Field who writes a lot of the stats books.
+
+Um, but it gives you an idea of like where you should be at more or less by the end of this semester.
+
+So as I mentioned already earlier, you were kind of comparing means and stats.
+
+One, most of the things that you learned were, uh, a means based comparison.
+
+So I'm going to do an experiment and I'm going to compare these groups, two groups or multiple groups,
+
+and you learn sort of the tools for how to do those analyses and make sure you design research questions related to those.
+
+We're thinking now in more of a model based framework for where we're going to go with the course.
+
+But we're going to start a bit earlier today. A bit of reminding you about probability.
+
+Next week we'll get into sampling theory. We're almost always going to want to visualise some of our data.
+
+So we have some intuition of what they even look like.
+
+What they can tell us before we then, uh, run our models to answer our research questions or test our hypotheses.
+
+But we're going to be doing something in the generalised linear model.
+
+So those correlations, regressions, mixed effects, they're all part of a larger, uh, family of models.
+
+And uh, Anova also is in this category.
+
+Um, but we're thinking more about model building. So we might start with uh, a regression model that has one variable, two variables.
+
+Three. There might be interactions between them. We might look at different, uh, variance structures.
+
+And we're actually going to be seeing okay, what's our scientific question.
+
+And how can we build a model that we think is sort of robust, uh, and helps us to answer our question.
+
+So we'll do that hypothesis testing. We'll look at our estimates, we'll check our assumptions.
+
+And uh, and we'll go over each of these four, uh, correlation testing, various cases of regression and then the mixed effects models in the course.
+
+So adding another.
+
+Or building on the existing stats in order to have more within this model building framework to still answer scientific questions and test hypotheses.
+
+Okay, so I already did the semester plan. Sorry, I'm going a bit out of order.
+
+Anyone deleted R from their computers. Yeah.
+
+Needed some space. Um.
+
+Again. So in class we will do exercises.
+
+If you don't have it on your computer, maybe your neighbour does.
+
+You can follow along. Pair up.
+
+Uh, I will go over, uh, sort of solutions to exercises in class two and in the practical sessions that you have later on.
+
+There's already, uh, PCs with ah, and everything you need on there, but definitely require you to reinstall.
+
+Uh, so you can follow along in class. Okay.
+
+I'm, uh, at a transition point now where, uh, I'll switch into some content before we have a bit of a break.
+
+Any questions though, before I, uh. Yeah.
+
+Yeah. Go ahead. I need some questions from the. Yeah.
+
+So I said there it's a mix of multiple choice and constructed response, which is things like fill in the blank or very short answer,
+
+but not you don't have to write an essay and you don't have to run or yourself.
+
+Yep. And you'll see them later, uh, this week. Yeah.
+
+Yes. Any other questions?
+
+Yeah. Um. Uh, also. Most of the exercises are.
+
+I said we. Like. Yeah. Experience like.
+
+Yeah, that's a great question, actually.
+
+Uh, so part of the motivation at the program learning objective level is that you're not stuck to only learning one language.
+
+So of course, you get your intro to programming or data structures and algorithms in Python, and those are more focussed on the programming skills.
+
+And in R you don't get as much of the programming skills, but you get the stats with R, uh,
+
+and it's because our so, so it's that one part about not being sort of tied to only one language.
+
+R and Python have some similarities, but they also have some things that don't work.
+
+Uh, but a lot of data science teams, for example, cognitive science teams use these different languages interoperability.
+
+And you can actually see now with our studio, um, I'm not sure if you've seen this, uh, before.
+
+So many. How many of you are using Jupyter notebooks? Something like that for Python, a lot of you.
+
+Anyone use our studio for your Python? Okay.
+
+Uh, so if you're working within, like, a markdown document, you could add in, uh, you can add in Python.
+
+So you could have sort of an integrated notebook two that has R and Python code.
+
+So whatever you find is uh, is easiest for you.
+
+So that's a bit of the two two kind of main goals there.
+
+Yeah. Good question. And also for multi-agent systems, that's still a bit why we also use that logo as well, that, uh,
+
+in your career, maybe Python is still, uh, the dominant, uh, coding language, but things change.
+
+Uh, and we want to make sure you are exposed to, you know, different languages and can kind of pick up on them, uh, quickly.
+
+Yeah. Anything else for now.
+
+Okay. So I'm a big fan of tacos.
+
+Anyone else really love tacos? Yeah.
+
+Anyone else from North America? Oh, am I the only one?
+
+Well, when I moved to Europe, I thought at first that there's a bit of a difference and taco culture in Europe especially.
+
+You know, when I first moved here in 2016 to Denmark, first, um, you know, being much further away from Mexico,
+
+for example, uh, the tacos weren't quite as good as they were back I was in North America.
+
+Um, so here is sort of a visualisation of the sort of anatomy of a taco.
+
+And this is just kind of a for fun example. But you can think of kind of, you know, there's different types of tortillas.
+
+You know, you could have flour or corn or wheat even, not even all of them on their hard or soft shelves, different types of fillings.
+
+Um, anyone who's never had a taco before. Okay if you haven't yet.
+
+I would recommend it. Um. So let's say now you know what tacos are.
+
+Or at least the concept of a taco. Even if you don't know the glorious experience that a taco can offer you.
+
+But let's think about this.
+
+So if I did a survey of a thousand Europeans and showed that 72% were taco illiterate, this doesn't seem to be the case for you all.
+
+Um, but it's just to think about, uh, some kind of sampling and probability.
+
+So 720 out of a thousand didn't understand the basic components of what was in a taco.
+
+Or the historical lineage. So if I increase the sample from 1000 to 10,000 Europeans, would you expect 72% also to be taco illiterate?
+
+Maybe just a quick show of hands. Would you expect it to be 72% with a larger sample?
+
+Some of you may be okay. Some of you who think definitely not.
+
+A couple. And what if it went down to 43%?
+
+Would you, if you would be surprised by that? Maybe raise your hand.
+
+If you would think it. That's not surprising. Raise your hand.
+
+Okay. Where do we come up with this?
+
+So? I think a couple of you said that you thought maybe 72%.
+
+If you increase the sample, it might be the same. What?
+
+Where do you come up with that? Any ideas?
+
+What are some factors that you might have to think of, of whether this would make sense as we increase that sample size?
+
+Yeah. Go ahead. You're good sometimes. Uh, on average.
+
+Uh, so are you 1000?
+
+Are you sure about that? Uh, if we increase the sample size, the.
+
+We should stay the same. That's close.
+
+So I think you're referring to central limit theorem, but it shouldn't be that the mean stays the same.
+
+It should be that the mean as your sample increases gets closer to the true population.
+
+Mean right. Did you want to add to. Yeah. Yeah.
+
+So if we had 72% for our same sample size of 1000 and then we increased it to 10,000 and we got 72% again,
+
+then that would say, well our, our smaller sample was representative right of, of maybe the population.
+
+Um, if I change just a little bit. If it was 70 now at 10,000, would you be surprised by that?
+
+Or you also think it's pretty close? Pretty close, but what is pretty close mean in this case?
+
+How would you know? Is this within sort of an acceptable variation?
+
+We would need to know how the levels of taco literacy are distributed, right?
+
+How much variability is there in the sample? Um, if we saw this big change.
+
+To 43%. Some of you said, yeah, that seems a bit surprising if with a thousand it was 72 and now it's 43.
+
+Why was that surprising? Why does it look like a big change?
+
+Someone else want to volunteer. I appreciate the museum.
+
+Yeah. Anyone on this side.
+
+Big change, but what makes it big? The mean changed a lot, right?
+
+Well, so here we don't quite have. I mean.
+
+Right, we just have a percentage. Um, there's another another parameter.
+
+Not the mean, but there's another one you worked with a lot in stats one.
+
+Anyone remember what that was? Yeah. Standard deviation.
+
+Yeah. So those are the two things that we need to define our distribution.
+
+Right. Um. And if we saw, for example, that it was 72% for a thousand people, but there was a big standard deviation of something like 40%,
+
+then we wouldn't be surprised with the 43 because we remember that, you know, plus or minus one standard deviation.
+
+We could expect that there's a high probability that we will observe something within that range of our, of our mean.
+
+So the idea here is that we we use probability theory.
+
+It kind of underlines all of the things that we do in inferential statistics in order to know how representative our data are of that population.
+
+So some of you may go on in your careers to study, maybe some very well, I'm sorry,
+
+an unknown disease where there's only 5 or 10 people in the entire world that have it,
+
+and there you don't actually you would have your full population, right?
+
+But often the things that we study, especially me as cognitive scientists wanting to study teams and things like that,
+
+I never have access to everyone in the world who might possibly be relevant.
+
+So I'm always taking a sample and I want to know, can I make some inference about this sample, uh, relative to the population?
+
+So this is the core of almost all of science.
+
+And then probabilities form the basis for this.
+
+So this is a nice kind of metaphor here of statistics says if you sort of pull something out of a pail,
+
+like some marbles, for example, uh, then you would try to understand what's in the pail.
+
+And probability is the other way around. Right. So given what you have in the pail, what's likely to be in your hand.
+
+So these two things go together. Um, we primarily work from a frequentist perspective.
+
+This has been sort of the dominant paradigm in stats for, I don't know, 100 years or something.
+
+Anyone has has also, uh, learned a bit about Bayesian.
+
+Was it in some of your coursework or. A bit.
+
+What course? And so I hear.
+
+So did you learn a bit about Bayes theorem and, uh. Yeah. So Bayes theorem, we're not really going to cover it in this course,
+
+but it's actually a good to know that all of the tests that we do have a Bayesian equivalent,
+
+and Bayesian essentially means that you're accounting for prior information and changes
+
+in beliefs to update your estimates for sort of the statistics that you're applying.
+
+We have a really great colleague, uh, Doctor Bruno Nissen Baum, who wrote one of the latest books on Bayesian statistics.
+
+And he offers a course that's an elective, I think, that you could take if you're eager to do that.
+
+So keep that in mind, um, that we're doing frequentist version of statistics and there are others.
+
+Let's look at a basic, uh, probability distribution.
+
+So we all got up and got dressed today.
+
+At least if you're here, maybe if you're watching the recording at home, you didn't bother getting dressed today.
+
+Um, when? When, uh, whenever you get up, uh, if you're reaching into the dryer because you don't like to put away,
+
+uh, your clothes, and you grab the first pair of pants that you find in there,
+
+depending on how many pants you have or what outfit you have, you know,
+
+there's a different probability that you will grab one or the other of them, depending on how many of those items you have in your wardrobe.
+
+So this kind of, uh, thing is what's referred to as an elementary event.
+
+So for a given observation you make, or one withdrawal of a clothing item from the dryer or the washer,
+
+whichever where, you wouldn't put it straight on from the washer. But, uh, you also probably don't have.
+
+Many of you don't have dryers, I assume. Anyways, you understand the example, I hope.
+
+So if you have blue jeans, grey jeans, black jeans, a black suit or a blue track, depending how many of these have you you have.
+
+Maybe you have a lot of blue jeans. Then there's going to be a higher probability that you will pull out a pair of blue jeans.
+
+If you are me, actually, it's probably almost all black jeans. Um, the sum of all of the probabilities has to equal one.
+
+So you can always sort of solve for what's the probability of something else if you know all of the other information.
+
+Um, and the total set of possible events is this sample space.
+
+You could have non elementary events. We're going to work with those in a in a bit today.
+
+So if you wanted to know okay what's the probability of wearing jeans.
+
+Why don't we see that there's three types of jeans out of the five total types of pants here.
+
+So you could sum up those probabilities. Um, we'll have a break in about five minutes.
+
+Um. So why do we care about probabilities?
+
+Well, we need to know how likely things are to occur.
+
+That's essentially what we're doing with all of our inferential statistics, right?
+
+Um, but let's just make sure we work through kind of a simple example first before we get to our normal.
+
+Other distributions we tend to use. Any of you, uh, play any dice games?
+
+Maybe Yahtzee or something like that. Maybe some of you play a D and D, and you have a lot different odds than a normal, uh, uh, die here.
+
+But the binomial distribution is used to model sort of an independent event where there's either a success or a non success.
+
+Right. So it's binomial meaning there's only two outcomes.
+
+And in this case we're looking at rolling a six sided die where one of them has a skull on it.
+
+Uh, so one out of six chance that that will occur.
+
+And we can look at the success probability. Right. So here are 20 rolls.
+
+Sorry. Here is, uh, the number of skulls observed.
+
+Uh, and these are the probabilities associated with them.
+
+So you can see sort of from this distribution, there's some information contained in there.
+
+Is the highest point that you see on that distribution.
+
+What do you think it means? Mhm.
+
+Uh it's an option that you see most often.
+
+So that's probably the one. Yeah.
+
+Or it's actually just just the probability. Right.
+
+So this is about 3.3 or something like that or one sixth.
+
+So if you if you have 20 die rolls and you checked how many times you saw, uh,
+
+that a certain number of skulls where it's a 1 in 6 chance, most often it's going to fall at that one sixth value.
+
+But we talked a lot. Well hopefully you learned before in stats one about error.
+
+Right. And when you're sampling we're going to talk about this more next week too.
+
+You know there's going to be some error. And in this case your probability estimates uh can change too.
+
+Um but it should be something uh, corresponding to the probability of it occurring.
+
+Although, you know, if we do, if we flip a coin which should have a probability of 50, um.
+
+Or point five, then you know you might get 0.5.
+
+If you do it 100 times, maybe it'll be a little bit above and a little bit below.
+
+So it depends on a couple of things. So well one is the probability of something happening.
+
+Uh could be one and two if it's a coin flip one and six for rolling a die.
+
+Um, the number of trials. So whether you're doing it 20, 1010 thousand times, um, and then we will get some our, uh,
+
+probability so we can use a binomial distribution to answer questions about,
+
+uh, sort of success or failure for two possible events I'm going to show you.
+
+Uh, briefly how you could do this and, ah, but this is just on the slide before we, uh, switch in a bit.
+
+So in, ah, you probably use some distribution functions, I think.
+
+And stats one. Anyone use the ah norm at all?
+
+No. Well, that's that's okay. We'll, uh, we'll use it soon.
+
+So. And the de Bynum.
+
+Function where we're sort of sampling from a binomial distribution.
+
+And we're saying what's the probability of four successes.
+
+So maybe we're going to say four times we roll a score out of 20 observations where the probability of the event being a success is one of six.
+
+And this is going to give us that answer point two. Um, if I swap over to.
+
+Ah. I'm kind of curious to see about replicating the plot from the book.
+
+Can you see this? All right. So I'm generating here a sequence, uh, of values from 0 to 20 by one.
+
+So that will just be a. Sequence of values, as I mentioned.
+
+And I'm going to apply this de binomial. And I'm going to get that sequence of values in there 20 observations with that probability of one over six.
+
+And then I'll make a plot. And this looks very similar to what we saw in the book.
+
+Showing again, that kind of peak point, which is just above just around three or so close to that one sixth percent.
+
+Notice that the probability of getting 20 skulls in 20 olds is really low.
+
+It could happen. Um, but it's much more likely that you will get one sixth of them.
+
+Okay. It's, uh, time for a break. So let's do a vote today on how long we should have for the break.
+
+One of the things that I always do is if we vote majority for a shorter break, then we always end earlier.
+
+Sometimes we just need our full 15 minutes break.
+
+Uh, sometimes we don't need it. Need that much. So anyone want to have a full 15 minutes today?
+
+Just a show of hands. I see some, uh, nods.
+
+No. Ten minutes and in five minutes early. Five minutes only break.
+
+I'm thinking it's going for ten, so we'll end five minutes early.
+
+Uh, we'll start back here at, uh, 141.
+
+Yes. Yes. Let me just, uh. Yeah.
+
+Uh, first of all. I'm sure you're okay with this.
+
+Uh, but the troops are there. They're, uh.
+
+Uh, so are you. Are they full already? No.
+
+They are. There is no option for joining them.
+
+Oh, okay. So we can all be pretty sure that you're not joining them.
+
+This is like a lock on you.
+
+Oh, yeah. I don't see. Much going on here.
+
+Yeah, because we don't. Have a mission.
+
+It should be fixed. But if you can double check, you can kill the others within about two weeks.
+
+Oh, practically. Yeah. Uh, you said that the exercises will be on my rifle for those first months, so, uh.
+
+Yeah. So in person, they do get released on canvas, but.
+
+But they can get released when they such bad times.
+
+Yeah. Okay. Yeah. Because that's that's what I thought that would be problematic for me personally because I also I could miss some of those spots,
+
+you know, like that could come inside or something else could happen.
+
+You have other sessions scheduled at the same time.
+
+Well, sometimes they get sometimes unstable.
+
+Is it fair? Is it that you're assigned to one session and you could swap to the other session?
+
+Like would that solve your schedule conflict? Uh, I mean, for four days, that's for sure.
+
+Yeah. So there's two sessions on, uh, you know, they're usually, uh, one after.
+
+Right. Yeah. So. And, and then the other ones that you're up for.
+
+Does it conflict with both of them sometimes or.
+
+Well, difficult to manage. I.
+
+Think you're right because it's sometimes that's just something that we get from like one point that I really wouldn't like to kind of.
+
+Miss out on of the great because of the. Yeah.
+
+So of course, uh, the, the leniency policy already is that you only have to do a so if you have just two conflicts or something.
+
+No problem.
+
+If you see, if you get your schedule and you see, okay, I'm a Tas for practicals for six out of ten times, and that's going to be a problem.
+
+Um, let me send me a message from candidates with, uh, let's go and we'll try to understand what is the most effective person.
+
+So if you must, um, you know, know so it will scale down problem because.
+
+Yeah. Okay. In this one it was like if you get last time allow time zero.
+
+Uh, okay. So if you just somebody.
+
+Yeah if you do one you will still go. And there was graded on the best practices.
+
+Right. So I mean if you don't get the fully correct.
+
+Correct. Yeah. Okay.
+
+But if you do see it's a really big slash let me know and we'll see what okay.
+
+Sure. Hello arena.
+
+Yeah. Yeah I have for this, um, 100% ideally, no.
+
+But, uh, there's concepts, of course, that we build on from starts one.
+
+Okay. Yeah. Because that's the. I'm gonna be honest with you.
+
+Okay. Yeah, yeah. No, it's. Okay.
+
+Was there something in particular that might help about, like, certain type of.
+
+Do you just want to learn how much push out I had to remember for me to.
+
+So there are some kind of basic things like instance one that we go over like the mean and standard deviation and variance
+
+and things like this that are kind of built into some of the equations that we have now that we're not going to cover again.
+
+But I just have difficulties memorising what to do and what to do next.
+
+Let me see if I can kind of do this.
+
+Well they were like. Okay.
+
+So it's going really, really quickly. So. Yeah.
+
+Well they are supposed to be kind of sequential that it builds on stats.
+
+But I still tried to make it clear, like where there are connections like, oh, this was something that's wrong.
+
+So if I mention oh here is where using the t-test again in the regression model.
+
+So then if you don't remember how we get the t value for example you could check back.
+
+And. Then you.
+
+I. Should just get every one of the data.
+
+Here. I think this is basically the same thing.
+
+Yeah, I know at least. Yeah. Okay.
+
+Now. Is that all right? Yeah.
+
+Yeah. Oh, my. Yeah.
+
+So as far. As student goes, you are.
+
+You want to be. Takes a while for.
+
+It's that's why I also said that's because I think sometimes I publish my slides and I know what it doesn't say.
+
+And sometimes. It doesn't make sense.
+
+And also like we mentioned. This.
+
+It was in the movies. Uh, so.
+
+So can you try refreshing them and see if they look?
+
+Oh, you. Mean you look.
+
+Um, I. Think I would say the same thing.
+
+Yeah. Yeah.
+
+Yeah. Yeah.
+
+I don't know. I mean, it could be a problem.
+
+Yeah. Yeah. So do they. So I think you need to have all of the other cases.
+
+Um, what? System of software? Um, you know, I just didn't approve.
+
+But I certainly know that this person has the same problem because I did this weekend.
+
+But there. Is still.
+
+Okay, so what are they? Oh, I didn't do that.
+
+Yeah. Yeah. What about your school?
+
+Oh, yeah. Let's take.
+
+I'll have to check expand. I'm just got it for you.
+
+Oh, yeah. Yeah. Um.
+
+Oh, yeah. Thanks for joining.
+
+Us on. This special pass for the grading as well.
+
+Okay. So again. I'll check out later.
+
+Thank you for letting me know what you.
+
+On. It's a classic issue. Young. It's.
+
+All. Right. All right.
+
+That was our, uh, ten minute break. And I will promise to end five minutes early and maybe even a bit earlier.
+
+The weather's pretty nice today, so, um, anyone want to go sit outside?
+
+Well, um. So I mentioned before a bit about the r norm function.
+
+I said, did anyone use that? Uh, what I just showed you was just using the, the bino that was this function here.
+
+Um, but a lot of times we're actually interested in sampling a normal distribution, right.
+
+We use that a lot for stats.
+
+One, uh, that forms the basis of most of the analyses that we do, or at least what we assume about how our data are distributed.
+
+We're going to look at that more in a second. Um, but there's various functions here.
+
+So there's a prefix. And these all apply to any of the type of distributions if you want to ask a question about them.
+
+So in this class a lot of these distributions that I'll show you in a little bit, they're built into the statistical tests that we run.
+
+Um. So. In practice, you're you may not be asking a question about the binomial distribution per se.
+
+It might be something that's built into your model if you were doing a register regression or something like that,
+
+but you could still ask these questions. You could still use these to generate data to make comparisons against.
+
+So it's important to know sort of how these different distributions kind of underlie the different things that we'll cover,
+
+which I'll point out more in a bit. So the one we already use this D form, uh, tells us the probability density of obtaining a specific outcome.
+
+That's what we already saw with the rolling of the die example.
+
+But we could also do a cumulative probability, for example, with these functions.
+
+And that would tell us whether we would get an outcome smaller than or equal to a given quantile.
+
+If we're doing a continuous distribution. Does anyone remember quantiles?
+
+There's a nice prefix there that tells you quants.
+
+But it's sort of this parsing a distribution into segments.
+
+You use it a lot for creating a histogram, for example.
+
+Um, if you remember, uh, did you cover q-q plots in stats one?
+
+Yeah. So those cubes are the looking at the variability at the different quantiles.
+
+We'll also use those here too. So good that some of you remember those.
+
+Um, and then the R form is the random number generator.
+
+So I use our norm actually quite a lot if I'm trying to see, let me generate a bunch of data with a certain property to compare to my empirical data.
+
+This is a good way of doing a certain kind of, uh, comparison.
+
+Um, so you could ask sort of these what if questions about different distributions using these prefixes,
+
+or you can generate some random numbers from those distributions.
+
+Again, the real reason we need to know this is sort of how they underpin a lot of the inferential tests that we'll do.
+
+So normal distribution. Uh, here's a picture of Carl Friedrich Gauss normal distribution, also called the Gaussian distribution.
+
+It's the most important one in statistics, uh, also called the bell curve.
+
+It's a continuous distribution. So notice that we have here probability density.
+
+Whereas when we're looking at that binomial one before we actually just had the actual probability of success.
+
+We already talked about this. Right? So we know that we have a mean and a standard deviation that describe our normal distribution.
+
+So, uh, in this case, our mean is around zero.
+
+Um. Hello. Welcome back. We don't always have a mean at zero, right?
+
+Does anyone remember what you can do to your variables to make the mean zero?
+
+Yeah. Yeah.
+
+So you can. Yeah. You can scale them. Rescaling, standardising.
+
+Convert them to Z-score. And this case, when you have them in this format the zero is whatever value is the mean.
+
+And typically this these are in standard deviation units if you standardised or variables.
+
+Right. So this is plus one the standard deviation from the mean minus one.
+
+And this could tell us a lot of information actually if I said sort of what's the
+
+what is the probability that the value falls between 0 and 1 standard deviation.
+
+This curve will give us that probability.
+
+I'll show that on a slide in just a moment. But it all depends of course, on knowing the mean and the standard deviation.
+
+Does anyone know what would happen if we change the standard deviation?
+
+So change it to something different from what we have for whatever this distribution has.
+
+Let's say we make the standard deviation bigger. Yeah.
+
+It'll go down. So where? Where will we see it going?
+
+Down. You're saying? Yeah.
+
+So maybe because we have more variability, the standard deviation is larger.
+
+Our mean might but might not be observed as frequently.
+
+So maybe this peak kind of goes down.
+
+And maybe these other ones, these get spread out a bit so it gets wider which is what we have here on the next slide on this example here.
+
+And in this case we have changing the mean of the distribution.
+
+So in this case it's not sort of standardised where we have the mean of zero like we had here.
+
+Um, so just think about. You have these two parameters for your normal distribution.
+
+And the mean is telling you, you know, it will slide the distribution, whereas the, uh, the standard deviation sort of tells you about the shape.
+
+I think you also looked at. Two other things when you were checking.
+
+Are my data normally distributed? There are two other things you ought to have checked in stats.
+
+One about those distributions. Anyone remember this? They were related to checking, uh, assumption of normality.
+
+There was skewness. Hopefully that sounds familiar.
+
+I see some nods, so skewness would look like, uh, something where it's not an equal distribution on both sides of the mean.
+
+Right. Like it might be to one side.
+
+We'll look at some skewed distributions in a little bit and kurtosis, which was more about it being more squished or flattened.
+
+And those assumptions from stats one will come back as well for some of our analyses in this class.
+
+I'll be sure to mention them to you when it's relevant. Um.
+
+So last slide for normal distribution is just going back to those ideas of the probabilities.
+
+So again this is just putting it here. This you could standardise and then this would be zero like we saw before or sorry this one would be zero.
+
+This is the mean plus one standard deviation minus one standard deviation plus two.
+
+Standard deviation minus two.
+
+And we know for example, that 68% of our data fall within plus or minus one standard deviation if the distribution is normal or 95% within two.
+
+So we could answer those questions about how, what's the probability of uh, the value falling within plus two to plus three standard deviations.
+
+If it's a normal distribution, we can we know enough information to tell us.
+
+Um, so this is just to remind you,
+
+this relationship here of the normal distribution and these probabilities associated with it adding up to one or in terms of percentages, 100.
+
+Um. Now there's two things, right?
+
+So one is about how our data are distributed, and the other is going to be about the likelihood of certain observations for our statistical test.
+
+I saw some of you wrote p value in, uh, in the, uh, what you remember from stats one.
+
+So if I gave you a T distribution and I asked, could you define a p value from this distribution?
+
+But would you say maybe. Yes. Raise your hands. Could we get a value from this, for example?
+
+No. One thing. No. No idea.
+
+Okay. That's all right. Well, the recap here is so we were looking at normal distribution.
+
+That's something we often assume about our variables are dependent variable especially
+
+um if it's not we need to do those nonparametric tests that we're covered before.
+
+And we'll cover some new ones here. The T distribution.
+
+That was one of our test statistics, right?
+
+When you did the T test, you were actually looking at your data and trying to calculate the t statistic in order to test your hypothesis.
+
+And the p value was something that you could calculate once you knew your t value and where it lied on the t distribution.
+
+So if we had a t of 1.96 or something like that, your p value was the area under the curve, right?
+
+So that's where we get those p values, whichever distribution we're using,
+
+where we're doing our analysis on our test to get our test statistic, and then solving for the area under the curve.
+
+And that will tell us sort of how likely that is to occur if our null hypothesis were true.
+
+Hopefully that sounds familiar. That's all.
+
+That's one stuff, but we're going to be looking at it again and again for the analyses we learn in this class.
+
+If you, um, really don't remember things like p-values, confidence intervals, mean and standard deviations.
+
+If you really forgot it all, we will be working with it, um, in this class.
+
+But, um, we may not spend as much time on them as you might have in stats one, assuming that you did spend the time on it.
+
+And so we're going to use t test already and regret, uh, sorry, you use the T distribution in the T test,
+
+but we're going to use them in regression later in this course. Um, and the T shows up other places.
+
+So often if you see a statistical test somewhere and there's a T value in there,
+
+you know that that value is on this t distribution and some p value is being calculated from that distribution.
+
+Um, and we use this one typically when the data are normally distributed.
+
+But you don't know necessarily the properties of the population.
+
+So the population mean or standard deviation. So when you have a sample.
+
+And this shows, um, the t distribution is the blue relative to a normal distribution.
+
+So since we have some unknown parameters, like when we change the mean and the standard deviation, it changes the shape of that distribution.
+
+Uh, the t value has degrees of freedom, which you also should hopefully remember which kind of changes the shape of the t distribution.
+
+But it has these heavier tails. So a bit of a higher probability for these uh, values further away from uh, the mean or zero.
+
+And you could do some test on the T distribution with those same prefixes in R.
+
+This makes sense. Anyone lost yet?
+
+Hopefully just getting refreshed on the on this. Um, someone also mentioned Chi Square earlier.
+
+So this looks like a skewed distribution. Probably.
+
+But this is what the chi square distribution looks like. Uh, you use the chi square test and stats one, it's going to come back again.
+
+Um, but you used it probably for categorical analysis.
+
+So you were thinking of. Okay, I have a number of different frequencies of these categories happening.
+
+Uh, how likely are these to occur? Chi square is going to show up a lot, mostly when we're trying to do some kind of, um, model comparison actually.
+
+So remember I said we're going to be doing a model building approach and we're going to be asking questions of,
+
+does my model fit better if I add this variable in it versus if I leave it out as an example,
+
+and a chi square test will actually be one of the metrics we can use in some cases to to test that.
+
+Does anyone remember sum of squares from stats one? A couple of you.
+
+So we're going to look at some of squares again particularly related to correlation.
+
+But sum of squares does come up because it's it's about looking at your values.
+
+Uh, hopefully you remember you took the mean and you took a deviation from the mean for each observation,
+
+and you squared them so that you won't get values that cancel each other out and you sum them up.
+
+So that was the sum of squares. And it uh, that's what you would use also for different types of calculations.
+
+Again you could test some stuff here. Um another skewed distribution the F distribution.
+
+Anyone remember when you use this in stats one. What test was the f statistic used for?
+
+Tough crowd today. I know this was a while ago.
+
+Yeah, I know, I know. Yeah. Thank you.
+
+Yeah. So you did an F-test for the Anova. Um.
+
+This is showing one example shape of the Anova. But remember, whenever you hopefully you remember when you did your Anova test,
+
+you got that F statistic and you got two values that were your degrees of freedom.
+
+And that sort of shapes gives you the shape of the distribution.
+
+So it will modify the distribution in order for you to then calculate the other values that you would use.
+
+So we are also going to use this to compare two chi square distributions.
+
+We're going to do this to compare like multiple model fit later on.
+
+Um but again it is most common and Anova and it also will be used in regression in this class to tell us overall model fit,
+
+which I'm just kind of setting the stage for things. So you, you know, that they will, uh, be coming back later.
+
+Okay. At this point, I have an exercise that I want to turn over to you.
+
+Um, some things to try and are if you want.
+
+These are not that hard of probability question, so you could probably do them by hand or talk about them with your neighbour if you'd like.
+
+Just working with the binomial distribution.
+
+So I for some reason went with food related things for some of these tacos and pizzas and a bit of Netflix.
+
+Um, so these are just about the binomial distribution.
+
+Thinking about, uh, some probability questions.
+
+You can use the functions I showed you before to try to solve these.
+
+Or again, I think you could probably work them by hand. I'm going to give you some time, maybe about 1010.
+
+Ten minutes or so. Um, I'll check in with you, see how it's going.
+
+I'll go over these and then we'll wrap up, uh, after that for the day.
+
+And if you have any questions, you want to call me over to have a look or to clarify something in these questions, please do so.
+
+Just a. Yeah.
+
+Most. Of the time I would like to take care of.
+
+So just to clarify, for the first one, we could just assume that they have an equal amount of hard and soft shell.
+
+So it's uh, that should tell you the probability.
+
+You guys. Face to face.
+
+She said. Why?
+
+She said. You know.
+
+Yeah. Oh, yeah.
+
+Oh, yeah. Yeah. I think I.
+
+This goes like this. This.
+
+Um. You could. Uh.
+
+Um. Yeah. In that.
+
+Sense, yes. So.
+
+I. Think I would just.
+
+Like to. Say.
+
+Thank you, my love. For you.
+
+Are. It was always.
+
+I mean you. It's almost. You.
+
+Know. Yeah.
+
+Thank you guys so much. I love.
+
+Is thankful. So you see.
+
+That you don't want that you. So you don't have to.
+
+Go to. They.
+
+I. I know that some.
+
+Of this was because. I.
+
+Was just looking. For a.
+
+Way to. Get.
+
+Okay. Yeah.
+
+Yeah. You know.
+
+This guy. Yeah.
+
+Yeah. Yes.
+
+Yes. Okay.
+
+Okay. Oh.
+
+Oh. Oh. Oh.
+
+Oh one. Oh one.
+
+So it's time to go to second place. Yeah.
+
+Yeah I know. Yeah.
+
+That's all. I have to.
+
+Say. I like to say that last one.
+
+You. Already?
+
+Know that in. The restaurant business.
+
+Yeah. Yeah, yeah.
+
+Yeah. Yeah.
+
+That's, uh. That's for sure.
+
+Um, you. Know.
+
+It's not that you. Won't see.
+
+Yeah. That's right.
+
+So. Yeah. So. So.
+
+So. So. So.
+
+So. Yeah.
+
+Um. And.
+
+Yeah. I think.
+
+Very soon. We.
+
+Um, but. You know.
+
+Um. Uh. I think they they have to work.
+
+And then you. Thanks for the.
+
+Maybe. We ought to.
+
+All right. We've had about ten minutes. Uh, maybe 12 or so.
+
+And I got a chance to talk with some of you, see how it was going, if it was going.
+
+Um. So for all of these exercises that we do in class, usually after class, whatever or file I was using will be made available.
+
+So you can look there. Um, and with any type of programming, uh, there's um, obviously multiple ways to reach, uh, kind of the same solution.
+
+And again, you didn't necessarily have to, uh, use R, for example, to solve these questions,
+
+but because we were working with this binomial distribution earlier, I wanted to show these.
+
+And ah, so in this case with the tacos, uh, we were looking for, you know, at least for 25 of them that are soft shell, the restaurant made 50 tacos.
+
+That would be nice. If anyone wants to make 50 tacos for the class.
+
+Uh, there was almost 50 of you on, uh, will clap today.
+
+So then including me, that would be perfect. We all can have one anyways.
+
+Uh, and then our probability is one over two. Or you could write it as 0.5.
+
+Either works. And I heard from some of you that you also got, uh, around .11.
+
+So, um, here for the pizza party.
+
+This was actually just looking at that distribution again. Um, I did this a bit differently.
+
+Uh, first just to look at it, uh, where you can see it over here.
+
+I'll make that a bit wider.
+
+Um, but if we're having 20 pizzas and we can have only meat or no meat, that's Italian, then this binomial distribution should make sense, right?
+
+That about half and half have the highest, uh, probability, although it can be a bit different.
+
+And if we plug in six, which is what our question was um, out of size 20 with the same probability, we get something like 0.03.
+
+We could do. We could actually do the Bynum to get at least six.
+
+Which gives us this value much higher value. And for the Netflix one most of you used,
+
+or the ones I saw did 17 size 50 and probability one out of five and got quite a small probability for that one as well.
+
+So that would be quite a high number of comedies to get.
+
+You wouldn't expect to see that. So why are we looking at these probabilities?
+
+Uh, well, we don't work with them as explicitly as we've done today,
+
+but it's to kind of hopefully refresh that you had this probability maybe back in high school.
+
+Um, but also keeping in mind that everything that we're observing, you know,
+
+there's some probability that that occurred when we're collecting data and we're getting a certain response.
+
+Uh, there's probabilities of that occurring based on how prevalent something is in the population and our sample.
+
+And we're going to talk more next week about, uh, sampling.
+
+Um, so we're definitely going to end up finishing early if you want to try some more probability exercises.
+
+There's a couple of links here, uh, that you could could work through.
+
+Of course, you'll have a practical session tomorrow, uh, where there's going to be working and are working with our mark down again.
+
+Um, and that's all I have for today.
+
+So I will see you all next week, I think, both times on Tuesday for both classes.
+
+But double check your, uh, schedule. See you next time.
+
+Got. Yeah.
+
+Uh. I have.
+
+To. Go to the harbour.
+
+But that's part of the. Right.
+
+So it's. Still time, you know?
+
+Yeah. There's also a chance to escape your office.
+
+Yeah. So. So you.
+
+Um. Yeah. Okay, so that's why I got the number.
+
+Like, I can't believe I cannot work. Oh, no.
+
+I'm just gonna go look for you, and then we'll go back. If you see that I don't have any control over it.
+
+But I was like, oh.
+
+Yeah. So if it's at least no problem. And the grade is based on like, okay, I, I'll make the test.
+
+Yeah. So it's just that 20% and if you else.
+
+Yeah. So was required in our in the groups like for to do the assignment.
+
+Oh really. Yeah. And maybe we read from the show.
+
+It's like. I don't know, a question like, um, is it just that you have to do with fast because like, um, I'm really better off with it.
+
+Did you, like, clearly do your best, but like, cannot do everything else like you said.
+
+Okay. Where it's like. Yeah. So. So, uh, I know in stats one, you probably had to do, like, a very balanced attack, right?
+
+Yeah. And it changed. Um, because we're doing these in session.
+
+You also have a chance. Uh, for Barbara, uh, your classmates as well.
+
+So we're not checking. Correct. But. Okay, so that was supposed to work for me for two hours.
+
+Uh, looked like it, but hopefully. Yeah. Like, if you if you work on for full hour, that's okay.
+
+Yeah. Me wrong. Yeah. But I want you to also get it right.
+
+So. Yeah. If you're really struggling, uh, in there, I have no idea.
+
+Yeah, there should be a bit of a briefing. We're trying to tweak the format a bit too, so if you have input as well, that would be great.
+
+Updated on. So that you don't just.
+
+Yeah. And so.
+
+This semester program, which sometimes at least more than two times, coincides with the practical.
+
+So I'm. Yeah, I had another student that mentioned that too, but he wasn't sure of the schedule.
+
+So if you can confirm with me, like where you have the conflicts.
+
+Yeah. Uh, send me a message on those dates and we'll we'll come to an agreement for that.
+
+I don't have a solution yet. Or is that only for today?
+
+Because I like to take an extra language course in school and so I speak for two hours.
+
+Um. You can also send me an email.
+
+I know some. You. Thank you.
+
+Yeah. Thank you all. Yeah. See you next week. It's.
+
+They. A little bit.
+
+It was of. Definition of the same.
+
+Mr.
+

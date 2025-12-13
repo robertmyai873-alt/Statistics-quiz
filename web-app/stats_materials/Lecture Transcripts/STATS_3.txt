@@ -1,0 +1,1501 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay. Good afternoon everyone.
+
+Hello. Is this too loud? It seems a bit. It's okay.
+
+In the back. Well, welcome to start to a nice, uh, rainy afternoon.
+
+Least we're not missing, uh, being outside in a nice weather. Today we're going to be revisiting hypothesis testing.
+
+Hopefully, it's a reminder that you all already memorised from stats one.
+
+But for those of you who completely forgot it. Uh, there'll be a bit of a reminder before we get into correlation.
+
+So the slides should already be up, I think. Um, we'll see how far we get with correlation today.
+
+Uh, based on the how the exercises go. And, uh, if we need to move some of that to next week, we'll do that.
+
+You can see where we are only week three before we start getting into, uh, correlation and regression for many weeks.
+
+Um, but we're moving along. Already said what we're covering today, but I have a few questions for you on.
+
+We'll clap. Surprise.
+
+All right, I'll give you a moment to, uh, scan, type in the code, send the emojis, and get ready.
+
+As a bit of a side story, I was just meeting with a new PhD student, uh,
+
+before coming to class, who was a student of mine, actually several years ago in this class.
+
+Uh, and he said to me that he didn't realise how important stats would be for his, uh, for his research.
+
+I asked him if he would come and, uh, give that message to you all, but he said maybe another time.
+
+Um, but just just wanted to bring that up because it is interesting that this is
+
+someone who has done quite a lot of research during his bachelor and master,
+
+hence why he is now doing a PhD.
+
+Um, but really kind of he underestimated how much stats would be useful for understanding the literature, doing his own projects.
+
+Um, anyways, let's see what you all know about some of these questions for stats.
+
+So hopefully you know something about the Pearson correlation coefficient already.
+
+If not, we will talk about it today and next time we meet.
+
+They didn't put timers on today, I guess, but.
+
+Give you a chance to look these over. Uh, ten more seconds for the last few of you are still contemplating.
+
+All right. Uh, which of the following is true?
+
+Was this only allowed you to put it in one answer? I.
+
+Okay. Uh. That's right. Sorry. I was, uh, I was thinking this one had multiple answers, but.
+
+Okay, so it doesn't range from -2 to 2.
+
+It ranges from. Anyone? One.
+
+One. Two minus one. Yep. We'll talk about that today. What it means. A value of zero means there's no relationship between the two variables.
+
+That's that is true. Although we want to add some nuance to that,
+
+particularly with our hypothesis testing that we're going to do because we're
+
+going to be trying to see is the relationship zero or is it different than zero?
+
+So it could actually be that we see a value of zero point, uh, zero five for a correlation.
+
+And we would want to know, is that different enough from zero or not?
+
+If it's a negative correlation as one variable decreases, what should the other one do?
+
+Should increase, right? Yeah. Was that the raise of hand you were saying increase or, uh.
+
+Yeah. Okay. Um, and the person can only apply to a sample and not a whole population.
+
+Well, we do typically apply it to a sample, but if we had our whole population, we could, uh,
+
+calculate it as well, and we wouldn't necessarily need to do the hypothesis testing part.
+
+We could just get the correlation value and know what it was.
+
+We'll come back to that a bit more today. Welcome.
+
+Come on in. Okay. So what test statistic should be used when the population standard deviation is unknown?
+
+The Z test. Cohen's d t test. Beta test.
+
+Got ten more seconds for the last few to put it in a guess or answer.
+
+All right. Oh, this one seems a bit, uh, tricky. The correct answer here would be the t test.
+
+We talked a little bit about this in the distributions before, when we compared the t distribution to the normal distribution.
+
+Um we're going to look at sorry about my messages showing up.
+
+I thought those were muted. We uh we're going to look today at the difference between the z test and the t test.
+
+Cohen's d anyone know what that is? Should you remember this from stats one?
+
+Is it a test statistic or is it something else? I hear whispers.
+
+Uh, yeah. I think it's the power of the cars.
+
+Power close. Anyone.
+
+Yeah. Effect size. Yeah, related.
+
+But not exactly the same as power. But yeah. So we're going to look at this again today.
+
+And beta test. That's something I just made up. All right.
+
+So this is the last one for today. Which of the following does not need to be known in order to compute a p value.
+
+About ten more seconds. Hello.
+
+Welcome. All right.
+
+Okay, so a pretty interesting spread here.
+
+So we definitely need to know the test statistic, right?
+
+Because the test statistic tells us where on the curve and from beyond there
+
+where the area under the curve we're trying to solve for to get our p value.
+
+We need to know whether it's 1 or 2 tailed, whether we're capturing both tails of the distribution of the test statistic or just one.
+
+This one was a bit of a tricky one. I put that one in there to be a bit, uh.
+
+Not mean, but, uh, to test you. If you put alpha level.
+
+Anyone want to say why we don't need the alpha level to calculate or compute the p value?
+
+Yeah. There's always the probability that we will get that from the reject the null hypothesis.
+
+If that's true. Paul predicted the new.
+
+It's not apparent in the Eagle population.
+
+Yeah, exactly.
+
+So we don't need it for the calculation, but we need it in the decision making process, right, of whether we reject our null hypothesis or not.
+
+Great. So we're going to look at this today. If you're totally lost forgot all of it.
+
+We're going to revisit it. Um, if you already did well on this then it'll just be a reminder.
+
+So. Does anyone know what a hypothesis even is?
+
+Let's start there. What kind of things would you use to say what a hypothesis is?
+
+Uh, I don't think we, uh. Would you like something that he presented with the Beatles?
+
+Yeah. Something you try to test? Yeah, I think that.
+
+Well, gentle. Goes to the top on Monday, on every Thursday.
+
+And then you think about that and then you eat that. Yeah, that's.
+
+The other day? Yeah I think.
+
+Yeah. It's a it's something that we want to test. Interesting example.
+
+Um, so it could be a formal statement. Right. Predicting some relationship between two or more variables.
+
+We could have. For example, the number of hours spent studying will improve students grades in a course.
+
+Anyone think this one is likely to be, uh, supported?
+
+Maybe you would say it depends. Playing video games more often leads to stronger social relationships and teenagers.
+
+Higher incidences of communication breakdowns and teams will lead to poor teamwork.
+
+Performance. Increased word frequency leads to shorter reading times.
+
+So these are all phrased in slightly different ways.
+
+These are not things that are necessarily supported by the literature per se.
+
+But just to give you an idea of how you might see a hypothesis being worded.
+
+Note that they aren't questions right.
+
+We might have research questions, and those are important to have too.
+
+You might say, what's the relationship between number of hours spent studying and students grades?
+
+And of course, if you don't have any idea what it might be, if you have a prediction,
+
+then you would actually say, well, this is the relationship that you expect, and then you can test it.
+
+And we'll see today why having a specific directional prediction, uh, can be important for our hypothesis testing.
+
+Because that relates to our test statistic and the part of the distribution.
+
+Um, but we could also have, uh, let's see.
+
+What I don't have an example of on here is that things are different.
+
+So we could just say that, uh, there's a difference in the number of hours students spend studying in terms of their grades.
+
+And of course, and then it's not saying exactly what direction that it's, uh, but that there's some difference.
+
+And we might test that like you did in stats one with comparing the means, for example.
+
+So our goal with hypothesis testing is that we want to try to rule out chance, right.
+
+We saw some examples already when we were doing these simulations of the sampling distributions of the mean that there's always some sampling error.
+
+We don't have access to our whole population. Uh, but we want to try to rule out chance as an explanation for the results from our research study.
+
+Or we have some data and we want to figure out if something is likely to be the case in the population.
+
+And we want to rule out chance.
+
+So we wanted to test for a specific effect or relationships or, um, or maybe we have a model that we think describes the phenomena,
+
+and we want to test all of those associations, um, or we want to look at differences between groups based on treatment or conditions.
+
+Uh, so there's a lot of ways that we might have a research goal or research question.
+
+We could transform that into specific predictions that we test to try to rule out chance as the explanation makes sense.
+
+So the null and alternative hypothesis. You all learn this in stats one.
+
+It's it's a bit of an old logical argument that you're doing when you do this kind of null hypothesis testing.
+
+Of course, there are other ways to to test relationships.
+
+This is what we're covering for now though. So we have some null hypothesis, right?
+
+That there's no difference in the population or the effect is not different than zero,
+
+or there's no relationship between some variables in the old in the population.
+
+And the alternative is that the null is false.
+
+Right. Or this is typically the thing that we are making a prediction of to begin with.
+
+Right? So we would say there is a difference in the population or the effect is positive and strong.
+
+So we collect data and we try to find evidence against the null as a way of through deduction,
+
+kind of bolstering support for our alternative hypothesis, which is the prediction we wanted to test to begin with.
+
+But how much evidence do we need to actually reject the null hypothesis?
+
+That's the whole reason why we use these test statistics and alpha levels and, uh, this kind of scientific conventions.
+
+Right. So we've already looked at test statistics early on in the semester.
+
+Uh, early on it was just a couple of weeks ago. But, um, we have a test statistic, right.
+
+And that test statistic will fall on some distribution.
+
+If the hypothesis is true. Uh, the null hypothesis.
+
+If this is true, then, uh, you know, we're going to get this kind of distribution where that value is quite likely to be observed.
+
+Uh, if we have a test statistic that's that is sort of in the tail ends of the distribution,
+
+then it's less likely to be observed if the null hypothesis were true.
+
+So here's our formula for the z score, which requires that we do know our, uh, standard deviation.
+
+Uh, and we're taking, you know, the mean minus the mean of zero, for example.
+
+And, uh, we could simply compute that and get some value here that falls on this distribution.
+
+And we use this convention typically this alpha level of 0.05.
+
+But sometimes we need to be more stringent and use 0.01 or 0.001 or something even smaller.
+
+If we're doing many, many tests and we have an inflated. Type one error rate.
+
+So we're comparing, uh, we're solving for this area under the curve.
+
+Right. Based on whatever our test statistic is. And we're using our alpha level, which isn't to compute the p value,
+
+but to make a decision about whether our p value is, uh, is beyond that threshold or not.
+
+Right. So if our test statistic distribution is like we get something like this and it's very common,
+
+then, ah, no, we might not have evidence to reject the null.
+
+Whereas if we have a value pass 1.96 or further, then that result is quite rare to observe if the null are true.
+
+That's all a reminder for everyone. The logic is still a bit convoluted, I think.
+
+Um. So it's good to have a bit of repetition.
+
+So whenever we get we do some statistical test, we're using some we're getting some inference about our data.
+
+We're going to get that test statistic right. And it's going to give us a value.
+
+And it might be, uh, one or it might be one and a half, or maybe it's 2.5.
+
+You know, that's our first piece of evidence. When we're looking at the output, we get an R or whatever program we do our stats.
+
+And where is that test statistic on the distribution.
+
+If we get a value of zero for the test statistic for a z test or for a t test, then we know already that it's it's basically.
+
+Uh, something that we cannot reject our null from. If we see already it's 1.96 or 2.58.
+
+You can kind of memorise these values, and then you'll notice right away before you look at your p value.
+
+This test statistic is already like quite close to the centre of the distribution, close to zero or far from it.
+
+And then you can look at your p value. You could look at your effect size, your confidence intervals.
+
+All of those are pieces of information that we want to have to be able to see.
+
+Can we really interpret our data this way in terms of the prediction that we had?
+
+This makes sense. Ready to test it out for yourselves.
+
+All right. So Z test in R if you have your laptop R studio R with you, or maybe your neighbour does.
+
+I want you to simulate some data first. So hopefully you remember how to simulate some data from the normal distribution if you forgot already.
+
+Wave me over and I'll give you a hint. There's a package you'll need for this z test function.
+
+It's BSD. You need to make sure to install and load it.
+
+Hopefully you remember how to do that. If not, let me know.
+
+Check out the arguments. Why do we need to put in the z test to test a comparison?
+
+I gave you some parameters here for that distribution,
+
+and I'd like you to compare it to a null hypothesis that the mean is 50 and the standard deviation is 20.
+
+So with the sample that we generate here be different from these population parameters.
+
+Make a prediction for your alternative hypothesis and the null.
+
+Try out the z test function and see what decision you would make about the null hypothesis.
+
+I'll give you some time to get started on this. If you need some help, let me know.
+
+Otherwise, I'll come around in a bit and also show you my approach to this shortly.
+
+This is. Yeah.
+
+Second. It took us from.
+
+And. This.
+
+There. You. No. I probably didn't want to.
+
+Results. Of ten years and six.
+
+Better this. Bit of evidence.
+
+You know, this isn't so funny to me.
+
+60. It's a beautiful day.
+
+For us. So just a little bit. So it's.
+
+Of. For the 21st century.
+
+United. Totally.
+
+Right. Well, I think.
+
+That's. If.
+
+You do this. You will see this.
+
+Oh, yes. Oh. Yeah.
+
+Uh. Uh. Oh, yeah.
+
+I just want to tell. You something.
+
+That's. The time of the.
+
+Year. This is. You can.
+
+Going. Come.
+
+You're right. You're right.
+
+Like. This is.
+
+So you're only. It's not.
+
+So that's a big part of. The map.
+
+I do. You. Yes.
+
+You. Know. It's hard for you to think.
+
+And I can't think of. Anything.
+
+I'm sorry to. I.
+
+Got a lot of.
+
+How do you get that? Uh. Yeah.
+
+Yeah. Oh, God. I love these things.
+
+Are you listening? Right now.
+
+Oh, yeah. Because.
+
+I. Don't.
+
+Know. What I'm.
+
+Doing standing next to, uh.
+
+So, you know, it's, uh, you. He argues that.
+
+I. Uh.
+
+Uh. Uh.
+
+Uh. Yeah. I.
+
+Think. That that.
+
+Is. It was such.
+
+Yeah. Yeah.
+
+I think. So.
+
+Well, thanks for coming today. Yeah.
+
+Just a. So they're like, oh yeah.
+
+Oh, yeah. Yes or no?
+
+Yes. Okay. What's the problem? Yeah.
+
+It's fine. Thank you. Open the damn thing.
+
+Uh. Oh.
+
+Yeah, but there's a. Yeah.
+
+That's right. You know, honestly.
+
+I. So.
+
+Yeah. I wasn't going to get this.
+
+And I. Think it's just a little less obvious since.
+
+That's what you are supposed to be. You have.
+
+Well, if you look at these.
+
+Well. Lobster is. Almost ready.
+
+To go. There's nowhere to go.
+
+So. You.
+
+It's important. That.
+
+You. But.
+
+You're. Still going?
+
+To that. Well, I. Think so.
+
+I'm nervous. I say so.
+
+So now you have to make it. Look like the principal.
+
+Yes.
+
+Yes. Yes. Yes.
+
+I'll go over just to that.
+
+No, thanks. So if you want to see my.
+
+Slides. Yes I all.
+
+It's like. It's like.
+
+You're trying to make sure. I told you to get rid of.
+
+Let's. Take a look at this.
+
+Okay, uh, let's kind of sync back up together.
+
+I got a chance to check in on both sides of the room with some of you.
+
+Any of you that found this difficult? Difficult to implement, coding wise.
+
+Or difficult to remember this. That's part. Okay, uh, let's look through it together.
+
+I think we have kind of some variability in the room about where where people are at with this, um.
+
+Where should I start? So. I have been giving just kind of our scripts before, but I'm.
+
+Thinking of doing a different format here, which is not connected.
+
+Give me one moment. So also in your practicals you are working with our markdown, right?
+
+Uh, so I could give the solutions in markdown, but I, I, I think this is nicer to kind of present, but it's not the same way.
+
+You'll see it if you're doing it in our script. So you can give me some feedback on what you prefer me to do in class,
+
+but I'll do it this way today and you can let me know after what you like better.
+
+Um, so the idea here, right, was to do the Z test in R.
+
+I set a seed just because I want to make sure I get the same results every time.
+
+But you don't need to do that if you're trying to have some variability.
+
+It's random, right? Because we're drawing a random sample from a distribution of.
+
+Uh, with a mean of 55.4. Standard deviation of five.
+
+Sample size of 30. If I get a summary. In this case, my mean is 55.05.
+
+It's not the same as the one that I put in here, right?
+
+Because it's drawing randomly from this, uh, from a distribution with these values.
+
+So it's not going to be exact. Uh, I showed some of you how to, uh, load, install and load your packages.
+
+If you're still struggling with that. Just let me know.
+
+It takes just a second to get things working. Hopefully.
+
+So I asked you to check out the arguments if you're in, or you can just go to help and type in z dot test and see what you need to put in there.
+
+You would have seen that you need to specify some things you need to put in your vector or your variable.
+
+You need to put in that population mean and standard deviation.
+
+And you could also specify a direction. I'm curious.
+
+Uh, what what did you all think if we look at this set of values.
+
+So we drew a sample from, uh, from a distribution with these values, and we wanted to compare it to these population parameters.
+
+Maybe just a quick show of hands. Did you have a null?
+
+That was there's no difference between this sample and the population.
+
+Okay. And did some of you think more that your prediction was that there is a difference?
+
+Maybe just a raise of hands? Is there any particular information between these sample parameter sample statistics and the
+
+population parameters that made you think it was going to be not different or different?
+
+What what what kind of clued you into how you made your predictions?
+
+Yeah. Uh, one.
+
+Which null hypothesis. Okay.
+
+And and you base this on the standard deviation. You said.
+
+I know which one is high. For the population.
+
+Relative. What. So in the sample it's five right.
+
+And so 20 years higher than five. So you were thinking like.
+
+Okay, if it's 50, then 55 is included within that standard deviation.
+
+Is that kind of your thinking? Yeah. Some of you as well. Yeah.
+
+So the idea here, when you're looking at this set of values, we see 55.4 has a smaller standard deviation compared to this one.
+
+So you can picture this one is kind of wide and maybe this one might fall within that one.
+
+So to run that test. I didn't specify, uh, that it was directional or not.
+
+I said two sided, but I put it in my sample variable,
+
+specified my population parameters and the confidence interval, and I get some test results here from my z test.
+
+If you had to interpret this. Could anyone tell me where I should start?
+
+Where do you all look first? Anyone.
+
+Yeah. Thanks. P value okay. Why the p value?
+
+Uh. Okay, so we could just jump straight to the p value and then we know okay.
+
+So this is 0.16. Do we reject or fail to reject.
+
+You know. Yeah.
+
+Yeah. Ah, we failed to reject the null either. Either way. Yeah. Yeah.
+
+So we could start at the top, right. We could say, what kind of test did I even run?
+
+Did I mean to do a one sample z test? In this case I did because I knew the population parameters and I was trying to compare that to my sample.
+
+But I would probably start with just my test statistic. Right. I was saying just a bit ago, you already can see something from your test statistic,
+
+especially if you remember those kind of Cut-Off values 1.96 or so.
+
+This is already lower than that. So then I'm thinking if I look back at that distribution, if I go here real quick.
+
+It's going to be somewhere around here. So I already have that information that if that this is quite a likely result to observe if the null is true.
+
+Wrong class. All right.
+
+And then the p value. You interpreted that perfectly. We have our mean, which we knew because we already saw that in the sample above up here.
+
+And then our confidence interval. So, uh, what would we be looking for in our confidence interval here?
+
+If we want to compare our sample statistics with the population parameter.
+
+So are how we interpret our confidence intervals is always relative to the test, the comparison we're trying to make.
+
+Um, in this case, we might be looking for example, for 50 and 55.04.
+
+Are they falling both within this confidence interval?
+
+Then that's another piece of evidence that there may not be a difference between that sample and the population.
+
+Any questions about interpreting this output?
+
+Question about this output. No.
+
+Okay. So we're going to kind of build on this type of test right.
+
+We're actually going to later have models in the class where we have a bunch of test statistics,
+
+all with their own p values and confidence intervals and effect sizes and things like that.
+
+So it's really important that you get sort of just the basics of one of the simplest test here,
+
+which is comparing some sample data to some known population parameters, and that you can interpret kind of what that.
+
+Test statistic tells you what your p value tells you, your confidence interval.
+
+Um, a one more thing to mention. So the alternative hypothesis is mentioned here.
+
+This is a sort of reminder to you, right?
+
+It doesn't tell you how to interpret the output. It's just saying.
+
+The alternative hypothesis is that the true mean is not equal to 50.
+
+So you'll see this in a lot of the tests that you run. And that just as a reminder to you, how can I interpret, uh, this output.
+
+So if the p value was lower than 0.05 at least, and your z value was higher than 1.96,
+
+then you might have some support for your alternative and you could reject the null.
+
+But we don't have that information here. All right, let's have a break.
+
+Um, do a quick vote. 15 minutes today.
+
+Ten minutes. Five.
+
+Skip breaks forever. Let's do ten minutes.
+
+Uh, we'll start back at, uh, 145. So we have to.
+
+We have. All these.
+
+Things. So this is one of.
+
+The most important things. And it's.
+
+Just. Great to.
+
+Think of the home notebooks of Jesus Christ.
+
+What are you up against? Go go go go.
+
+Yeah. Okay. So you're going to go see you.
+
+Don't go. Right.
+
+Like you're listening to me tell. And this.
+
+We're going to make these. Like we're talking about, like crude oil and same thing.
+
+And we used. They love them so much.
+
+It's pretty. It's. It's not.
+
+Yeah, yeah. Think of.
+
+Association. You probably think.
+
+So. Yeah.
+
+So this is number.
+
+Yes. I.
+
+So. Just. You know I don't.
+
+Even know what to say. Not even our state police officer.
+
+Yeah, right. Just think about.
+
+The other thing I say from this whole discussion.
+
+Okay. Welcome to.
+
+Yeah. If. I remember.
+
+Let's say. Yeah.
+
+I'm right. I think this.
+
+Yeah I could. There was just a little bit of.
+
+Disappeared. They're all. Gone.
+
+Yeah, like a whole. Yeah, I know it's supposed to link up a.
+
+So it's. And reform of.
+
+Anything like that? Yeah.
+
+Yeah. I noticed when you show up.
+
+Yeah. Yeah.
+
+Yeah. Yeah. I think.
+
+That's the, uh, takes through of the.
+
+Yes. This, I think.
+
+Is amazing, but overall I. Think it's really.
+
+Was. Oh, you don't need so much.
+
+Yeah, I. Think so.
+
+Uh. This is nice.
+
+Oh, my. God, I think.
+
+Just. There's an ISO.
+
+Uh. Yeah.
+
+It was. Thank you very.
+
+Much. Yes. Going.
+
+To. That.
+
+Works the same for. But I wanted to tell you that I love.
+
+That you have a beautiful city in town. That's what.
+
+I like most about. Look.
+
+What you think of me? So.
+
+Yeah, yeah, yeah.
+
+So none of us. Uh, I can.
+
+I was looking for somewhere to. Use.
+
+So. Right.
+
+Each. Yeah. Yeah.
+
+All right. I think, uh, that's our ten minutes.
+
+So we will. And five minutes early, at least.
+
+We looked at this z test. Right. So the z test with some simulated data.
+
+It's a bit abstract, but it's important to remember that we can always make errors in our hypothesis testing.
+
+Right. So just because our sample mean is different from our population,
+
+mean doesn't always mean that the effect is there or that some treatment is there or some association.
+
+So we need to remember that there's always some sampling error.
+
+And as scientists we define like some acceptable level of possibility that this is the case.
+
+Right. So that's when we look back at this. Oops.
+
+Sorry, I skipped some stuff. Oh, I'll get there.
+
+So that's what we say. Like, okay, if the null were true and we observe a test statistic over here in the distribution,
+
+then there's still a chance the null could be true, but it's quite unlikely.
+
+But we could still be making an error in whatever inference we're making about our data.
+
+Right? We are on board with that. So I skipped over this bit with the t test.
+
+I'm going to show this example in a moment. So the t test we would use when we just don't know our population standard deviation.
+
+Right. That's our mean minus the value we want to compare it to.
+
+That's the null there with the zero over the standard deviation over the square root of n.
+
+Right. So just like with the with the z distribution we can use that t statistic.
+
+The values are pretty similar. Um and the p value we get is the area under these curves.
+
+Right. And if it was two sided we would add up both of these.
+
+If it's one sided it's you know only one side right.
+
+I had another exercise, but I think for the sake of time this is really similar to the last one.
+
+What I'll do is I'll just show you, uh, for this one, and I'll save some time for other exercises today.
+
+So in this case, taking this example that we had before with a mean of 55.4 standard deviation of five.
+
+If we didn't know the population standard deviation we were trying to compare it to.
+
+We just knew the mean 50. We would just use the t-test.
+
+Right. So we could put in that same variable that I generated before compared to the mu of 50.
+
+Specify my confidence interval. An alternative. These are default anyway.
+
+So if you didn't put that you would get those. And then I get this output here.
+
+So what does this one tell us? Any one want to take a go at interpreting it?
+
+Our T value. Is it close to zero? No, no, it's pretty far away.
+
+Degrees of freedom. Well, that's based on our N minus one, if you remember t test.
+
+So 30 minus one p value here.
+
+Unfortunately I left it in scientific notation. If you know it it's really small right.
+
+So the alternative there was that the true mean is not equal to 50.
+
+And in this case, uh, we would reject our null hypothesis.
+
+Right. So the true mean is likely not equal to 50.
+
+If we have this information with the t test. So we see here our confidence interval and our mean.
+
+We don't see 50 included in there, right? So that's giving us some evidence that with the variability in the sample we have, even though.
+
+The standard deviation here was five. Um, these are likely to be distinct according to this t-test.
+
+And I just put another, uh, shorthand way to do the same thing besides this here.
+
+So what I was saying about errors is it could be that we made an error, right?
+
+We could make this inference and we could say this.
+
+It looks like the mean of this standard of this sample is different than this population.
+
+And then then what do we do with that. Right. Um, usually in science, you know, we're trying to generate some new knowledge, right?
+
+So we might try to say people like, uh, this type of construction versus this type or uh, or studying does help with, uh, learning.
+
+Those cases are not too bad. I mean, maybe you would just waste your time studying if it didn't really help your learning.
+
+If we made an error when we tested that hypothesis.
+
+But there could be other cases, right? Where it's maybe more of.
+
+Is a drug effective at treating some type of condition, or is, uh, did, uh, person commit a crime?
+
+Um, so what's important here is to kind of remember a bit of your type one error,
+
+which is that false positive saying that there is a difference when maybe there isn't a difference or there is an effect when there isn't an effect,
+
+and how much kind of impact that could have.
+
+So I would say a lot of research that is not medical, but that's more in the cognitive science domain.
+
+You definitely don't want to make those errors. You don't want to say, uh.
+
+That some effect is there when it isn't, but it may not be as bad as, you know, something that is in the medical domain.
+
+So there are some different standards as well about, you know, whether you know,
+
+what kind of alpha level you might accept in cognitive science studies versus
+
+some of these medical studies and the conditions around those experiments.
+
+You don't have to memorise this, but when you're thinking about doing your test and thinking about, okay, can you reject your null hypothesis or not?
+
+And then remember, okay, there's still some chance that this is a wrongful conclusion.
+
+And then you have to decide. Can I sleep at night? If I might have made a wrongful conclusion.
+
+And I would say most of the time I think you're okay.
+
+But you should kind of think about what would be the impact of making a wrong conclusion for the type of inference that you're making.
+
+And just because we see that there is a significant difference in our t test or a z test or a correlation or regression.
+
+Um, what's important is we want to know how big that effect is.
+
+So you should have gotten some of this already in stats one,
+
+where we talk about a significant finding in terms of it being significantly different than the null,
+
+doesn't mean that it's actually significant in the important sense.
+
+Right? So there's kind of two meanings of that word significance.
+
+One is the statistical significance. And the other is sort of does it actually matter.
+
+And this is why we use the effect size. Right. So we might have a statistically significant finding that has a really small effect size,
+
+which means that okay, this is it meets our statistical criteria.
+
+But practically it's it's a really small effect.
+
+So what is the effect size. It means um. Well, it depends how we are quantifying it.
+
+Um, it's it's something that we use to say, like, how strong is this difference?
+
+How strong is this relationship between these variables that you're trying to test.
+
+So we have this first part where we're doing our no hypothesis testing and trying to see okay, is there an effect or not and not an effect.
+
+And then if there is an effect, how strong is it?
+
+And for every test you probably saw this also already in stats one, you know you have these different criteria that for Cohen's d.
+
+For example this is small point to medium is 0.5 for correlation which is new ish.
+
+Ah. Point one A small 0.3 is medium, 0.5 is large 0.7.
+
+Is very large and that also applies if it's negative.
+
+So this is kind of like, uh,
+
+you might see sort of misreported or poorly reported results in some papers where they don't include things like the effect size.
+
+And if I get, uh, paper that I'm peer reviewing and the authors aren't including their effect size or their confidence intervals,
+
+then I will reject or I will say, try again and, uh, resubmit with this extra information.
+
+Yeah. Remember. Yeah.
+
+So I think in practice you should, uh, try to memorise them.
+
+And what I mean by that is, uh, there's a lot of them.
+
+Uh, but but when we're looking at correlation, particularly for this course, uh, correlation should be easy to memorise.
+
+I would say for Cohen's d that's more of a thing.
+
+And we'll talk a bit about today, but it doesn't come back that much.
+
+Um, and we're going to talk later as well about, um, standardised regression coefficients.
+
+That's not for today. Sorry. Um, but. Then we will kind of have a relative interpretation of all of this.
+
+So you would want to know right away is this kind of a small or medium or large effect?
+
+Yeah. Particularly for correlation and regression coefficients.
+
+Just to kind of refresh on the effect size here.
+
+So if we were comparing those two distributions, this is an example of a SAT scores a standardised test used in the US.
+
+Um, like you wanted to give some kind of treatment or intervention to try to improve test scores.
+
+And you compared like before to after. You would want to see okay.
+
+Uh, how much did the distribution of those kind of samples change.
+
+Right. To see. Is it even worth doing this kind of treatment to improve test scores?
+
+Maybe in this case Cohen's d is kind of small here.
+
+Whereas uh, this example shows one that's quite larger.
+
+You know, there's a bigger difference in the means of those two, uh, distributions.
+
+And those could be useful for telling you, like, should you do this treatment or this type of intervention.
+
+So that's why I was saying if you have a small effect, it might be there is some association.
+
+It's statistically significant. The effect size is small.
+
+And then uh, but then maybe it's expensive or it takes a lot of time to do such an intervention.
+
+So maybe a small effect might not be worth it.
+
+But maybe if you are in a position where you can, you can have that kind of treatment or intervention, then it is worth it.
+
+Right. So think about kind of the statistical interpretation, but also the kind of practical does this affect.
+
+Is it large enough to kind of have a difference there that's worth considering.
+
+Oh, my battery is, uh, running out. Is there a question?
+
+Be? Uh, sure. Yeah. Uh, probability of anything, uh, under the moon.
+
+Yeah. And how big? They.
+
+Built up their idea of one building that you have to 0.01 probability of getting this.
+
+Until then? Well, I think the probability that you get it, I get chance.
+
+And if you tell me that the events I. It's different.
+
+That I have in the. I uh, and then, uh uh uh, yeah, that's a good example of a big effect size in that case.
+
+Um, so I had here another exercise for calculating some effect size.
+
+Uh, I think I will also skip this one.
+
+Because again, we're not going to be working too much with coal and see,
+
+and I want us to get at least into correlation today to get started with that.
+
+Um, but you can, uh, take a look at this. It might also be on your practical exercise that comes up, uh, later in the week.
+
+Um, just to try to. I would recommend that you try and, uh, test out this currency.
+
+Uh, I'll show you my example, though, if you take a look here.
+
+So this is a function that's in the psych package. I think you all have used that already in stats one.
+
+There are some, uh, data sets.
+
+This might be a reminder to you, too. Some packages have data sets that are in them, and you can load them by using a data function.
+
+And then this will make them available to you in your working environment.
+
+And ah, this is a data set that includes some standardised test scores based on with some factors like gender and education level and age.
+
+And if I run this code and stay on this data set looking for whether there's an effect of gender, uh,
+
+what do we get as output here is for each of these variables, we get the estimate of the effect size here and the confidence interval.
+
+Right. So when we're looking at confidence intervals around effect sizes we're interested in whether there's a zero contained in there.
+
+Right. Because that would tell us the effect size could be zero.
+
+So these ones that are like -0.2 to positive something, you know,
+
+these are saying that there's likely no effect even without doing our statistical, uh, inference.
+
+Whereas this one here, this last one. So this is like quantitative uh SAT component.
+
+There's a negative effect, uh, and it doesn't include zero.
+
+So you could interpret that perhaps in this data set, which, uh, I don't know if it was made up or not.
+
+Um, you can check the package.
+
+Um, it actually shows that there's, uh, that the female in this case had better quantitative scores on this test, on this part of the test.
+
+That's based on the coding here for the, uh, for the gender variable.
+
+So just just looking at an example of some effect sizes and confidence intervals and how you could interpret them.
+
+But so you might see this and then see okay, there might be a moderate sized effect here.
+
+And then you could still test for that uh, statistical difference as well.
+
+Any questions on confidence intervals per sorry or the effect sizes.
+
+It's also a refresher from stats one, right? See you later.
+
+Up. Okay, so there's one more bit of nuance that I want to add here for hypothesis testing.
+
+That's going to set us up for a bit later in the course.
+
+And that's that we're going to have some data and we're going to make some predictions with a model.
+
+We're going to develop like a regression model to start. But remember we could even have the mean as the model of the data.
+
+Right. And then there's some error. So.
+
+With this hypothesis testing,
+
+we talked about some of these kind of lower level hypotheses at the beginning of like relationship between one variable and another,
+
+or a difference between two variables or difference between a sample and a population.
+
+But we're going to kind of get to these more complex models where we have a couple hypotheses built into there.
+
+So we're going to have those specific relationships between variables and each other or variables and an outcome.
+
+And we're going to have overall model fit what that is.
+
+Don't worry about it for now.
+
+If it sounds new, it's sort of setting the stage for where we'll get in a couple weeks when we're going to come back to different test statistics.
+
+So for example, with regression, when we get there, we'll have beta coefficients, t t values and p values for each variable in those models.
+
+And we'll also have f statistics with p values for the overall model fit.
+
+So different kind of levels of hypothesis testing.
+
+And as we get to those I'll make sure that you hopefully all are on board with how to interpret them.
+
+So I, uh, I started the course kind of with saying this is where we're going with, like, this model fitting type of approach.
+
+We're doing some sampling, always trying to visualise our data.
+
+Fitting some models, testing our hypotheses.
+
+I wanted to include this example here because, uh, often like this is not as, uh, rigid a process as it can be made out to be.
+
+Right?
+
+You might have some hypotheses that you get from from reading some papers, or you have an intuition and you want to come up with a hypothesis to test,
+
+and you get some data, and either it fits with the hypothesis or it doesn't.
+
+And you, uh, you look to the literature and you see, is there some other way to interpret this?
+
+Ah, you talk about some, including inconclusive results with some experts.
+
+And it's it's not always this sort of straightforward process.
+
+It's just like, I'm going to build my model and test it and get some output, but.
+
+Um. But there's some dynamic parts here.
+
+So when you're thinking of your hypothesis, what I want from you all whenever you run your stats is don't just click run, right.
+
+You should think before you click run. What is it that I'm testing?
+
+Why am I running these statistics? What is the relationship that I'm trying to examine here?
+
+And does it make sense? And when you're doing your own projects, your own analysis, you should think, what is this test that I'm doing?
+
+Does this test even make sense? What am I predicting? And if you see something that isn't what you predicted, that's okay too, right?
+
+Sometimes you're surprised. I like actually being surprised. Sometimes your results are disappointing.
+
+But then why didn't it go the way that you predicted? Then you have to kind of figure that out.
+
+So it's not always easy. It's not always straightforward.
+
+Hopefully in this class, you know we'll go through some of these steps and what we kind of can and can't interpret about our data and our models,
+
+but only through practice where you kind of get to that point where, you know,
+
+you're really generating a lot of hypotheses and testing them and stuff.
+
+All right, who's ready for some correlation? Yeah.
+
+Let's actually start. I have this really nice slide telling you everything we're covering, but we're not doing all of that today.
+
+Uh. How many of you already have learned about correlation?
+
+A few.
+
+Um, so hopefully you already have an intuition there, sort of the conventional thing that you have in society of how these things are correlated.
+
+A lot of you know, what that kind of means, that there's two things that are related in some way.
+
+We're going to look at unpacking. How do we get a correlation value?
+
+Um, and I will remind you always that it's not a causal measure.
+
+Right. Just because two things are correlated.
+
+You cannot say that one causes the other. So if I look at the correlation of all of the hours that you spend studying and your exam scores,
+
+and I cannot say your studying caused you to have good exam scores, but I can say they're related.
+
+If you know something about correlations or if you don't.
+
+You should always start with visualising them. Your data.
+
+So this is these are scatterplots right. The relationship between two variables.
+
+Something on the x axis. Something on the y. And you can already get an intuition about whether there's a relationship just from this.
+
+So if you have something like this one, just kind of evenly distributed, probably no correlation.
+
+Things kind of going both positive and very close together.
+
+Pretty strong correlation positive as they get more spread out more weak.
+
+And then the opposite here for the negative. So some of you did say negative correlation was they had a wrong answer to that.
+
+Right. So. Me as one variable is going up, you know, the other one is actually going down.
+
+Right? So that's the difference there with the negative. Okay.
+
+So let's play a game. You can go to the websites if it's still working.
+
+Guess the correlation.com. Should work on your mobile devices as well.
+
+You can play on your own, or you could try to invite your neighbour to do a competitive match.
+
+The idea here is that, you know, maybe you have to log in, uh, when you.
+
+You'll get shown a scatter plot and you have to guess the correlation.
+
+You have to type in a specific value between minus one and positive one, and if you're within some tolerance, you'll get it right.
+
+If not, you'll lose a heart. I'll give you some time to try this out, and then I'll come around and see how you're doing.
+
+Let me see who gets, uh, keep track of your, uh, your score.
+
+We could see who gets the highest one. Oh.
+
+Is that the heart is lost. Or is that a it's not a, uh.
+
+You got it right somewhere. Was that. Uh, okay.
+
+Just go. The child is born.
+
+No. These.
+
+I think the first one. How's it going for you?
+
+Yes. Are you. It's in. Yeah. What do you think?
+
+So sometimes I think that's just too old.
+
+Yeah. You like to. Are you trying to, like, sort of shape a pattern?
+
+Yeah. I think so.
+
+Yeah. I mean, your. Last chance, I.
+
+Guess for this one. I think that works because.
+
+Yeah. I like the way we won this year. So.
+
+It's one that we should be doing any correlation.
+
+But I think I still. Think it's like zero points.
+
+0.2. Yes, we.
+
+Do. Old.
+
+Well. I don't know.
+
+I think it says places.
+
+Where they were first 6:45.
+
+Or so I remember. Oh.
+
+You there? Uh, when when you, uh.
+
+I. Was always team.
+
+Uh, yeah. Because he. Wouldn't.
+
+Be. Able to accompany you.
+
+Oh, my. God!
+
+Oh my goodness.
+
+Oh, my. You think about it.
+
+A few, but not here. Do you think?
+
+Yeah. Okay.
+
+Okay. Oh, thank. You.
+
+Oh. Thank you, thank. You.
+
+Thank you. Uh, yeah.
+
+I think I've been. Uh, yes you can.
+
+Let's say that, uh, I think thought.
+
+That was. Oh, it is fine.
+
+Oh, no. No, I guess so.
+
+Okay. Yeah.
+
+You know, it's. Just, uh, you know, I see.
+
+I was against it. I was.
+
+More than 39 years and I got my way.
+
+As I pointed out, it was going.
+
+I told. You that I had.
+
+You can see him there.
+
+So I. 24. Sorry about that.
+
+Okay, so just to make sure we can cover a couple more points, you're free, of course, to set up some competitive guess the correlation if you like.
+
+We had a high score in here. Nice job. Um, why do I have you take some time to play this?
+
+Well, one is getting used to looking at some data, right?
+
+And often before we collect our data, we want to have like a prediction, something we're trying to test our hypothesis.
+
+But then we get our data and we plot it for various reasons.
+
+One, does it look like we expect it should look, um, does it seem like there's maybe the pattern there that we are predicting already?
+
+Is it going to meet the assumptions of the analyses that we're going to, uh, do on those data?
+
+So I saw and I heard a bit from some of you that you were looking for kind of some patterns in there.
+
+Anyone want to share maybe some of you who are doing high scores.
+
+What what were you seeing in these patterns that was helping you judge the value?
+
+Yeah, well, if there was like 1000 each border, you knew there was like, almost no correlation.
+
+So. Press the nail on. Even if it was like in the top left and bottom right, for example.
+
+Or on the right is height relation, but each corner.
+
+Oh yeah. So one in each one. Okay.
+
+And you. Yeah. Did you have just mentioned the in the middle?
+
+Uh, but, uh. Yeah, exactly.
+
+So if we just look back at this slide real quick.
+
+If we had that perfect positive or negative correlation, they're all going to be on a line.
+
+And the more spread out they are. You would still maybe try to see is there a line between there or when you get to this one,
+
+you might be like, okay, maybe there's one here or here or here.
+
+Like it doesn't really seem like there's really that clear of a line versus this one.
+
+You see pretty clearly. You're not going to say this is like the trend, right?
+
+So we're kind of looking for this trend that in this case follows a line.
+
+And that's kind of the spoiler of this class that most of what we're doing is fitting things to a line or a plane.
+
+We're going to get a bit curvy later on at the end of this semester, but for the coming weeks will mostly be looking at something like this.
+
+Um, so nice that you had some strategies for that.
+
+Um. So this is a relationship right between these variables and the correlation that you were typing in, uh,
+
+and maybe getting right some more than others, you know, is quantifying how strongly associated those two variables were.
+
+In this case, we don't even know what the variables were. It was just these points on the scatterplot.
+
+Right. But so one place that we might start with a lot of analyses is is variable one and two or x and y related.
+
+And we would start by getting the covariance.
+
+It's the first step in getting to the correlation. So in stats one you already heard about variance.
+
+And now we get covariance. So it's.
+
+How much each score deviates from the mean. It's going to be a kind of building on this calculation that you saw before.
+
+Just one moment. Just trying to find what would be a good five minutes, uh, stopping point for us.
+
+So let's take a look at these two variables.
+
+So one is like advertisements, money spent on advertisements.
+
+One has packets. Uh, this is an example from the reading, uh, that you should do for, for next week.
+
+But if we have the average of each of these variables and then we have these deviations from the mean, right.
+
+So these are the observations here for ever advertisements watched and packets.
+
+But and so we see for example that for this one the mean is 5.4.
+
+And then we get this deviation of -0.4. It's 0.4 below the mean.
+
+Uh, for this one eight. The mean is 11, so it's minus three from there.
+
+That makes sense. Hopefully you remember this kind of deviations. Um, for the variance.
+
+We square those right. So we can see basically.
+
+All of these values. We take them, we sum them up, we square them, and we get the variance.
+
+So this covariance is closely linked to this. Kind of skipping through that there too quickly.
+
+Sorry about that. So the idea here is that if we want to see are these things related,
+
+we're going to see how do they change around their mean individually and then relative to each other.
+
+And this is where we get our sort of covariance. So we expand this formula for variance into covariance by just having this x minus the mean.
+
+So each observation of x and y, each observation of y minus the mean of y.
+
+Summing up all of those having the product of them dividing by n minus one.
+
+So hopefully you can see this simple expansion here, except for no longer squaring, but still taking up these sums there.
+
+And then we get the covariates. So if we did this by hand.
+
+Which most of you won't do. Actually, as a side point, when I took stats when I was a bachelor student, my teacher made us do a lot of things by hand.
+
+It was great for kind of learning what's actually going on.
+
+Can't say I had fun doing it, but I'll show you one worked example here, right?
+
+So if we take these values where we have each of these deviations, we can see these being, uh, kind of multiplied all to each other.
+
+Right? So the -0.4 times the minus three, the 1.4 times the minus two plus the -1.4 times the minus one.
+
+Summing all of those up, getting these, these values, uh, summing those up and getting a value here of 4.25.
+
+So that's our covariance between adverts watched and packets.
+
+But. How would you interpret that?
+
+4.25. Any guesses?
+
+I think that's going to have to be the cliff-hanger that I leave you all on for a week.
+
+So where we are not all the way to our full correlation yet.
+
+This is one step and I will start. The next time we meet with covariance again.
+
+I have just a point still to wrap up, so give me one more minute.
+
+So we have the chapter on correlation still for next week.
+
+And there are practical sessions with practical exercises as well.
+
+This week we'll pick up on correlation. Next time I see you all and have a good rest of your week.
+
+Doing that. You know.
+
+What? Uh. Uh, well.
+
+Um. Okay.
+
+So it's right. Other.
+
+So basically I like. Back in the day when I started, we started with, uh, similar, uh, purposes.
+
+Um, I wanted to, uh. That instead of saying, I know I like resources and that's negotiate between each other at that time.
+
+Simple strategies for I can say like one of sense every day.
+
+Yes, I will say this with others. So a little bit more complex, uh, like bargaining, just like other things.
+
+Like, I know if it's too challenging for this, I just.
+
+Yeah. So I mean, it it depends if it's on the side.
+
+It is a major. Yeah. That you want ability.
+
+Yeah. There are some game theory like that basically.
+
+Yeah. And there's a dynamic where it has like many agents um, choosing to cooperate or get that.
+
+Yeah. So that might be a place to look to see how other people could translate that to.
+
+There's also some resource ones that we're gonna cover the and.
+
+It's a wine, uh, trading kitchen. Very small here.
+
+And I think they have some different strategies for, like, who they would trade with.
+
+Okay. I don't think it has negotiation, but you should check if you share a room.
+
+So I think my point is it might be challenging, but you might not have to start from scratch if we do.
+
+Okay. Let's close this already. Yeah. If you could kind of expanded.
+
+I will look into that though. I'm pretty new to it, so I'm still learning how to use it and everything.
+
+Yeah, I mean, you like as I said, you don't have to do it in that logo.
+
+You can use Python. Yeah, or something like that, you know.
+
+But it's good to look at what the examples are saying. So, you know, this is something selected.
+
+Something. So maybe a good starting point and you can check in with me, uh, after you've done.
+
+Expensive and think very much so. I wish you knew that. You know that.
+
+You asked me to think. You can hear that.
+

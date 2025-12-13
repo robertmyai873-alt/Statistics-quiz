@@ -1,0 +1,1327 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Good afternoon everyone. Our recording is live so we will get started.
+
+I posted an announcement earlier about, uh, the seamless apps, which is something I've been developing for a couple of years.
+
+If it's something you'd like to try out, uh, I put the instructions here.
+
+I would say in class, the advantage, uh, would be, um, I'll show you real quick.
+
+The advantage would be that, uh. I'll back up for a second.
+
+Uh. So the whole point here with this, uh, experimental platform and what I was trying to create as one interface where we would have lecture content,
+
+quizzing as well as the exercise is integrated.
+
+So when everything works, uh, then, for example, you don't have to download the data and load it,
+
+but you can actually already work with these interactive, uh, coding blocks, for example, to enter your code.
+
+Try it out here within the app. Uh, so if you want to try, uh, to follow along today in this format,
+
+I put the instructions there and it will be useful if you have any feedback on that.
+
+If things don't work, just let me know. Of course, you don't have to try it out.
+
+Uh, but it might be a format I switch to, uh, later on.
+
+Um, okay. So we're. So I will go through kind of my normal way that I do things.
+
+But if you, for example, are following along, then you can see, for example, you can click along the tabs for,
+
+you know, whichever slides I'm covering or, uh, click to the specific exercises.
+
+And uh, the talking is pretty loud in here from this group right here.
+
+Yeah. And it's really, uh. Yeah. The echo, uh, really distracts me.
+
+Thanks. Um, does that make sense? Anyone plan to try this format out?
+
+Couple. Okay. Thank you for trying it out. Um, so, what are we covering today?
+
+Well, we're going to look at multiple regression with categories.
+
+You may say, oh, but we already had multiple regression with categories.
+
+If you remember when we did dummy coding before we're going to expand on that.
+
+Right. So there we usually only had two categories. And today we're going to say what if we have more categories.
+
+What if we want to look at certain differences between them.
+
+So we're going to expand. What do you know about multiple regression with categories to have multiple different types of
+
+coding systems like dummy coding weighted and unweighted affects coding and contrast coding.
+
+These are just a few of like the most common options.
+
+Uh, there's a link at the end where you might see, okay, there's like 30 or something, but, uh, if you can understand this, you'll be good to go.
+
+And, and it extends to these other types of coding systems.
+
+So here's where I will switch back to woot clap! Uh, but if we were working with this full integrated format, you could actually do the quiz here.
+
+And, uh, you can also do it still here.
+
+You can, for example, put an answer, but we don't get some sort of feedback in this format without the database.
+
+So we'll go to boot clap. Um, and it would be good if you could join.
+
+And, uh, look through three questions. And these have, uh, some output as well from our.
+
+So maybe a bit like what you could expect on an exam in terms of interpreting some output.
+
+Not sure why we started at 19 already. Can anyone send some emojis to see if it's working?
+
+No. I thought I'd reset it.
+
+Give me one second. Reset should be good.
+
+Mm. Okay.
+
+That should work. It would be nice if you could do the emojis on the questions too.
+
+You know, if you really like the questions, you can give them a heart or a thumbs down if it's too difficult.
+
+Let's go on to the first question then. So I'll give you some time to take a look at this output.
+
+Maybe I'll put it up here if it shows up. It doesn't show it all on the screen, but you should be able to see it all on your own device.
+
+Is it difficult to read on your device? Yeah. Sorry about that.
+
+Maybe an image will be better next time. Welcome.
+
+Let's do about 30 more seconds or so. All right, less 10s.
+
+So you can guess at this point if you like. Okay.
+
+So most of you got that correct. Let's see if I can visualise this better.
+
+Ah, there we go. So the question here, right, was about uh, specifically the interaction term, which maybe you forgot.
+
+We did interactions last week, but, um, uh, I'm a bit stuck today.
+
+Interaction term is this one here. Right. So it's telling us that these are our main effects for these two variables and that
+
+there is an interaction effect here we see that it is negative and that it's,
+
+uh significant. We have that very low T value and uh, low p value.
+
+Let's look at the options again. Uh, so the effect of engagement on grades decreases as the number of students increases,
+
+meaning that these are really long, uh, too long to display on here.
+
+Sorry about that. On the, uh, exam format though, at least you can visualise all of them.
+
+Um, but you can see at least here that case where there was that negative interaction effect.
+
+But we probably want to do something to understand this interaction effect better.
+
+Right. That's what we spend most of our time on last week.
+
+So here we have the same output. Uh, but the question is which of the following would you do to better understand the interaction effect?
+
+So again the output here is the same as the last one. You don't need to check it per se.
+
+Just think of which of these would be good ways to better understand that significant interaction.
+
+About ten more seconds for this one. All right.
+
+Okay, so some of you put the AIC of the model or check the assumptions.
+
+But some of you also put probe to simple slopes or calculate and plot the simple slopes.
+
+So those were the two kind of main things we did last week. Right. We said okay, we see there's an interaction.
+
+Is it significant or not? How can we understand what the variation is at one level of the other variable,
+
+while kind of adjusting the other one, which we could do by these two options.
+
+If you put the AIC, then maybe you might be trying to see does this model with the interaction, uh, fit?
+
+Well, we would need another model to compare it to. Right. So you would maybe see the model with the interaction term in the model without.
+
+That might be one thing to do with the AIC and also to check the assumptions.
+
+It might not help you better understand the interaction effect, but it would tell you does that model meet its assumptions?
+
+So can you then interpret the interaction which you would then need to do?
+
+Step 2 or 3 here. So makes sense. Yeah.
+
+Okay. Last one. So. Here's one about categorical variables.
+
+I'll give you a minute to read this one and put in your answer.
+
+About 15 more seconds. All right, let's see how those of you who answered did.
+
+Okay. So. Majority view 57% got three.
+
+Dummy variables. Uh, if we expand this.
+
+We see that, uh, what we're going to cover today is that it's always sort of the number of groups minus one for dummy coding.
+
+So there's four groups, so we should have three. Uh, and then this is all that we need to account for all of the methods in the model.
+
+For those of you who put two. Um, as we'll see in a bit, the two wouldn't totally represent all four groups.
+
+Uh, especially according to the conditions that we need to meet our modelling, uh, requirements.
+
+And then for one for each group. Uh, this will actually lead to redundancy in our model with that fourth variable.
+
+Um, so we're going to go into this, uh, now unless there's any questions about these and, uh.
+
+Sorry the format didn't, uh, show up that great. And we'll clap.
+
+Okay. Nothing. Um. So we're we're still here.
+
+We're still doing multiple regression. Uh, next week, we have still multiple regression, uh, with polynomials.
+
+But then after that, this kind of equation will change a bit.
+
+So what's different now? Nothing is different from multiple regression before.
+
+It's just that we were looking at more continuous variables.
+
+Now we're looking at different types of categorical variables that we will be entering here.
+
+We'll get these coefficients. And as you maybe remember a bit about how we interpreted our intercept when we had just one, uh categorical variable.
+
+How we interpret our intercepts.
+
+And our coefficients are going to change really a lot depending on which type of categorical coding system we're using.
+
+Why do we even need categories. Well, because it simplifies things to put them into categories.
+
+Sometimes it makes our models or our data easier to interpret.
+
+Um, sometimes they just are already categories to begin with.
+
+Um, but here we're thinking about two or more groups or categories that we're going to use as predictors.
+
+Um, so we need to often convert these into different sets of numerical variables that we'll call our code variables.
+
+If we take a look at, uh, one example here.
+
+So this is the question that we just had. So within all of the coding systems in multiple regression we can memorise that.
+
+We're going to use g minus one code variables to represent a total of g groups.
+
+So again if you had four groups uh you will only need three code variables to represent them.
+
+And they have to correspond to a single distinction among the groups which is related to being mutually exclusive.
+
+So you can have an individual observation where, uh, it's in more than one group.
+
+This will be a different, uh, type of system, uh, or exhaustive.
+
+So all individuals are in at least one of the groups.
+
+So these are some kind of baseline conditions for how we create our code system.
+
+Um, if we we're going to be working with this data set, I think for the we have four exercises today.
+
+We'll see how long the first couple take you if we have time for all of them.
+
+Uh, for each one, for each of the coding systems. And we're going to be working with, uh, this BMI data set, which is built into our.
+
+I'll tell you about loading that in a moment. Um, but here we see some examples of some categorical variables.
+
+So here's one for uh, sex, which just shows the top.
+
+It only has male, but we can probably assume there's at least female.
+
+And there may be other. Um, education here has some different levels.
+
+Middle. Lowest. Highest. Um, we have something here that's no or.
+
+Yes. Does anyone remember if we have something like this where it's a character string,
+
+if it's saved as a different type of variable, are will automatically dummy code.
+
+Does anyone remember what it should be? What kind of variable?
+
+Nobody. So these could be saved as just character strings, right?
+
+But then it's not going to be that nice for our analysis. If we save them as a factor, then we know our will automatically dummy code them.
+
+Was that what you're going to add? Arena. According to.
+
+I. Well. So so it does actually end up numeric in the analysis.
+
+We'll see that in a second. What that looks like. Um, but if it's if it's saved as a factor variable R will automatically dummy code.
+
+But today we're going to make dummy codes ourselves so that we can have a bit more control over which categories we're looking at,
+
+how we're comparing them.
+
+But for some of the other variables, we're going to need some of the other coding systems that we're going to need to make our contrast ourself.
+
+So here is a recent paper, uh, from a few years ago now, 2022 on, uh, top journal in cognitive science, cognitive psychology, memory and language.
+
+Uh, about contrast coding choices and a decade of mixed models.
+
+So I'm including this here because it points out a problem.
+
+And it said that, you know, of this really large, uh, review of papers that over 3000 papers in psycholinguistics,
+
+specifically that we're using a particular type of coding system that we're going to cover today.
+
+There weren't enough details, uh, included for all of those, for people to really understand how they use that type of contrast coding,
+
+and in order for it to be able to replicate their, uh, results.
+
+So that's part of why we have this module here on an introduction to coding systems, and to point out that even published papers can do things wrong,
+
+and then you can write a paper to show how everyone is maybe not doing it the right way and how to be better.
+
+So hopefully you won't make the same mistakes, uh, mistakes as, uh, authors of these 3000, uh, papers.
+
+Um, by knowing about each of your coding systems at the end.
+
+So. We're going to start with dummy coding here.
+
+Then we'll have the exercise on dummy coding right after it. Then we'll go into the next one after that with the exercise and so on.
+
+So we've already looked at dummy coding. That's what we did. Uh, I think on our first, uh, regression model with assumptions and centring, uh, module.
+
+Um, so now we just have instead of just one categorical variable, we have more than one.
+
+Maybe I will put, uh, laser here instead.
+
+So we have our reference group. This should be a reminder, right?
+
+That I said before, when you had a categorical variable that gets dummy coded, you need to think about what your reference group is because,
+
+uh, that's how you need to interpret your output relative to that reference group.
+
+Um, so reference group is the one that gets assigned zero for every categorical code.
+
+So in this case you see uh, an example here where there are four, uh, different.
+
+Uh, religions in this example from the textbook and uh, three code variables.
+
+But do you see one where it's all zeros?
+
+You do. Which one? The Catholic one, the top one.
+
+So. So in this case that would be the referent group.
+
+So when we have our code one variable as a predictor code to our code three,
+
+we're not going to see this Catholic group as uh as one of the variables that were our predictors in our model.
+
+We'll actually see all of the other three which have at least been coded with a one.
+
+So in this case, uh, these three examples, and we have to interpret those values relative to whatever was the referent group.
+
+So in this case, this was, uh. Table on religious groups from the.
+
+Textbook on regression modelling, uh,
+
+which tried to show you how you could just change your reference group depending on which which one you make sure is zero.
+
+So there's four groups. There's only three code variables, uh, in whichever one doesn't have a one in it.
+
+That is essentially the reference group. So what changes here is, uh, the intercept of the reference group is the mean of the reference group.
+
+And we're going to check this, uh, as well.
+
+And then each of our unstandardised regression coefficients is now the comparison of the mean of the group to the mean of the reference group.
+
+So we saw this a bit when we looked at that, uh,
+
+vocal pitch example many weeks back where we saw how it was a prediction of a lower pitch for the, the male group relative to the female.
+
+Uh, and we interpret that regression coefficient as the change in the mean relative to the reference group.
+
+So this one should be a bit of a refresher, but now we just have more than one code variable.
+
+Um, let's give it a try. So, uh, you will need this weighted effects code package.
+
+I think this is the one that has this, uh, BMI data within it.
+
+So you need to remember how to how to load that.
+
+Or if you're working within the seamless, uh, app that I developed with my team, it will already be in there.
+
+Uh, check out what's going on with that, uh, data set. I just showed the preview before, though.
+
+Um, and look at the dummy decode function from the psych package.
+
+So this one allows us to manually create our dummy code variables.
+
+Although I told you, if it's a function, R will automatically do it.
+
+But here we can actually do it manually and then choose which one we want to be our reference group by omitting it.
+
+Why don't you have some dummy coded variables? Check out the data set and try to create a linear model with your dummy codes as predictors of BMI.
+
+Um, so sorry, I wasn't clear on that. So the dummy code should be for education specifically.
+
+So relationship between education and BMI in this case.
+
+Once you have that model with the chosen reference group check out the summary.
+
+And if you still have time take a correlation of your predictors to see.
+
+Is there some correlation between your categorical predictors or not?
+
+I'll give you some time as always, to get started. And then I'll check in with, uh, some of you soon to make sure it's going well.
+
+You can of course, feel free to wave me over if you're stuck or, uh, if you need any input.
+
+So it's like. Okay.
+
+So you. In.
+
+You just. These.
+
+Days. I.
+
+And so I. There you have it.
+
+Yeah. Get. You know.
+
+What's the state of. Something else.
+
+Don't. It's.
+
+But you want to put it. They.
+
+I don't believe this. I.
+
+Think. This is all anybody's.
+
+Uh. This was.
+
+So in this case. It will.
+
+Just some. But yeah.
+
+Over. I think that.
+
+Is that what you. And so.
+
+Remember. But I'm also.
+
+So. So we.
+
+Because this is. So we just leave.
+
+Need to. So I think.
+
+That's for. It's quite.
+
+I don't how? Home.
+
+Is it true that you can since you.
+
+Ended up. And.
+
+Other. There's no.
+
+Just when you. You're.
+
+I. You could, I could.
+
+It works. And if you're happy with your references and that's that's.
+
+But it. This is.
+
+Bologna. It's.
+
+Yeah, that's pretty good. Yeah.
+
+Yeah. Krispy Kreme.
+
+As soon as I.
+
+What we know. I don't know.
+
+So you're interested. You know.
+
+The 21st century. The. I was.
+
+And then. It makes more sense to be fair because then you still experience a lot of issues.
+
+It that also. You don't have to show.
+
+I think that. All right, let's take a look together as, uh, some variability and progress on things that were easy for some of you.
+
+Some got stuck on some things. Um, I have my r markdown here.
+
+Um, so you can look through this after lecture if you want.
+
+Uh, at the start, I'm just loading, uh, the packages that I already had installed, so you don't have to worry about that too much.
+
+What's important is when you're loading data that's already within a package, you just can do data BMI.
+
+And then this is my data frame, right. So everything related to this data frame as what I will look for.
+
+Here's a quick head of what the data look like.
+
+Hopefully you all saw this as well if you got a to load.
+
+And we were interested in the relationship between this education variable and the BMI level, this variable here.
+
+So I could take a look at this. Right. And I see okay for education, uh, it's categorical.
+
+And then I actually don't have an average if I try summary.
+
+But I actually have the number of observations in that category.
+
+This is going to be important in a little bit because we're going to look at weighted affects coding.
+
+And we do see like a discrepancy of it's not equal observations in each group.
+
+So maybe we would want to do a different type of coding. Don't worry about that now.
+
+We'll come back to it later. Um, but and then we could look at the mean, for example, of the entire sample for BMI and this distribution.
+
+I asked you to take a look at the dummy coding function from the psych package.
+
+This would just pull up the help.
+
+Uh, when I was coming around and looking with a lot of you, the example at the bottom of the help shows you a bit of how that works, right?
+
+So in my case here, I used the dummy decode function.
+
+I apply that to my data frame BMI, the dollar sign education, that particular variable that I wanted to dummy code.
+
+And then I need to append it to my original or make a new data frame.
+
+So what you would have seen if you did something like this,
+
+you create a new data frame that just has three dummy code variables, one dummy code for each level of education.
+
+And then here I'm putting those together so that I can use those, uh, with my, uh, analysis.
+
+Did I print it? I didn't. Let me just show you in our studio real quick.
+
+So in this example you can see here's all of the stuff from my original BMI data set.
+
+And the three things I added were these middle highest and lowest.
+
+And you might be saying but I thought you said we should have G minus one dummy codes.
+
+And you're absolutely right. But this dummy code will give us a dummy code for each variable that each level of the factor.
+
+Right. So we still get three. And that's where we have to choose what our reference group will be.
+
+So I talked with some of you, but I'm curious.
+
+Did what? Did what did you all choose for a reference group?
+
+How did you choose that? What makes sense in this comparison.
+
+Any ideas? No one.
+
+Tough group today. So this is a conceptual question, right, of what do we want to, uh, compare?
+
+Yeah. Ivan's. Yeah.
+
+Yeah. Really? Really good argument.
+
+Uh, so in in a lot of cases, uh, it whatever your reference group is, it depends on how you want to interpret your data.
+
+Um, and maybe we don't have all of the information,
+
+or we would have to double check the data documentation to make sure we interpret lowest, middle and highest accurately.
+
+Uh, but we can interpret our output relative to whatever we choose as our referent group.
+
+So if we think let's see, is it better to have more education than the lowest education?
+
+That might be a good way to do it. And my example, I chose middle because I thought maybe middle is like the average level of education.
+
+And how do you how does the BMI compare to if you have lower than average or higher than average?
+
+But in any case, it's something you make as a conceptual choice of what's the right or what's the way that you want to interpret it.
+
+So you can see, uh, when I create this new data frame, I just double check that these variables are showing up here.
+
+Middle, highest and lowest for education. That's what's created with that dummy code variable.
+
+I still have my education variable in there in that data frame.
+
+But then I have these. Sorry. This one. This one and this one.
+
+Here is my model. So what you see is that I chose.
+
+Middle as my referent group, and I chose it by not including it in my model.
+
+Right. So when I showed this slide before where we had, okay, if it's all zeros, that's our reference group.
+
+If we don't put any variable in there. Uh, for middle, then lowest and highest will be zero for all of those cases that are middle, right.
+
+Does this make sense? So you choose your reference group if you do it manually through omission.
+
+Now, when I was interacting with you all, what I saw is that some of you put.
+
+Education here. And that's totally fine.
+
+If you want to have lowest as your reference group, because your your reference group will always be sort of the first level of the factor.
+
+So if we take a look back here in our studio. We see education here is a factor with three levels and the first one is lowest.
+
+So by default our will dummy code are factors for us and use the first level of that factor as the referent group.
+
+So why did I go through all of this dummy coding myself? That's if you want to have a choice of what your referent group is.
+
+If you think there's some reason to change it from whatever is this first level of your factor, then you can do it manually the way I just showed you.
+
+Otherwise, just go with the simpler approach and use education as a factor.
+
+Makes sense. Okay.
+
+Um, let me just show you this output real quick, and then we'll take a break.
+
+So here is our output from the model.
+
+BMI predicted from lowest education level plus highest education as categories.
+
+And then our reference group the mean of that reference group.
+
+So the middle. Education group.
+
+The BMI on average is predicted 24.97.
+
+That's significantly different than zero, and the lowest and highest are relative to this one.
+
+Right. So these coefficients. If you had the lowest education category, then it predicts that on average it will be, uh, about 24.97 plus 1.16.
+
+So the average, which I calculate in a second would be this plus this.
+
+And if you had the highest education group you would have the average of that group is then this minus that.
+
+And these are significantly different than zero as well.
+
+So there is a change in the predicted or estimated BMI based on your education level.
+
+That's what this shows. And you can interpret them all relative to the referent group, which in my example was middle education level.
+
+If you did lowest, then you probably saw both of these were.
+
+If you did lowest as your reference group, you probably saw both of these were negative coefficients I think.
+
+Let's just make sure this makes sense. So if I look at the average of this middle group I get 24.97.
+
+That's this value here. Good. Sanity check. And to interpret the coefficients right.
+
+We could, for example, recreate this one by subtracting the mean of lowest from the mean of middle, and that's that coefficient.
+
+Uh, and same for this one here. That makes sense.
+
+So really when we're doing categorical regression, we're actually just again comparing means.
+
+Um, but we can have multiple categories and we can put them within a predictive
+
+modelling framework and do all of the other stuff that we've been doing so far.
+
+I think it's time for a break. Right? How are we feeling? Anyone want to do 15 minutes?
+
+Ten minutes. Five minutes.
+
+Think that's a ten minute one today. So we'll start back at, uh, 156.
+
+Yeah. Of course. So I was thinking in grad school that you said that you told me this is your work.
+
+Because for me, if I were really conducting a study, guess that would have saved the policies I would have to support, like, say.
+
+For instance, reference work, because those are sort of mentors in that study.
+
+So, yeah, I mean, uh, so, so a lot of the courses that we do that we just make up and uh.
+
+Spend time. What you choose as your.
+
+I wouldn't say you have to go. So. Well-established established for them because.
+
+Your. It's just how you. So you could just move.
+
+And then your your your overall. So when you think there's an effective education in poverty, why do you put up?
+
+But it doesn't. Mean that because the just said so.
+
+But if you were trying to make. We need.
+
+Because it's important. Yeah. And then you might think.
+
+Coastal locations. This is. This is. Hi.
+
+It's. You just.
+
+I just about how you want to interpret. You know.
+
+This. You.
+
+You can see. Ask.
+
+Uh. Uh, nice. I heard this just recently.
+
+Can we do it now? Uh, can I get you some?
+
+But I wouldn't be happy to hear about it. Yeah.
+
+I. Coming here to.
+
+I was able to go from 1 to 3. They don't.
+
+Is an institution that. Yeah, yeah.
+
+You know, looked up those. The.
+
+You know, like you like to go from like to those, you know.
+
+If you like. It seems most likely.
+
+So. Yeah. No.
+
+Did you just call? It doesn't touch.
+
+To. I don't know.
+
+You just stops me wandering my. It's.
+
+It's. Holy [INAUDIBLE].
+
+That is. Super. This.
+
+Is. Boys.
+
+I don't think there was. I see.
+
+The common. Just to.
+
+I'll see you these. You think this is a cuz?
+
+It's free. It's like in the price. Yeah. So it's like it's free for those time.
+
+We know what it is we don't like. Uh.
+
+Um, to like the other, uh. And then I would like to.
+
+Yeah. So we had. Them.
+
+So what do you. Say?
+
+So do. It looks like.
+
+Like it was like one of my brothers, sisters.
+
+My brother. You know.
+
+Uh. You know what? This one's a secret.
+
+It's just it's a. Um.
+
+Mr. Exclusive.
+
+It's a. But like she's her future.
+
+Oh, look, you're the worst.
+
+So anyway, my friends. It's.
+
+Probably. The institute.
+
+All right, so that's our, uh, ten minute break.
+
+I will. Prime Minister, get us out five minutes early then.
+
+Which means we might just have to look at some of these exercises together.
+
+Um, maybe we have time for one more. Um, and then maybe we'll just look through kind of the solutions together.
+
+And then, of course, on your practical, uh, exercises, you can, uh, work with these somewhere.
+
+So so far we've covered dummy coding. Again, we did cover dummy coding before.
+
+Now we did it a bit more intentionally where where you could choose our reference group.
+
+And looked at how we can interpret, uh, those values of output relative to the reference group.
+
+Hopefully this makes sense because we're going to make it a bit more complicated.
+
+Um. We have unweighted effects coding, which implies that we also will have weighted effects coding.
+
+Um, but let's start with this one.
+
+So if we take a look here, uh, this would be used to compare how the outcome for each group differs from the grand mean.
+
+And the grand mean, as a reminder, is the mean of the group means.
+
+So this is not always the same as the mean of your whole sample.
+
+If you take the mean of group means because they can actually differ.
+
+So unweighted means that each group counts equally.
+
+Um, maybe as a spoiler alert.
+
+Uh, what we saw before was that with this education variable, we actually have unequal number of observations in each of those groups.
+
+So we may not want to weight them equally.
+
+We might want to do some kind of weighting, uh, so that it would then allow us to, uh, to account for that difference.
+
+The way that unweighted affects coding is different is that this base group gets all minus one.
+
+And this is sort of the way you would choose. This is if it's the group that's like least interesting.
+
+I know these aren't like very, uh, principled ways of choosing your referent group.
+
+What's what's maybe worth pointing out is that you can always change it.
+
+Right. So. Uh, in this example, it shows a few of the cases before for these few religious groups that were in the textbook about,
+
+if you want to say Catholic as your reference group.
+
+Uh, minus one is the code for all of those. Um,
+
+and then it's least interest because then you actually don't get that information
+
+about it in the same way that we had everything relative to our referent group before.
+
+I'll show you this in some output, uh, in a second. Um, but it's, it's of least interest.
+
+But you could always change it. Right? So if you say, oh, I think that this group is my least interesting, so I'm going to make that my base group.
+
+But then you say, well what about that group. You can always just rerun your model and change your base group.
+
+Right. And you'll get some different values. But the overall pattern of effects that you observe should be consistent.
+
+So our interpretation of our coefficients is a bit different.
+
+Now our intercept is the unweighted mean of the groups.
+
+And each regression coefficient is the deviation of the outcome for the group relative to that unweighted mean of the groups.
+
+And then you could still solve for your base group here like uh by actually taking these coefficients.
+
+So actually kind of subtracting each coefficient and adding them to the intercept which again was that unweighted mean of the groups.
+
+So if you wanted to still know what it was from your coefficient, you could do this.
+
+Of course, you could just calculate the mean of the group as well. Right.
+
+So in some cases you might think, I just need to know how each kind of category, how each group compares to the the grand mean.
+
+I would say, let's look through this one together. Uh, in terms of my exercise I had planned, you can, of course, try to do this on your own.
+
+Um, but you'll have something on this in your practicals. So, uh, where it's.
+
+There we go. So in this case where we're looking at functions from that week package that you probably already loaded.
+
+Um, and we're using this con contr like contrast some to get some information.
+
+So in this case, uh, if we just wanted to see what the output is, we could,
+
+for example, use the function and specify the number of groups we have, uh, like this.
+
+And it will by default always make the last group, uh, the one that gets the all minus one.
+
+So if we do three, uh, we see the last one gets minus one.
+
+If we do four, we see minus one is all for four.
+
+And again we have, you know, the number of code variables as the groups number of groups minus one.
+
+So two in this case or three for the four.
+
+If we wanted to then manually choose which of our, uh.
+
+Which was our then base group. We would then have to make sure that it's the last one in our, uh, factor, for example.
+
+Now for this exercise, I wanted you to explore a new argument for the LM function.
+
+So there is actually a contrast argument where you can specify what your contrast are.
+
+Um, in this case, uh, I enter which variable.
+
+So education and that the contrast should be using this contrast sum function,
+
+which is what we were showing here, which is what gives us unweighted affects coding.
+
+Um, and then testing this model BMI predicted from education and saving that output.
+
+So in this case, we're, uh, these examples here, these are necessary to do.
+
+It's just to visualise what that contrast, what that unweighted effect's coding looks like.
+
+Using this contrast sum function um, and then plugging the correct one into this contrast argument here, which had to be done as a list.
+
+Um, so you can just adopt that. So here is the output from the model.
+
+Notice that the intercept is different from the intercept we saw with dummy coding.
+
+And that's because it's the mean of the group means.
+
+And now we have education one and education two which we then have to back interpret to uh,
+
+this being lowest and middle I believe because third was highest.
+
+So this gets a bit less meaningful variable names in the output.
+
+So we'll want to be careful with that. Um.
+
+And we see now that, uh, relative to the grand mean, uh, education one is significantly different, uh, from, from that.
+
+But education two is not. It's, uh. Our value is not greater than -1.96, and our p value is not less than 0.05.
+
+Although it does, it is slightly negative. Um.
+
+So if we wanted to look at those, we could, um, actually double check, for example, how to interpret these and that that is the right way.
+
+Um, we could also do it like this.
+
+When we, uh. Specify this attribute of the education variable.
+
+Rather than specifying it as contrast.
+
+So this is just something to look at that we could get the same, uh, results in whether we do the model this way or whether we specify it this way.
+
+So a couple of ways to get the same outcome. And I think I had something here to double check.
+
+Yeah. Our mean of the base group. So in this example I just wanted to print out each of the group means.
+
+So I'm getting an aggregate, uh,
+
+grouping BMI by education level and applying the mean there and getting those group means and then calculating the grand mean.
+
+So that's these for me. These three means divided by three.
+
+This should be our intercept. Let's double check. 25.14.
+
+Looks good. And then calculating the mean of the base group by those coefficients that I told you,
+
+basically subtracting them all and adding that mean of the base group.
+
+So I'm just doing this math in here just so that you can see that the interpretation is correct.
+
+Does this make sense? I would say more often than not you wouldn't really use unweighted affects coding.
+
+But it's important to know that because the weighted affects coding can be um.
+
+Quite useful. Okay.
+
+So here is the weighting effects. Code weighted affects coding.
+
+We see that the, uh, coefficients or the the values here are quite different than what we saw before.
+
+Let's go through this together.
+
+So this is actually important for when we want to compare how the outcome for each group differs based on a weighted mean.
+
+Or we want to adjust the group means by the group size.
+
+So if you have groups that are, uh, quite different number of observations, uh,
+
+you want to maybe normalise them so that you're accounting for the fact that, uh, there's great variability in them.
+
+You could also weight them so that they actually represent the population better.
+
+Um, if you, for example, have, uh, a sample that you think is representative for how proportional your variables are to the population.
+
+This is also a good case where weighted affects coding.
+
+Uh, would be useful. So. Two cases one when your size of your groups in your sample vary a lot or two.
+
+If you want to make sure it's kind of representative of your population, you can use this approach.
+
+In this case, our base, we still use a base group and it's still that group that's of least interest.
+
+Maybe you're interested in all of them and you just choose one. And you can still figure out what what the values are.
+
+It's not that important. Um. But we can see that it's calculated basically, uh, by accounting for over the sample size,
+
+uh, number of observations, uh, in the groups, uh, in a, in a fractional way here.
+
+Uh, also with a negative sign. So we get, um, minus the ratio of the group and the base group size.
+
+And then this would be same as unweighted, uh, if the group sizes were equal.
+
+Right. So that's why we went through the last example. This should simplify to unweighted effects coding if you have all equal sample sizes.
+
+Otherwise these coefficients uh will adjust the the estimates based on those.
+
+Have I lost anyone yet? Maybe.
+
+All right. Well, we have about, uh. 15 minutes.
+
+Something like that. Um, do you think it would be useful to try out another one of these on your own today?
+
+Or would you rather I go through them all? Maybe just a quick vote.
+
+Should I just go through the rest of my solutions? I think that's a majority.
+
+Okay. Um, well, it's also nice to have these, uh, to look through the interpretations together.
+
+I, of course, like to see how it goes, uh, when you try them out.
+
+But for the sake of time today, we'll go through it together.
+
+So in this exercise, uh, I wanted to use, uh, you to use this function contrast, uh, weighted effects coding,
+
+uh, from this package and try to create two new variables that represent either the, uh, um.
+
+Either omitting the lowest or highest education group and running two models that include these and then interpreting them.
+
+Let's take a look at what I had. So here we're getting, uh, just using this weighted effects coding function and omitting here the highest.
+
+This is essentially just saying, uh, you know, what's that base group that you're going to omit?
+
+And if we want to confirm these kind of coefficients for the coding system.
+
+So I take the sample size of the lowest group with the highest group.
+
+And I get this value which is uh, this one here.
+
+Right. So that's what. We have in the slide here.
+
+Maybe it's a bit hard to see. Uh, so I'll zoom in real quick.
+
+Um, so these give you examples that you could then adopt.
+
+Doesn't matter what your particular categories are, but if you had, uh, if you had four groups,
+
+you know, you could just adapt this relative to your specific, uh, number of observations.
+
+Does that make sense?
+
+So that's why here I show tracing the number of observations that I had for these groups, which if I did scroll way back up here to my.
+
+Values. These number of observations came from this part here, right?
+
+So again, the point of that is to show that.
+
+This is what's happening behind the scenes,
+
+because we don't just want to use functions and not make sure they're doing what they're supposed to be doing.
+
+Um, so this is our weighted effects coding system with highest education as the base group.
+
+Um, we could run our models.
+
+Uh, for example, uh, where did I do that?
+
+Oh, not on here. Uh, so in this step, I just made two different variables so that we could choose which ones to omit.
+
+That was kind of getting at the idea of like, well, what are the results look like if I choose a different, uh, base group?
+
+Uh, in this case, that's what those do.
+
+And then I run this here where we'll get, uh, will include those two new variables that are omitting one or the other.
+
+So here we get our intercept and we still have our, uh, lowest and middle and our lowest and highest coefficients.
+
+Uh, still would be relative to, uh, this intercept, but then adjusted for the difference in the,
+
+uh, size of the samples for those groups relative to each other.
+
+One thing that came up when I was talking with one of you was just about the overall models, which we haven't really looked at today.
+
+So we did see, overall, these models are doing better than the mean.
+
+We have this quite high f value and low p value, but our R-squared is still quite small right?
+
+So even though we're spending all of this time looking at these different ways of coding.
+
+Education and how we would interpret it differently.
+
+We probably would still want to add in those other variables in the data set to account for more variability.
+
+Um. But yeah. Any questions on this one?
+
+Yeah. That's just the function of.
+
+Because that's what time. Hmm. Uh.
+
+Because let's say we're, uh, doing research. Right handed.
+
+Well. They are in our sample.
+
+For example, we have one ratio that would be already in our sample of what is actually happening in the population.
+
+Yeah. We don't need. We. It's because our sample is the same as.
+
+You ever just. Yeah. They say research on the population, but they really, for example, have.
+
+5050 rpm in our sample. That would be would be to.
+
+Yeah. To actually represent what's happening in.
+
+For me, it was counterintuitive. Yeah, it should be like the reverse of.
+
+Hmm. It is not in our sample.
+
+Uh. Something different is happening than what's happening in.
+
+Yeah, that's a good, good point. I haven't actually looked at that systematically.
+
+So if I understand your point, it would be that our sample, if it is already representative of the population basis.
+
+Yeah. Care about.
+
+Uh, group sizes? Yeah, sort of the same. Uh.
+
+Yeah, I am not sure how it would compare if you, for example, had oversampled, uh, the lower representative one.
+
+So if you talk about the left handed, if you did make sure that you had 5050 in your sample, how would that compare to the weighted versus unweighted?
+
+Um, that's something we could probably simulate and see what effect that has on the the outcome.
+
+Um, I think the main thing is that it is meant to adjust the imbalance in the, uh, in the sample,
+
+um, which you're right, it may or may not be representative, so maybe you don't want to adjust it.
+
+Um, but I think the point there is that, uh, a lower representative value in the sample.
+
+You will have less observations. And so maybe it needs to be adjusted because that's still might be a stable value,
+
+uh, or less stable value because you have less observations, if that makes sense.
+
+Maybe. I'm not 100% certain on this one, but it's a good, uh, comment.
+
+Okay. One more, uh, type of coding for today.
+
+Contrast coding, so I already showed this article.
+
+Uh, contrast coding is apparently quite. Popular and psycholinguistics.
+
+If there was three over 3000 papers that were using it, uh, for mixed models alone.
+
+Um, this is particularly useful when you want to combine groups together.
+
+So if you think that there's say you have three groups and two of them, you want to kind of combine and compare them to a third group.
+
+So let's say you want to combine group A and B and see how that compares to group C.
+
+Um, that could be that you have a specific hypothesis that you want to test.
+
+And if you want some good examples of this, there was a lot in that paper that I had on this slide,
+
+uh, earlier, especially if you're interested in that, uh, psycho linguistic type research.
+
+This could be useful as well for increasing power of your statistical analysis.
+
+So if you have many categories and you have fewer predictors in your model, that could give you greater statistical power for detecting an effect.
+
+This one is the more complex one.
+
+Uh, and there's this set of rules that has to be applied generally, although there are different ways of doing contrast coding.
+
+Um, so that's part of what the problem was with, uh,
+
+what those researchers found on all of those papers was it wasn't quite clear how exactly they did their contrast coding.
+
+But if you all were following some nice open science practices,
+
+and you make your data set and your code all available, then you wouldn't have to worry about that.
+
+It would be totally replicable. Anyways, enough with the side point.
+
+So the rules here are that each code variable should be the sum of weights.
+
+The sum of the weights across all groups should equal zero.
+
+So if we look for example, um, at uh this case here, uh, you know that they should sum to two zero.
+
+So we have like minus I have a half I have and minus a half.
+
+That would be zero. That's fine. Sum of the products of each pair of code variables must equal zero as well.
+
+Uh, so essentially, if you're multiplying all of these, uh, you and there's a zero in there, you will get them to equal zero.
+
+And then the difference between the positive set of weights and the negative should be equal to one for each code variable.
+
+For ease of interpretation.
+
+I would say you don't necessarily have to remember these rules, but you would want to be able to recognise if you saw an example of contrast coding,
+
+that it was contrast coding and not weighted affects coding or dummy coding.
+
+So knowing what some of the rules are. Might allow you to identify those more easily.
+
+I would say in practice, if I need to do some contrast coding, you know, I'm more or less looking up.
+
+What's a good, uh, way to do this? Uh, for the number of, uh, groups that I have.
+
+And that's what these examples give you, is if you follow the examples for the number of variables you have,
+
+uh, or number of groups you have, then it's very straightforward.
+
+So the last one, basically I wanted to recreate this matrix that we have for, uh.
+
+Uh, for our three group variable. So essentially we could do something like, uh, this one here.
+
+I think that's what I had for the, uh, so I wanted you to recreate a matrix that allows you to compare the lowest education to the middle and highest.
+
+So combining the middle and highest and seeing how that compares to the lowest.
+
+Uh, and you could do that, for example, by, uh, combining, uh, some of these coding systems.
+
+We'll take a look quickly at what I had. So in this case, I just recreated this matrix that I had shown here.
+
+And this allows you to compare, for example, both treatment groups to a control group or to different uh, uh, groups to another group.
+
+And then I plug this matrix into my contrast argument again and specify it here,
+
+in which case we get a model output looks pretty similar to something we've seen before.
+
+Um, although now we have, uh, this comparison still of these two groups, uh,
+
+relative to the combined group we wanted to compare, but I need to show you that here so that it makes a bit more sense.
+
+So here, if we look at the mean education for all of them compared to the low, the middle and the high.
+
+Our first coefficient is the second of the two groups relative to the lowest.
+
+So I'm plugging in those values for those means. Uh, and getting this value here that -1.51.
+
+So that's the mean of these relative to the low.
+
+And then the second one here is the second two groups.
+
+Compared to the difference between these two means, which is what we get here.
+
+So this one's a bit trickier to interpret as well.
+
+Uh, because it's not just relative to a referent group or a base group,
+
+but it's these two groups combined relative to the lowest one or the two groups compared to each other.
+
+But notice that the information we get here. It's not as informative as some of the other ones which tell us which variable they are.
+
+Any questions on this one? Okay.
+
+You'll get to work with this in the practical session this week if you attend or do it on your own.
+
+Next week we're going to look at polynomial regression. Uh, maybe it'll be a bit more intuitive than all of these coding systems.
+
+Uh, otherwise, I wish you all a nice week, and, uh, I'll see you next time.
+
+Okay. Uh.
+
+So. Because I would think that so many of these are some of the.
+
+Research. Study. Groups.
+
+That. But then some of so they are not rational things and then some people.
+
+Just three seats. So.
+
+That's right. You have.
+
+Yeah. So we have three types of student teachers.
+
+Let's say. That are all students coming out to our community.
+
+So they come students. They will just be. Students, which are kind of pros and cons.
+
+They just remain in place. The students, they, uh, randomly and then just, uh uh.
+
+This of people if they will move towards the nearest.
+
+Product or process. You hope that they will try to work towards the next.
+
+At which point, uh, it will just. Uh, so, uh.
+
+We'll see. Dark vision here.
+
+You. I say. Yeah, yeah.
+
+The guard told me. I mean, the. The dark.
+
+I. All you see is frozen. Students of a certain age doesn't see anyone.
+
+It just looks rather late, but still addresses the cells, which he said before.
+
+And that's actually what the question figuring yesterday was.
+
+It's just time to make that rapid movement less random.
+
+More. Rational to search out the building.
+
+Uh, because right now, those agents, they will, uh, try to.
+
+And also, what you see is that the they, uh, behave kind of rational.
+
+So this one is already, uh, on the target, and the second one move toward that target.
+
+And, uh, if we actually increase the size, uh, the number of guards or let's say it showed, it shows it because.
+
+They will basically each one person.
+
+See. They each. The same.
+
+Yeah, they just did. So for now we are just measuring like the number of ticks, so the number of time it takes to evacuate.
+
+I also wanted to ask, I don't think that we need to simulate smoke or fire patches in here, just because it wouldn't be very realistic anyway.
+
+So we would rather, I think, simulate like us like a stick model which says like every tick there is a certain probability for a certain agent to die,
+
+basically, or something like that. If we were to simulate the casualties at an extreme burn test to look at the number of states it takes.
+
+But I think if we were to simulate this, uh, because this is already happening on the computer, you can already analyse many things.
+
+So I think this is great already, but we also wanted to make it more interesting, let's say.
+
+So maybe we should simulate the casualties.
+
+Uh. So do you have any idea?
+
+Well, I don't know if you need to. So, for example, um.
+
+You could say that you know, the amount of time that it should take to get back to the place.
+
+That's the case. And you could fix it by, uh, if any links are above this direction.
+
+You see those as like, no, unexpected. Something like that where you don't have to add in casualty.
+
+But, uh, yeah, if they're frozen and stuck in this corner here, that for whatever reason, the consumption.
+
+They're not, even though it still goes long. Um, so that's that's if you don't really want.
+
+Doesn't matter much. Maybe you find it somewhere.
+
+Uh. How long? Yeah. Or maybe just like a lot of.
+
+Whatever we find, it's still kind of the abstraction in San Diego,
+
+because the research isn't made on actual fires and the actual, uh, shootings or something like that.
+
+It's all just the simulation that people. But you can still motivate some level of.
+
+What time did you get? Um, I was curious about what you had for.
+
+You said it looks like they're sort of coordinating, but you don't have.
+
+Do they have knowledge? That's another one of the cards has already been in the area or not?
+
+Uh, it's not about there. Yeah. It's only about 80 student agents.
+
+So basically when they find a target, they think there is, uh, some sort of cards to that target.
+
+And only if there is one that they. So it's not about right now.
+
+Uh, in this simple model that, uh, that you can see through, uh, models so they can see this to the schools,
+
+which kind of makes sense if you think about the natural divergence,
+
+if they may have some intuition or some spatial awareness, they can hear someone through walls.
+
+Yeah, but we thought that maybe we would make it so that, uh, they can only see those, uh,
+
+students through walls if they're panicked about the frozen mountains that I
+
+thought you had said that they they are looking to see if they see any students,
+
+but they also if they don't, they will not go where they've already been.
+
+Right. Uh, yes. So they leave the, uh, kind of, uh.
+
+I. I.
+
+Nature.
+

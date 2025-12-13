@@ -1,0 +1,965 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Testing. Hello? Hello? Can you hear me? All right. Yes. Nice to see you all today.
+
+This afternoon. Uh, hopefully you're ready for some stats, too.
+
+I think I'm ready. Uh, we're going to be talking about interactions in our multiple regression model.
+
+So I think just looking at where we're at.
+
+Right. We're here module eight. We have just a few more after this.
+
+Um, we're going to add just one layer of complexity today to what we've already covered last week with multiple regression.
+
+Uh, just to, um, try to understand what happens when we have variables in our model that interact.
+
+So I think it's actually going to be a bit of a shorter lecture today.
+
+Uh, then maybe the last one, because we covered what was multiple regression and what were all of the assumptions that went in there.
+
+Hopefully you remember that from two weeks ago. If not, of course, we can look at some of these things together.
+
+Uh, so you can see sorry, you can ignore this one.
+
+That was a mistake. But we're going to just compare, uh, multiple regression with interactions to what we've covered so far.
+
+How do we go about creating interaction terms and most importantly, how do we understand them?
+
+We're going to keep it simple in terms of maybe just two variables that interact.
+
+Uh, but of course you can scale the complexity. Too many things interacting.
+
+Although the interpretation, as you might see in a bit, gets a bit tricky.
+
+I actually don't have exercises today. They will all be in your practical.
+
+But I do still have our, uh, with clep quizzes, so I'll just display that.
+
+In a second. Yeah.
+
+All right. So go ahead and please, uh, scan and join for three questions I have for you today.
+
+Seems like the trains are also back to normal. So nice that you don't have to take the bus anymore.
+
+If you're coming from out of Tilburg. Looks like almost everyone is in.
+
+Shall we go on to the first one? Yeah. Okay.
+
+Okay, I'll show up, make this output show up. All right, so given the output here, which of the models has a better fit.
+
+So you have output here from two models. Great time to mow the leaves.
+
+All right. About seven more seconds for you. All right.
+
+How did you do? Okay.
+
+So we have some variability in the answers here.
+
+Well, let's look at it together. So we talked two weeks ago when we met about ways that we could compare models and how well they fit.
+
+Hopefully you remember we talked about the I see this Q is a little off, but hopefully you knew that this here was the AIC.
+
+And which metric here would tell you that the AIC is a better fit?
+
+Anyone remember what we'd be looking for? Yeah.
+
+Lower one. Exactly. Yeah. So from here, if you just use I see alone, then you would see this value is lower than this one.
+
+So maybe that's a better fit. So I guess you probably put two.
+
+Yeah. Um what else could we look at. Right. Well we could look at the r squared and we saw the r squareds here.
+
+They're pretty close. Right. So 63.63 or 0.65.
+
+Um so we do see from here that the second model is explaining a bit more of the variance in the outcome.
+
+We have no idea what the outcome is because I didn't give that. But it's about, you know, 3% more or something like that right.
+
+Um, Rmse. So our error is also a bit lower.
+
+Now we have f and p values here for the overall model.
+
+What we miss actually is what we did last time when we did an Anova that compared the two models to tell us,
+
+for example, if that r squared between them was a significant change in the variability.
+
+So if you put model one, I would say model one would be incorrect.
+
+If you put not enough information provided and you thought that that was specific to the R squared,
+
+and you would have liked to have seen that Anova comparison of the two fits, then I would say that that could be a good answer as well.
+
+But mostly I would have gone for model two here.
+
+Does this make sense? This refreshes you a bit on what we're looking at for model fit.
+
+Okay. So the next one I have is a bit more open ended.
+
+I'd like you to think about three variables where y is our outcome variable,
+
+and two variables that you think that would interact to explain the variability, variability and y.
+
+So this you can put some in here and we can actually move them around.
+
+But uh so think of three variables that have some relationship and a possible interaction.
+
+And I'll just give you a bit of time to think about this. And you can of course talk with your neighbour too, with what ideas you have.
+
+So these ones are pretty similar. Exam grade and test results.
+
+Maybe you would use your exam grade for. I'm going to put this one in the Y, but I don't know.
+
+Do you have option to move this back? Yeah.
+
+Okay. I'm thinking an exam performance also is going to be our Y.
+
+So think about our outcome variable right. The thing that we want to explain.
+
+Maybe you wanted to use that to explain something else. So. Coffee.
+
+Coffee? I'm going to move here. Let's see.
+
+So I'm thinking maybe. The. Poverty and inequality were meant to interact, to go with the rate of crime.
+
+Is that what someone was thinking? I could see that as a possible one.
+
+Coffee. This could be hours of studied coffee and then your exam grade.
+
+What do we have here? Diet as well. So. What's diet going with?
+
+Is that supposed to be? Sleep? How much sleep you get?
+
+Maybe. And BMI that could see that one.
+
+So can anyone explain what you were thinking when you put the two here?
+
+What what what did you mean by they might have an interaction?
+
+Yeah. Together they might have a stronger attack on each of the five of them on their own.
+
+So together, they might have a stronger effect than either of them on their own.
+
+That's a good, good start. Anyone else? What does it mean if they might interact?
+
+You want to add to it? Yeah. Maybe another. Another. Is that?
+
+That may be there, but there. Is not.
+
+There is also. That's interesting.
+
+So it could be any one of them is not there. You won't observe the effect.
+
+So it means that there's some kind of dependency between the two variables, right.
+
+That if we're really interested in the stuff that's here in our r y category of outcome variables,
+
+things that we want to be able to explain, and we would take, you know, this variable and this variable,
+
+and we would use both of them to try to explain the variability here, but not just both of them as individual predictors,
+
+but the way that these two might go together and how that dependency might change.
+
+How much of the outcome variable we can explain. So it could be that they have a stronger effect.
+
+Usually it's that the level of one of the variables has a different effect dependent upon the levels of the other.
+
+And we're going to look at how we could visualise this. Uh that's what we're going to do for the whole, uh, lecture today.
+
+For the most part.
+
+So this is just meant to get you thinking about how things could interact with each other, and they might have a different relationship with, um,
+
+the Y and I could actually follow up and say, okay, well, maybe draw what you think these relationships look like, but I won't do that for today.
+
+Um, let's go to one last question here. So this one's fill in the blank.
+
+I'll give you a second to read it and put in some ideas for the two blanks.
+
+20s left. Ten.
+
+Maybe I was too quick on this one. All right.
+
+Some of you got some answers, and let's take a look. So.
+
+Uh, let's see most of you for one.
+
+Well, few of you said L-I'm different spellings, so we're trying to estimate the best fitting line that has the least squares.
+
+This would. Maybe apply to the model, but the model is more general, right?
+
+So we could have things that are not quite align. Um, polynomials.
+
+We haven't gotten there yet. And this is for simple linear regression, not polynomial regression.
+
+So I would go with line for this number one and number two.
+
+If you put plain that would be the right answer there.
+
+So a couple of you had plain as well. So we are fitting a model.
+
+Right. And the model does have um. Some of these squared error that we're trying to minimise.
+
+But the particular shape of the model was what the blanks were, uh, trying to get at here.
+
+Does that make sense? Okay.
+
+Any questions on this? Before we go back to slides.
+
+I think that was the last one. I have one more question for you, though.
+
+Maybe you already did the reading, so you already know. But so far we've had additive effects in our regression, right?
+
+So if we were going to look at the relationship here between let's do, uh, time working and studying and exam performance, we could add these.
+
+So working plus study time equals exam performance.
+
+What would we do if we wanted to have an interaction? Besides addition.
+
+Yeah. The blood multiplier. Yeah. So let's take a look at that.
+
+So here's where we were before you had a break for exams or time off.
+
+Or catching up on all the other things we need to do, right? So here's our simple linear regression model.
+
+All we've been doing is expanding on this for the last period.
+
+So we had this intercept plus our regression coefficient times our predictor variable plus some error equals our outcome variable y.
+
+We expanded that to have, you know, more than one predictor that we added together up to however many.
+
+And. As you just said, we could add the interaction, which is the multiplication of variables together.
+
+So we could have here we have x and z and we can estimate a third regression coefficient.
+
+That's the interaction term of the two variables.
+
+So this is how we can define an interaction when the effect of one predictor differs based on the level or magnitude of another predictor variable.
+
+Right. So there's this dependence between them and the effect that you observe, uh, will change based on what the level is of one of the variables.
+
+That can be a bit tricky to interpret. So that's why I've put this, uh, interpretation here.
+
+So with The Intercept, uh, that's going to be the predicted outcome when both of those predictors are equal to zero.
+
+Right. That's just that hasn't changed from last time. The new one here, though, is our interaction of x and Z.
+
+Predicted is the change in the slope of x for one unit change in Z or vice versa?
+
+So these ones are also the same as what we had last time as well.
+
+But this change, this interaction term, is what we want to try to understand a bit better.
+
+But let's take a look at some figures that show some interaction examples.
+
+These were for from one of the readings, I believe, and it was looking at, say, how sex or gender relates to drug dose responses or in this case, age.
+
+And what we often see when we're looking in at an interaction if we make some plots,
+
+maybe you remember this as well from interactions in Anova that you see lines that maybe intersect, right.
+
+Different patterns of the line. So this drug dose seems to depend on this categorical variable.
+
+For example there's the slope is less strong in this case than in this case.
+
+Hopefully you see that and here as well.
+
+So this has a the young population here has a lower slope compared to middle or old which has a steeper slope.
+
+So this is a categorical interaction right, where we have a categorical variable.
+
+And that the effect of drug dose on cholesterol I guess uh depends on which of the levels of the categorical variable.
+
+Uh, one of the observations is. I think that the categorical cases, this is basically what you did in Anova and stats one,
+
+but it's a bit trickier when we have continuous predictors that interact.
+
+So what kind of things can we answer with interaction? So often we think the world is, you know, more complex than our simple regression model,
+
+probably more complex than just the interactions we would test today.
+
+But we often think that things interact and that gives rise to some complexity.
+
+So we want to have research questions that map to the complexity of how we see these phenomena in the real world, right.
+
+So these are generic kinds of questions like what's the predicted y or outcome given a particular x and z.
+
+What's the relationship of x on y at particular values of z.
+
+And this will be called something like simple slopes or simple effects.
+
+We'll define these soon. And is there a difference in the relationship of x on y for different values of z.
+
+That would be comparing the simple slopes.
+
+So, you know, when you're thinking about whatever research questions you might be wanting to answer and test,
+
+you could, you know, use these as a template for for them.
+
+There's a couple ways we could create interaction terms so we could.
+
+Actually just create a new variable and we could just take the product of the two.
+
+Um. I don't know when there's a lot of cases that you want to do this.
+
+Maybe if you need some transformation of them, uh, we can actually just include, uh, the variables themselves like this in our regression model.
+
+So we could, for example, just do our linear model with our outcome equal to variable one times variable two.
+
+And this will actually give us what we had before which would be this part.
+
+Plus the interaction so our knows for us to give all lower order main effects in addition to the interaction effects.
+
+But you can write it out. So you could also do variable one plus variable two plus the interaction.
+
+So this would be another way that you could write it with a colon instead of the asterisks.
+
+Uh so this function can take both of these, uh types of input.
+
+I skipped over this bullet. But in maybe if you do include like a new variable that can be useful for looking at multicollinearity collinearity.
+
+Um, if you're trying to see how correlated is this interaction term with my, uh, with your other variables that are already in there.
+
+So if you're just taking the product of two terms, you would expect it to be correlated, right?
+
+Um, so there's some things you can do.
+
+Uh, if you find that your interaction term was two correlated, uh, then you may have that multicollinearity issue that we talked about two weeks ago.
+
+You could use centring. So we already talked about centring as well.
+
+Uh, to reduce the collinearity uh, from the interaction terms by doing something like this.
+
+Um, but I think there's actually some good literature that suggest you don't really need to worry about that.
+
+Um, so most cases, I would think that you.
+
+Uh, you can just include the interaction term and check your model assumptions, right.
+
+And make sure that you're not getting any multicollinearity problems.
+
+Although if you do, you can try centring again as a solution.
+
+And if you need to, uh, have some references to support that, you don't need to bother with centring.
+
+These are some good ideas. This makes sense so far.
+
+So interaction term we just put it in. Um what can we do to further understand our interactions.
+
+Well there's a few options. So maybe I'll just start at the bottom.
+
+Plotting I think is always useful. Right. You understand the patterns of your data, the patterns from your model.
+
+You can understand, uh, in particular what this interaction might be telling us.
+
+We can probe them. So we could use specific follow on hypothesis test, uh, to look at simple slopes or differences in simple slopes.
+
+And I have simple slopes on the next slide for us. But we can also decompose it so we can break down this interaction into its lower order components.
+
+So what does this mean? I don't have a good example of this actually.
+
+Let me just double check. No.
+
+Uh. So let's imagine that we had our regression model output from our up here, which I don't have.
+
+Um. What did we have in there? Right.
+
+So before we had the effect of our predictors on our outcome, we would see what the regression coefficient was, the t value for that, the p value.
+
+And we'll have the same thing for our interaction term.
+
+Right. So we would see there either is or is not a significant interaction.
+
+But this is what we would need to do to then qualify.
+
+What does that significant interaction even mean. Right.
+
+So before we were thinking, is the model a good fit of our data?
+
+Are our predictors significant predictors of our outcomes.
+
+And here if we see we observe a significant interaction.
+
+These are the things that we would want to do to say well what does that interaction even mean.
+
+So let's take a look now at the simple slopes part.
+
+There's a lot on this slide. Um, so let's just start with the top.
+
+All right. So we have our interaction term here again this third regression coefficient.
+
+So if we find that significant interaction we could make some plots right.
+
+So we could have a plot like this that shows us here is the relationship between x and y.
+
+Depending on which level the variable z is at.
+
+So you would see, for example, when Z is at 10.070, it looks like the effect is not that strong.
+
+It's a pretty flat line. Whereas we have like a positive slope when Z is at 12 or a negative slope when z is at 7.93.
+
+So this may look arbitrary right now because I haven't told you how we get to those values,
+
+which I will get to soon, but you can see very easily, right?
+
+If I asked you what is the relationship of X and y? Well, accounting for the level of Z, you would tell me something like I just mentioned, right.
+
+This makes it very clear, not always that easy to see such a difference.
+
+Um, but so what we want to do is we want to decompose our regression equations into simple slopes and intercepts to try to understand,
+
+especially the, uh, continuous variables and how, uh, we could make a plot like this, for example.
+
+So this shows like an example, a worked example of an estimate from a model where this would be our intercept.
+
+Right. This is our regression coefficient for x for z and for the interaction term.
+
+And we can pull out these values to get the simple slope or the simple intercept.
+
+Like that, and we can, uh, convert them. So a simple intercept would be at a given level of Z.
+
+Where is that intercept? So here or here or here. And the simple slope is at a given level of z in this case for x.
+
+What is that slope. Right. So that's how we could then solve these from our output to define them.
+
+Although of course we can use R to generate these for us. But it's good to know what kind of goes into unpacking this.
+
+Does it make sense why we would want to get some simple slopes and intercepts to understand the interaction?
+
+Otherwise we would just present a plot, the predicted values from the model.
+
+Right? And we wouldn't really have the specific visualisation of the interaction between them.
+
+So for the simple slopes that where those values of z came from is using one of the common approaches,
+
+which would be to take plus or minus one standard deviation from the mean for that continuous predictor z.
+
+So I'll go back real quick. So we could see here that this 10.7 would be the mean.
+
+This would be plus one standard deviation above the mean. This green line and the red one would be minus one standard deviation.
+
+So then we know that this relationship between x and y that depends on the
+
+level of z is either at the mean or above or below by one standard deviation.
+
+This choice is really a convention. It's kind of arbitrary.
+
+Um, but it can be meaningful, right? If, you know, you know a lot about the distribution of your variables based on the standard deviation.
+
+So you could interpret them and then you could plug these back in.
+
+So this isn't like that. Interesting.
+
+Maybe to look at just these equations.
+
+But it's good to know how you could take these values and plug them back into the equations that we had here so that we could solve for these simple,
+
+uh, regression lines, a simple slope. So the intercept, uh, for example, or the slope.
+
+You could choose other ones. So again I said it's semi arbitrary.
+
+Uh, you may have something that's more meaningful depending on your data set.
+
+Uh, or you could even use quantiles too. So you could say, you know, the upper quantile or lowest quantile.
+
+Um, yeah, this is actually just putting it all together on one slide.
+
+So having a visualisation in your paper, uh, you know,
+
+you would then put something like this to then unpack that interaction effect and you would explain, you know, what happens with these simple slope.
+
+So you know where the meaningful, uh, pattern is. Here is the next thing that we could do for plotting.
+
+So I just showed you the plot, but I didn't say, how do we get there?
+
+Um, there's a nice package called rock chalk. I don't know where they got that from.
+
+Maybe someone was a climber. And, uh, stats are package lover when they develop this.
+
+Um, but then you can do plot slopes and you could fit.
+
+You put your model object in here, and then you can specify which variables should be your x, which one moderates x.
+
+So that's the one that you want to be on multiple lines like this.
+
+Uh and then how you're going to do that um, sort of splitting that, moderating of x uh variable.
+
+So in this case that's using the standard deviation like I showed you before.
+
+Um, and this will then give us, uh, an interactive plot that will look something like this.
+
+So this example here is between GPA and work ethic based, um, IQ centred, I guess.
+
+Also don't think, uh, I don't know the source of this, uh, data, but I would like you to take a minute and think about what you see on the plot here.
+
+Maybe talk with your neighbour. Uh, how would you interpret this interaction effect between these variables?
+
+Uh, I'll give you a minute before I'd like to hear some ideas.
+
+You. So.
+
+It's. So.
+
+Yeah. Thank you. So. You.
+
+That's what I don't. I think that's. So that's.
+
+So this one. This one. And then.
+
+You don't know to. Yes, I.
+
+Yes. But you.
+
+So to like. I said like.
+
+A nice lotion and. Is not.
+
+I don't know. It was.
+
+Us. I.
+
+You know that, Squire? Does everyone have a good idea how to interpret this?
+
+There's a no, I see. Well, let's look at it together then.
+
+Some of you, I think, had quite some good intuitions.
+
+I will just clarify. I think this is simulated data.
+
+So don't think that you can interpret this as some kind of scientific evidence for this relationship.
+
+But if you saw this from your data, what could you conclude from it?
+
+Right. So we have work ethic, which is, you know, how hard you might work at something as a variable GPA.
+
+Of course, that's your grade point average and IQ here.
+
+And we have this in three, uh, in three segments.
+
+Right. So the IQ that's the average of whatever this sample, this one standard deviation above the average and one standard deviation below.
+
+Notice that these are centred too, right? So this value here would be when work ethic.
+
+That's the average work ethic of the sample. So these two are also above or below the average work ethic.
+
+But GPA is going here from one point something to.
+
+3.5 or 4. So if we start with the average, we see something like we expect maybe the harder you work or the,
+
+uh, then then your GPA will generally be higher at the average IQ.
+
+Uh, if you're have an above average IQ, then this plot shows that you would have a quicker rate of, uh, increasing your GPA based on your work ethic.
+
+And if you had a lower than average, it shows there's not really an effect.
+
+Right? So you would kind of predict the same GPA no matter what the work ethic was.
+
+So this would be a bit. Sad to observe that you couldn't work harder to get better grades, for example.
+
+Hopefully this gives you an idea of how two variables that are predictor.
+
+So in this case work ethic and IQ could interact where the relationship between them and the outcome depend on the levels of the other.
+
+Right. In this case, these are both positive, but one is more strongly related.
+
+And then this one seems to have a flat slope. That makes sense.
+
+Now for those of you who weren't sure how to interpret it.
+
+No, we can talk. Actually, we're going to be finished.
+
+Uh. Pretty soon. Today I have maybe just another few slides.
+
+Let me check that real quick. Yeah, just another couple of slides.
+
+So I'm happy to, uh, hang around and talk stats stuff.
+
+If any of you want to or look through some other examples together.
+
+Um. Talk about projects or things like that, so let me know.
+
+I'll finish up with a couple slides and then, uh, we can wrap up.
+
+So. Again, we have maybe observed a significant interaction in our model.
+
+If we don't observe a significant interaction, we don't need to do any of this stuff that I've just showed you, right?
+
+We would just say there was no evidence of an interaction effect from this sample,
+
+and then we don't need to explore what that interaction would be because there wasn't an interaction.
+
+But if we do see a significant interaction, then we want to see, okay, what what is that relationship we're observing?
+
+Now. So far, we've looked at kind of getting these little equations for simple intercepts and slope, so we could maybe make plots of them.
+
+So that was two of the points that we had back here.
+
+Um. But we could actually also compare them, right?
+
+So in this case, actually I'll go back once more.
+
+Sorry. In this case we see, for example, that these slopes, they do look quite different, especially different from this one.
+
+But are all of these slopes different or not? That's something we can also do a follow on statistical test to analyse.
+
+Maybe in this case it looks really clear that they're different. But let's go back real quick to this one we had earlier.
+
+Of course. These are categories. Um, but.
+
+You know, especially these who might say, okay, well, the pattern is slightly different, but are those slopes actually different from each other?
+
+That's kind of the question that we would want to follow up with next.
+
+So is there a difference in these simple slopes that help us understand the interaction?
+
+So I think one way to do this is using the m m means package.
+
+This is the estimated marginal means package. And this can help us to decompose into simple slopes and then actually make some comparisons of those.
+
+So this package requires uh, manually defining those sort of representative values of our z variable.
+
+Again our this this variable is a bit a bit arbitrary too.
+
+Um, so when you look at this case, we could have done work ethic as the one that we split into lines.
+
+But I think intuitively it's a bit easier to interpret if we're splitting this one,
+
+using this one as our z variable to split and to average above or below average IQ compared to work ethic,
+
+because maybe not everyone has an as intuitive and understanding of the average work ethic, at least I don't.
+
+I'm not sure. So here you have to just, uh, see which way makes most sense to interpret the interaction,
+
+which one you're going to use to split into these different, uh, values.
+
+So this is just a manual example of creating, uh, this effort variable above, which is a here.
+
+That's just my convention I used. So that's the mean plus the standard deviation of effort.
+
+At the mean and then below. So B I put the four below and then that's minus standard deviation.
+
+And if we look at those values and round them just so they look a bit nicer that that was the step done here.
+
+So the average here is 29.71.
+
+Standard deviation below 24.5 and 34.8 is above.
+
+So just doing that to look at them you wouldn't need to do that for your analyses per se.
+
+We can then use this variable here. The estimated marginal means.
+
+Trends. For example, and get these different variables.
+
+These are three separable, separate simple slopes for our x variable.
+
+This is ours. And effort. Is this what this example is working through?
+
+So this would be solving for our simple slopes that we did by hand before.
+
+That we could use this function to get those for us without us having to do the the work per se.
+
+But that still doesn't allow us yet to make that comparison between them.
+
+We just have these, uh, trend estimates. Right.
+
+So you could see, for example, this is, uh, smaller coefficient than this one, which is even bigger than this one.
+
+And we have some confidence interval around those. But if we want to do our comparison that would look something like this.
+
+So. We could, for example, make a plot with this example.
+
+I'll come back to that. But this main testing of these pairwise differences, we can use that same function from before and trends which I used here.
+
+And put in pairwise based on which variable you want to compare in a pairwise way.
+
+And then we get this contrast variable. Or output.
+
+And then what this is telling us actually, is whether those slopes for those different comparisons are actually different.
+
+Right. So we see this value here 24.5 to 29.7 is the estimated difference between those significantly different or not.
+
+Let me just go back one slide. Right. So that that's the comparison here between this slope.
+
+Simple slope. And this simple slope. Right. The 24 to 29.7.
+
+And then we have here 24.5 to 34.8.
+
+That's comparing this slope to this slope. And then lastly the 29.7 to the 34.8.
+
+So what is this test telling us? Right.
+
+So if we were looking at these lines here, which again, that's sort of at the mean above the mean one standard deviation or below the mean.
+
+This is actually telling us that all of these simple slopes are significantly different from each other.
+
+That's what each of these pairwise contrast tells us based on the t value and the p value, they're all less than our 0.05 cut off.
+
+So you can see this looks pretty similar to even this other plot we had before,
+
+where one standard deviation below the mean has this kind of flat slope relatively flat, and that increases.
+
+And those are all different from each other. Does this make sense to many of you?
+
+Hopefully. Okay.
+
+So just to try to recap this, right.
+
+So um, if we are testing and interaction in this case, we just looked at a pairwise interaction between two variables.
+
+And we looked at well how could we kind of solve what these simple slopes are,
+
+knowing the coefficients for our overall regression and plugging that into these simple slopes equations.
+
+Making plots of those so we could actually just visualise and try to think
+
+through what does this interaction mean at different levels of one variable?
+
+How is the relationship between the x and the Y.
+
+And then actually statistically testing whether the simple slope estimates are actually different from each other or not?
+
+So hopefully this gives you some tools for thinking about how I can unpack and interaction.
+
+And, uh, if you had a categorical regression.
+
+Categorical predictors like I started with, then you don't need to do this extra step of.
+
+Creating this plus or minus one standard deviation around the mean.
+
+Because you would just use your. Categories to understand the interaction.
+
+Any questions? So the exercises for today will be.
+
+So we'll be in the practical session this week rather than in lecture.
+
+Um, but now that that was all I had for today.
+
+So, uh, please do attend that to work on the interaction stuff.
+
+And then next week we'll actually go more into unpacking categorical regression, different types of coding systems,
+
+and how we can interpret our regression coefficients based on different types of categories and interactions between them.
+
+I'm happy to stick around if anyone wants to talk more about this or any other stats stuff.
+
+Um, just let me know. Thanks.
+
+And, uh, short day today, but, uh, see you next week. Five for you.
+
+I don't like moderation. Uh, let's say, for example, some of the ones that I, uh, you.
+
+Know, um, and usually we try to restrict something that.
+
+Somebody. See.
+
+I haven't tried. Well, I didn't hear from.
+
+You. Um, so.
+
+So. Uh, yeah, I did, um.
+
+It's okay. The.
+
+Only thing. So how long ago did you notice?
+
+Um, you can always, uh. To be honest with you.
+
+You know, um, on campus, then I know. I'm always looking.
+
+To see if. It's a pretty short.
+
+Okay. Let's test. Having to say.
+
+Hello and see. We're working. What's.
+
+I like this research question, but we're not sure to like. A problem.
+
+Yeah. Okay. So you can talk about that time. Uh, uh, for reasons, right?
+
+Um, so imagine because you were talking about.
+
+You had exploratory. Um. Other one.
+
+Yeah. Yeah. Uh, what if we just tried to replicate the behaviour?
+
+Flocking to bread throwing. Uh, it's not over yet.
+
+Yes. That's right. Oh, no. Too early? Yes.
+
+Why is it so short? Yeah. Well, I'm, uh, I'm talking with them, and then you'll be next.
+
+But I'm happy to talk with you after if you want. Okay.
+
+But then after yesterday, you showed a lot of graphs and data and stuff.
+
+But out of a model like that, we can get data like that.
+
+Maybe a bit by changing variables. Yeah. So we were just thinking what exactly does the output need to be actually.
+
+And what. Is with that kind of model.
+
+So the question was about. Pigeon looking for food?
+
+Yeah, I guess one of the research questions could. Uh, beer like.
+
+Like brothers and healthy. So how does the amount of bread affect their health?
+
+Yeah, it's not really a. Girl problem.
+
+So, uh, I mean, this that still would account for, like, a multi-agent system interaction.
+
+Uh, I think, uh. There you do have a clear way that you could analyse the amount of crumbs of bread crumbs that they.
+
+Now you could come up with some other. That you can find out with different scenario metrics that you could.
+
+Um. I think there's other things too, that some people have also looked at turtles and, uh, like incidences of them, like getting plastic on that too.
+
+Uh, that kind of affected the population overall.
+
+So there's definitely something you can do. So this would be like a balance thing too.
+
+I think it's a good start. Okay. Yeah. But then you would want to kind of refine what is the question.
+
+Yeah. Yeah that's a good. Yeah. So the question is can we just recreate this concept digitally is my opinion.
+
+Well, then you have to. I think then you would want to compare it to something else, right.
+
+So you could say, how does our simulation of pigeon, uh, flocking to feed bread relate to some real world data on that?
+
+Um, but just just having the implementation and then, um, like, can we do this thing?
+
+That's I see that more as the starting point. And then what can you do with that model.
+
+Right. What kind of questions could you try to answer a bit beyond just the implementation?
+
+Yeah. Does that help for now? Yes. And if you, uh, if you ever find something, get it written down or have some initial thing working.
+
+Thank you. Have another quick question. Does an octopus counts as a system?
+
+Are you, like, modelling the limbs? Uh, individually? I was thinking about that.
+
+You would need physics and stuff for that. But it's just in general.
+
+Is it a multi-agency? It has also like a distributed nervous system.
+
+At least the last time I checked. True, but the brains are.
+
+That's what they say. Yeah. I mean, it could be something that you model in that way.
+
+Uh, that's kind of where we've talked a bit before about where do we define our system boundaries.
+
+And it depends on what our question is.
+
+You could also look at the population of neurones within a single person that are still interacting and put together multi-agent systems to massively.
+
+Yeah. Okay.
+
+See you next time, though. Um, I actually have to talk to or someone.
+
+I did. Do you want. To go over, um, email or canvas because it goes into email.
+
+Then it can get lost. Okay. Yeah. You know, with canvas.
+
+Then I can, um, it gets linked to the course, and then it's okay.
+
+Yeah, I did, uh, you know, I need to take a over. What was your name again?
+
+Uh, my name's Frida. Uh. Yeah.
+
+And last name? Can you. Okay.
+
+You. So it's not in my email.
+
+Because I got an untrue. In Congress.
+
+Who are. Yeah. And I said, I emailed you, but then she urged me to email her.
+
+And, uh, no, she told me that there was no way to email it to her, but, um.
+
+So then this is. Should be, uh, kind of to the left.
+
+Yeah. So I try to keep the. Teaching related stuff.
+
+Okay. Let's to us. Yeah. Um, and Barbara and Sasha are the ones organising for the practicals.
+
+So, uh, we do have to be kind of strict with.
+
+It's beyond the release date or something. Yeah. Which is why we do have our, um.
+
+Leniency policy. And are you are you aware that you can still get points if you missed more than two?
+
+And so. Yeah, just just just because I've done it. That's why I wanted to, like, at least try it, I guess.
+
+Yeah. Okay. Um, this was a couple of weeks ago. Yeah.
+
+Yeah. Um. And you emailed right after the line.
+
+Um, yeah. I think this was the same day or.
+
+Yeah. It's worth the fortune. And what did Barbara say?
+
+Uh, no. I sent her again because she said that it came true.
+
+Um, so I was like, okay, can you show me your email? So I type it correctly, and now I think she got it, or she said.
+
+Who were you also there in person. You know.
+
+Um. You can still send it.
+
+And then we probably have to discuss as a team what our position is on it.
+
+Because again, now that it's much, much later.
+
+Yeah, I can try because PDF is in my computer and you can see the time when I made okay.
+
+So it's in the time range. Yeah, yeah. And I mean I usually like to give the benefit of the doubt.
+
+Uh, I just try to have something that's clearly enforceable.
+
+Yeah. It's just in forever. Yeah. It's also hard as it is use.
+
+So when I get distracted, I want to take. And then, of course, if you get distracted, the time.
+
+Yep. I, uh. Uh, I can understand.
+
+Does it make sense to look anymore at what we were looking at today?
+
+I think I need to get into it myself bit before then.
+
+I can my ask questions. Okay. And, uh, uh, they're going to go through an example as well.
+
+Yeah. Yeah. I always that's. Yeah, I think I first for to get it myself and then if I have questions to ask.
+
+I saw from one of the other students that the link, the one that I have up here was broken.
+
+Um, so now it should be fixed. The one that was for this week that you said the shorts.
+
+Uh. Well. This one. Yeah. Oh, okay.
+
+So if you check through that one. Look at the slides again.
+
+Yeah. That might help. Yeah. Are you?
+
+I've. Yeah, we did the first course, uh, last year of statistics, and I did quite well.
+
+I've never done this before, so. But now I think I have, you know, it's really like understand.
+
+So that's why I think I'm was. Not everything,
+
+but I would say it's a good if you have a bit of mental capacity to try to feel
+
+like you are comfortable with the basic multiple regression and to interpret it,
+
+now is a good time to put. Some effort into that.
+
+Yeah. Before it gets a bit long. Yeah. Because we're just going to add in more layers of complexity.
+
+Yeah. Yeah I think uh, it is all passing through a bit like from last year.
+
+Yeah. So, so I think because now this regression is back over you.
+
+Yeah. So I think. But I'll try.
+
+Thank you. Okay. Thank you for that. And, uh, see you next time out.
+
+Yeah. Yeah. I.
+

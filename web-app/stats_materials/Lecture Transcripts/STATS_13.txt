@@ -1,0 +1,743 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+No, I don't know. You know, I was a stripper there when we started.
+
+That's all. Yeah. I'm, uh. I'm going back.
+
+Yeah. Yeah. And so she also the might not even when we look at it.
+
+Okay. Thank you all for coming today. Yeah. That's the people who made it.
+
+Chocolate cake. Oh, yeah, I know.
+
+You stay over there. Thank you. Thank. God, we made it.
+
+Yeah. I got the crew.
+
+Yeah. I'll take it. Yeah. You know, friend and patients here at sports medicine is helping patients.
+
+Yeah. Yeah, I know, I know. We'll be all right in this place.
+
+Something I didn't like. Yeah. Yeah. Cancel.
+
+Hello. Um, alright. If you decide to make it sort.
+
+I'm not so sure. That's right.
+
+I don't. Know what else to do.
+
+Yeah, well, the. Super size, so that'd be nice.
+
+Oh, like you said, that was wrong.
+
+Go go go. Here's.
+
+Yeah, it's messing with the tumour. That's what I. I come.
+
+From Indonesia. You do that.
+
+But. And I think especially.
+
+That's what you to. I'll go.
+
+First. I grew up next to the.
+
+All right. Good afternoon. For those of you who could join.
+
+And I guess maybe if someone is watching this back later, 45 minutes after the recording started.
+
+So this is our last session together for stats two.
+
+I just want to wrap up things today for the course, kind of go over what we've covered and, uh, give time for Q&A.
+
+Of course, related to to the exam.
+
+Um, just a reminder that, you know, both myself and Sasha brought this course to you all, and Barbara as well, helped.
+
+Um, so usually the course evaluations would be available at the last time, and then I would ask you all to please just do it now.
+
+But they're not available till next week. So I'm just going to say please evaluate the course next week and you'll get a reminder on canvas.
+
+Um, but it's really useful to know what you think worked well for you, what you think could be improved.
+
+We're actually going to be meeting, uh, a bit later, uh,
+
+in December to talk about the stats track in the program and whether we should make modifications or things like that.
+
+So please take the time to do this. It's always good to know, uh, if we're doing a good job.
+
+So what I have prepared after this is, uh, a couple of slides with different types of our output.
+
+So I'll put these up and I'll give you some questions to think about.
+
+Um, then we can look through this output, make sure that you understand it.
+
+Um, and then I'll open it up, of course, to a general, uh, Q&A before I have some wrap up points for the course.
+
+So. Let's take a look at this output.
+
+Um. What does it represent?
+
+What? What kind of model do you think this is? Yeah.
+
+Yeah. So maybe you see that here. You see the LM function and the formula.
+
+Right. So hopefully by now whenever you're given whatever kind of outputs or at least if not by today,
+
+by the time you take the exam, you will be able to kind of see what is the formula.
+
+What was this model being tested. Um, and then you would see, okay, this one is a model that's predicting depression rates from class.
+
+For example, often if you're given some output and there's some information about variables that you need to understand,
+
+usually that will be provided for the exam. But but in a case like this where um, maybe it would actually say class is dummy coded.
+
+Right. And then you might have to know that, well, if it's using dummy coding, then there's one of these categories of class that's left out.
+
+So you would know that your intercept, right, is uh is the mean for the class low for example.
+
+So sometimes there's some information that will be omitted and that you'll need to be able to tell from the output,
+
+um, what that is and how you could interpret, uh, the model.
+
+So there's three levels of this categorical variable right class.
+
+You can see that here. And the intercept right.
+
+That's the mean of that category for class low.
+
+And how does this model fit overall? What would you would you say that's a good fitting model or poor fitting model?
+
+Anyone? Yeah, I mean are screwed.
+
+Yeah, it's it's, uh. It could be better.
+
+Right? So we could have R-squared that was 70 or 80 or 90%.
+
+Um, it's not terrible though, right? So, um, if it was much lower, like 0.03 than I would, it would be very clear that it's quite poor,
+
+not accounting for much of the variance in the outcome.
+
+Um, but we do have, you know, statistics here that are showing that this regression model is better fitting than the mean, uh, for this outcome.
+
+So what if we expand this one a little bit, um, where we added in a gender variable and an interaction term?
+
+Do you think this model is better or worse than the one that I just showed you?
+
+Anyone. Any guesses? Yeah.
+
+More than. So if we look at this one so .34 and it went down to 0.25.
+
+So how would you interpret that. A little worse than.
+
+And so interactions. It's pretty high.
+
+It's likely that they are not. They're not significant.
+
+Yeah. Yeah. So that's exactly how I would hope you all would kind of approach this.
+
+Right. If, if you saw okay, well we take the same output, run the same model, but we added a different predictor and allowed for an interaction.
+
+You would be asking this question of did the additional things that I added to the model account for more variability than what I had before?
+
+And as you pointed out, the adjusted r squared went down.
+
+Right. And we have that. That's the one that accounts for having multiple parameters in the model.
+
+So that's why that one went down although this one went slightly up.
+
+But it's not adjusted for that. Yeah. Why you add the mother of the gender.
+
+You mean in the model here? Yeah. Yeah, actually, that's, uh, that's redundant there.
+
+So, um, in this case, it would still give you just this main effect.
+
+Uh, so it's written there only for completeness, so that you would know there is an interaction and there is the main effect.
+
+But if you know the function well, you would know that as you did that you will get both of those anyways.
+
+Yeah. What?
+
+Uh. So we, we see that there are not significant effects for the gender variable or interaction effects from the t values,
+
+from the p values of those we see the adjusted r squared went down.
+
+Is there something you would do to actually compare these models to see if there was, uh, significant change in the R squared?
+
+Or other metrics to compare the fit. Okay.
+
+No. So you could be asked that question on the exam.
+
+Like which of the following. Uh, functions, for example, or bits of code might be the good next step to compare the fit of the between the two models.
+
+So maybe you might say, oh, I want to look at the AIC of these models,
+
+or run the Anova to compare the change in the R-squared between them to see if it's, uh, significant.
+
+And you might be asked, of course, to interpret. Uh. What these main effects mean.
+
+What's the correlation? Any guesses? Anyone think it's, uh, point three or less?
+
+Higher than point three, but not higher than 0.5. Yeah.
+
+Higher than 4.5. Uh, well, I don't ask you on the exam.
+
+Uh uh. Exactly a question like that.
+
+But, uh, you should be able to see from a range of options what might be the most likely correlation.
+
+So thinking again about that line that would go through a scatterplot,
+
+how much variability there might be around that line to estimate what the correlation might be.
+
+Also what are some other reasons you might look at a scatter plot.
+
+Um, you know that could be to look at the correlation which we talked about could also be to look at the regression fit.
+
+If we had the regression fit through the observed data, if it was only with a y variable and an x variable and so on.
+
+Um, okay, so how about. How about this model?
+
+Does anyone know what what this model is testing?
+
+Yeah. Thanks. Yeah.
+
+Where do you see that from? Yeah.
+
+I up here? Yeah. And then we see as well that we now have those random effects as well as fixed effects.
+
+Um, we see that it does say linear mixed model with LMR, which we should remember.
+
+That's the linear mixed effect regression, not the linear model.
+
+So you want to make sure you can differentiate those types of outputs so you uh interpret them correctly.
+
+Um, does can anyone tell me what this random effect is telling us or what what it is specifying in the model?
+
+Tough group today. Is everyone just, uh, lost or you think this is all so super easy with all the parent?
+
+Yeah. Go ahead. Social media management ideas.
+
+A random. Yep. Yeah.
+
+It's creativity. Score a. Yeah. Trying to predict the sales.
+
+Yeah. Yeah, exactly. So when you when you see this, you should first recognise this is within the mixed modelling framework.
+
+You see the outcome is sales. So some sales of whatever we don't know what it is but sales of something uh,
+
+being predicted by a fixed effect of creativity score and controlling for a random intercept for social media manager ID.
+
+And then we have some values here. In this case, we are missing our p values that we would usually get if we had added our LMR test.
+
+Package, but we can still interpret our T values with our sort of rule of thumb.
+
+Alpha cut off right, which is about 1.96 for the t value, in which case both of these are certainly exceeding that value.
+
+Um, so you would have at least some, some preliminary evidence that there is an effect for creativity score and the intercept is non-zero.
+
+But of course I would maybe want to know what is the r squared conditional and marginal for this model.
+
+Um, so I could interpret it a bit further. And we do see, at least for the random effects that, uh, this random, uh,
+
+intercepts is accounting for about half of the variance that's still unexplained.
+
+So maybe there is, uh, some other variables to add or some other random effect that we might want to try to specify,
+
+but I would want to look at the R-squared as well. And maybe the ICC uh, for the model.
+
+And how about if we change this and add this random effect structure?
+
+So now we're getting a random slope right for creativity score within the different social media manager IDs.
+
+Which if we look at this variance, uh, component here, it's much smaller than the other, uh, the residual and the ID.
+
+So it's, it is probably not something we would want to specify because it was our main fixed effect.
+
+Right. But um, you can see at least that it's, uh, how it's sort of changing the output here,
+
+but still we observe the same, approximately the same, uh, interpretation of the fixed effects.
+
+So this is just to kind of prime you on. Make sure that you can take a look at some of the, um,
+
+different types of output that we've covered in the semester and answer different types of questions about them.
+
+Uh, what I would say is how many of you have already looked and looked at the, uh, exam, uh, study guide list?
+
+Maybe just raise your hands if you've looked at it already. Okay.
+
+Not everyone. Um, I still have to finalise the exam.
+
+So what that means is all of the questions are there.
+
+Um, but I still have to decide exactly how many, um, and submit the cover sheets and things like that.
+
+Hopefully I have that done today or tomorrow. Um, you can expect that it will be about 60 questions and you have an hour and a half.
+
+So, um, that's about, uh. A minute and a half or so per question.
+
+Some of them are easier. Uh, yeah.
+
+One second. Some of them are going to be more knowledge based. Questions will take less time.
+
+Some will really require more interpretation. Yeah.
+
+No. No. So as stated in the syllabus, the exam is multiple choice and constructed response.
+
+So there will be fill in the blank. Um but then it's usually at most a phrase or something like that.
+
+Um, not uh. There's nothing on there that says, please write up a results section for the whole output or anything like that.
+
+So, um, and I think it's, it depends a bit on the randomisation, although I try to account for that.
+
+But it should be approximately like 80% multiple choice and then maybe 20%, uh, constructed response, fill in the blank.
+
+Sometimes there could be also be multiple fill in the blanks for like one item.
+
+What other questions do you have about the exam? Are there other topics we can pull up?
+
+Uh, slides from other modules and look at some of those again together, or any of the topics you saw on the study guide.
+
+Any questions that you have? It's open. Uh. Yeah.
+
+I have a question about grading. Mhm. Question done at the same point like both of them are.
+
+Want to be for. Yeah, so I still have to finalise that.
+
+But, uh, typically it should be that all questions are worth one point.
+
+It could be that if it's a multiple fill in the blank option, that those might be 1.2.
+
+Um, what you what you can expect from me as well.
+
+Once the exam is submitted to the administration, I will also post the, the cover sheet, uh,
+
+which has the final official information about the number of questions, how each, uh, how the grading works.
+
+Uh, officially. So that gives you an idea for now. And then when it's official.
+
+Official. Then I'll communicate that to. Yeah. Other questions.
+
+Yeah. Or is that just a stretch? Huh? Okay.
+
+Are there any things that I already showed you that you think I totally forgot that already?
+
+Let's let's go back to the slides quickly and look at it.
+
+No. You guys are, uh, feeling confident then, huh?
+
+Oh, I hope, uh. I hope you will all do, uh.
+
+Well. Of course. Um, everyone is registered to take the exam.
+
+Is that right? Good. Okay. And, uh.
+
+Well, they didn't schedule your exam too early in the morning.
+
+That's always nice. Whenever I see them scheduled at, uh, 8 a.m., I always feel bad for you all.
+
+Uh, although maybe some of you like getting up early, but let's see, uh.
+
+For the exam grading. Um.
+
+It depends a bit. Uh, I haven't. So usually we used to take the exams on canvas, and I migrated to test vision a couple of years ago,
+
+and sometimes it's just more efficient to submit the grades to the administration, and then you will just see them and Osiris.
+
+Um, sometimes I'm able to post them back into canvas so you can see them there.
+
+Um, I will communicate that on canvas as well.
+
+What what what will. Be given to you and where?
+
+Um, if there as it also states in the syllabus, if you request an exam inspection,
+
+there's a period after the exam where you can request that so that you can get an appointment to see it prior to taking the reset.
+
+Everyone knows the reset policy as well, right?
+
+That, uh, I think since you all started, it's been if you take a reset that that is the score that counts.
+
+Yeah. Okay. It wasn't always that case.
+
+So I have to make sure that we're on board with, uh, understanding that it used to be the the highest grade would count, but.
+
+So if you do well and you're happy with the first one, which I hope you are, then don't take the reset.
+
+I guess we don't need the full, full hour today, but that's, uh.
+
+That's all right. So what I would do then is, uh, I have a few slides, just things to wrap up to, to keep in mind.
+
+I'm happy to stick around if you want some one on one or something to to look at some of the specific topics.
+
+Um, if not, then of course we can. Uh, we can just end it here and, uh, I will.
+
+Um, so I want to point you to a couple of things.
+
+Right. So in your stats journey for the last semester and this semester, we've really been working within the generalised Linear modelling framework.
+
+Um, which this resource here, you know, kind of puts all of these like Anova,
+
+your t test, your linear regression, uh, all into this one kind of framework.
+
+And you can use this as a reminder of what the different specification of these look like, how to do them in R, for example.
+
+Um, but I would want you to remember that statistical decision making isn't easy.
+
+So we've in this course looked more at model based approaches.
+
+Whereas last semester you were thinking more about comparing the means between two groups or more than one groups and still looking at interactions.
+
+Um, but with the model based approach. Right. We we looked at how we could sort of think about the different things that we could add to our models to
+
+try to account for the variability in our outcome variable and whether adding and multiple predictors,
+
+adding in interaction terms, specifying random effects,
+
+how to systematically build more complex models to characterise our data and see whether they improve the fit or not.
+
+Right. So we want to ultimately end up with, uh, you know,
+
+a model that is as simple as it needs to be to describe as much variability about our data as it can,
+
+that we think will generally generalise beyond just the sample of data that we've collected to our population.
+
+We're trying to understand. Please don't misuse or misinterpret your p values or follow the null ritual.
+
+Right? So I have tried throughout the course to emphasise the value of looking at your confidence intervals,
+
+your test statistics, uh, understanding the data as well, and different fit metrics of an overall model.
+
+It's too often I still find a lot of scientists that just only put in p values in their paper,
+
+or just overinterpret what that single statistic is telling them.
+
+Uh, and I hope that you are prepared now to not fall into that trap, to realise the larger picture of what your data are telling you.
+
+In this course. We didn't have a lot of time to go into theory.
+
+Right. We're really focussed on here's a data set very rapidly understand a bit of the details about the data before you run an analysis.
+
+But I always said make some prediction about what you expect before you run this model.
+
+And that should really come from, you know, the theory or the prior empirical work,
+
+which we don't have enough time in this course to like give you the background on all of these different data sets.
+
+But, um, hopefully, you know, as you go into your research workshops, I think, which will be next year, also your thesis.
+
+Um. You know, maybe the year after that.
+
+Research workshops next semester for you? Yeah.
+
+Okay. Some of you, maybe, um, you know, you'll you'll learn to sort of like, combine, you know,
+
+theory and prior work with your research questions and the tools that you'll use like you've developed in this course to, to test those.
+
+So these will go hand in hand with your experiments. And, uh, you should always kind of combine this, right.
+
+Like you, you have tools, statistical computational tools.
+
+Uh, those can inform the type of questions you ask. But that should really also be bidirectional, right?
+
+Your your theory and knowledge of the literature informs the way that you ask questions and the tools you use to answer them.
+
+So I'm pretty sure a lot of you, when you get to your A thesis.
+
+You're going to have to think back of what is the way to analyse this data and, uh,
+
+and maybe look at some of these decision aids for this is how many outcome variables I have, how many predictors, how many interactions.
+
+Um, but those resources are there. Uh, make sure to save your stats documents somewhere that you can access, you know,
+
+in a year and hopefully beyond that, uh, because they should come in handy.
+
+I have had, uh, a lot of comments before that people want to go and learn more stats on their own.
+
+Well, you will still go into machine learning, which builds on statistics,
+
+uh, and several ways, and you can go into deep learning and things like that.
+
+But if you want more on statistical modelling, I think this is a really good book that kind of builds up on where we have left off for this course.
+
+So. And this is, uh, this book down online version is free.
+
+So, of course, I like to share things that are openly available with you all.
+
+With that being said, I will, uh,
+
+ended there and I will thank you all for a nice semester and I wish you all good luck with your exams and your projects.
+
+And, uh, maybe I'll see you, uh, for thesis or things like that.
+
+Thanks. You can think of that.
+
+I. Know that.
+
+Maybe you want. To go see.
+
+Some of this. Oh.
+
+Yeah. Yeah, I should actually.
+
+I actually posted this, but I didn't. Actually.
+
+Do the same thing. I was like, I don't still five.
+
+It will be like, you know, somebody told me I saw that multi-agent system six.
+
+Yeah. Oh, yeah.
+
+Thank you. Any other questions? Uh, I think I might have to sneeze, you know.
+
+It's not about. Um.
+
+It's probably going to come back. Yeah, yeah.
+
+No, that's a good point. Yeah. Next week will be number six.
+
+Derek. Uh. Um.
+
+Yeah. What else do we need to study?
+
+Oh, you got this? Yeah. Did you this.
+
+I didn't post it, uh, shortly after, uh. Because we'll do the Q&A for that.
+
+Uh oh. Uh, but it does have a part of. What you should know.
+
+And it does include. Results.
+
+From my thoughts about safe from some of this.
+
+Stuff. So check this out right here.
+
+Uh, yeah. So, you know, either one of them is.
+
+So. Oh, yes.
+
+Yeah, I think it could pick up the whole. Thing all.
+
+Is there anyone that. Find a good balance between.
+
+It's true, but we don't. We have like four different ways of defining what seafood paella is.
+
+So I thought about sharing the data and.
+
+Origin. We also had.
+
+The experience of the. Making your life 45 degrees and then looking at the distance to mass.
+
+And we also thought about. Subtracting them from each other and getting was closest to zero.
+
+We don't know what's best. What's, uh. What's.
+
+The question was to find the best balance.
+
+So when I get a chance to. And it's the balance between.
+
+That are. Because it's come up with the defence.
+
+How much you to spend. Yeah, definitely.
+
+And, uh, sometimes I. Fall into a similar.
+
+Other producers. For example, you could do the whole purpose of what is the right metric.
+
+That's not. Just to point out that.
+
+Yeah, it's, you know. Yeah. It's not always easy to do what's the right way.
+
+Um, I think what you could do is see which which one seems.
+
+Um, that you can kind of motivate. And then you can still say.
+
+There are other ways to operationalise. Such as.
+
+They work for you don't. Yeah, sure.
+
+Yeah. Yeah. So that's typically how. I have to work as well.
+
+If there wasn't, like someone else. This way.
+
+If you're sort of doing in this area or do you have an operational?
+
+Operational. And which you could do.
+
+Of course, it's just maybe a few of us. And look at the distribution.
+
+Otherwise, I think it might be at least one. Question.
+
+Uh, do you mean the distribution of the metric?
+
+The. It does kind of discord.
+
+It just wants to. The best.
+
+Uh. Maybe I misunderstood the question.
+
+So. So you have this part where. Uh.
+
+You talk about different ways to transform. These two into a single dimension.
+
+Yeah. And then what were you going to?
+
+With those. Basically what you want is, uh.
+
+The least amount of trash. Berkeley. So that is cheap.
+
+And also. So that would just be the lowest score.
+
+So the. Like we want to minimise them as much as possible.
+
+But. You want to get as close to this basically.
+
+But it's also open up. So you do get.
+
+You get to see all those? If you was present, this would be something.
+
+Each business has a different. It's.
+
+So. But. This is the one that you.
+
+But she writes, you can choose how much to spend.
+
+Yeah. And the liver as this is something that's up to.
+
+So I could. So you could actually analyse this.
+
+Because you see. Well, the problem with that is increasing costs doesn't necessarily cause the cost of base of 330.
+
+Any combination of all. So.
+
+You wouldn't really get to. It would just be.
+
+It has a lot of curves in it. Yeah. You know, it's because it's a mix of three variables that are.
+
+It's not the best model. It's, um. But this thing is worth more interest to the room.
+
+I think so. I think this is. So how are you approaching?
+
+Can you remind me what things are different? You talk about distance. With that before.
+
+Like the two combinations, I think this. That's like everyone's to capture.
+
+Yeah. I was just thinking, uh, just.
+
+The. Litter the mean amount of litter divided by the cost.
+
+So then you will. You will have one day. Or you could still have a.
+
+Each of the things that are sort of weighted by. Yeah.
+
+Much better. And then what will you do with that?
+
+Which is think. That would be the least amount.
+
+So it's then it gets like these. Get some here. That's for example.
+
+How did you go? I love what you have to say.
+
+Very. Yeah. So you would think.
+
+I think probably you want this one. Because, uh, the cost is very low and there's almost nothing that.
+
+And what what makes this? Well, for example, what makes this one different than that?
+
+That there's so much. Yeah, I think it's good because.
+
+Maybe we could do a linear model.
+
+Of course. Creation. Mostly. Very. You could see which one sort of drives the biggest changes in culture.
+
+But we know that, you know, it's. The.
+
+You know, like we have the points here and they differ from each other, but we don't know if that's true because.
+
+Because they're always. Um.
+
+Oh well, yeah, they all have. And the fact that they were all in.
+
+I was lucky because this is the only thing. I was particularly litter among from all that.
+
+You know what if you put it in. So then if it's like on the same, if it's the same cost and there's a little difference between the two that.
+
+I was conscious that you. And try to make a prediction about which.
+
+Yeah, maybe there's a few sort of simple question. Together and one might like I what I worry that trying to find like a singular value.
+
+Might lead you to two. Simple. Yeah.
+
+That's why. So, uh, so I think it could.
+
+It could be part of an answer that if you could say. From this set of models and analysis yourself.
+
+This seems to. Over the age of 65.
+
+About. But then you might ask. So why is this so bad?
+
+For some cost of. Which of the factors.
+
+Strongest. Uh, and then so then maybe that's also that there's something.
+
+The randomisation of. So we could, for example, maybe.
+
+If you grab, like everything, the lower cost of life and look at the differences.
+
+Yeah. So that's that's an idea since the two.
+
+Yes. You're right. Low versus high. Because I think even within that within this one is like really high and then the other.
+
+Like that with maybe one of our. Do I did, I predicted.
+
+Litter. Litter abounds from. People.
+
+But they were all. But sometimes, uh, like, you don't have to have.
+
+You do sometimes. Look at all.
+
+But. But you know. So even if you even do write up that.
+
+And you have. Inquisitive and like your wife.
+
+This. Bye bye. 16.
+
+The idea. I don't have to do that.
+
+Couple days ago. Um, so what I would recommend is.
+
+Just think about the story of. Are able to tell from your model and, you know, some some specific.
+
+One of these. But really, what can you tell us?
+
+And if you don't know something. But then just think about.
+
+Reflect on. Uh, that way I could kind of bring the.
+
+Is I. Make the model stop early after a few enough steps to.
+
+I'm out later. Is.
+
+Okay. Uh. That's interesting.
+
+So when, when I was talking about it for us to look at, if you might run into more of it than you do to you use kind of like a rolling joke.
+
+Sort of stabilises across. Um.
+
+All you need to do is. So I don't.
+
+No, I mean, just like you, you're making choices about how did you do this thing in the world of modelling where you can do anything you want?
+
+That. But if you have a plot.
+
+Stop. Double check the rubric.
+
+Just, uh, before you send that to and just see the different components of the.
+
+Thank you. Yes. You're welcome. Good luck finishing things up.
+
+Thanks. Going to be rough.
+
+Don't forget the, uh, evaluations too. Yeah.
+
+Yeah. I.
+

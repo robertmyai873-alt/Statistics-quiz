@@ -1,0 +1,1167 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Good afternoon, everyone.
+
+Welcome to, uh, stats two, where we're covering mixed models, multi-level models, random coefficient regression models, hierarchical linear modelling.
+
+We have a very full, uh, agenda.
+
+Fortunately for you, this title just means that there's a lot of ways to say the same type of modelling that we're covering today,
+
+but it can be a bit confusing sometimes because you might see some paper that say, oh,
+
+we did hierarchical linear modelling, but that's the same thing as a mixed model or multi-level model.
+
+So hopefully now just from this intro, you know that these things all refer to the same thing.
+
+Um, you can see here where we are our second to last, uh, lecture number 11.
+
+Again, this one, I think it's going to be more complex than anything before.
+
+And we will just build on that for the for the next week as well.
+
+Um, so really, please, if something doesn't make sense today, let me know and let's make sure we can get some common ground.
+
+Um, I have just two questions. Um.
+
+We'll clap. Uh, and also, um, the Posit Seamless server should be running.
+
+There's a link under the modules. Um, or you can go to Seamless Dovetail now and do lecture 11 if you prefer to do the exercises this way.
+
+For now we'll clap is ready for you to join.
+
+Give you just a bit longer to scan if you're going to. Otherwise you can just watch or type it in manually.
+
+Welcome. All right. So for our first okay.
+
+First question is true or false.
+
+So the following are code which you should see here uh is an example of a polynomial regression using second order orthogonal transformations.
+
+True or false. About ten more seconds for this one.
+
+You've got a 50% chance of getting it right. There's no gas correction.
+
+All right, so this one was false.
+
+If you had spent a bit more time checking out the arguments for this, uh, poly function than you would, and you saw RA is true.
+
+This just means that they're the raw polynomials. Um, you could specify other types with the arguments here.
+
+Um, is it a second order? It is second order because of the two here.
+
+So that part of these is, uh, correct as well.
+
+Okay, last question for today. Let me expand this.
+
+So in the equation below, which of the following options would be certainly true?
+
+About ten more seconds for this one. All right, let's see how you did.
+
+Uh, okay. Interesting. Uh. Let me see if I can expand it to show this full.
+
+Um, okay. So a majority of you said this is a multiple linear regression model predicting memory score with practice time and participant,
+
+which is not true, unfortunately. Um, although there could be a bit more information to clarify this, I'll put the equation back up in a second.
+
+This one is the correct one. It includes a random effect for participants.
+
+If you put this on, anyone know what kind of random effect? We're going to go over this today.
+
+But if you read the paper, maybe you already know.
+
+We'll come back to that then. If you put this one.
+
+What's a first order polynomial? That would just be like something raised to a power of one.
+
+So that's kind of what we've been doing the whole time with our linear regression.
+
+So if it was not with orthogonal, maybe this would have been true because there's no orthogonal in that equation.
+
+Um, so yeah remember what the first order polynomial is.
+
+So this is a random effect. And we can see that based on what's provided here.
+
+Um, what we don't see is the formula or the, the function that tells us that this is LM or LMR, which we're going to cover today.
+
+But this type of notation here refers to there being a random effect in our model.
+
+What is that? Well, we'll talk about it soon. And in particular it's a random intercept for participants.
+
+Uh, we can see that based on the one here with the vertical bar and participant.
+
+And we'll see how that changes sort of the coefficients from our model today.
+
+What does it mean to add a random intercept based on participant.
+
+And we can also add random slopes. So this is priming you for what we're going to talk about today.
+
+Because it has this type of reference here.
+
+If you try putting this into your linear multiple regression model you will get an error and that model won't run.
+
+So that's why um,
+
+this refers to this particular random effect structure that's specific to mixed effects models that you can have in normal multiple linear regression.
+
+All right. So what I would like to cover with you today is what is this mixed models that we're doing.
+
+Um, talk about random intercepts and random slopes and then some of the assumptions.
+
+Uh, that way you are on board with what mix models are and why we should use them or win in particular.
+
+As we've done before. This is all the stuff you already know about multiple linear regression on the left here.
+
+And this is what changes now when we do mixed effects model.
+
+So we actually add, uh, sort of qualifications to our error terms, uh, where uh, essentially we can have random intercepts or random slopes,
+
+which mean that our coefficients can vary based on levels within, uh, whatever variables we use that have a nested structure.
+
+And I'll give you an example of that on the next slide. Um, but the idea is still similar.
+
+Like at the highest level, we're still kind of using this equation to predict our outcome variable with some set of, uh, predictor variables.
+
+Uh, although now we will actually specify some error structure,
+
+which is about that random intercepts and random slopes and how essentially we can account for hierarchical nested or clustered data,
+
+which is what we said before was what we couldn't do with multiple regression.
+
+Right. That was one of our assumptions about the data structure.
+
+Um, so here are some examples here. Like if you do research on groups or teams like I do when I do my analysis,
+
+I often have to do mixed models to account for the effect that there's multiple observations coming from the same group, often over time.
+
+Uh, but these also I do research in different hospitals too.
+
+So if you want to account for like different locations that are nested within your data set, then you usually have to go this route.
+
+So let's unpack this a bit more. What does a nested data set look like?
+
+Um, well, it could look something like this. For example, if, you know, I tried out two different teaching methods for half the class.
+
+Uh, and so basically split the class in two and try it out, two different teaching methods for you.
+
+Then you would all be sort of part of, uh, this sort of nested structure, right where there's multiple,
+
+uh, students, for example, who are getting the same type of teaching method, part of a group.
+
+Uh, so just kind of thinking about if you have this sort of hierarchies or nastiness within your data, you need to account for that in your modelling.
+
+Otherwise, uh, you will run into some problems and we'll see that with the example analysis that we do today.
+
+So here's for example, thinking about, uh, different sort of treatment, uh, types that are separated into multiple groups.
+
+And then you have multiple observations for each of those. Um, or it could be that you're having a repeated measures data like you have, uh, you know,
+
+before middle and end of your experiment and they're all coming from the same participants,
+
+or maybe you're collecting longitudinal data, uh, something over weeks or years.
+
+Uh, you're going to have that interdependence between your observations that they're coming from the same participants,
+
+and there's going to be sources of systematic variation that are due to participants coming from the same group or getting the same treatment,
+
+or be getting the same teaching method, for example, whatever this sort of organising structure is.
+
+Uh, and we want to be able to model that variation that's due to this sort of nested ness with our data or repeated observations.
+
+That way we can see where there are things that we actually think make a difference.
+
+Um, actually have that effect. Well, accounting for that sort of nested variation.
+
+So I have more or less said this already, but, uh, we should use this so that we can ignore and to some extent,
+
+that assumption of regression that all of our observations are independent.
+
+Um, we don't have to worry about homogeneity of regression slopes anymore,
+
+because we can explicitly model variability in our regression and slope regression slopes with, uh, random slopes.
+
+So we can ignore this assumption of independence. Sort of. I'll come back to that in a second.
+
+Um, and multilevel models or mixed effect models that can usually handle a bit of missing data better than our regression models can.
+
+So if you look back in this case, for example, there's not equal observations in all of these, uh, cases.
+
+Uh, maybe you might have one observation missing here.
+
+And, uh, these methods tend to be robust to some kind of missing data.
+
+If they're within this nested structure somehow. So what does it look like?
+
+Well, fixed effects versus random effects is the new part that we're going to see when we look at our output today.
+
+I think what we're what we most often care about is our fixed effects.
+
+Those are the things like our coefficients from our regression model that we've been looking at for the last, uh, several weeks for the course.
+
+Um, so that's going to be sort of the things that we think are the main predictors in our models.
+
+We want to see does this predictor have an effect on the outcome.
+
+And then we're going to have this new part which is information about random effects.
+
+And typically these are things like intercepts and slopes that will become random.
+
+So here in this figure here uh, there's an example of random slopes.
+
+Sorry random intercepts. You see, the slopes are all the same slope, but the intercept where they cross the y, uh, where they cross, where x is zero.
+
+Uh, then you see this change in the intercept? Slight changes in the intercept.
+
+Perhaps some of them are maybe even overlapping, but there's variation nonetheless.
+
+If we have random intercepts and random slopes.
+
+It reminds me of this, uh, dropping a bunch of sticks game.
+
+Uh, you know, you just get everything that looks all kinds of slopes and intercepts could become possible.
+
+But this would be with random intercepts and random slopes,
+
+and the fixed effects would be sort of what across your sample is sort of the main
+
+effect that you observe the main relationship between your predictors and your outcome,
+
+while still recognising that there's this sort of variation due to the nested ness in the data that we specify in our model.
+
+And we'll see what some of those look like in a second. So there's a bunch of information on this slide.
+
+Um, what's important to sort of point out that I expect from you for this course is that you at
+
+least know how to recognise and specify when something is a random intercept or a random slope.
+
+You can actually do quite complex nested models where you have, uh, many levels within them.
+
+As I mentioned before, it is sometimes called multi-level modelling,
+
+and we're mostly just adding sort of one level to that model where there's uh, one type of variable nested within another.
+
+But you could have more complex data structures than even we show here.
+
+Often when I'm, uh, going to run these myself, if it's not something as simple as just a random intercept and random slope,
+
+I do need to refer to, you know, sources to make sure I specify my model correctly.
+
+And with our examples today we're going to look at some things that are a bit about are we specifying our model correctly or not.
+
+And uh and, and I'll come back to that too.
+
+So this is just an example to show kind of the relationship between, uh, some model here that has, you know,
+
+our intercept and our regression coefficient with one predictor plus some error versus if you add in,
+
+uh, some random, uh, intercepts for subjects, uh, versus expanding on that to have for uh, random slopes as well.
+
+Uh, but again, you would probably need to refer to these, um, but you can see an example on this side too,
+
+showing just simple linear regression versus mixed effects with, uh, fixed slope, random intercepts, fixed intercepts, random slopes.
+
+And then again, something like I had on the last slide where you have different intercepts and different slopes.
+
+Did I lose anyone yet? A bit.
+
+Hopefully, uh, when we look at some output together, uh, it will start to, to make a bit more sense.
+
+But again, the idea is that we'll still want to have sort of one highest level equation that's going to tell us about the fixed effects,
+
+the relationships between our main predictors and our outcome, while just accounting for that variation.
+
+Uh, that's due to the nastiness. So we're often not going to be that interested in all of these random effects that we add.
+
+Um, but we are going to be interested in the fixed effects to which you could interpret.
+
+Mostly like what we have so far with multiple regression. So there are some pros and cons.
+
+Uh, so as I've already been mentioning, we can now account for any nested nests or repeated measures in our data.
+
+So we just expand this modelling framework we've been going through for the course from regression modelling to mix effects modelling.
+
+Uh, and now we can have, you know, these more complex data structures with repeated observations.
+
+Um, we can have missing measurements. Now, of course, we're not covering like what to do with like missing data techniques.
+
+There's a lot of, uh, work and resources out there for that.
+
+If you encountered in the future, I'm sure you'll find some resources for that.
+
+But we also can understand our error term better.
+
+Uh, to some extent. So if you remember with our basic simple linear regression model, we were just saying,
+
+if we know these values of our predictor, how how much variability in our outcome can we explain.
+
+Plus there's some error associated with that.
+
+Well, now to some extent we can say, well, we know the sources of systematic error in our model based on like nested ness or repeated observations.
+
+Uh,
+
+so we can actually see how much of those of the variability actually goes toward those nested structures versus how much are due to our predictors,
+
+our fixed effects.
+
+Um, we could also maybe to to specify this a bit more while I said here that we often don't really care that much about our random effects,
+
+what you're going to see in a little bit as well is that we can still pull out individual coefficients for our random effects.
+
+So overall, we're going to be interested mostly in the fixed effects.
+
+That's going to give us, uh, generalisable, uh, understanding of our data.
+
+But if we wanted something that's more graphic, more specific to each observation, we're going to look at coefficients that will tell us about that.
+
+So we could actually go from like something generalisable to very specific.
+
+And in my research sometimes that's relevant because we're looking at, say,
+
+teams right in a hospital and how they do their team work together and whether we want to predict whether they perform well together.
+
+So we could say overall, this is the pattern relationship between our fixed effects and our outcome.
+
+But then we could dive into individual coefficients and say something specific to the pattern for each team.
+
+That's a bit abstract, but we'll come back to that when we look at the example shortly.
+
+Some of the challenges are related to computational complexity and interpretation,
+
+so sometimes it's difficult to properly specify your mixed effect model.
+
+If you have a more complex your, uh, data set is or the model that you're trying to create.
+
+If it has many levels of nested ness, uh, it can be difficult to specify that we can't use least squares regression anymore.
+
+OLS. Uh, I'm a bit glossing over this today.
+
+We'll see it in some of my code that we're now switching to a maximum likelihood estimator, which I'm not expecting you to know for this course,
+
+but I do have certainly encourage you to, uh,
+
+check out what that means if you're interested and want to know what's going on behind, uh, the hood for fitting these models.
+
+Um, but we can sometimes run into convergence issues.
+
+Um, convergence in this case means there's going to be messages or errors.
+
+Um, there's a difference between those that will tell us that there's maybe something not optimal about how well our model fits.
+
+And there will be some of those we look at together today.
+
+Another thing is there's debate about the calculation of p values for these types of models.
+
+Why is that important? Well, by default, the main package we're using for our mixed effects models does not provide these.
+
+They provide the test statistics, uh, the coefficients and things like that.
+
+Um, and we use a separate package that's an add on that will give us p values using a certain type of estimator method.
+
+But you can imagine that somewhere there's a whole subfield of statisticians who debate,
+
+uh, about what's the right way to estimate p values from such and such types of models.
+
+We don't have to know that either, but we have to know that there is different ways to do it.
+
+And r squared changes as well. So now before you remember we saw like r.
+
+Adjusted r squared and r r squared. And that would tell us about either the overall variability accounted for by our model.
+
+Or the adjusted one would tell us the variability accounted for by our model, adjusted for the number of predictors we had in it.
+
+But now we're actually getting r squared conditional and r squared marginal which tells us conditional about the
+
+overall model including r random effects and marginal which is the variance explained only by our fixed effects.
+
+So remember often I really care about what is what are the what's the r squared by the fixed effects.
+
+Those are my things that I think are important predictors from theory or prior research that I'm using to explain my outcome.
+
+But I know that the random effects are still accounting for some significant source of variation.
+
+So looking at both of these two and interpreting them correctly is important.
+
+Okay, so one last slide before I turn it over to you to give it a try.
+
+So running the model in R. Fortunately, for the most part, it's really similar to what we've been doing the whole time.
+
+We're going to write some formula in in R that's specifying the relationship between our predictors and our outcomes.
+
+We're going to need two packages. So this is what I was just saying, that this is the main package that has linear mixed effects models in it,
+
+and this one is the one that adds in the p value calculation.
+
+So this is LMR test with a capital T.
+
+So if you don't have these yet you will need to install them and make sure to load them for these exercises.
+
+If you don't load this one and you run your model, you'll see that okay,
+
+you won't have any p values which you can still interpret your coefficients in your test statistic, but maybe you want to add that p value as well.
+
+So rather than just LM function, which we were using before, we now use lm r.
+
+If we have this package installed. And then this is the basic form of our equation that we have now.
+
+Right. So we have our outcome variable some predictor one and our random effect.
+
+So the random effect will always be added to whatever our fixed effects are.
+
+And this will be that formula for the random slopes based on the levels within predictor two.
+
+I just call them predictor one and two here.
+
+Um, but predictor two is really just this grouping variable that you don't really have a prediction about.
+
+It's being associated with your outcome, but that there's some systematic variation due to the grouping,
+
+like, uh, multiple observations from the same participant.
+
+So it could be a participant ID, I could be participants all coming from the same school or all being on the same team.
+
+Whatever that predictor you have is that is that specification of the nested ness or multiple observations?
+
+Does that make sense? I would like you to try this out.
+
+So there's a lot of steps here. And this is one I want to give more time to, to make sure you can get through these steps on your own.
+
+Then I have, of course, several other exercises for comparing the models, trying to specify a different random effect structure.
+
+We'll get to that soon. Uh, the politeness data is the one from the reading for today, but I've also put it on canvas.
+
+Or if you're working and, uh, seamless, uh, web app that I've developed, all of this stuff should already be in there for you.
+
+Um, check out the data set, make a prediction about the attitude variable and vocal frequency attitude is specified in the required reading for today.
+
+Otherwise, I'll mention more about it in a little bit. Um, try to run a mixed effects model with random intercepts for subject and scenario,
+
+and try to see if you can interpret the output, um, and get some metrics of performance, um, and so on.
+
+Was there a question or is that just a stretch? No.
+
+I'll give you a bit to get started on this. Wave me over if you need some help.
+
+Otherwise, I will, uh, wander around shortly and see how it's going.
+
+With. For sure.
+
+It's. Your regression.
+
+She did this with all this. Stuff goes.
+
+I see. I owe.
+
+You sure you know that? Yeah I remember.
+
+Yeah. Usually.
+
+So. You're not.
+
+In principle, we skip. So it was.
+
+I think that. Sorry the link wasn't published, but it should be now.
+
+But the one from last week. If you want to use this. It was.
+
+To. To bolster our.
+
+Know people sometimes. Look.
+
+I go. I think.
+
+He said. Yeah.
+
+Just because you don't like. Uh.
+
+You know. Louis.
+
+She got up early on. We want.
+
+Are you? This.
+
+This. You.
+
+Let's go back to the. You know.
+
+Like a. Concentration of excessive.
+
+They got the. Just another.
+
+So this is. But this. Another.
+
+It's good that he did. That's right.
+
+Other companies. As you can see.
+
+Thank you. You're in.
+
+I would look at you with. That's.
+
+And to get a bit. So it's our usual, uh, break time.
+
+I'm going to propose that we do a ten minute break today and then five minutes early.
+
+So I need to get to my labs after this. Um, so let's start back at, uh, 142.
+
+If you need more time to work on the exercise, you can take a bit shorter break if you want.
+
+Otherwise, we're going to look at this together after the ten minute break.
+
+Okay. He's like.
+
+We. Sorry.
+
+Do I do that? You see.
+
+All right, so that's, uh, been our ten minutes. Hopefully you, uh, had some sort of break.
+
+Although some of you look like maybe you just still working. Uh, let's take a look at this together.
+
+Uh, so I actually just made sure to include in my markdown, uh, just the packages that you need.
+
+Although usually I kind of hide those. Um, so, again, you do need the LM for an lm r test if you want to add the p values.
+
+Um, I added some other things here. Not important for now.
+
+Um, so. I worked with this politeness data set, and just as a reminder related to the paper, this attitude variable was about whether the scenario,
+
+um, where there was this conversation was more of an informal, uh, attitude or more of a polite attitude.
+
+And this was to look at, uh, the changes and vocal pitch based on the type of, uh, attitude taken toward a certain statement.
+
+Um, so this is, uh, polite is, uh, asking for a favour from a professor versus a peer as one example.
+
+Um, here are some of my summaries. So we see that we're getting like vocal frequency, which is uh, I think it's measured in, uh, hertz.
+
+So we have, you know, values here going up, uh, to several hundred.
+
+Um, and there does seem to be one and a in here.
+
+So one missing, uh, missing data.
+
+So I did check where that was. Observation 39.
+
+Uh, maybe that's going to be relevant later. And I made a quick box plot so we could look at vocal frequency relative to gender,
+
+which the F here is for female and male, which were in this data set, and whether that was informal or polite.
+
+So we can see just from the box plot maybe already that there's definitely a difference in vocal pitch for the gender in this data set,
+
+although it's a relatively small data set and maybe a reduction in vocal pitch,
+
+uh, speaking lower, for example, in the more polite context it looks a bit more pronounced and, uh, in between these two than these two.
+
+Uh, but we want to test that relationship, right? So whenever I have this statement here, that's about making a prediction.
+
+That just means what do you expect? Well, if we already made this box plot, then maybe we already have some prediction that it's going to be lower.
+
+And the polite, uh, sort of conversations, the vocal frequency will be lower.
+
+But if we hadn't made this, you know, we would think kind of logically about what makes sense.
+
+Oops. Sorry about that. So for our mixed effect model.
+
+This is not it. Hopefully I saw some of you using LM.
+
+If you did this, that's okay, because that's, uh, that's what you've been used to the whole time.
+
+Um, but it is actually interesting to compare what changes, if anything, from our original linear model to our mixed effect model.
+
+So in this case, I just added in gender and attitude and developed a summary.
+
+Maybe we'll come back to it. But just notice we do see overall a significant model.
+
+And there is a significant effect for both of those predictors.
+
+Um, but we actually want to look at our mixed effect model.
+
+Right. So the big difference is the function is the first step.
+
+Right. So not just LM anymore LM are.
+
+Outcome is our frequency. Predicted by attitude.
+
+Plus these two random intercepts, one for subject, one for scenario.
+
+Where did this come from? Right. We would have had to look at our data set to see what they were.
+
+Which we see. Here is a subject variable and here is a scenario variable.
+
+So scenario there was actually seven scenarios in this study.
+
+And for subject there was actually only six subjects I believe.
+
+We'll see uh those in a moment. So kind of like when we interpret our mixed our regression model, multiple regression model,
+
+we want to see where do our eyes go first or where should they go when we're looking at this.
+
+Often we do want to see our fixed effect right. That's that main predictor variable, something that we wanted to see.
+
+Did it explain our outcome. So I would always look at my fixed effect.
+
+Do I see an effect for attitude I do right.
+
+Uh there is a. Negative coefficient here with some variability around that estimate.
+
+And here is my test statistic information for the t value which is smaller than that -1.96.
+
+For a conventional 0.05 alpha level. And quite a small p value.
+
+You didn't get this p value if you didn't use the LMR test, but you still know how to interpret your T values,
+
+so you would still know this looks like a significant effect.
+
+You can interpret this the same way as your dummy code in multiple regression, right?
+
+So this is telling us that the average of the polite attitude which is specified here is -19.
+
+Uh, the frequency is on average -19 compared to our referent group, which is the informal which is specified here by the intercept.
+
+Right. So this would require that you looked and saw that this was categorical.
+
+And it's getting dummy coded by default by this function.
+
+So far. That's that's, uh, that's pretty much what we've done already.
+
+So hopefully this is just a reminder you're doing. Now.
+
+See, there's a bunch of other stuff. So if we look back up a bit, it's nice to double check that the formula is what we thought we were modelling.
+
+Frequency predicted by attitude plus two random intercepts based on subject and scenario.
+
+That looks good. Then I would maybe look at the random effects.
+
+What does this all of this stuff mean? Well, I have it on the slide for you so you can have it, uh, for your future reference.
+
+So for random effects, the variance tells you how much variability between individuals in a group is explained relative to the residual.
+
+The standard deviation there tells you about between subject deviations within a group and correlation, which is not yet shown on this output.
+
+Is a relationship between the slope and the intercept.
+
+So that's just written there. So if you wanted to try to interpret that you could let me pull it back up here.
+
+So you see that there is groups. So scenario we had seven groups in scenario.
+
+Right. Because there were seven scenario types for a subject.
+
+There were six of those. And we have only random intercepts.
+
+And you could interpret that variance and standard deviation relative to these residual values as I described on this slide just there.
+
+Usually. Again, we're not that interested in what our random effects tell us.
+
+We want to have them there though, so we know we account for this interdependence in our data.
+
+Here I use the performance. Uh, actually, let me scroll back up.
+
+Yeah, so I skipped over this. Um, but I added here.
+
+Ramlal equals false. This is related to the estimated estimation method.
+
+So for all of the models that we did before that were regression, those were using ordinary least squares.
+
+Here we're typically using maximum likelihood or restricted maximum likelihood.
+
+I was attempting to make it maximum likelihood so that we can compare models.
+
+We'll see some warnings later that say changed from restricted to maximum likelihood to compare models.
+
+Um, it's not too important for you to to memorise or memorise that, but uh, we will get some warnings about it in our modelling process.
+
+So here we can get our normal model performance.
+
+And I just tried to add this ML to indicate that it was estimated using maximum likelihood.
+
+Um, by itself. Right. We don't get uh, we need something to compare this to.
+
+Right. Um, whether that's the AIC changes or our square changes, uh, but we do see.
+
+Quite a large R squared conditional and a relatively smaller R squared marginal.
+
+So remember this is the amount of variability accounted for by the fixed and random effects.
+
+That's 85% of the variability in the outcome. Really high.
+
+And just the fixed effects. That was attitude. That's going down to about 2%.
+
+Right. So. Could still be a significant fixed effect, as we saw, but a lot of the variation is being explained by the subject and the scenario there.
+
+There's one more thing that's on here, which is the ICC.
+
+This becomes important for us for, uh, mixed effect models.
+
+It stands for intra class correlation.
+
+And I have just written something here on the slide about that how you can interpret it.
+
+It's the ratio of the random intercept variance to the total variance.
+
+Um, why it's important, though, is in particular, uh, it's about the clustering within the data.
+
+So whether you actually should have specified, uh, the random effect structure as you did, if you saw that ICC came out near zero.
+
+Maybe the random effects that you included are not even that important to include, because there isn't this clustering coefficient.
+
+Uh. What that means is like you, you specify these random intercepts which are going with the specific subgroups within your data,
+
+and the ICC tells you like how much those are correlated, um, or how much is explained, uh, due to that clustering.
+
+So maybe you ran a mixed effect model and it didn't fit well, and your random effects had an issue and your ICC was close to zero,
+
+then maybe you could just do a linear regression instead, although you would be still kind of avoid,
+
+um, violating that assumption of the interdependence of the data.
+
+It's also can be useful to look at how this ICC changes with different changes to the model.
+
+So so far we've had two random intercepts.
+
+Maybe we wanted to also test does a random slope improve the model fit.
+
+And then we could also look at how the ICC changed between those.
+
+Let me just make sure there wasn't anything else to cover here.
+
+So I also asked you to look at the coefficients.
+
+Uh, I got to talk with some of you about this.
+
+I asked you to look at the coefficients, just so that you could see this relationship between the fixed effect, which we saw here.
+
+This is telling us this overall pattern of the data.
+
+Right. So across all of the observations this is the predicted effect for attitude on vocal frequency and the intercept.
+
+But we told our model to estimate random intercepts based on subject and based on scenario.
+
+So we get those right. When we print out these coefficients.
+
+We saw there are seven levels of scenario. So we have seven unique intercepts based on those.
+
+Each of those levels of scenario and attitude is fixed.
+
+That's the same as the fixed effect in our model. And subject.
+
+Here we had six unique subjects. And again, we have a unique intercept for each of those subjects.
+
+Uh, with a fixed. Uh, coefficient for attitude.
+
+So think of these just as if you wanted to go into the specifics within your data set.
+
+You now know, for example, that the intercept is predicted to be 189 for scenario one even with this fixed slope.
+
+So if I showed you back to, uh, this slide where I had.
+
+These different intercepts and lines.
+
+You could then predict that for each scenario or each of those subject IDs, that gives you a different intercept.
+
+And they all have fixed slopes. So something like that.
+
+Although again you are often more interested just in the overall fixed effect, unless you had some reason to dive into the specific.
+
+Subjects, right? So that's how you can also verify that your model is specified the way that you want it to be.
+
+If you did not want changes in slopes, but then you saw somehow that these were all changing, then you would have to look back.
+
+Did I specify my model correctly? Right. So it's it's to do two things.
+
+One, to check whether your model is actually estimating things the way that you thought it was because you now have these random intercepts only.
+
+And also to know sort of the, uh, subgroup specific coefficients.
+
+Well, we just went through interpreting the output.
+
+Um, here I also just showed how to use the model parameters to get standardised, uh, coefficients, uh, for you.
+
+Any questions on all of that?
+
+I know it's a lot of, uh, some new stuff with, uh, random effects looking at changing coefficients, um, differences to the r squared interpretation.
+
+Um. So that's, uh.
+
+If there's no questions, then I guess you all got it or you're lost.
+
+Hopefully it's the former. Um, okay.
+
+So we also do want to compare our models, right?
+
+Uh, I think maybe I'll just, um, show you this and then let you try this one, and then I'll skip the later exercises.
+
+Um, so now we can still use the AIC to compare our models.
+
+Lower values are still better. BIC is also commonly used for comparing models.
+
+We've seen that one before. Um, but it's been a bit less relevant and also lower as better.
+
+Really. What we now compare, though, is often the log likelihood where higher is actually telling you that one model is better than another.
+
+Um, so we would like compare, for example,
+
+the difference between the log likelihood of one model and another model and see is it a better fitting model or not.
+
+And ultimately go with that one that gives us the best fit as how we interpret our output.
+
+So I would like you to try with just less time than before.
+
+How many of you did get your mixed effect model to run?
+
+Okay, that's almost everyone. Um, if you could create a new model.
+
+But now add in, uh, gender.
+
+So before we just had, uh, vocal frequency, uh, but now add in gender and then keep the same random intercepts for subject and scenario.
+
+So just save a new model with this new fixed effect in there.
+
+Try the same things to get a summary of that. See how it changes from what you saw before.
+
+And then I'd like you to try to compare these two models. So you can use the same Anova function that we did before.
+
+Or you can also try compare performance and you'll get some information about how those models compare.
+
+So have a look at that. See if you can get that rather quickly before we look at it together.
+
+Mm. Sorry about that. It's.
+
+Yeah. If you show.
+
+Yeah. Becomes a.
+
+Yeah. No, I used it for something else.
+
+I knew I had some things there. It was to find.
+
+Potentially make another. All right, let's take a quick look together.
+
+So all I added here was to what I had before.
+
+So again I'm using LMR because I'm having some random effects in my model.
+
+These are showing that there's random intercepts for subject and scenario.
+
+And I just added that other predictor variable gender.
+
+And in this case uh we see that's we now have that fixed effect here for gender, which is telling us that, uh,
+
+on average relative to the referent group, the average of the male gender vocal frequency is -108 compared to 256.
+
+Um. And we still see this same effect for attitude.
+
+But we wanted to see does this model improve our fit?
+
+Right. So, uh, we do see there's a significant effect, but is it better to include this predictor or not?
+
+That's the type of thinking that we want to have right? When we're building these mixed effect models.
+
+Um, maybe we already had a good reason theoretically from the beginning, which makes sense for vocal frequency, but not always.
+
+Um, so just pulled out those same things before.
+
+And notice now we just have that gender, uh, with that fixed coefficient as well for each of our random intercepts there.
+
+And here I do the Anova to compare model two to model three.
+
+Model two is the one we ran before that didn't have the gender as a fixed effect and nice for us.
+
+This tells us the models that are being compared. So that's the only difference there.
+
+And it does look like there's a significant change.
+
+And here we actually have that AIC, BIC and log likelihood.
+
+Uh so we could compare them. Uh, although uh notice that this value it is less negative than this value.
+
+Right. So then it is a higher log likelihood. It can also be positive.
+
+But uh, that's uh, something to not get, uh, tripped up on when you're interpreting this.
+
+So we do see uh, adding this additional predictor does account for a significant change in the variability that we account for.
+
+If I do compare performance, we get, uh, similar uh, metrics here for AIC works, for example.
+
+And we can then compare our changes in the r squared, uh, conditional and marginal.
+
+Notice in particular this change here.
+
+So we see. Hello. Are you here for stats, too?
+
+No. Okay. Uh. You can always join for stats.
+
+Uh, so look at how much this r squared changed.
+
+Right? So now that we added in gender, uh, our marginal R-squared, which is just for the fixed effects, is much larger.
+
+So now 70% of the variability.
+
+And that is then telling us, right, that, uh, you know, before we had the subject variable which did have one identifying variable for each subject,
+
+which half of them were males and females in this case. So actually that variability is now getting uh, into that predictor instead.
+
+And the ICC went down. This isn't bad.
+
+It's not too low.
+
+Um, but that kind of tells us, actually that there was really strong clustering going on in that first random effects, uh, that we specified.
+
+But now we know, actually that there was a big effect for gender.
+
+And this sort of variability has sort of swapped from the random effects part of the model to the, uh, fixed effects part.
+
+The plots of the compare performance aren't going to be that clean for today.
+
+Meaning, you know, we had some before where it was very obvious on all metrics.
+
+Uh, which model perform better? Although, again, these are the main ones we care about for model fit the I see the bike and the R squared,
+
+which is here shown to be better for um, for our model that included that fixed for gender.
+
+Here's an example of how to interpret this output as well if you needed written up.
+
+Uh. For you. Okay, so we have about, uh, 15 minutes.
+
+I want to make sure to cover a couple more things for you. So, so far we've only done random intercepts.
+
+We might want to also have random slopes.
+
+Uh, so what's important is that you learn that if we have to one here on the left side of the vertical bar and nothing else,
+
+then we're going to have a random intercept for whatever is here.
+
+This is going to give us something like a random slope for this predictor,
+
+which is the same one here, uh, in addition to the random intercepts for the other predictor.
+
+So it's important to kind of keep in mind where to put.
+
+Something if you want a random slope versus where to put it.
+
+If you want a random intercept. I think for this example, we don't have time to go through here, uh, through this one.
+
+But I'll show you, uh, the difference in the output, uh, by swapping back here to my markdown.
+
+So you can see that I placed attitude here as that.
+
+I wanted a random, uh, slope for attitude.
+
+Sorry. Have to sneeze. Maybe I don't know. Uh, we also see that we're getting this warning, which is about singular fit.
+
+That's what's showing up right here. Get some help.
+
+Uh, this was a bit of what I was referring to earlier, where you could have convergence issues.
+
+You can specify a random effect structure that essentially is basically, uh, getting all of the variability into the random effects.
+
+And then your model is sort of a perfect fit or not estimable, uh, which is more or less what's what this is indicating here.
+
+So you can think about that, right? If I'm saying, well, I want a fixed effect for attitude,
+
+but I also want to have a random slope for attitude that's different based on subject and scenario.
+
+Then a lot of variability is going into that random effect part of the model.
+
+So now we have a bit of a more complex overview of the relationships between, uh, these random effects.
+
+Still have more or less the same pattern for our fixed effects.
+
+That's important. We want to have stability in our model output, especially the fixed effects.
+
+Um. Let's look here.
+
+So now that we have asked for a random slope for attitude, when we look at a scenario or subject, we are now getting a different, uh, intercept.
+
+Sorry, a different we still have different intercepts. That's what we had before.
+
+But now we also have different, uh, slopes for attitude.
+
+And notice that these are not the same as these ones.
+
+Right. So the way that we specify did was we wanted a random slope for attitude.
+
+That was dependent upon the change in intercept for scenario and for subject.
+
+And that's what we specified, uh, when we wrote our equations like this.
+
+Does that make sense? I think it's worth talking a little bit about, like why it should be random or fixed or not,
+
+because now I've shown you we could put attitude as a random slope.
+
+And there's a bit of debate in, uh, about this, too, uh, in terms of like, what's best practice for this type of modelling?
+
+So there is the rule of thumb approach, which is actually that you should have something as minimal as possible.
+
+And this means that you have, like all of your control variables, that you need to account for a nested structure in your data.
+
+So I gave some examples here that maybe I have multiple data from the same subjects multiple times.
+
+Or I often have teams. So I have like multiple of the same team ID variables, different observations for them.
+
+And all I want to do is account for the variability due to those data all coming from the same subject or same ID.
+
+And then then I will just include a random intercept for that.
+
+And then I feel okay. I don't have to worry about that assumption anymore, that there's a source of interdependence in my data,
+
+and I can meaningfully interpret my fixed effects, and then only include random slopes that are interesting to it to test.
+
+Um. I'm trying to think. So there could be a case where, let's say you studied psychotherapy and you think that,
+
+okay, well, we have like, you know, 20 psychotherapists in our project and they all have,
+
+uh, you know, ten different patients, uh, and you want to see is there some systematic effect for that psychotherapist that has like not.
+
+And, but you want to see if they're all giving the same or two different types of treatment.
+
+You want to see the effect of the treatment and maybe how it varies by therapist.
+
+This is just an example I'm thinking of on the fly, but that could be a case where you think,
+
+let's test the random slopes just to see what it looks like per individual for their sort of sub group of participants or patients.
+
+I would say most of the time I never am interested in random slips, but I gave an example where maybe you would be.
+
+So this is one approach. Rule of thumb approach.
+
+There's another group, uh, by these, uh, scientist here that say you should actually always go maximal.
+
+That means you would say this is the full maximal structure of the model that accounts for all of the possible random slopes and intercepts,
+
+and go backwards from there. So every time I try this, I find my model doesn't converge, so I always have to have some much more minimal structure.
+
+Um, but it is one common approach that they argue for specifying this and then walking the model backwards.
+
+And what that means is trying this maximal structure. If it doesn't converge, simplify the structure until it is converging,
+
+and then systematically test where you get to the point that your model has sort of the best fit with the fewest parameters.
+
+So I tend to go for this approach, but there's good literature support to go for this one as well,
+
+although in practice I have found it to be to not work that well for my cases.
+
+Does this help you with how you would decide whether to specify a random intercept or random slope or not?
+
+Okay. Um, let me just get an overview real quick.
+
+So I have here as well just the assumptions.
+
+So you can check the assumptions the same way that we've been checking them.
+
+Uh, it's the same thing of linearity and homeless cadastre.
+
+City of the model, normality of the residuals, multiple multicollinearity and influential data points.
+
+And the model does still assume independence. And maybe you're like, what?
+
+I thought we could ignore that, but it's still that you have to make sure to properly model that.
+
+Right. So we still assume that we have properly captured the interdependence in our model, uh, and in our random effect structure.
+
+Uh, real quick, I will show you, um, some assumption checking, maybe.
+
+Yeah. So here's an example where I plotted again the fitted values versus the residuals.
+
+More or less they look like they're um distributed fairly evenly across this, uh, range of values.
+
+Also I could look at uh, histogram. I might wonder what's going on over here.
+
+Otherwise it looks fairly normal. The q-q plot also looks all right.
+
+Most things are on the line, although there's a bit of things in the tail.
+
+We can of course check them all at once, although this got rendered in a way that's almost unreadable.
+
+I'm sorry about that. Uh. Let's see. Maybe I can run it here real quick.
+
+Maybe not. Okay. That's worse.
+
+Well, uh, you'll have to, uh, trust that it looks okay overall,
+
+but you'll want to make sure yours, uh, shows up, uh, so you can see them in a more expanded way.
+
+But you can just see, of course, that this. Now, this function does.
+
+No, to test, uh, each of these. And what I wanted to kind of point out was that there was a few potentially influential observations showing up here.
+
+Uh, in which case. I made a plot, uh, where we can pull out these, um, hat values,
+
+which is another way to look at whether there's an influential case which ended up being this one over here.
+
+So you could look at my example in a bit to see what happens if I exclude that value.
+
+Uh, and whether improves model fit or not.
+
+So hopefully checking the assumptions for mixed effects models is more or less the same as what you've already learned.
+
+So that's nothing new. That's great. Um, I also did give like a reporting example in my markdown, so you can see that later.
+
+But I got a bunch of different papers here that show different ways of reporting on mixed effects models.
+
+For a while this was not very standardised, which is annoying, and I have one as well.
+
+That's my own paper that's different from others. So I'm also contributing to that in a not so great way.
+
+But there was a recent, uh, well, not that recent anymore paper on best practices for reporting linear effects models.
+
+I would say check this one out if you're going to use that, uh, in your thesis or in your research in the future.
+
+And there's a bunch of stuff on mixed models, because we only just scratched the surface on this whole modelling framework.
+
+We could have a whole course just on this, uh, and it really expands into, um, many different error structures.
+
+We can also change the shape of our outcome variable into the generalised linear modelling mixed effects linear modelling framework.
+
+Um, which again, beyond the scope of what we're going to cover.
+
+Um, here's one quick video to a maximum likelihood estimation.
+
+If you do want to understand a bit about what's going on that's different there from ordinary least squares.
+
+And do be sure to try to work through the exercises that I skipped over today, if you can.
+
+And of course, complete your practicals. Uh, later this week for next time we meet, our last lecture, uh, will be on growth curve modelling.
+
+So we're basically just doing mixed models that week. But we're going to look at the effect of time.
+
+So what if we add in time as a predictor. How does our model predict that pattern of change over time.
+
+All right. See you next week. So.
+
+We live? Yes. Yes. Yes.
+
+Yes. Yes. Yes, I think it's.
+
+Time to have some people say. Can you get to the faster.
+
+I can feel about your body.
+
+Better. I said so then you said I was going to look at the government.
+
+And there's only so much you can do about it.
+
+I don't see that I can make an announcement going on like that.
+
+Thank you. Mr.
+
+Ferguson. Okay.
+
+All. You.
+
+Know, I was also loved, you know.
+
+So. So good luck to you.
+
+See you next time. All right. So I want to.
+
+Over. So I just like to kind of like.
+
+You know. Was it? Yeah. I guess.
+
+Yeah. If I. Just want to.
+
+Take some. Yes.
+
+Uh, there will be an exam to study guide. Okay.
+
+Okay. Thank you.
+

@@ -1,0 +1,1143 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Good morning, everyone. Can you hear me? All right. In the back. Thumbs up.
+
+Yeah. Thank you. Nice to see you all survived your first week and, uh, made it back for, uh, for stats this morning.
+
+And, uh, hope to see you all later this afternoon for the best time slot until 630 for multi-agent systems.
+
+Hopefully you can make it that long. Um, today we are getting much more into stats.
+
+I think a lot of this should be a bit of a refresher and a bit of new material.
+
+Today we are going to cover. Things that you covered in stats one.
+
+Like what is the population versus the sample?
+
+We're going to go over different sampling methods and remind you a bit about the difference between sample statistics and population parameters.
+
+Before we get into how we estimate these and on confidence intervals,
+
+this will set us up for next week where we're getting into hypothesis testing and
+
+correlation analysis before we get into regression and things like that later on.
+
+You can see that a bit here. If you look at our modules, um, we're only here in week two, but we'll get into these, uh, next time.
+
+So I heard that there was quite some attendance, uh, with the practical sessions.
+
+Uh, did you have enough time to do the p zero in there?
+
+We felt like enough time. Okay. Um, we're, uh, we're trying this, uh, format.
+
+And, you know, hopefully we'll we'll plan that these exercises have enough time to be done within those, uh, sessions.
+
+If things go long, you know, we'll be sure to, to account for that, to accommodate if needed.
+
+Um, any questions or.
+
+Anyone had some time to think a bit about this course and the syllabus and how things run?
+
+Anyone have any logistical or admin things before we swap over to Lukla?
+
+No. Okay, well, as always, you can, uh, chat with me on the break, uh, or shortly after class.
+
+Um. There will be a short announcement from, um.
+
+A colleague asked if they could talk to you all a bit about the rugby team, so they will come in during our part of our break.
+
+Um. Just a heads up, so it's not a surprise.
+
+All right. If you could please join me here on clap.
+
+You can scan. You can, uh, type in the link and the code.
+
+And, uh, once I see enough of you have joined, we'll go to the first question.
+
+About five for you today. And we're stuck down here in the windowless room.
+
+It's not as nice as, uh, the one from last week. I think that's about everyone that's in here.
+
+All right, let's check out the first one. So what type of sampling is most commonly used in cognitive and social science in a university setting?
+
+I think I, uh, set the timer a bit wrong on this one.
+
+I could spend 50 minutes on this question.
+
+Hopefully I got it right on the next ones. All right.
+
+I'll give you about, uh, five more seconds if you're just coming in.
+
+You can still type in the code, uh, at the link on top.
+
+Or if you ask, I'll show the QR code again quickly. All right, let's see what you thought.
+
+Okay, so this is good. Uh, you know, this was from the reading for today, and we're going to talk about this material.
+
+Um. Some of these are have partial truth to them.
+
+Um. Opportunity sampling.
+
+Uh, well, we'll, um, but we will unpack all of this, but let's talk about convenient sampling.
+
+How many of you have, uh, say in for some course credits or as a requirement for your program?
+
+You have participated in some research studies? Yeah. Did you learn anything when you participate in there?
+
+Maybe. Maybe you had fun. Maybe it was really boring.
+
+Maybe it inspired you to do research.
+
+Well, you all are in our programs and you are a convenient sample because we have access to us students to participate in research.
+
+Um, and we'll talk about how we kind of define these more in a bit.
+
+A random sample is what we actually would prefer to have, right?
+
+So if you look around at the other students in your cohort, you all share some common characteristics, right?
+
+You're all studying the same, uh, degree program.
+
+Your maybe have some similar interests. You know, this isn't a totally random sample.
+
+There isn't, you know, a wide range of ages in the class.
+
+For example, um, opportunity is, uh, maybe if I stood outside of class when you were leaving and asked you, hey,
+
+will you fill in this questionnaire or will you come participate in my study, that sort of opportunity, in a moment.
+
+There are some convenience to it. And volunteer. Um, you do volunteer?
+
+Of course.
+
+So I see why a lot of you, uh, put that you do choose what you get to sign up for, um, and you're allowed to quit, uh, any study at any time.
+
+But the real way that we define it is convenient sample. And we'll come back to these in the lecture today.
+
+For the next one. Well sorry I spoilt that one.
+
+Also got the timing wrong on there. So let's say. Well, what's the most common goal for, uh, empirical work and statistics?
+
+Sorry. I'm, uh, getting mixed up in CSI using statistics.
+
+For you right now. You know, it might be you want to use statistics to earn your degree.
+
+Learn some data analytic techniques to, uh, do your research.
+
+To do your thesis. Um, but as it was already revealed by accident, uh, you know,
+
+we want to use knowledge of our sample that we collect to make an inference about the population.
+
+So sorry about that. Let's see if I get it right this time.
+
+Here we go. So if we replicate a study 20 times, how many studies will not have?
+
+Or we'll have a mean that's not included in the 95% confidence interval.
+
+And, uh, I guess I'm showing the this one live.
+
+Kind of biasing your input maybe could be right because you.
+
+Give you about ten more seconds for the last few.
+
+All right, so most of you got this right. There isn't 95 observations in 20.
+
+So that one we can certainly rule out, um.
+
+We're going to talk about confidence intervals again.
+
+And we're going to talk about some parts that go into this like the sampling distributions sampling distribution of the mean.
+
+How do we get to this idea that, uh, that studies would have this kind of result or would not if, uh, with regard to our confidence intervals.
+
+So we're going to dive into that today. So how about this one.
+
+So we use sample statistics to do which of the following regarding population parameters.
+
+Anyone remember this one. Only about 44 minutes left to answer this one.
+
+All right. Last chance for, uh, a guess if you have one. Oh, great.
+
+So a lot of you said estimate, right. We're going to try to estimate from our sample what that population parameter is.
+
+If you said differentiate there could be some cases like we talked a little bit about like
+
+paired sample t test where we're trying to differentiate some samples from each other,
+
+but we're still trying to estimate what that difference might be in, in the population.
+
+Okay. Last one. So as we increase our sample size, the sampling distribution of the mean becomes which of the following.
+
+Does it get more normal wider skewed or more narrow narrower sampling distribution of the mean.
+
+Ten more seconds. All right.
+
+Oh, okay. So this is what we're going to unpack today.
+
+If you were looking at the distribution of the data, if you have, uh, more sample size, you will get a more normal distribution.
+
+But when we're taking the sampling distribution of the mean, we're getting a lot of samples,
+
+and we're getting the mean of those in the mean, uh, of that distribution actually gets narrower.
+
+That gives us this idea that we get more precision on our estimate of the population parameter.
+
+So we're going to look at this today.
+
+Um, if you have, you know, your laptop with you and are ready, load it up to go that we will have a few exercises today,
+
+uh, that we're going to look at together to try to unpack some of these, uh, questions that we started with.
+
+But I'll start with, uh, some lecture first. But are there any questions about these questions?
+
+Or ready to just wait to see the slides related to this?
+
+Okay, so before I put these on. Can anyone give me an example of what a population might be, any populations that you might study?
+
+You have one? Yeah. Oh.
+
+CSI students? Sure. Yeah. Did you have one, too?
+
+I did point that. Yeah. No.
+
+Uh. Um. Yeah, probably. Yeah.
+
+Could be just a certain type of animal, right? Uh, um, so we've got CSI students.
+
+Would that be the current cohort or all CSI students at the university or all in the world?
+
+Uh, any other ideas? What kind of populations might you be interested in?
+
+Those are good examples to start. Some that I had on my, uh, slides here to.
+
+So we could say, well, we're really interested in, uh, you know, all of the undergraduate CSI students at the university.
+
+Um, so maybe we sample some of you to participate in our research, and we're trying to see what makes, uh, CSI, CSI students amazing.
+
+Uh, rather than getting everyone because I'm not sure about you,
+
+but even getting all of the students to participate in a study or fill in course evaluations, that's a really tough one.
+
+So when we do course evaluations, also, we're getting a sample to estimate how how good was the class?
+
+Did the students, uh, learn from it? Um, but we could think about all students studying a similar topic around the world.
+
+So that would be more than just at this university, but all other universities.
+
+Uh, we could want to study all Dutch people as our population.
+
+Um, people who play an instrument. Maybe. We think there's something interesting about people who play an instrument.
+
+And we want to know something about that population. About anyone in life used to play video games and VR or any biological organism.
+
+Uh, this question is important, uh, because, well, many times we don't think about what is this population we're trying to understand.
+
+We often think get into this routine of just sampling.
+
+We get our convenient sample, and we try to make some inference from that sample.
+
+But who is the population? I think last time we talked a little bit too, about, um, maybe certain people who may have a rare condition.
+
+They might you might have access to that entire population if there's only 2 or 3 people in the world with this,
+
+then you don't need to really do any inferential statistics, but you just have access to the whole population.
+
+Yeah. You know. So what would the population be in that example?
+
+Yeah that's a great example. So and I'm a bit human centric with my examples of populations or living organism centric.
+
+But it doesn't have to be. You could think of uh, text and sampling from uh, text or other disciplines, you know,
+
+we'll sample different types of things to try to estimate whatever their population is.
+
+So that's a great example of why it's important to ask, what is your population you're trying to make an inference about?
+
+So a population here is some collection of units.
+
+Right. Whether that's people applying to implant subsidiary literary text.
+
+And we want to generalise some set of our findings using some statistical models.
+
+Uh. Yeah. We want to generalise.
+
+What does that mean? Generalised. Right. That we think this is something that tends to be the case.
+
+It's reliable. There's some margin of error. But we're pretty confident that it's likely to be the case.
+
+Um, on the question that I had earlier, I said, what's what is it that we tried to do, uh, with regard to our population parameters from our sample?
+
+And one of those was proof that anyone put that one, I don't remember.
+
+So often I still see someone does one study and they say they prove something to be true.
+
+And that's really a wrong interpretation of what the inferential statistics will tell us.
+
+We can't really prove anything, but we can provide evidence that something is likely to be the case.
+
+And we'll get back into this sort of logic that, uh, statistical inference rests on much more, uh, next week with our hypothesis testing.
+
+Um, but anyway, so we have our population and we have our sample, usually smaller, hopefully the representative of your population,
+
+uh, and it's some subunits from that population that we want to determine if there's something true about them or likely to be true.
+
+Right. So we often can't observe all of our.
+
+People or text in our population. Maybe we could, but that's the reason for sampling.
+
+So when we're doing empirical work and CSI, we're thinking about how can we use our knowledge about that sample that we've collected data on,
+
+uh, to make some inference about our target population? Hopefully everyone remembers descriptive statistics.
+
+You know, those were things like our means and standard deviations.
+
+You gave some examples last week.
+
+Um, if we had our full population, you could really just say, well, the average response to question seven on this survey was,
+
+you know, five and a half and you don't have to make an inference about it because you you have your whole population.
+
+But again, we often don't.
+
+So we would say, what can we say about the average response to question seven for the population, given the sample that we've observed?
+
+So I'm mostly just kind of saying the same thing several different ways.
+
+Hopefully it will stick. Let's look now at, uh, some sampling methods.
+
+So this is really simple right. So here we have letters uh a through J from the alphabet.
+
+So we're going to use this toy example that it's our our population.
+
+We want to study. It's not even the full alphabet. Right.
+
+Um, just these uh few letters and some of them are sort of filled in circles, and some of them are empty circles.
+
+And if we take a sample of four observations from these without replacement.
+
+Can anyone tell me what it means without replacement? Yeah.
+
+In the back. Exactly.
+
+So if we had with replacement, then, you know, impossible.
+
+It would be possible that we could get a four times, right?
+
+Uh, maybe not that likely or not that probable. Based on what we learned last week.
+
+Um, but in this case. So as we take out each observation, you know, there's fewer and fewer to choose from when we don't have replacement.
+
+So we could get some samples like this. Do you think these are representative of our population?
+
+Or are any of them more or less representative? So if we had two.
+
+Two filled in circles. Then we're kind of thinking, okay, maybe it's 5050 in the population, but it would.
+
+Would that be likely to be true? Apologies for that.
+
+Uh, luckily I uh muted in time so. Um, well, it's not that it's not that clear.
+
+Right. So it isn't a 5050 split, but are they representative or not?
+
+Well, we could ask questions about that. Uh, if we had simple random sampling.
+
+Again, this is what we what do we really want to have?
+
+But it's not often the case that we actually get simple random sampling.
+
+Now, even with this idea of randomness in our computer today,
+
+we're going to do like random sampling from some normal distributions and things like that.
+
+If you're if you want to kind of, uh, go down a rabbit hole about, can we really have randomness in computers?
+
+There's some evidence that it's not. It's really pseudo random, but often for our statistical inference purposes, it's close to random enough.
+
+Now, this is a contrast to the example I showed you before.
+
+Would you think these samples are representative? Probably not.
+
+Right. You you would want to see something more like this.
+
+Like, okay, maybe it's about half or there's some variety in the sample.
+
+Uh, whereas if you got these cases this is again without replacement, but only pulling out those.
+
+Uh, filled in circles. Uh, seems like there would be a problem.
+
+And this would be a good example of bias sampling. Right?
+
+So there's some sort of bias in how you are sampling that pulled out only these type of observations,
+
+where you had the filled in circles and not the variety that were in that population.
+
+Can any of you think of like what might be a source of bias when you're sampling?
+
+Okay. Yeah. In the back. Yeah.
+
+So if you didn't hear, you know, you're a university student, so you're maybe more highly educated, I hope then, uh, just the general public.
+
+Um, and there's, there's a lot of research, actually, that goes into a lot of university research.
+
+And it's the the weird acronym. Have any of you heard of it?
+
+Weird. A few of you. Western education.
+
+Educated, industrialised. Uh, what are they?
+
+What's the R&D? Anyone remember? Uh, yeah.
+
+Thank you. Yeah. So, uh, so those things could be a source of bias, right?
+
+That that's something some information, like why we report demographics when we, uh,
+
+when we report on our research so that people can interpret those results within the context of which they were sampled from.
+
+Although there's some, uh. Ethical concerns.
+
+Two now with having a lot of personal information and reported in your paper.
+
+So if you, uh, work on your ethics application here to do some research, they'll ask you, do you really need this demographic information?
+
+Is it part of your, uh, research question, or is it something that, you know, might give an unnecessary risk for your participants?
+
+Um. Okay. So. Here is an example where we just have simple random sampling but with replacement.
+
+So again you could get, you know, multiple observations of the same letter.
+
+Um, but this wouldn't typically be something we would ever want to do, right?
+
+With our normal type of inference that we're going to make. Um.
+
+But it's good to still realise that that's a possibility. So that's often why we might exclude someone from participating in a study twice.
+
+They've already know how the study goes, they would be biased and so on.
+
+So I have a short exercise for you to just try to think about these simple samples.
+
+So. I have an idea here for you to create a variable called pop, which is short for a population that has the letters A through J.
+
+So a bit of recall of some programming. How are you going to put, uh, these letters A through J in a variable?
+
+There's a couple of ways. Uh, try to create a sample by this.
+
+From this you can call it sample one using the sample function.
+
+And you insert that variable into it, another sample uh with replacement.
+
+And then see if you can think of a way to add bias into your sampling method.
+
+How would you do that if you were trying to program it.
+
+That will only draw the black or filled in letters A, B, G, and H and try to make a third variable for that.
+
+So I have a few exercises today.
+
+I'll give you a couple of minutes to get started on this, and I'll come, uh, check in with you before we'll look at some ideas for this together.
+
+And if you don't have a laptop with you, maybe you have a neighbour that you can, uh, look, look at theirs, or think along with them.
+
+All right, I, uh. If you didn't finish this one, it's a good thing to try.
+
+Uh, later on, some of you did get finished, or we're still remembering how to do things in art.
+
+Uh, this one, I guess, is already available, this script.
+
+But usually I just make them available right after lecture so that you see my solution after I show it to you.
+
+Um, but there was at least two ways you could create this variable, uh,
+
+using this letters function and referring through the first ten letters, or some of you also, you know, spelled them out manually.
+
+Um, and if we run this, you know, we get our different, uh, characters strings and we can take a sample, um, and take a look at those real quick.
+
+So here I'm getting, you know, hopefully it's something kind of random.
+
+In this case, I didn't get replacement, even though I said replacement, I did.
+
+Sorry I got to use in this one. Um, and I asked you to think about bias.
+
+Uh, so the simple way, of course, is that you could change the probabilities.
+
+So this was an argument that you might have seen if you went to help and put in sample, which I always recommend,
+
+because then you could see, oh, you can change the weights for obtaining certain elements.
+
+So here I just weighted it so that all of those filled in letters had a probability of one and zero for the other ones.
+
+Did anyone have any different ideas they came up with for for a bias?
+
+No. There's other ways you probably could have come up with this.
+
+You could have had different probabilities. Of course not just sort of zero and one, but somewhere in between.
+
+Uh, you could have, uh, said you could have maybe wrote some logic,
+
+like take out a random observation and only accept it if it meets certain conditions.
+
+Um, something like that. Um.
+
+Okay. Any questions? Just to get you thinking a bit about how to use the sample function, what are the arguments for it?
+
+Um, we'll be using some of those later on to.
+
+Let's go for it then a bit more before we have a break.
+
+So in practice with sampling we we really want to do this random sampling.
+
+Right. So we want to have something where every member of the population has this sort of equal chance of being selected to be in the sample.
+
+Um. But you know, very large samples can can be random.
+
+But you really it's really difficult to get the resources or access for having a truly random sample,
+
+even when we, uh, program them into our computers to maybe it's not truly random.
+
+Uh, but that's sort of what would be the the ideal case.
+
+Um, sometimes we might be interested in, uh, making sure that our sample is, uh, sort of meeting certain criteria.
+
+So maybe I'm interested in studying, like, ageing and development.
+
+Right. And then it's important that I get young people, middle aged people, older people within my sample.
+
+That would be an example of stratified sampling. So you might or you might do in this case it's giving one for uh different nationalities.
+
+Um, so this is sort of making sure that your sample is.
+
+Pulling specifically from different people have certain characteristics or data that have certain characteristics.
+
+Volunteer sampling is just asking people to participate.
+
+You could run like an ad online or or something like that and see who responds.
+
+So that's a bit different than we have access to the student pool.
+
+And you do volunteer to participate in a particular study.
+
+It's more of something that goes out in mass and people respond to it.
+
+Opportunity sampling. Uh, my train was just delayed getting here.
+
+Maybe as soon as I was getting out of the train, someone asked me, oh, do you want to fill in a survey about your experience on the train?
+
+Uh, you know, that would be just because I happened to be in that spot.
+
+Particularly inconvenienced. Uh, that that would be an opportunity sample.
+
+So these are all types of sampling that you can use.
+
+And when you're thinking about your research design, uh, it's it's you you can get to choose those.
+
+Right. Sometimes we go with just what is most convenient because we have access to a student pool.
+
+Um, but other times you would have to think about this when you're designing it,
+
+where you get the right participants or sample to make an estimate about your population.
+
+And you can also use it to critique, uh, a study as well.
+
+Right? So if you read some study and you see, okay, well, you were just doing opportunity sampling,
+
+but you're trying to make claims like this applies to the whole population.
+
+Is that really true or not? So convenient.
+
+Sampling is something like what? What we talked about earlier.
+
+Here's a researcher, maybe that's me. And there's a lot of students around so I can ask you to volunteer to participate.
+
+Um, but it may not be totally right. Sorry. Uh, may not be totally representative of the population.
+
+Um, but we could also add snowball sampling.
+
+So sometimes if you study people and, uh, with a certain condition, uh, that is sort of hard to get access to.
+
+Usually they know someone else. Uh, so you can get them to help you find other people.
+
+One example I think, that is supposed to be shown here is maybe with pregnant people.
+
+If you were trying to study something about pregnancy, uh, then they, you know, maybe they go to, uh,
+
+courses on pregnancy or things like that, and you can get access to more of that type of population.
+
+But again, these ones are not truly random. But maybe what you need to do in order to get access to a sample.
+
+So you might be asking, uh, does your sampling method matter?
+
+And as with most answers that I give in science, it depends.
+
+So it depends on what is your actual target population.
+
+Right. Are you. Where where are you? Uh, where are you trying to generalise to?
+
+Is it? Everyone is. It's only certain subsets of people.
+
+And is there a bias in your sample? And if so, what way?
+
+So even if you have a bias, is the phenomenon that you're, uh, interested in studying, do you think it still might vary randomly in your sample?
+
+So let's say we study only university students.
+
+Um, but they all have very different interests. And I'm looking at interest and something else.
+
+You know, if you think it's still likely to be randomly, uh, represented in them,
+
+then it still could be you can still make a valid inference from that.
+
+So again, here,
+
+what's often essential is measure and report diversity in your sample and be transparent about your sample and how they were recruited.
+
+So I just want you to think about this a bit more with a short discussion activity.
+
+So maybe talk with the person next to you.
+
+Um, about which subsampling method you think might be most appropriate for each of these four examples.
+
+And then I'll ask you to, uh, to share with me. This case.
+
+So what do you all think about the first example?
+
+Perceptions of different age populations of a virtual agent helping with health issues.
+
+What kind of sampling do you think would be appropriate here?
+
+You know. You want to know how people of different ages.
+
+Yeah, that's a good. So that fits with what we talked about with stratified exam uh, sampling that uh, we could choose okay.
+
+We are interested in these age groups and make sure our sample has, you know, a representative selection from those different groups.
+
+Did anyone think of a different type of sampling for this one?
+
+So you could. Of course, if you don't know, uh, if you don't know how to stratified,
+
+you could just try to get a, uh, convenient sample and hope that there's a variety of age groups.
+
+But if you really want to look at something that's sort of equally balanced across age groups, uh, then you would want to try a stratified hip.
+
+What about, uh, children with autism spectrum disorder and how they learn social skills from a robot?
+
+Any ideas for this one? Yeah. Volunteer.
+
+Want to elaborate a bit? Yeah.
+
+So they would need to self-select if they saw an advertisement and then they could could volunteer.
+
+Uh, any other ideas? For that one?
+
+Yeah, in the back. Yeah, exactly.
+
+So maybe they're in a network, uh, already for, uh, weather.
+
+That's already some kind of skills training or anything like that.
+
+And, uh, then they might be able to snowball. Simple. Uh. Good example.
+
+Yeah. Okay. Uh, how about, uh, cognitive capacities associated with better problem solving performance?
+
+Yeah, I think that's such a broad question.
+
+Because otherwise we, uh, tend to have a certain bias.
+
+In what? Because such a. Like.
+
+Yeah. So we could go for random sampling. And what kind of bias and what do we have if we did convenient sampling.
+
+The same be here? Yeah. That's right.
+
+So maybe there are hours in the university, for example.
+
+We tend to. Uh. More often people access to better education.
+
+But the research question is specific to those.
+
+Yeah. Go around. I think that's a good example.
+
+So I'm trying to think of if we have this bias, what would it look like?
+
+Let's just say if problem solving performance is our outcome variable and we have, you know,
+
+a distribution of how good someone is at solving a problem, maybe it's sort of time it takes to solve the problem,
+
+for example, as a performance measure, if we go with convenient sampling and we're biased in the way that you just shared,
+
+what, what what might we miss in our distribution? Maybe it sort of shifted, right?
+
+Like if we if we think that this. People have a general.
+
+If the prediction is that maybe there's maybe you all are better at problem solving on average than those who do not study CSI, for example, right?
+
+So then the idea there might be that there's this kind of systematic shift and, uh,
+
+sort of what the average problem solving ability is that if you're missing out
+
+on these other people that aren't in your sample because it's not truly random,
+
+then you might, uh, you might have that, uh, limitation in their.
+
+Were you here for? Uh, quick introduction for the rugby.
+
+No. Are you just late? Uh, okay. All right. Now, I was expecting, uh, them to come by at 1130.
+
+Uh, so, uh, no one is here to talk about, uh, rugby.
+
+No. Let's have a break, then. Uh, so, how are you all feeling?
+
+Let's do a quick vote. Should we take 15 minutes today?
+
+Ten minutes. Five.
+
+No break at all. Uh, I think that was a really kind of even split.
+
+Uh, I think we'll do ten and still plan to end five minutes early.
+
+So let's start back at, uh, 11, uh, 45.
+
+All right, so that's our ten minutes. I think a few more people will still be coming back, but, uh,
+
+I'll keep going forward since we want to make sure to also, uh, and five minutes early for having a shorter break.
+
+Um, so why do we talk about sampling, right.
+
+Because that's kind of every basically every sample that we're going to analyse in this course.
+
+You know, it had something that went into how that sample was, uh, designed and collected.
+
+And we're going to be using estimates from our sample, uh, to try to, uh,
+
+we're trying to get these estimates from our sample to understand our population.
+
+That's the whole thing that we're going to be doing. Now, it's important to keep in mind, uh, that you may see different symbols, uh,
+
+when you're seeing something refer to a population parameter versus a sample statistic.
+
+Apologies for the resolution. When you blow it up that big, it looks kind of poor quality.
+
+Sorry about that. Um, but you see, for example, mu is the population parameter for the mean versus x bar is the sample mean.
+
+Uh sigma versus s for standard deviation.
+
+So when you see some of these equations uh, you know it's important to keep in mind whether that's from your sample or your population parameter.
+
+Now I had already another exercise here.
+
+Maybe what I will do is, uh, just show you this one so we can go save some time today for the for a couple of the other ones.
+
+Um, so we looked last week at, uh, these sort of distribution functions.
+
+This is the one referring to the normal distribution in the, ah, in front is getting some random sampling from that distribution.
+
+So we're not using sample anymore because we have this function that's already saying here's a distribution.
+
+Draw some random values from it. But we have to define how many values.
+
+So that's n of 100 or 1000 or 10,000.
+
+We define the mean, though, in the standard deviation and following our text.
+
+This is meant to be some sort of general IQ scores.
+
+Um, maybe before I run anything here, I'm wondering if you have any, um, any predictions?
+
+For the mean and standard deviation. So as we increase our sample size here.
+
+What do we think we will see for the mean if we know that these are the the values that the distributions are based on.
+
+They'll get closer to 100. So will they always be sort of less than 100, or will they be also above 100?
+
+Ideally, they might get closer to 100. What about our standard deviation?
+
+Should we also get closer to standard deviation of 15?
+
+Let's take a look. So here I am.
+
+Just, uh, make sure you can see. I'm rounding here, too, just so that we get, uh, hold values.
+
+But we can take a look at those, uh, real quick.
+
+So you can see what these values look like, right? Just whole number values.
+
+The mean should be somewhere around 100. Standard deviation of 15.
+
+Let's take a look. So for sample one this was with our uh sample above 100.
+
+So we get a mean 100.66 and standard deviation 13.
+
+Um, not exactly our, uh, values, but kind of close.
+
+We increased that sample size to 1000.
+
+Okay, we get 99.65 and 14.48.
+
+So is it a little bit? I guess the difference is a bit less for this one.
+
+So it's a little bit closer. And the last one with 10,000.
+
+Also. Then again, even a bit closer. And for both of these.
+
+So if I just make a quick plot of this, um.
+
+This was, uh, the mean. Maybe I should have added a line here at 100 so you could see that kind of right around there.
+
+And here's the standard deviation. So I think what you would often see is your mean estimate.
+
+And if if you all had run this now two, maybe your plot would look different than that.
+
+Maybe yours went a bit up on the second one or went a bit down.
+
+Uh, but in principle it should be kind of going somewhere around that mean and getting kind of closer and closer the larger the sample.
+
+And the same should be true as well for our standard deviation.
+
+And why is that the case? You learned about this in stats too.
+
+Sorry, we're in stats. Who now? And stats one.
+
+Uh, that, you know, we should get more accurate estimates of our population parameters from larger samples.
+
+So here just sort of like a proof of concept of this, that if you have, uh,
+
+six sided die and you roll that, you know, up to a thousand, uh, times, uh.
+
+At least the number of dice is up to 1000 here. Then you're getting something that goes toward three and a half.
+
+What? Why three and a half? Yeah.
+
+Yeah. So the average of the possible values in there should be around three and a half.
+
+Right.
+
+And so this is, this is if we did something like the example I just showed you, but increasing all within the possible range of values for that mean,
+
+you know, it's it's never exactly I mean maybe there is an exact one, but it goes a bit later.
+
+So we know there's still some error, but it should be narrow and narrower closer to that.
+
+True. Um, population mean.
+
+So this is why if we can, we go for larger samples.
+
+Although we're doing convenient sampling within the time frame of a thesis, you know, then you might only have two months to get what you can.
+
+Uh, so it might not be ideal. We'll talk a little bit more about power analysis.
+
+Uh, in another lecture. Um, okay. So I had this question earlier on about sampling distribution of the mean.
+
+Right. So before we had, uh, these distributions that it was just a value for the mean, right.
+
+Sorry. Let me go back to our real quick. So I took a sample and I got a mean.
+
+And that's what we have here for three samples. So if we want to look at sampling distribution of the mean.
+
+That means that I. I take a sample and then I get a mean of that sample.
+
+I take another sample and I get another mean and so on.
+
+And so this distribution is different than just increasing the size of the sample.
+
+It's taking more samples and getting that mean and looking at how the distribution of the mean changes.
+
+I want you to give this one a try yourself. So, uh, we're going to use the same sample information from before.
+
+Oh, sorry. That's the mean of 100 and standard deviation of 15.
+
+And try to calculate the sample distribution of the mean for 100, 1010 thousand samples with a size of five.
+
+By the histogram. So I think there's one way that you can do this using a for loop, right?
+
+You want to pull a bunch of these samples, um, different sizes and make a histogram of them.
+
+Uh, if you get stuck with me over and I will come give you some tips.
+
+Uh, so you're just kind of building on what I showed here for these ones.
+
+But then for the first example, it's using size five.
+
+Next one you could try. Uh, different sizes.
+
+But maybe I'll show you my solutions for those if you get started on the first part.
+
+Did anyone struggle with this one? Yeah.
+
+So a lot of you maybe haven't programmed much in R and, uh, earlier,
+
+remembering how to create a variable could have been a challenge or how to do for loops and r.
+
+Um, I would say in this class, there's not a lot of programming challenges like this one, because often we're specifying a model,
+
+uh, where we're running a function and we write a formula to define our model, or our data are already in kind of a clean format.
+
+So we don't do a lot of data wrangling to get it in the right format.
+
+Although all of those things are, uh, are possible and are and often necessary.
+
+Yeah. Well, data wrangling and Ruby on the final.
+
+No, no programming on the final, but they're still kind of code and output in the questions you have to interpret.
+
+Yeah. So you won't be programming on the spot. Um, but my point I was trying to make was that.
+
+We don't do a lot of the programming part in R because we're mostly doing analyses.
+
+But why? Why would I try to get you thinking about how to take a bunch of different samples and look at the properties of those?
+
+Like, what kind of thing might this be useful for? No ideas.
+
+It's not meant as an exercise in futility, that's for sure.
+
+Um, it's to get you thinking about the stuff that I tell you, right?
+
+I don't want you to, uh, just think for sure.
+
+Oh, this is how it is.
+
+And, uh, when we when we do some of these exercises, it's like, okay, well, if we see this in a stats book, let's check if we get the same thing.
+
+If, if the law of large numbers, for example, says a distribution should look like this.
+
+Well, let's actually test that. Let's design some ways to simulate some data and look at it ourselves.
+
+So it's meant to kind of get you thinking a bit about how can we unpack these things so we can engage with them differently.
+
+I find that for me, just reading something, looking at the pictures, not that really, uh, not as helpful as trying to create these sort of conditions,
+
+uh, myself, but we had a limited time in lecture, so of course, I give you these exercises and if, if you can run with it quickly, it works well.
+
+If not, you get a bit of time to think about how to, to approach it.
+
+Um, so in my example here, so, so maybe the wording wasn't totally clear.
+
+What we did before. Right. Was we did generate three different samples here with three different sample sizes.
+
+Right. So we had these three variables. One was 100 observations, one was 1001 was 10,000.
+
+All the same mean and standard deviation.
+
+And now the challenge was okay I want to get 100 samples that all are sample size five with the mean 100 and standard deviation 15.
+
+Right. So that wasn't clear uh, to everyone.
+
+But what does that look like. Right. So we're getting a much smaller sample size than the ones we did before, but we're getting 100 of them.
+
+So let's take a look. In this case also just for the programming part, this is the main way to write a loop.
+
+And ah, uh, and you have to use these parentheses and brackets.
+
+In this case I just initialised like an empty vector.
+
+And then I'm adding in, uh, to this vector, the prior parts that were stored in it and getting the mean of, uh, of each sample.
+
+So I will run this. And we get something that looks like this.
+
+Looks kind of normal. Most of the value is sort of around 100.
+
+There's some values in the tail end of the distribution.
+
+Now if I increase this. So I'm just increasing here the number of samples that I'm pulling while keeping the sample size the same at five.
+
+Okay. Got a little narrower. Let me just go back so you can kind of see that change a bit.
+
+And then lastly I'll do this one 10,000. Oops.
+
+That's not doing that. That's messing up my code. And then here a bit a bit narrower.
+
+But they didn't change too much. Right. You see that you really have to squint to see how much they've changed, which is not much.
+
+Okay, so the next part on there I had was changing this to 10,000.
+
+So we're still going to do 100, 1010 thousand.
+
+But now we have a much larger sample.
+
+So here we get something that looks kind of strange, but notice right away the range of these values is a lot different.
+
+So if we go back we have from 80 to 120. Here we're getting something already much narrower closer to that mean.
+
+It takes a little longer to run. This one looks a bit more normal, but still really narrow range.
+
+Last one taking a little longer. And it looks fairly normal with but uh, quite narrow around, uh.
+
+The true population mean that we set. So what are we seeing?
+
+Uh, if we go back here and take a look at this slide, we're seeing how the sampling distribution of the mean changes with sample size.
+
+Uh, and as we increase it again, we get that narrower, narrower distribution of the mean.
+
+Right. So we're increasing like our precision of that true population parameter.
+
+This one with sample size of one. If we take a bunch of samples it's going to just look like the normal distribution.
+
+But as we're getting more and more samples at a larger sample size, we'll be more precise on that mean that we're trying to estimate.
+
+Just what's going on upstairs? Uh. Uh, so this is all based on central limit theorem.
+
+Again, you learned about this in stats one. But we have some standard error, which is the standard deviation over the number of samples.
+
+And that uh, with a sufficiently sized sample we should have a mean that's the same as the population mean,
+
+a standard deviation of the sampling distribution that gets smaller as the sample
+
+size increases and the shape of the sampling distribution becomes more normal.
+
+So this is not the sampling distribution of the mean but just that sampling distribution of one sample.
+
+The larger it is. So this tells us why larger experiments are more reliable, right?
+
+If you see a study that they say, oh, I have 10,000, uh, participants in this study,
+
+um, you probably will think intuitively that's more reliable than 100 or 20.
+
+Um, but how much more in terms of the standard error? So the standard error comes up all the time in the things that we calculate in stats.
+
+Uh, but it also tells us why the normal distribution is normal based on this, this property.
+
+All right. So we have about ten minutes. So I want to make sure to uh go over confidence intervals today.
+
+So I'm skipping this on standard error. But this is basically the exercise I showed you.
+
+But instead of the mean calculating standard error when you're looking for something fun to do uh, over the weekend, give this a try.
+
+Um. So whenever we are estimating our population parameters, we often just give our best guess.
+
+And that is an estimate from our sample.
+
+You can see the calculations for these here. Um, right now I'm not going to go into detail on this.
+
+Uh, for the sake of time. Although you will see us referring back to these when they're included in things that we calculate,
+
+like if we calculate correlation next week, you're going to see, well, where do we get our sample variance.
+
+How is that built into the equation for a correlation. But they should all be things that you covered in stats one.
+
+So I don't remember what the percentage was.
+
+Of those that said had the right interpretation of the confidence interval on the quiz, but there was a paper from a few years ago,
+
+uh, now, uh, so I that's, that's more than a few as 20 years ago, so older than, uh, most of you, I guess.
+
+Yeah. Um, hopefully this has changed.
+
+Uh, but at the time, this was kind of alarming. Right.
+
+So you think there's all of these scientists out there doing science, hopefully applying their statistics correctly to make some inference.
+
+And this study showed that most of them, uh, misunderstood confidence intervals.
+
+So I hope that when you pass this class, you won't be one of those ones that misunderstand confidence intervals.
+
+So all of what we've been talking about today is how we might design some sample to be representative of the population,
+
+how we can look at how these properties change with we when we increase sample size or increase the number of samples.
+
+Um, and we really want to know how can we quantify the amount of uncertainty associated with our estimates of the population parameters.
+
+Right. So if we want to say something is likely to be the case, it's likely to be this particular value of problem solving ability, for example.
+
+And how much sort of margin of error do we have? We often use 95%.
+
+As sort of the chance that the true population mean lies within a certain window of values.
+
+That's something that we often want to say. Um, it's not quite the most accurate way to interpret a confidence interval.
+
+Um. But we would like to say something like, there's 95% chance that a normally distributed quantity lies within,
+
+you know, about two standard deviations of the true mean.
+
+So that's where we could look at this. Here would be our sample mean.
+
+And we have some range around that that we're quite likely to know.
+
+It's it's within there. So it gives us some. There's some uncertainty, but with that, uncertainty comes with how certain we actually are.
+
+So we use confidence intervals for that. And this is based on standard error.
+
+Uh, and these values which come from the t statistic in this or in this case it's showing an example with the normal distribution.
+
+So if we ask for these sort of quantiles related to that we get these sort of Cut-Off values.
+
+Although we would typically use the T distribution uh for that.
+
+So these values are sort of just made up. It's based on how these distributions work and where the they should fall.
+
+If you want to go into a bit more detail, there's a video here that talks about this in depth.
+
+But the important part that that we need to get right and how we interpret it is
+
+about what this 95% confidence interval means that if we replicated our study,
+
+if we had repeated samples. Over and over again.
+
+Uh, that are 95% confidence interval for each replication.
+
+You can see, uh, that 95% of them would contain the true population mean.
+
+So you can see an example here of replication number sort of going through 50.
+
+And the mean of the IQ like the example we used earlier of 100.
+
+And we see uh, you know some of those.
+
+Uh, that do not include that true population mean.
+
+And same thing here with different sample sizes.
+
+So this is what the confidence interval is really about. It's not exactly a 95% chance that the confidence interval is in there.
+
+It's about number of replications, which is interesting because a lot of times we're not really doing replication studies right.
+
+I don't know, even for a thesis.
+
+For example, some do a replication, but most of the time we want to do something new at least, uh, that's what we kind of build our research around.
+
+Like no one has looked at this before. If all you do is replication, uh, it's important, but it's, uh, not sort of cutting edge, uh, work.
+
+Does this confidence interval interval stuff make sense?
+
+So if I go back here just briefly, you know, this would be taking our mean from our sample.
+
+And the confidence interval is plus or minus this critical value 1.96 times that standard deviation over the square root of the sample size,
+
+which is uh, this value we get back here standard error.
+
+So when when you report your stats later on in the course and you tell me what the meanness of something,
+
+or you tell me this is the size of the correlation or the size of the regression coefficient,
+
+I always want to know what's the confidence interval around that.
+
+Right. And there's going to be important things when you test your correlation for example of if zero is
+
+contained within that confidence interval then you know there may not actually be a correlation.
+
+So you can already make an inference of how, uh, related to your hypothesis of whether you have like a non-zero correlation or not.
+
+Right. So if you want to say something's correlated, it needs to be correlated greater than zero.
+
+But if zero is in your confidence interval, then you know there's a chance in the population that it's, uh, zero.
+
+We'll come back to that more uh, next week. So I have an example here also for calculating confidence intervals and ah.
+
+Uh, give this a try on your own. There isn't a practical session this week.
+
+Sasha is presenting her work at a conference, but there is one next week, so you have a bit of extra time.
+
+There may be one in your schedule still. So if you show up.
+
+Well, maybe you might be the only one there.
+
+And if you do, well, the room is still available to you, and you can, uh, you can work on some of these.
+
+So just to sum up. Today we talked about sampling methods, different ways you could do that, how that might bias, you know,
+
+what type of interpretations you can make about your population,
+
+how we estimate population parameters from sample statistics, um, and also confidence intervals.
+
+So for next week we're going to go into hypothesis testing and introduction to correlation.
+
+Um so there's a required reading from this um chapter six.
+
+And uh, other than that I will see you later tonight I think, or this afternoon for multi-agent systems.
+
+If not, then next week. Thanks.
+

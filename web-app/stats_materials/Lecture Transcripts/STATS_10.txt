@@ -1,0 +1,931 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Good afternoon everyone. I think the microphone is working all right.
+
+Yeah. Nice to see you here for stats two today.
+
+Hello. Can you hear this like feedback as well?
+
+No, it's a bit better this one. But, uh, maybe it just depends where I stand.
+
+Uh. It's better. Okay, so stats two today.
+
+Multiple regression with polynomials. Let's take a look where we're at for the course we are in the last month of the course.
+
+And actually you see we have including today three more lectures that I'll introduce some new material.
+
+And uh, that means actually that this will take us through the next three weeks.
+
+And then the last meeting that we have in November, uh, will be a course wrap up and exam Q&A.
+
+And then actually, we won't need that first meeting in December.
+
+I'll, uh, I'll remind you of this as we get a bit closer of that.
+
+Um, but one thing I wanted to draw your attention to, and I've said it a couple times throughout the semester,
+
+is these last three modules, especially the last two.
+
+It is, uh, they do get to become the most difficult.
+
+So I really encourage you to, uh, make sure to come to lecture, to go to the practical sessions if you're finding this material challenging,
+
+because we're going to shift from to add some more complexity to our multiple regression into mixed models and growth curves.
+
+Luckily, we kind of been building up to this point. So for example, today we're adding polynomials and whatever that is.
+
+And that actually comes back here in the growth curve part.
+
+But I know you have a lot to manage in the coming weeks before the end of the semester,
+
+so just make sure that if you find this challenging, uh, try to clarify any misunderstandings you might have, let me know.
+
+Uh, but, uh, teaching assistants know, so you'll be well prepared by the end of the semester.
+
+These are also kind of my favourite, uh, lectures in the coming weeks, too, because I like the complexity of these types of models.
+
+Um, so they're challenging, but I think they're, um, it can be rewarding,
+
+especially if you're able to use them in your, uh, research or your projects or your thesis and so on.
+
+Okay. Could you join me, please unmute, clap for just a few questions, see where you're at with some of your stats knowledge that we've covered.
+
+Also while you're joining the Posit Connect server is should also be live.
+
+So if you already signed up for this last week, you can actually access the link here in the modules.
+
+Um. It's just right here.
+
+Or you can actually just log in with the link from before and you can choose lecture ten if you want to follow along here.
+
+Give you another, uh, 10s or so to join.
+
+If you just came in. Otherwise, you can type it in. All right.
+
+Looks like we are ready. First one.
+
+What is the intercept represent in multiple regression using dummy coding for three groups.
+
+Note that. Out of the way. Got the timer running on this one too.
+
+Well. 10s left. All right.
+
+How did you do? A lot of you got this one correct.
+
+So just thinking back to what we covered last week, whenever we did dummy coding,
+
+we were always comparing our parts of our model to our reference group.
+
+Um, if you said grand mean, that was a different type of coding that we covered.
+
+I don't want to remember which type. Yeah.
+
+Yeah, the unweighted effects. So then, then we were looking at that grand mean for our intercept.
+
+If you put this one. So change in mean for a given category relative to the reference group.
+
+What part of our model output which is not the intercept would tell us this.
+
+Anyone remember that when we were looking at the dummy coding output?
+
+There's a you got a smile? Maybe. You know. Uh, the.
+
+Yeah. So the beta coefficient, uh, the regression coefficient, whatever we want to call them,
+
+those values where the change in the mean relative to our reference group, which is the intercept.
+
+Good. So this can be a bit tricky to keep straight.
+
+How we interpret our intercept and coefficient based on which of the types of coding system we used.
+
+And I added in three groups here. It's a bit irrelevant because it doesn't matter how many groups for this question.
+
+That intercept will always be uh, interpreted as the mean of the reference group.
+
+Welcome. All right. You predict a quadratic relationship between your x and y.
+
+What order polynomial should you test? 10s.
+
+Last chance. All right.
+
+Majority of you also got this one right. To the two is the correct answer here.
+
+Second order polynomial. Polynomial gives us a quadratic relationship.
+
+We're going to look at this today. If you did the reading you already know this I guess if you didn't maybe you put four.
+
+Uh that would be uh, quartic relationship.
+
+Um, we're going to unpack these all. If you have never heard of polynomial until today, well, you're in luck.
+
+Last question. How are you feeling about your current understanding of the stats material covered so far in this course?
+
+Maybe we can, uh, do this one real time.
+
+See how normal we can make our distribution. If you're feeling like a 1 or 2.
+
+Um. You know, what I can recommend is going back and checking some of the lectures, trying to see which you found most difficult.
+
+Looking through the worked examples from the code that I provided.
+
+Talk with me, the teaching assistants. Um, you'll have a time.
+
+Time for this as well. Uh, in the coming months in classes and practicals, but also, uh, in the Q&A session.
+
+Um, if you're up here, then that's good. Uh, at least you're feeling confident.
+
+Hopefully your knowledge matches your confidence, uh, as well.
+
+And, uh, yeah, if you're in the middle, I guess you're feeling average about it.
+
+So that's perhaps representative. I hope by the end everyone is going to be at least a three or above for their stats knowledge.
+
+But, uh, we have to, uh, see if we can get you there.
+
+Okay, so as I said, if you want to follow along for the.
+
+Exercises or some of the lecture it should match.
+
+Mostly in here.
+
+I'm still going to go through with my slides a normal format, not a full transition to this format today, although it would in principle work.
+
+Um, okay. Any questions though, on the quiz questions I showed up here.
+
+Everyone's feeling of five, at least on those questions.
+
+So what we're going to cover today is whatever this thing, polynomial regression is, when we would want to use it, how we can do that in R.
+
+And we're going to have like two kind of longer exercises focussed on doing that.
+
+I'm going to introduce orthogonal polynomials to you, whatever that is.
+
+Uh, after the exercise I have a few slides on those.
+
+What they are. Um, but then you're going to work with these more on your practical exercise.
+
+Uh, later in the week. Thursday. So how many of you saw polynomials for the first time when you, uh, saw it on the slides when you came in?
+
+Anyone. Maybe not wanting to admit it in principle, you should maybe have had something related to polynomials when you have taken algebra before,
+
+but it could certainly be a while since you had that.
+
+Um, the whole idea, though, it goes back to algebra and thinking about equations for lines or different types of lines that might have curves in them.
+
+Um, so a constant polynomial function is one actually,
+
+where it doesn't really matter if there's a relationship or there isn't a relationship between any of the variables that are included in there.
+
+Um, but mostly we've been looking at something just like this a linear polynomial function.
+
+Right. That looks just like our regression equation or our formula for a line that we've been using.
+
+That would be one of these, uh, kind of straight lines, like the blue one here.
+
+And all we're doing is adding exponential terms or polynomials into this equation.
+
+So here's an example where we add the squared term of x and x,
+
+or a cubic term in this quadratic term, or any general form of higher degree of polynomial.
+
+So we can go up to whatever number you think of.
+
+Although we'll talk about practically. Does that even make sense for the empirical modelling you might do.
+
+Maybe you had to, uh, solve quadratic equations by hand in some algebra courses you had years ago.
+
+I know I did. Um, we don't have to do them by hand.
+
+Uh, we're going to be looking at whether, you know, different curves, uh, fit our data.
+
+So why would we need to think about this? Uh, my image got a bit un centred here.
+
+Sorry about that. Yeah.
+
+So there could be a theoretical reason, right?
+
+Uh, I mean, you might have been saying this from, you know, six weeks ago.
+
+What if the relationship between my predictors and my outcome is not a straight line?
+
+I hope some of you at least thought that, um, well, maybe you have a theory that there's a curvilinear relationship, right?
+
+That that it's not just this straight line, but there's some other shape to it.
+
+A common one is the, uh, Yerkes Dodson law,
+
+this relationship between stress or arousal and performance on a task that's theorised to have this kind of,
+
+uh, inverted U or quadratic curve, right, where, like, the best performance you'll get was with the right amount of stress.
+
+Not too much and not too little.
+
+Um, and this paper here that I did, uh, with some colleagues, we were interested in understanding the relationship between,
+
+uh, electro, uh, neurophysiological activity and working memory.
+
+Uh, and we thought that perhaps certain regions of the brain might have, uh, different relationship with working memory,
+
+uh, following this kind of curve, which you can kind of see as we plot different electrode sites here, uh, and there, um.
+
+DFA exponent, which is not important for you to understand, but just an example of where we had some prediction about, um.
+
+This relationship so kind of theoretical with some empirical support.
+
+So that's the first approach, right. We might just have a good theoretical reason to predict such a relationship.
+
+Empirically, we've already seen some of these examples.
+
+I think I showed you these same plots before, but if you were inspecting the output of your linear model.
+
+And you saw some curve like this when you look at your fit versus your residual.
+
+I said there might be a problem with your linearity assumption there, right?
+
+It looks curved. If you look at the fit versus the residual, that's a good empirical reason to say this model doesn't seem to fit that well.
+
+There might be some other trend that's being underlying the data.
+
+So you might need to consider polynomials. So this is empirical right.
+
+So you check your scatterplots or you're checking your assumptions for any of these.
+
+And if you see something that looks nonlinear ish or curvilinear that's a good time to, uh, say maybe I need to test this.
+
+And this comes back to our model building approach that we're taking in this course, right.
+
+That, um, we might have a theoretical prediction, like, we just want to test the relationship between our predictor variable and our outcome.
+
+And is it a good fit or not? But now, you know, we're thinking we've looked at adding interaction terms.
+
+So we then say okay we have our predictor two predictors maybe and a possible interaction.
+
+Does that fit better. Uh if we have the interaction versus not.
+
+Or does our model fit better if we have a polynomial term or not?
+
+Um, that's the type of thinking that we are kind of going to be looking at comparing here.
+
+There's one more thing that I want to add here.
+
+So sometimes people call it a non-linear relationship.
+
+Right? Because we know that our, uh. Simple linear regression.
+
+It is a line, so that is linear. Polynomial models are, in a way linear and nonlinear.
+
+And what I mean by that is. Uh, I'm skipping around a bit.
+
+Sorry for that. Our equation is still a linear combination of the terms.
+
+So we don't have nonlinear terms in our model.
+
+You could look up nonlinear regression, for example, and you'll get, um, actually coefficients that are uh,
+
+and predictors that are raised to a different powers in a way that is quite different than what we're covering with, uh, polynomial.
+
+So it is nonlinear in the sense that.
+
+Uh, what we're modelling is not just a straight line, but the equations that we're using to estimate them are still linear equations.
+
+I hope that makes sense.
+
+So for polynomial regression, as you maybe already realise by now, the degree of the polynomial determines the number of points of inflection.
+
+So when I gave you the quadratic example in the quiz.
+
+And ask you how many, uh, what's the polynomial order that was to.
+
+So two for the red line, which is quadratic here. But there's one point of inflection, right?
+
+So in that curve, there's one point where sort of the direction of the line is changing.
+
+If we look back at this, uh, example, right.
+
+One point of inflection around here or so before the direction starts changing, as we increase that, then we have more points of inflection, right?
+
+So our cubic line which is the dashed green one here we have now two points of inflection,
+
+something like here and something around here where the sort of direction changes.
+
+So D minus one. Uh, points of inflection.
+
+In our models, we have to include all lower order term.
+
+So just like when you did an interaction term in your model,
+
+you needed to have the predictors by themselves and together as an interaction term, we need to include all lower order terms.
+
+So if we do a cubic model, we also have to have a coefficient in there for quadratic and linear and our constant or intercept.
+
+Maybe one point. To add to that,
+
+I meant to mention here there's sort of zero order or constant polynomial that's actually just a base model of the mean predicting the outcome, right?
+
+So when we're making our comparison of our linear model for regression, right, we're actually doing that F test.
+
+And seeing is the predictors the linear combination of predictors a better fit than just the mean.
+
+So this ties it back to that in a way. Oh.
+
+So you might say. Well, how many?
+
+All. In what order polynomial do I need to use? Right?
+
+Um, you could just keep increasing them until you get like the maximum r squared value.
+
+Then you have like a really good fit for your data. Right. Uh, but the problem is that you can overfit your data.
+
+Right. So if you think about the number of points of inflection,
+
+if you went really high in terms of your polynomial order, you would just get some like really curvy line.
+
+That's just fitting every point.
+
+And then maybe if you were trying to generalise from your sample to the population, you've overfit your data and it wouldn't generalise well.
+
+We're not really looking at. Like assessing generalisability in this class.
+
+You do this to some extent in machine learning, right? Where you do, uh, some.
+
+Test and, uh, training and test sets.
+
+For example, you could apply the same type of logic here with polynomial models.
+
+Do it on a subset of your sample, uh, and then see how well that fits an unseen sample.
+
+Um, but but we're not going to cover that. Um.
+
+So be careful of that. Practical significance versus statistical significance.
+
+This is again thinking about what you can interpret like which order polynomial is still interpretable.
+
+Um, with regard to understanding the relationship between your predictors and your outcome.
+
+Um, welcome. Sometimes we might see statistical significance for some really high order polynomial.
+
+But then is it that meaningful or interpretive interpretable.
+
+That's what we would be wanting to figure out. And the coefficients.
+
+Tell us the direction and strength or depth of the curve.
+
+It's kind of easy if we see sort of like just a quadratic model, then we have like a positive or negative quadratic term,
+
+and we can tell like from that which shape the curve is like whether it's like a U or an inverted U.
+
+But once we get a bit higher, uh, in terms of polynomial order.
+
+The best way to understand it is just to plot it, right? So plot the the fitted values of the model, the predicted line of the model.
+
+That's what I have here. So when you really want to interpret them, you should just plot them.
+
+Plot your predicted line versus your fitted your your observed data.
+
+The quadratic term. Again easy to interpret.
+
+If it's positive the curve is opening upwards like in a U, and if it's negative, then it's, uh, opening downward.
+
+Maybe, um, when we're thinking about polynomial coefficients and how to interpret them,
+
+often it's really about which order polynomial model is the better fit of the data.
+
+As opposed to really trying to interpret specifically the coefficients.
+
+And what I mean by that is, um. Maybe when we're doing simple linear regression and we talked about Unstandardised coefficients,
+
+that we could really see the relationship between, uh, changes in our coefficient and our outcome.
+
+Right. We wrote out those equations and we could plug values in.
+
+Once we get to polynomials, it's a bit less about the interpretation of those particular coefficients,
+
+especially as you get to higher order polynomials.
+
+But really about sort of the trend that you're observing and how that changes, uh, in your model.
+
+Any questions so far? Before we look at this, how to do this in our.
+
+Okay. So there's a couple of ways we can create polynomial terms.
+
+We could do them manually right. So we could say I want to look at the relationship between arousal and performance.
+
+Like if we were testing some Yorkies dogs log data, which we will actually do.
+
+You could actually create this as your sort of.
+
+Quadratic term or your cubic term I just multiplying the variable against itself the number of times that you need to create that polynomial term.
+
+Or we can do it, uh, in our uh regression formula.
+
+So we can have. This embedded within the LM function.
+
+And then we have our outcome variable a predictor.
+
+And then use this AI with parentheses.
+
+And then whichever order polynomial term we want to use.
+
+So this would be for the quadratic model. If you want it to do cubic, then you could add plus a predictor to the third power and so on.
+
+And then you will get uh you know. So for this model we would get a linear like line coefficient and we would get the green one like this.
+
+An estimate of that at least. Okay, uh, let's try this out.
+
+So I'm going to give you some time to load this data set.
+
+This one is on on canvas under the module a CSV file.
+
+If you're working in the posit server, the data should already be loaded there.
+
+You can interact in that browser if you need some help getting access to that, let me know.
+
+As usual, you should inspect this data frame.
+
+What's going on with these data? What? Descriptive statistics.
+
+What do they tell you? And then try out just a linear model.
+
+So simple linear regression predicting for perf which is performance uh as the outcome.
+
+Uh predicting that from arousal as your predictor. Interpret those then check your assumptions.
+
+So maybe look at your fit versus residual histogram and so on.
+
+And then try to run a quadratic model and interpret the results.
+
+And so see how those compare. I'll give you some time to get started on this before I'll come around.
+
+Check in with some of you, uh, before we come back together and look through the example collectively.
+
+And if you need any help, just wave me over. A little bit past when we usually take a break.
+
+How many of you are totally finished? Just a quick show of hands.
+
+Okay, some. Most of you are finished, some still working.
+
+I would say, uh, let's do a ten minute break today.
+
+Uh, so we'll start back at, uh, 146.
+
+Uh, if you're already finished and you're not having a longer break, you can wave me over and we can look together at your output.
+
+Otherwise, when we come back, I will go through my output together.
+
+Hello. All right, that's our ten minutes, I think.
+
+Yeah. Um, let's take a look at this example together.
+
+Uh, here I have my R markdown file, uh, which you can access after lecture where I load the data.
+
+And I use that handy describe function to quickly give me all of those descriptive.
+
+So. Well, I told you this is some arousal and performance data.
+
+Uh, it is simulated data, but. So we don't know what the units are.
+
+But you would think, for example. Well, the average arousal is 207, whatever that means.
+
+There's a range of 50 there. The average performance is 88.
+
+Uh, only a range of 11 or so.
+
+Just to have some intuition for what those values are and the range and whether they're distributed in a normal way or not.
+
+Make a nice plot scatter plot. There's not a lot of observations here.
+
+Only 18. Um, but when you look at this, if you were doing your guess the correlation like you did way back,
+
+uh, several months ago, maybe you would say it doesn't look like it's correlated, right?
+
+You could probably could maybe picture something through the middle or maybe something like that.
+
+But it's hard to say for sure. So here I ran first a linear model.
+
+Right. So I'm saving it as modelling.
+
+That's just my name to remind it that it's my linear model using that LM function.
+
+Outcome is performance predicted by arousal and reference to my data frame,
+
+and getting the summary of my model because I want that full, uh, summary of the linear model.
+
+Right. Let's make sure we're all on board on how to interpret this.
+
+So I would again start from the bottom and I would see this F-test.
+
+Right. Which is telling. Does this model fit better than the mean.
+
+So the model with whatever we put in it, which in this case is just this arousal variable.
+
+And we see the f statistic is quite close to zero and the p value is quite high, not anywhere near r 0.05 or lower value.
+
+And r squared is about 1% of the variability is explained by this this model.
+
+And then we see our arousal predictor also a small coefficient.
+
+But we would need to standardise it to know how small and t value close to £0.00 value.
+
+Pretty much the same as our p value here. Doesn't seem to be a relationship between these predictors and the outcome.
+
+Uh, but our intercept we can see is non-zero at least from this t value in this p value.
+
+So you might have done some like experiment to collect this data.
+
+And then you saw this. And you might be disappointed because you thought I predicted a relationship between arousal and performance.
+
+But my model doesn't tell me there is any.
+
+Well, if you looked at, for example, the fit versus the residuals, you know, they're not very evenly distributed across this space.
+
+If you look at the histogram, I don't see that much there.
+
+The q-q plot is a bit bumpy, so maybe you would think that there might be.
+
+Some other relationship in here, like a quadratic one.
+
+If I didn't tell you that. Um, I added this one to, uh, nothing that's too clear in this one, though, related to.
+
+I think the clearest one is maybe this one, but I would actually want to see a lot more data points, I think from this it's a bit sparse.
+
+So anyways, from this I would decide that I should do a quadratic model, which I specified here as squad that has almost a nice rhyme to it.
+
+Uh, and then I add to my arousal.
+
+Plus I uh arousal squared.
+
+So with the carrot on your six key. Right.
+
+So we want to explain performance like how well someone did on a task from their arousal level plus the square of the arousal term.
+
+So we've now moved from simple linear regression to multiple linear regression.
+
+And it's polynomial. So polynomial regression our output looks quite different right.
+
+If you had spent months collecting this data and you had this output, you might think,
+
+well here there's something more interesting than the model you saw before.
+
+So our F statistic has gotten quite higher, quite further from zero.
+
+Our degrees of freedom changed a little bit because we now have one more predictor and the model p value just above 0.01.
+
+So also below our 0.05 threshold r squared value changed from 0.01 now to 0.43.
+
+But it's multiple regression. So we would be better off checking out our adjusted R squared.
+
+So about 0.36. Both of these terms are significant predictors, right?
+
+Arousal squared is significant with this high well low T value and, uh, low p value.
+
+And same for arousal. And this intercept has changed quite a bit uh, which um.
+
+Just keep in mind that it's now fitting like a plane to the the data, because it's a multiple regression rather than simple linear regression.
+
+So what would I kind of conclude from this? Well, I would see.
+
+That this seems to fit much better than the date then than just the linear model.
+
+Uh, a quadratic term that's negative, which, if you remember from the slides.
+
+What that if it's negative right. You have that curve opening downward.
+
+So a U-shape. So that's what you could mainly see from that coefficient.
+
+So it's good to just at least remember these ones. Uh, but yeah, when you add in higher order terms, uh, you don't necessarily.
+
+Can't really remember that anymore. Um, any questions on how to do the, uh.
+
+Quadratic polynomial. How to compare them. Or sorry we're doing comparing next, but how to interpret it?
+
+Yeah. Twice. Uh. Now.
+
+Yeah. So this is a great observation. Uh, and that's part of why I had.
+
+This. That's not what I had. Um, this point on this slides about.
+
+Uh. Sort of the relative interpretation here because as you add like all of those higher order terms,
+
+it can change the significance of the lower order terms,
+
+uh, because of how the variability is getting accounted for based on fitting that term, fitting the higher order term.
+
+So it could be, you see, with the quadratic model that there is, uh,
+
+a significant linear relationship because the quadratic term is accounting for other sources of variability first and then uh,
+
+accounting for that linear one. But then maybe you add the cubic term and then those could change again.
+
+Uh, which is why we need to do like the comparison of fit and how you go from like the linear up to higher order polynomials,
+
+which one has the best fit, because that's the one that we can be confident in, whether those terms are sort of stably significant or not.
+
+Does that help at all?
+
+Yeah, it has to do with, uh, in short, the partial of variance getting allocated to each of these different shapes as their fit to the data.
+
+But it's a really good thing to, uh, to pay attention to, because when you, you wouldn't then say.
+
+Because this one might be the best fitting model. So it is actually that the quadratic term best characterises the data,
+
+but that there still is this significant linear pattern in there, while first accounting for like the quadratic trend.
+
+Good question. Anyone else.
+
+Did anyone try to specify their model? Uh, without this part and just this one?
+
+Is that a yes or no? I forget?
+
+Uh, maybe if someone tries that. It might by default, include the lower order terms.
+
+Could someone try it real quick? And let me know.
+
+So in some cases, it actually knows that you need to have a lower order term.
+
+So it might do it by default. But I didn't check it before lecture today.
+
+Uh, that's important to know, though, because you don't want to make that mistake of.
+
+Only including the quadratic term without the lower order polynomial, because then your.
+
+Coefficients will not be interpretable.
+
+They won't be stable. Did you try? Yeah.
+
+And it doesn't include that. No. You tried as well. Yeah.
+
+Okay. So make sure to, uh, write them all out.
+
+So if we wanted to do a quick model, what we would do here is we would add a plus sign, and I would just copy this and then change that to a three.
+
+So then we would have our first order. Second order, third order.
+
+Uh, if we wanted to do a quick for example. If you are, um, not sure how to interpret these.
+
+Uh. And you didn't ask that question just now. Uh, you can also look at these write ups that will be available there, too.
+
+Uh, just so you can make sure you know how to interpret them. Keep clicking the wrong file.
+
+Um, okay. So just briefly, um, before we go back to comparing them.
+
+We're doing. What we're doing here is really the same as our multiple regression.
+
+Just again, we're adding into that output whatever polynomial terms.
+
+Right. So now our b two rather than b two being applied to a different x variable like x1 and x2, it's the square of x.
+
+You can combine these in different ways right. So you could say well I have like an X1 and x2.
+
+But I think for x one it might have a quadratic relationship but x2 doesn't.
+
+So you could just include like your x1 and your x1 squared and then your x2.
+
+Um, so that's part of why we spend all of this time looking at these different ways
+
+to tweak or model different things within this kind of regression framework,
+
+because you can really expand it to whatever case you need, whether that's theoretical or empirical.
+
+What I'd like you to try next. Hopefully you still have your models saved and up.
+
+I want you to compare the model so you can use the Anova.
+
+Uh, you can look at the I see if you remember, maybe extract AIC or the performance, uh, function to get that which model fits better.
+
+And what's the change in R squared. And then check the check to see if you see any issues with multicollinearity for your, um, quadratic model.
+
+Let's, uh, let's take a look together, um, so we can interpret this way to compare them.
+
+Then I'll cover one more topic, uh, and then we'll wrap up for the day.
+
+Um, yeah. So. What we wanted to do here was next compare the model.
+
+So in this case we saw quite distinct results.
+
+Right. Like this one here was only 1% of the variability and the other was above 35 or something.
+
+It's not always the case that you have such a clear difference in the R-squared.
+
+But we want to do this for the sake of completeness anyway. So if we ran this Anova where we enter in our linear model separated by a comma,
+
+and our quadratic model, those ones I saved from before we get this output like we looked at before.
+
+This tells us, right, whether the variability accounted for by these two models that I put in here is different or not.
+
+Right. So it's doing an F-test on the, uh, the variability accounted for by them.
+
+And it is significant, which we see with this high f value and low p value quite small.
+
+And then we would have to look back to our model summaries to get the R-squared.
+
+That tells us how big that R-squared difference was.
+
+I have it down here below, I think in a second. I was.
+
+It was about. Uh, .31 difference.
+
+I, uh, I think, okay, so this is what I was trying to do is to compare performance.
+
+You could do extract, I see, uh, like this, but I like this one because you can, uh, just enter in both your models like you do with the Anova.
+
+And then you get all of these AIC values, your R squared and your and your error metric Rmse.
+
+Um, and we see that, uh, AIC is lower for the quadratic model.
+
+Uh, error is lower and the r squared is much higher for the quadratic.
+
+We could make this spider web plot, which I showed before, where the better fitting indices are the ones that take up more space on the plot.
+
+So quadratic again here. Visually at least we see better fitting than just the linear model.
+
+We should have known this already from our output, but all cases aren't so clear.
+
+Quadratic model here is fitting better. Um, I had this on there as well to check for issues with multicollinearity.
+
+So if I use my check model function from the performance package.
+
+You probably saw this, uh, where we have these, uh, high collinearity issues between our predictors.
+
+Um, and but all of the assumptions with gvm are acceptable.
+
+And if we look at the correlation between these variables manually.
+
+So here I just took, I created a manual, uh squared version of the variable and correlated it with the original.
+
+And you'll see that it's very highly correlated. So do we need to worry about it.
+
+Um, maybe. Uh, so it to some extent, when we are creating these polynomial terms, we know they're going to be correlated.
+
+Because they're just simple computations of each other.
+
+If you're just squaring it or cubing it. Uh, we will see that they're related.
+
+Um. Do I want to show this first? Uh, I'll come back to that.
+
+So. I think we can almost assume by default that there's going to be multicollinearity whenever we do polynomial models.
+
+Um, anytime we're taking a second, third order or higher polynomial term.
+
+But there's sometimes there can be different sources of polynomial, uh, of multicollinearity.
+
+Um, some of them which are sort of, uh, non-essential, like, uh, due to scaling of a non-zero mean, which we could try to correct by centring.
+
+This may reduce multicollinearity.
+
+Not always. Um, also in the structure of our data, we could have some multicollinearity.
+
+If there is non symmetric non symmetry in the distribution of our x variable which we could then try to solve with orthogonal polynomial regression.
+
+I think there's, uh. Oh one.
+
+Check. There's a couple of things that, uh, you could consider here.
+
+So typically, if you follow best practices for polynomial regression modelling,
+
+you could test if centring changes your results or if orthogonal polynomials, which I'll define in a second, changes your results.
+
+Most often I find that the if your data set is sufficient enough if your effect, your observing is reliable enough.
+
+These issues with multicollinearity and the possible ways to solve it.
+
+Um, they usually give consistent results.
+
+If I found, uh, for example, that there was a significant quadratic term in a good fitting model with non centred non orthogonal polynomial terms,
+
+and then that changed when I tried this. Then I would be concerned.
+
+I would think okay, maybe the effect I was observing is really conflated by this, uh, multicollinearity problem.
+
+If I tried these because I saw, for example, that high multicollinearity problem and then the results were the same, then I would think, okay,
+
+my effect is there and it's robust to this issue of multicollinearity, even when I try to give some solutions for trying to mitigate that.
+
+Does that make sense? So kind of like when you had problems, uh, with some of your other analyses,
+
+and you do a nonparametric equivalent and hopefully you'll see it will give you the same interpretation.
+
+Not always, but the same kind of thinking applies here as well overall.
+
+So I will show very briefly the orthogonal, the thinking behind the orthogonal polynomials.
+
+Uh, you'll work with these in the practical. And then I'll still have a bit of time to quickly show you a bit more of my analysis.
+
+So the whole idea between the orthogonal polynomials is that you just create a transformation of your polynomial terms, uh,
+
+so that you're kind of maximising, uh, the projected distance of these values in a way that reduces the, uh, the correlation.
+
+So this is like a simplification of, of creating some sort of orthogonal polynomials.
+
+Um, if you want to go into depth on how you calculate this and why it works, um, I put some links in here that you can check out.
+
+In, uh, in AR, you can actually just use the poly function in your linear model.
+
+So I would, uh, maybe you right now check out the help for the poly function so you can see some
+
+examples of how to apply that because that will come up on your practical,
+
+um. Later this week. But as with any transformations to our variables.
+
+This does make them harder to interpret. Right.
+
+So we're we're getting further and further away from our original units that we have for our variables.
+
+Uh, and then it makes it, yeah, harder to directly relate to our original metric.
+
+So we're always trying to balance this.
+
+Like can we solve statistical problems that might be giving us a problem with the inferences we are making with our model,
+
+versus can we actually interpret the output of our model?
+
+Um, this paper was mentioned here. Um, in the old days, apparently before I was born, in 79.
+
+Uh, there was issues that, uh, for example, polynomial terms were more efficient.
+
+Uh, in some cases, if they're orthogonal for higher order fits and they took less computing time.
+
+I think now those differences are really negligible.
+
+Um, but it shows sort of that, uh, ordinary polynomials, uh, when you test the significance on your parameters,
+
+you have this kind of non independence versus independence with this transformation that can,
+
+uh, make them, um, giving some better, more accurate results in some cases.
+
+You'll try this out in the, uh, practical.
+
+But I want to come back briefly to my analysis real quick before we close off.
+
+So. Here's an example that you could copy for how to plot like your data versus the fit from the model.
+
+Uh, so this is actually taking out, uh, the saving out the predicted values, uh, there and uh, putting them here in a line.
+
+So this would be the predicted quadratic effect for that, uh, output.
+
+Yeah. Right?
+
+Yeah. Yeah, but we can still have both depending on the way the data are distributed as well.
+
+So we are going to have essential with the polynomials because of the structure of the creation of the polynomial terms,
+
+but also depending on how the data are distributed, that would be the non-essential.
+
+Here I put in the cubic model. So if you want to see how that goes.
+
+Um, again, you need to include all lower order terms.
+
+So I added here to my quadratic model the cubic term.
+
+And if you were going to do an orthogonal polynomial one you could do poly here instead of I.
+
+Notice how the pattern of results changes.
+
+See you later. Uh.
+
+I'm sorry. Right now. No longer do we see.
+
+Uh, that all of these terms are significant RF value and the overall model are still pretty good.
+
+The R squared is kind of similar, but once we account for this potential cubic trend, all of those effects then go away.
+
+So how I would first interpret this is actually like okay, probably a cubic fit is not the right fit for this data,
+
+which I would then need to compare the performance of these models.
+
+And so I probably had a prediction from the beginning that quadratic was the best fit.
+
+And then I saw my linear model didn't look good. My quadratic model looked pretty good.
+
+And my cubic model. While the overall model info looks all right, the specific predictors or relationships I expected don't.
+
+And if we look at the performance I well we can look quickly here.
+
+We see a bit more of a complicated picture right. Our linear model still has the worst performance.
+
+Our quadratic one across the board has the best indicators here.
+
+But the cubic ones are. They're also pretty close on some dimensions.
+
+All right. We only had a five minute break, so I'll wrap up in one minute or so.
+
+We had a ten minute break, not five.
+
+Um, so we might use polynomial regression when we have a predicted curvilinear relationship between our variables.
+
+Or maybe we're checking our assumptions and we see curve like patterns in our, uh, plots like the fit versus the residual.
+
+We need to iteratively add our polynomial terms in increasing order.
+
+So going from first order of second or third order and so on, and iteratively compare the fit,
+
+we can stop when we no longer have a better fitting model, or when we think that we have the theoretically predicted model.
+
+And we test one level above that. We always need to compare these models.
+
+So and uh, you might have to consider some cases where you have highly correlated terms in them and
+
+centre or use orthogonal polynomials to see if that changes your pattern of results.
+
+In practice, if your data are good quality, you won't see a difference usually.
+
+Have fun on the practical. Later this week and next week, we'll get into mixed effects models.
+

@@ -1,0 +1,1491 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Uh. You.
+
+I. Yeah.
+
+If you have something to pull up. Yeah. No, I just want it ready.
+
+Okay. Yeah, I.
+
+Totally get that. Oh.
+
+Yes. Do you need the microphone? No.
+
+Good afternoon everyone. Hope you're doing well. And ready for some stats too.
+
+Before we get started, uh, we'll give the word to, uh, speaker.
+
+Uh, Marco. Uh, for a moment is going to announce, uh, an initiative to you all that I think might be interesting.
+
+Okay, so before the statistics, the movement has come.
+
+So see what I do. So.
+
+Okay. Step one. Step two.
+
+And that's a movie. Are you thinking about becoming a Start-Up founder at some point, but you have no idea how to get there.
+
+We have built the Entrepreneurial Literacy Initiative, which we call Ellies,
+
+to help you discover whether an entrepreneurial career might be a good idea for you.
+
+I am a professor of finance at University and advisor to several Start-Ups,
+
+and I am a professor of Accounting and Entrepreneurship at a Start-Up Business School.
+
+Previously at Tilbrook University and former Inntrepreneur MC Ellie.
+
+She would guide you through this discovery journey together,
+
+will bring you to reflect about your career ambitions and to learn about the entrepreneurial careers.
+
+And consists of three main steps. First, you learn key facts about interpersonal experience.
+
+For example, did you know that successful entrepreneurs rarely are college dropouts?
+
+Instead, they are people in their 30s and 40s with strong in the same market experience.
+
+Second, Ellie makes you reflect about whether an entrepreneurial career fits your skills,
+
+talents, and personality, helping you decide whether you want to pursue it.
+
+Third, Ellie provides practical tools to improve your chances of success should you decide to start your own business.
+
+For example, you will learn how to navigate your career towards attracting key resources like mentors for founders and investors.
+
+Ellie offers all this in a flexible online format.
+
+The idea is that you can take it at your own pace and whatever you want in a coffee bar, at home, or travelling on a train.
+
+Plus, eating would not interfere with your studies. You need to focus on your courses one week.
+
+Nowadays they can in the week after. It would take you two hours per week.
+
+You will listen to podcasts, engage in case discussions, watch interviews and learn from our knowledge clips.
+
+Ali offers you a valuable experience of professional development.
+
+Completing the early journey will earn you an independent certificate that you can add to your CV or LinkedIn page.
+
+So if you have inntrepreneur shape at the back of your mind, come along, join us and it will give you a smooth takeoff.
+
+So just to say that, uh, here you have the QR code. And if a print out that as well, if you're interested to, to learn more about it.
+
+And it's about student curious about the possibility of an entrepreneurial career,
+
+what it offers, what it requires, how to build it and how it fits your goals.
+
+And we help you, uh, develop, uh, awareness of what are kind of your lifetime goals.
+
+And so that's something which is very, uh, um, uh, popular with students in your program and at the university in general.
+
+And so please feel free to, uh, get there.
+
+You learn two weeks. Uh, I need for two CDs.
+
+Uh, if you complete the course, it's fully online.
+
+You can do it at your own pace between now and the end of the academic year.
+
+Thank you and enjoy the class. Thanks for having.
+
+Were there any questions before you leave for? Now you know where to get more info, I guess.
+
+Okay, that is Amy, you guys. All right, see you.
+
+All right. Thanks for your attention to Marco's initiative, where I was asked by the program director to let them have a few minutes of your time.
+
+I believe he came to one of my classes last semester, and a number of students from the prior cohort were interested.
+
+That's, uh, entrepreneurship is something you're into.
+
+It's a good way to get more, uh, information. Now I was set up.
+
+And now it's broken. Great. All right.
+
+Let's see. Hopefully it's working now. So today we're diving into an intro to regression, as I have already alluded to for you all several times.
+
+We're going to be spending a number of weeks kind of expanding on the foundations of regression that we'll cover today.
+
+So today we're we're just doing simple linear regression. So you understand the basics before we get into assumptions of regression,
+
+multiple regression interactions and other expanded forms that make it more complex.
+
+So today, if you're not understanding something, uh, you know, make sure you let me know, ask a question, come to me on break or after class.
+
+Uh, because this will really put you on a course for not understanding the things that come later as we build in the complexity.
+
+Um, I wanted to mention something about the practical exercises before you have your next one.
+
+So again, we strongly encourage you to show up to the rooms we have booked that we have teaching assistants and a co lecturer on,
+
+uh, to get interaction and feedback as you work on these, although we're no longer requiring it.
+
+You can do them remotely, but you need to do them within the time allotted to you.
+
+Uh, spoiler alert I will be there this week instead of Sasha.
+
+Uh, as she's going to present her work at a conference, Barbara will still be there as well.
+
+Keep an eye on the, uh, time edit, though, because there's a couple of weeks, including this week, where there's two rooms.
+
+So if it's too full, you may have to go to the second room that's listed, but you can just go to the first one that shows up.
+
+And if there's no space, go to the next one. But you do need to make sure to leave those rooms at the end of your hour.
+
+You do need to complete a majority of the assignment and show a valid attempt for completing each task.
+
+If you have trouble with knitting and it's going to be your responsibility,
+
+especially if you're doing it remotely and we cannot help you in person because you don't show up.
+
+Um, so you should make sure you're set up to knit your assignments correctly.
+
+You can practice on the prior ones if you're if you struggled, um,
+
+you can comment out code that's giving you trouble with knitting and just show make sure that code shows up still.
+
+Um, but you want to show that you've done, like, a valid attempt to complete the practical exercise.
+
+Any questions on the practicals? I think.
+
+Especially if you showed up. A lot of you, it's getting smoother going easier now that, uh, things are kind of ironed out.
+
+But if you're not showing up and you're having trouble and this is kind of your last reminder that we won't accept,
+
+uh, a word duck, for example, with screenshots put in, we're only accepting something.
+
+That's been it. Okay, enough with the admin.
+
+Let's do a few questions and we'll clap. I have four for you today.
+
+If it was showing up, I don't know why I just put duplicate.
+
+Okay, here we go. I hope we have as much enthusiasm on the practical on Thursday, because I have to get up really early to to come here.
+
+So. Think that's almost everyone.
+
+I'll give you another 10s if you're still trying to, uh, get access.
+
+Should have timers today on most of the questions too, so I don't have to announce how much longer you have.
+
+All right, first one. Which of the following types of correlation would you use for the relationship between X and Y,
+
+while controlling for the relationship of Z on both x and y?
+
+Time's almost up. All right.
+
+So majority of you got that one right. What about semi partial correlation?
+
+Can anyone tell me why this one isn't the correct answer? Yeah.
+
+Because with several partial correlations, he would only have the effect of x.
+
+Yeah, x or Y, but not both. Yeah. Yeah. It depends how we specified it.
+
+Uh, yeah. Exactly. So partial correlation.
+
+Remember last week we were talking about correlation and we thought about how well two things might be correlated,
+
+but there might be another variable that that maybe has some relationship with the amount of variance that you can explain.
+
+And that we looked at those kind of Venn diagrams and overlap in the variance.
+
+That's going to kind of connect to some material that we covered with regression as well.
+
+All right. Which correlation would be most appropriate for looking at the relationship
+
+between ranking in an e-sports competition and age when the sample size is small?
+
+All right. Nice. A lot of you seem to remember, uh, Spearman correlation was good for small sample sizes, especially when you have, uh,
+
+not normally distributed data like a rank, which was kind of the key, uh, item here that we were looking at rankings in a competition.
+
+And we looked at some of those data last week as well. All right.
+
+So which letter do we always use to specify our outcome variable and linear regression models.
+
+Last few seconds for your answers. Okay.
+
+Um. Well, the majority still got this one right.
+
+This is why. So I can see maybe who already did the reading today.
+
+These are going to be our coefficients in the model standard. Standardised and unstandardised X is something we're going to have as predictors.
+
+We will, uh unpack this all today. Question.
+
+Yeah, yeah. Uh, I like that, um, for spirit to speak.
+
+Yeah. Can you, can you. Specifically for schools.
+
+And so. Uh, it's not the.
+
+Yeah, so that's right. But I didn't put that as an option here.
+
+But also with the ranked data, this one is appropriate for that too.
+
+Yeah. Yeah. So if the if candles that was on there then you would have had to choose between those two which would have been most appropriate.
+
+Yeah. Um. Yeah, it would be kind of.
+
+Thank you. Last one then. What's the gold standard for scientific evidence of a causal relationship between variables A and B?
+
+Last few seconds for your guess or your answer. Cool.
+
+All right. A lot of you know this. That's great. Randomised controlled trial.
+
+If you put some of the other ones, they're not the gold standard for causal evidence,
+
+but they might provide some evidence or some suggestion about the relationship.
+
+Right. So we had already that we can never interpret our correlation as being causal.
+
+At least not alone. But if it is a very strong correlation and you have other information as well,
+
+like a randomised controlled trial, then you might have evidence for it being causal.
+
+Many independent studies replicate the findings.
+
+That's more evidence that that relationship is not just spurious, but it's still correlational in that case.
+
+Temporal precedence is a good piece of evidence that you might need for a causal argument.
+
+Um, but this is the gold standard option.
+
+Does anyone follow, uh, kind of things going on in the US with health things in the last day or two?
+
+A couple of you. Uh. The reason why I put this on here is because there's some announcements from, uh.
+
+From the cabinet that, uh, there's Tylenol may be a cause for autism.
+
+And, uh, it's certainly not a interpretation that is based on how we understand causality and science.
+
+So that's a really relevant example of why not understanding scientific method, uh, can really have bad implications for public policy.
+
+I put, uh, some more information on this on canvas.
+
+Uh, if you just look for the module from last week.
+
+Sorry about that. Um, there's this an article that I linked here on understanding.
+
+Under understanding causal arguments and science. So let me just find a real quick, um.
+
+I put it. I thought I posted it.
+
+And maybe it's didn't save. Are here.
+
+So if you want to read a bit more about this, this is a good article that talks about what kind of ways we can find evidence for causation.
+
+Because we didn't really cover that last week. We just talked about don't interpret your correlation as causation.
+
+So this talks a little bit as well about the randomised control trials and some of the other things in the last.
+
+Evidence. Uh, the last, uh, last slide.
+
+So the reason why I'm sharing this is because it's a good example of stats and scientific things kind of going totally wrong.
+
+And, uh, it's good that you are educated and, uh, can scrutinise some of these things when you hear them.
+
+Okay. So what are we going to cover today?
+
+Now that we have our quiz and causality thing, set aside linear regression with one predictor.
+
+That's simple linear regression. We're going to talk about how to fit a regression model.
+
+We're going to be revisiting all of these sums of squares.
+
+You should remember some of this from when you talked about Anova for example, because this is related.
+
+Um, and then we're going to do how do we do regression and how do we interpret it.
+
+I have one exercise only today for you to kind of go through this whole process.
+
+So that will come later towards the end. Uh, but let's see how we go, uh, in terms of getting started with this.
+
+So we looked at this figure last week and I think the week before, and we were thinking about scatter plots.
+
+So these are all scatter plots where there might be some correlation or a or sorry, no correlation or some positive or some negative correlation.
+
+And we think about how those points on the scatter plot, they might fit on a line or they might be distributed around a line.
+
+If you try to envision that line as a lot of you did when you played the Guess the correlation game.
+
+Or they might be like very loosely distributed around a line or not at all.
+
+Right. So this is kind of what goes into the basis of simple linear regression as well.
+
+Only the idea is we're not just saying are these two things correlated,
+
+but we'll be asking this question of if I know information about X, can I predict y with x?
+
+So the the kind of way that you might look at the scatterplot and the prediction of the relationship.
+
+Positive or negative is quite similar to correlation, but it will be in a different kind of statistical framework and type of thinking.
+
+So we'll be doing hypothesis testing with a model based approach now.
+
+Right. So we're going to have some data. We're going to make predictions from our model like using our x variable to predict y.
+
+And we'll have some amount of error. This is a bit different than comparison approaches, right where we're looking at.
+
+Is there a correlation between our variables in prediction.
+
+Instead we're saying can we predict these outcomes if we know some information that we use in our model.
+
+Right. So then our null hypothesis here is that there is actually no relationship between our data and the model that we're using.
+
+And this with the idea that you should have alluded to here, is that the model that we're using is a regression line.
+
+So maybe you all remember when you took algebra. Back in.
+
+High school or so. You have this equation for a line.
+
+Right. So it's coming back to you. Uh. We're predicting one variable from the value of another.
+
+The line that we're using is going to be a line. Sorry that the model we're using is a line and our dependent variable or our outcome variable.
+
+Those are used sometimes independently. That's our Y. And our predictor or independent variable are x variables.
+
+It's going to be a linear model, right? Because it is a line.
+
+And this is just a simple example of the equation for a line where you have your slope times some x value plus your y intercept.
+
+Uh, and this is the example here, uh, for this line.
+
+But in regression we're going to kind of interpret this equation in and model estimation framework which will look something like this.
+
+So we have y which is our variable. We're trying to explain our predictor or our outcome where we have an intercept value here which is b sub zero.
+
+This is our value of y when x is zero. So when it's crossing this uh y axis.
+
+We have our regression coefficient which is b.
+
+So I this will change based on the number of predictors we have for today.
+
+We'll just keep it with one predictor. And that tells us the slope and the direction or strength of the relationship.
+
+So if we have a positive coefficient then it's a positive relationship.
+
+And if it was negative then it would be, you know, negative. And we have an error term on the end of the line.
+
+Right.
+
+So before we could just solve for a line, if we know there's a line or we can just uh, find the parameters for it here, we have to solve for it.
+
+And there's going to be some error. Right? So these are the data points.
+
+And we're trying to fit that best uh best fitting line that minimises the error term.
+
+And I'll talk a little bit more about that later today. Does this make sense?
+
+So let's see how things can change. So here is an example where we would have the same intercept right.
+
+So the crossing of the y axis where x equals zero is the same for these two lines.
+
+But we would have a different predictor coefficient.
+
+Those coefficients here one would be positive and one would be negative.
+
+And there's a different size, right? This slope of this is a bit more shallow compared to this one.
+
+Right. In this case we have different intercepts.
+
+But we have the same, uh, kind of gradient or regression coefficient.
+
+In terms of how do we estimate these models?
+
+Um, we're going to use ordinary least squares for what we cover in this course, except for when we get to mixed effects models later on.
+
+The whole idea is that when we run a regression, our model is comparing all of these sums of squares residuals,
+
+which I'll show you what those are in a moment to try to minimise the amount of error.
+
+Right. So imagine that it's kind of, uh, changing the coefficients to fit a line a bunch of times and seeing how the error of that model,
+
+uh, looks and where that minimum error is.
+
+Right. So the ordinary least squares minimises the amount of error that is in the model.
+
+Right. So if you had this one is probably the best fitting line here.
+
+But if you had like a line here for example, then all of these error terms are going to be much bigger.
+
+So you will have more error in that model. So that's why you wouldn't get that one as the output.
+
+How good is your model? Um, well. This is an example of kind of what I was just showing where here are two different,
+
+sorry, two different lines, but the data points should be the same in these examples.
+
+Hours of sleep versus grumpiness.
+
+In this case this is going to have, you know, lower error or a better model fit compared to this one where we have these really big errors.
+
+And these are errors, right? Because it's the difference between the predicted value or the actual value and the predicted value.
+
+So what we want to do with our regression is like we're going to use this ordinary least squares.
+
+We're going to estimate the best fitting line. But we still want to see how good is that best fitting line, right?
+
+Like it's not going to be. Usually will not be a perfect fit.
+
+There will still be some error. Um, so we want to see how good is it.
+
+And that's part of why we do the hypothesis testing in this approach.
+
+But let's unpack first our sum of squares.
+
+Sum of squares. Right. This is we talked about it earlier.
+
+You talked about it in stats one. Here we have a couple of types of sums of squares that go into calculating things for our regression model.
+
+So just to visualise this before we look at the equations.
+
+Total sums of squares, right? Is the difference between the observed data and the mean.
+
+Because we also want to see is it better to fit a line to this data than just the mean?
+
+Because we could use the mean as a model, right.
+
+So total sums of squares here is a difference from observed to the mean sums of squares residual are the differences that we were looking at already.
+
+Right. So the difference between a observed value and the predicted value.
+
+And then we can have the model sum of squares which is the difference between the uh, sort of the predicted predicted value and the mean there.
+
+Right. So three types of sums of squares that we can calculate that we use for a regression model.
+
+Let's look at the equations. So the total variability between scores in the mean, we saw that visually here and here we see that in the equation.
+
+That is just the sum of all of these differences from the mean squared squared.
+
+Again because we don't want positive and negative values to cancel each other out.
+
+The residual here is the sum of each one, each observation to the regression model value.
+
+And then the model overall. We can actually just take the sum of squares total minus the residual.
+
+And that will be the model.
+
+And that's important because that tells us how much better the best regression model performs compared to what might be the worst, or just the mean.
+
+Right? So higher for this sum of the squares of the model is better because it's performing better than just the mean.
+
+If you look at that, uh, example here. So if you had really low sums of squares of the model, then you could imagine like the line maybe is flat,
+
+or maybe it's just really slightly different than the mean, then it would not be, uh, that great.
+
+Yeah. How are. Our models are ranked in the right.
+
+At the local time of with 80 minutes. Do I know what it is?
+
+Yeah. And I have that, uh, on and two slides after this.
+
+If you can wait just a moment. Yeah, but. Good.
+
+Uh, good. Anticipation. So one thing,
+
+before we get to P-values and our test statistics that we want to look at for our regression model is
+
+actually how much variability in our outcome variable or our y variable are we explaining with our model.
+
+That's our R squared. So we looked at this already with our correlation.
+
+We saw the Venn diagram. And we squared our correlation.
+
+And that gave us uh the amount of shared variance that we kind of had between those two variables in this case.
+
+In this case it's similar. Um. Except for we could have multiple predictors in there.
+
+So not just the square root of one correlation. But we can calculate it this way and then know how much variability we explain with our model.
+
+You'll see why this is important. Because if we, for example, explain 100% of our uh outcome variable,
+
+then we really know everything there is to know about it, just with whatever is in the model.
+
+If we have 10% in R-squared or 20%, uh, especially in social and cognitive science, that can still be quite a amount of variability to explain.
+
+But we know there's still a lot of unknown things that might be contributing to that variability.
+
+A couple of ways we could calculate it. So it could be the sum of squares of our model divided by the sum of the squares total.
+
+Or we could do one minus the residual sum of squares over the sum of squares total.
+
+So to get to how we calculate p values, we first have to figure out how do we get to our test statistic.
+
+So we had our r squared R squared is in a test statistic.
+
+Or sums of squares aren't test statistics. But we need to think a bit about these sources of variance in our data.
+
+Right. So total variance improvement of the model relative to the mean.
+
+What sort of the error in the model. The stuff that's still unexplained.
+
+Um, if the model results in better prediction than the mean then again we're going to expect this model.
+
+Uh, some of the squares to be higher than the residual.
+
+But we're going to use these to calculate our f-statistic so we can take the mean squared error.
+
+So sum. So in this case the sum of the squares of the model divided by degrees of freedom that gives us our mean squared error.
+
+And we could look at the mean squared residual.
+
+So sum of squares residual that I showed you how to calculate previously over degrees of freedom for the residual.
+
+And if we divide those that will give us our f-statistic.
+
+The free. The of freedom are pretty simple in our regression model,
+
+because for the degrees of freedom of the model, it's k which is just the number of predictors.
+
+So for simple linear regression, what should our degrees of freedom be?
+
+Any guesses? We're just having one predictor and simple linear regression right.
+
+So it's going to be one. And then the degrees of freedom of the residual is n.
+
+So sample size minus the number of predictors minus one.
+
+And then we can calculate these mean squared errors.
+
+So how do we get our value? Once we know our value.
+
+We simply put it into the event that we integrate the entry on that.
+
+Yeah. And then we get the area under the curve based on where that f value falls on the distribution.
+
+So hopefully this is coming back. And, uh, you're seeing how your test statistics and your p values and your sums of squares all are connected.
+
+So this says testing the model Anova because Anova stands for analysis of variance.
+
+Right. And we're looking at how these different sources of variance are um contributing
+
+to the explanation of your data or lack of explanation if it's residual.
+
+And Anova is a special case of regression, actually, we'll come back to that when we go to categorical regression in a couple model modules.
+
+Um. But yeah. So f here is still the f distribution that you know before.
+
+Um, and we solve for our p values under those areas under the curve.
+
+Let's look at an example. Yeah, I think we have time here.
+
+Okay, so if you were entrepreneurial, I guess, and you had a record company, although I guess the music business is not great these days.
+
+Um, maybe don't go that direction. Um, but let's say you wanted to predict sort of record sales or album streams based on money spent on advertising.
+
+This could be something you solve with regression. One of the values here is that you can also if you have a model that fits well,
+
+you could also say, well, if I do this for X, like I spend this amount.
+
+On advertising. Now what am I likely to see for sale?
+
+Right. So that's.
+
+In scientific cases, we actually just try to see how well can we explain our data with theory and the variables that we think might explain it.
+
+But you could take your regression equations and then make predictions from them.
+
+I'll show that soon as well. So let's say there's a bunch of bunch of album releases, 200 different ones.
+
+The outcome variable. Is sales or let's say, downloads the week after release.
+
+This is a pretty old data set.
+
+Um, and the predictor variable or the x variable is the amount in units of £1,000, I guess, spent promoting the record before release.
+
+So when we want to test the whole model versus individual coefficients, actually that's something worth making more explicit, right.
+
+So with our regression model we want to test how good the whole model fits.
+
+Right. And how much variability does it explain. Does it perform better than just the mean.
+
+And we want to test our individual coefficients.
+
+Now today when we're only doing simple linear regression we're only having one regression coefficient because we have one predictor.
+
+Um but we're going to expand that later on. So it's worth paying attention to this now.
+
+So with our whole model which is tested with the F-test or the Anova we're doing,
+
+we're comparing here a null hypothesis of there's no relationship between the predictors and the outcome.
+
+Right. So this is essentially what you would get for your null equation which is just anyone.
+
+Can anyone tell me what this term is. The new hypothesis.
+
+Uh, Deepak, what are you talking about? Yeah.
+
+Anyone want to add what? What is this term here? Be subzero.
+
+I showed it a couple of slides ago. Yeah.
+
+Your intercept. Intercept? Yes. Thank you. Right. So this is saying if I explain why or my outcome variable with only an intercept and some error,
+
+and that's when x we don't have any information about a predictor, right.
+
+So if this is the null model then you're saying the alternative hypothesis is that using some predictor some sum of maybe multiple predictors.
+
+Um, maybe that is if that's a better fit or not than having just the null model.
+
+And then for our individual coefficients.
+
+We have the note here that the coefficient is equal to zero.
+
+So kind of like when we were doing the correlation test which also used a T test.
+
+Sorry about that. I tried to mute in time, but. Excuse me.
+
+So. So like the correlation we're testing that it's zero or that it's different than zero right.
+
+And we can actually calculate our t value by using our regression coefficient and dividing that by the standard error.
+
+Okay. Um, I would say it's a good time for a break, and I'll drink some more water before we look at how to do this.
+
+And, ah, um, do we want a full 15 minutes today?
+
+Maybe a quick vote. Only a couple of you. Ten minutes.
+
+Five minutes. Oh, a lot of you on five again.
+
+No, brick. Let's go with ten.
+
+Uh, and and five minutes early. So we'll start back at 135.
+
+If you do. Not go up.
+
+There's no work for. You do not.
+
+Yeah. Just like, you know, like you're.
+
+This time of. Year.
+
+You're just, like, talking to. I just.
+
+I think we should just cancel. Yeah, just because I. Think so.
+
+Yeah. So. Yeah. Oh.
+
+I think so. So I think that.
+
+I don't know. If she doesn't have enough for them.
+
+Yeah, but you know. Iceland?
+
+Yes, I think we're. Less ego capacity and.
+
+This. You. Know.
+
+Yeah. We were the there and then. Uh.
+
+I. I don't know.
+
+This is the best news. I don't.
+
+Think so. I think they don't know.
+
+I think it's. We must.
+
+I was in the Premier League without my knowledge and I'm not afraid to.
+
+You know. Look, I think you understand. That's business is so.
+
+That's only because said like those don't like they say like you don't like somebody.
+
+This. Yes. Yeah.
+
+That's. To just make sure if you don't have everything there.
+
+You know. But this is not something. I know.
+
+She? She was. Okay. It's all there to.
+
+Including you and I can talk us through. Did you not?
+
+Yeah. So you never know what's going. Why?
+
+It you. Look at the. It's give me two reasons for playing this game.
+
+You think you like it? Like? This is.
+
+It's telling us. Just.
+
+I have. So what's interesting though?
+
+You're always. Do you like one?
+
+I think she would like. One have.
+
+She. Time for.
+
+Yes. Just means. I think it's.
+
+I only bring. I don't.
+
+And. I don't.
+
+I don't like. I think I think my.
+
+There was. I have this.
+
+All right. That's our ten minute break. So we're going to continue.
+
+I guess we're always just going with an average break of ten minutes.
+
+So let's take a look at how we do regression in R.
+
+And I'm going to take a short deviation in a moment.
+
+Um the function that we're going to use that you're going to become good friends with for the next few weeks is the LM function,
+
+which stands for linear model. As with any new function you're trying out,
+
+I always recommend that you plug that function into the help or do question mark LM so you make sure you understand the arguments.
+
+You can see some examples. But the simplest case would be something like this where we're just writing our equation.
+
+If I recall correctly, you also did something like this when you were doing Anova as well.
+
+You had to write an equation in the function. Um, so we're we're taking our outcome variable.
+
+And then that's being uh, there's a tilde here which you can think of as equals.
+
+And then your predictors on the right side. I'm saving it in a model variable here so that I can access that to do things with.
+
+We'll get more into that later. Um, but this is a general form, right.
+
+So just lm your outcome variable, a tilde and then your predictor variable or predictors.
+
+And we'll look at next week how to add or two weeks how to add multiple.
+
+You could do referred to your data frame rate. And with a dollar sign here.
+
+Or you could specify data and the name of your data frame like this.
+
+And you don't have to do that. Just pretty straightforward.
+
+Okay. So for my slight deviation. I'll make this available after class.
+
+But remember that I kind of said you should question the things that I say.
+
+Um, meaning if I say this is how we calculate this type of thing,
+
+sometimes you might want to tinker and say, do I get get that type of thing calculated if I do it manually?
+
+I think in stats one, you also did some manual Anova calculations.
+
+So here you could see, for example, um,
+
+how to calculate your sums of squares manually by fitting a simple model that's intercept only or a simulated model here,
+
+pulling out the residuals and seeing how these might give us the same r squared as the model here.
+
+So I don't have this I don't have all of this printed out. But if you want to run this yourself then you would probably see that at least
+
+what I checked before that this r squared actually matches this one here.
+
+And we're going to look at how to interpret that on my next slide. Um but again this is just sort of like a sanity check.
+
+People write functions for all right. And people make mistakes.
+
+That's one of the things, especially when you're using like open source software.
+
+They get updates to the software. Things break, so every now and then it's good to check.
+
+Does this function calculate things in the way that the math says they should?
+
+All right, so let's say we ran our analysis, right. We ran this model here which.
+
+This is showing us when we get the summary of the model we get our formula shown to us.
+
+So we're predicting sales. That's our outcome variable with advertisements.
+
+We get some information here. Right. Uh we get some residuals, some coefficients, uh, some information at the bottom.
+
+What do you look at first, what stands out to you and the back?
+
+Yeah. Go ahead. I mean, in a relationship, what is the probability of getting a better ratio between.
+
+More to wear and wear under the blue.
+
+So we actually have two well £0.03 values shown here right.
+
+So maybe you're drawn right away to one of these or all of these.
+
+Excuse me. Um, the bottom one.
+
+This one? Yeah. Anyone else? What are you drawn to when you see the results?
+
+P value is also the bottom one or the these ones.
+
+Yeah, these are all really small p values. In this case, I had to turn on scientific notation so we don't just get, uh.
+
+Um, what I would say when we're trying to interpret this, we want to start with our model fit first before we go to our coefficient.
+
+So model fit shows up on the bottom here actually.
+
+So our f statistic we see is 99.
+
+If our test statistic was close to zero, right?
+
+That's already our first evidence that maybe this model doesn't fit better than the the mean.
+
+We got our degrees of freedom reported and our p value.
+
+So this gives us an idea that our model, our line, is a better fit of the data than the mean.
+
+And we're going to use today this first r squared the multiple r squared uh which is telling us about
+
+the variability in our outcome variable that's explained by our predictors that are put in the model.
+
+Well in the overall model. We have our residual, we could, uh, we could actually calculate that value like I showed you before.
+
+So overall, we could say something like the model with advertising money spent on advertising, predicting, uh, sales.
+
+Accounts for 33% of the variability and the outcome.
+
+And it fits better than the mean. And we see here this relationship is positive for adverts.
+
+Our T value is quite high, at least relative to zero, and the p value is really small.
+
+What about our intercept? How do you interpret the intercept?
+
+Uh, test statistic, MP value. An estimate.
+
+Yeah, it says that, uh. Well, our line starts, uh, there on the, uh, y axis, and, uh,
+
+the p statistic tells us what is the probability of there being any other starting points better than what we already have.
+
+That's close. Close. Uh, so this is this estimate, right?
+
+Is telling us that where that y intercept is.
+
+Right? And it's still like this null hypothesis.
+
+So it could be b sub zero or b sub one.
+
+And he's saying that it's whether it's different from zero or not.
+
+Right? So that p value and this t t statistic are actually, uh, likely this uh estimate is to be non-zero in the population.
+
+Wow, I got the mute. Um.
+
+Is there anything else we should look at on here?
+
+The main things are our test statistics.
+
+R r squared r p value r coefficients.
+
+And test statistics for those and p values.
+
+Our standard error can tell us how much variability there is in our estimates.
+
+We often want to see those. I have a plot actually here where.
+
+Don't remember if I plotted standard error or. Uh.
+
+Our confidence interval. I think it's standard error.
+
+Um. Something like this is nice to show what your results look like.
+
+Not sure what. My throat is so dry today. Sorry about that.
+
+I'll switch to this one so I don't have to mute. Um, so we're going to see a lot of these.
+
+Um, question. Yeah. Yeah, so I think I have to double check.
+
+By default, whether I think it's the standard error, um, of the line, but it could be confidence interval.
+
+It wasn't explicit in my code. So it's with a default setting.
+
+So I have to double check that. But usually you uh.
+
+Sorry. Let me go back there. Um, when you do your regression analysis and you want to visualise that.
+
+Um. Your. You want to give some idea of what the line looks like, what the data looks like, and sort of, uh, precision on the estimates there.
+
+And there's less data over here.
+
+So that could be why there's a bit more, uh, uncertainty in that estimate compared to here where there's, uh, somewhere.
+
+But again, I would need to double check. Um. Yeah.
+
+This parameter here, uh, that's, uh, plotting the, uh, the.
+
+I think it could be standard error. Oh.
+
+Keep going to the wrong place. So we're going to look at a lot of output like this.
+
+Um. If I showed you.
+
+Where's my mouse? Okay, I'll just use this.
+
+So we could actually calculate these t values by these values here.
+
+Right. We would divide.
+
+This value by this value and it should give us our statistic.
+
+And then just like we looked at t test before, we just.
+
+Well, in this case R looks at that distribution and gives us the area under the curve relative to that uh t value.
+
+These are our regression coefficients sometimes because it doesn't tell us that it says estimate.
+
+Some people forget. Our intercept tells us it's our intercept.
+
+This is our regression coefficient or B sub one inch the first variable.
+
+We have residuals. You can look at if you wanted to sort of understand that variability uh that's in the data.
+
+And remember residual is the difference between the observed value and the predicted value.
+
+Most of the times we don't really look at those. We would rather just make a plot and see how variable they are.
+
+When you're reporting your statistics. I have this on the next slide.
+
+Um, so we could say something like the amount of money spent on advertising not only explained a significant 33% of the variance in album sales.
+
+And again, that's statistically significant here. And I have my r squared and my F statistic with degrees of freedom and that value.
+
+But it also positively predicted album sales.
+
+And then I have my regression coefficient with a confidence interval which you didn't see on the output by default.
+
+Then our T value with degrees of freedom t statistic and the p value.
+
+If our p value was bigger than 0.001, we would report the actual p value.
+
+But in this case, it's not common to put this many zeros in a write up when you're reporting your statistics.
+
+Does this make sense? You have an idea of how to orient to the output from the regression analysis.
+
+We'll be looking at them many times. So, uh. Now.
+
+For now, we can move on if there's no questions.
+
+Okay, so if we wanted to do make a prediction, like I was saying before, we could estimate our regression equation, right.
+
+So we have an intercept and we have our regression coefficient.
+
+And that's multiplied times our predictor variable which in this case could have been advertising budget.
+
+So we could say oh well I have 100. Units under $100, €100, whatever.
+
+And then you could solve this equation and say, okay, well, I would expect this much in record sales given the intercept and,
+
+uh, and the coefficient that I estimated in the model and the amount for your predictor variable.
+
+But the important thing to remember is like, uh.
+
+So I'll go back to. Yeah.
+
+This is a good or this one even. Um.
+
+Maybe you remember how the mean of your variable may not actually be an actual value in your data set.
+
+Right? Anyone remember that? So your mean is a property, but the same thing can apply here.
+
+Uh, maybe like. Right here. For example, if my sleep hours was like 6.5.
+
+There is no observation at that point. So you and again there's also some amount of error with that estimate.
+
+So you could improve your prediction. But it's just meant to indicate that sorry the model is a model.
+
+Right. And there's it doesn't have to be a true value.
+
+But if you had a good fitting model like. This one was pretty good.
+
+Um, then you could probably use it to make such a prediction and at least feel okay sleeping at night and confident in this prediction.
+
+You could improve that by adding in, say, the standard error.
+
+So you would say, oh, the estimate would be 143 .75 plus or minus.
+
+Uh. Yeah.
+
+This many, uh, .009 or something like that.
+
+Does that make sense? For most scientific projects.
+
+We're not going to really do this type of prediction where we just take a value and plug it in.
+
+But when we get to, um, when we get to interaction effects, we're going to be a bit more interested in,
+
+uh, teasing apart the relationship between multiple variables.
+
+And rather than saying this specific value, we might say plus or minus one standard deviation, what do we expect?
+
+Um, but we'll get to that at a later date. Okay, a few more slides before I let you try out on your own if you can stick with me.
+
+So what we looked at already was an unstandardised regression coefficient.
+
+What this shows us right is for every one unit change and our predictor.
+
+Uh, we can expect a 0.09 increase in the outcome.
+
+But this again is dependent on the units. Right? So if we get to multiple regression and we have not just, uh, variables that are on the same scale,
+
+then we can look at our regression output and say is a 0.09 different than a point one.
+
+If the units are very different, right. So we can also standardise.
+
+And it's very common to report standardised estimates which are called beta coefficients.
+
+And then these are again measured in standard deviation units. So we've seen this before.
+
+Um we're bringing it back in. And that would allow us to compare multiple independent variables or multiple predictors.
+
+And they'll all be on the same scale. So we often want to know um.
+
+Well, can anyone think of why we would ever use our unstandardised?
+
+Uh, if we think standardised might be useful for this research?
+
+Yeah. That's it. That's us. Yeah. Yeah.
+
+And having those actual values is often more meaningful directly.
+
+And. Yeah, I guess. Yeah.
+
+What? That. But you'd have to convert it, right? Yeah.
+
+Yeah, yeah. So if we were, like, saying something here.
+
+Oh, if you have, um, 1.5 standard deviations times a certain value, that's a bit less directly interpretable,
+
+then you're going to have one point or I guess in this case it's something like $0.09 more.
+
+For example, uh, so you could have unstandardised coefficients and interpret them in the direct units, which could be in some cases more meaningful.
+
+Um, but often we want to have standardised ones so we can make comparisons across, uh, variables of different scales.
+
+There's a couple ways to. Uh, get standardised regression coefficients.
+
+Uh, here's a couple so you can use um effect size package uh, which will give us some standardised coefficients.
+
+I don't know why I didn't put this in my example, but I'll fix that.
+
+Um, this will also give us some other metrics to, I think, confidence intervals.
+
+And that's kind of a hint as well that these are measures of effect size.
+
+Like we said, correlation was an effect size. If you have your standardised beta coefficients those are uh standardised.
+
+You could also standardise everything in your model. I don't know when exactly this would be useful.
+
+But it's good to double check that that works.
+
+So I just gave an example here that you could use the scale function within the model.
+
+And you should get out the same coefficients that we get here.
+
+Um, so that's again a bit more of a sanity check.
+
+Or if you want your output to be everything standardised rather than running the model Unstandardised and then getting these coefficients after.
+
+Okay, so I am now we have plenty of time to try out this full regression analysis.
+
+So last week you already looked at this exam anxiety dataset.
+
+You should remember there was exam performance exam anxiety exam revision time.
+
+Today we're just going to do simple regression. Simple linear regression.
+
+If you remember anything about what we saw last week,
+
+you should be able to use that to make a prediction about the relationship between exam anxiety and exam performance.
+
+Exam performance should be your outcome variable and the model and exam anxiety should be your predictor.
+
+I would like you to specify this model with the lm function.
+
+Run it. Try to interpret the output. Try to get standardised beta coefficients.
+
+If we have time, maybe create a scatterplot with a regression line.
+
+And if we have even more time. See if you can quickly write a summary of what they tell you.
+
+I'll give you some time to get started as usual. If you're stuck with me over.
+
+Otherwise I'll come around and check in on you in a little bit. Yeah.
+
+Yeah, this should be the one from the last module. I'll open it up here.
+
+It's, uh. Sorry, this one works fine. I think I misspecified it on the slide.
+
+I'll fix them. So it's from the module from last week.
+
+I did the same to. How do you.
+
+That's what my question. Why this is more.
+
+Why do. This.
+
+Mindful. Okay if someone tries to kill.
+
+So I think you're right.
+
+Is. Let's go.
+
+I. Think you know what's.
+
+Oh. Look.
+
+Hello. Can I get.
+
+You know. Oh, yeah, we have that.
+
+You have to. That just to be under.
+
+Yeah. Uh, okay.
+
+Of. For.
+
+Those who. Know.
+
+You. Look pretty much.
+
+This is this is this.
+
+Is. This is so wonderful.
+
+Yeah. You know, so, you know, you feel like. This is.
+
+What? I don't feel.
+
+Like you like this.
+
+Yeah, so I feel.
+
+Like. Yeah.
+
+This. You know, I just felt that.
+
+You know. So got to take care of.
+
+Everything else that you. Because are.
+
+So this. It's interesting because you.
+
+Of this. That's a bonus.
+
+Yeah. Because, you know, I say there might be some.
+
+Or. Suppose if I didn't.
+
+I know. I know, um, I think.
+
+It was. And that's it.
+
+Um. Maybe an hour.
+
+Just seconds. So that's why you have to.
+
+You don't have to like. Uh, I.
+
+This. But everything else.
+
+I am so sorry for your loss.
+
+Just a little bit. Yeah.
+
+Like celebrating? Uh.
+
+Uh, you. I think it needs to be.
+
+Let's get to that. So. What did you.
+
+Do? At the time?
+
+Yeah. So I.
+
+This. I would start with you.
+
+This is. Stay with us.
+
+This. That was our R-squared and that was about.
+
+That's. It. I guess it's.
+
+Six weeks ago. Now that is said to me that you still.
+
+So then overall. I think that's a good.
+
+This is. Just a baby friendly 90%.
+
+Yeah. And then this is.
+
+What's up? Yeah. So you loved that one?
+
+Yeah. So this is, uh. Okay. This.
+
+Whatever you do, there will. How?
+
+Uh, well. Underscore the.
+
+That sort of thing. So that.
+
+I would. You?
+
+That's. Do humans know?
+
+What they're like? Yeah.
+
+So, actually. So.
+
+And. This is what I would do.
+
+In case. I am your father.
+
+Oh, well, I suppose it's the king.
+
+I was just going. In this.
+
+So I think that. That's not a coincidence.
+
+This is pink. Yes.
+
+Yes. Where do you spend the night?
+
+I. Or something like that.
+
+Yeah. Yeah.
+
+So this. Is a picture of you.
+
+What do you think? I think I just see.
+
+You. So there.
+
+You go. Thank.
+
+You. Okay.
+
+You have to try to. See if there.
+
+Because. The.
+
+Song. Just over six months.
+
+I. But if you look at.
+
+The context, I think. I.
+
+Let's take a quick look together before we wrap up.
+
+It looked like a lot of you were able to do things well, to load your data, to get to your model running, to interpret it correctly.
+
+Um, let me just scroll down a bit. So something I kind of skipped over, uh,
+
+was the reason why we want to save our model into a variable is because we want to
+
+then use the summary function to get these full details that I showed you before.
+
+So if you just tried to get this output, you get less information than we saw.
+
+Um, but so hopefully you predicted some relationship between exam anxiety and exam performance.
+
+And you set up your model like this. Some of you also just used the data frame and the dollar sign, uh, version as well.
+
+I think this is just there's a couple of ways to do that. So would anyone like to volunteer to interpret this for me?
+
+I heard some great interpretations as I went around the room, so.
+
+No volunteers. All right. Well, then I will just walk you through it again.
+
+Right. So the first thing we're looking at is. We're looking at the overall model fit first right.
+
+This bottom line first, telling us that f-statistic and the p value, whether the model fit is better than the mean.
+
+So we have an f statistic quite far from zero with the degrees of freedom.
+
+And this p value much, much smaller than our .05.01.001.
+
+And we're kind of reminded of these, uh, significance codes and this line here and R squared.
+
+Right. So now in regression r squared is our amount of variability explained by the model.
+
+And this could be interpreted as a percentage. So 19% of the variability in the outcome which is exam performance is explained
+
+by this model which includes anxiety as a predictor as well as the intercept.
+
+What's the relationship here? So if we look at the coefficients we see that anxiety is negative.
+
+Right. So the more anxiety someone might have the lower their exam performance would be according to this data set in this model.
+
+And this is significant to right T value higher than 1.96 or lower than -1.96.
+
+Very small p value. Our intercept is non-zero.
+
+That's what this line tells us, right? The t and the p value there.
+
+So if anxiety is zero we expect an exam score of 106.
+
+Apparently I'm not sure how high that exam goes, but uh, in this case that that's what the model predicts.
+
+Any questions on this output? Hopefully makes sense.
+
+We'll see it some more. But again, so remember with correlation.
+
+That was why we squared the r value for our correlation.
+
+And that told us the shared variability between two variables.
+
+But now the r squared is the variability explained by whatever is in our model.
+
+Right. So in this case our predictors and our intercept.
+
+Hopefully you interpreted it correctly. I heard from a lot of you that you you were interpreting it.
+
+Uh, what I have here is two different ways to get the standardised coefficients.
+
+So one way is actually with the quant psych package using the LM beta function,
+
+plug in your model into that and we get the standardised coefficient for anxiety.
+
+So -0.44. Or we could try the effect size here, uh, which gives us, uh, this -0.44 plus confidence intervals.
+
+So I would actually prefer to use that one than we know, for example, that zero isn't included in that confidence interval.
+
+And we can interpret it more directly.
+
+Now if you tried what I showed on the slides, which was scaling your variables in the model, you saw some things changed.
+
+For example, your intercept changed. Uh, your intercept probably became very close to zero.
+
+So you can do that.
+
+But usually the way I do it is I run the model unstandardised and then get standardised coefficients and report the Unstandardised model.
+
+But maybe add in these standardised coefficients with confidence intervals.
+
+Yeah. Um.
+
+Did you check it? Well, that's all right.
+
+In some cases it depends actually, because the calculation for the coefficients is minimising the error in the model.
+
+And uh, in some cases I think that can be true.
+
+But especially as we add more predictors, it will be more similar to partial uh coefficients as well.
+
+Right. Yeah.
+
+I would have to double check it to see, because I think there's cases where that would be true, but somewhere it won't.
+
+Yeah. Here is an example of a plot.
+
+I showed another one of these earlier, I think. I saw you all as well.
+
+You could use the plotting function from base R, and then use the AB line to add a line to it, and you could plug in your model.
+
+So I saw a lot of you went that route. I use ggplot but.
+
+Uh, sometimes it's a pain. So normal, plodding and baser is fine.
+
+And then I wrote a short summary here of, like, how I would report those results, uh, which would be useful for you to give a read to,
+
+because you'll probably need to do that on some exercises and hopefully some research that you do in the future.
+
+So we're going to look more at regression in the coming weeks.
+
+Uh, we're going to look next week at more assumptions.
+
+So now we ran a model. But we think it might be a decently fitting model, at least that accounts for some variability.
+
+And it has a significant predictor, but really didn't check if it meets any assumptions.
+
+We'll do that next week. Um, so what we covered so far is regression with one predictor.
+
+We're going to make that more complex of course. We talked about how do we assess that fit overall.
+
+So we're not going to really revisit this in the coming weeks.
+
+I'm going to assume that you got this already, but we are definitely going to be interpreting our F and R squared,
+
+which you should know now that are based on all of these sums of squares comparisons.
+
+Hopefully you can interpret basic regression and uh using R.
+
+There's uh reading for next week is just part of this.
+
+So page one through 21. And if you haven't seen this before, you can see a bit of how you can do the different types of tests we cover,
+
+all within the uh, linear model framework, which is why we focus on regression so much in this course.
+
+See some of you at the practical. And then if not, I'll see you next week.
+
+Thanks. Well. You.
+
+Know. I hope so, you know.
+
+And it was. Just a family with us.
+
+Yeah. You know. We have things like the local businesses we don't have.
+
+Everything. And it's just like 23 years ago. Like I said before, it's nice to be, you know, and stuff, you know.
+
+And did you check what? They had a little trouble. I don't know if that Aaron was.
+
+And must mean me. Can you send me?
+
+Your script. And that's how to use this to play.
+
+With my videos. And yeah, it's just.
+
+But it's not great. And then we'll see. Yeah.
+
+Yeah. That's. Because for practical things.
+
+Oh, yeah. And and then I see and you can mention your to set your heels.
+
+It's always so. Yeah.
+
+But they should be able to have some time in 2020. How we can solve it in general.
+
+So it's definitely yeah. But that's because we what we do is we do have to be ready to write on the computer.
+
+But it says no, it's always true that you are able to use it, but also know that you can also send a message.
+
+Thank you. One question is why did you put in the album?
+
+Get two more than you put on. So I did like on the way around they did and say it with Excel and I got a different result.
+
+I let me too. Yeah. So that's uh, one well, I didn't put it written, but I said it out loud.
+
+That exam performance should be our outcome variable.
+
+Show the outcome variables. Or when you're trying to predict what should always be on the left side.
+
+The first one. Yeah. And then the variables you're using as the predictor are on the right side.
+
+Okay. All right. So if you think kind of about the research question you might ask, we don't really want to predict performance.
+
+You really want to see how well will they do on the exam.
+
+From anxiety, right? Yeah. The thing is, when I did.
+
+Well, when I put the formula in, um, reverse, basically.
+
+So with anxiety first in exam scores, after I almost got the same results, about like a little bit different to the results I got, I switching it.
+
+Um, but how does that work? Um, because in the, in the case where I reverse that, um, I was testing, I think how much, um, anxiety changed.
+
+With every point you get in the exam or something. Something like that.
+
+Yeah. Yeah. So so then you're reversing kind of the question you're asking the relationship.
+
+Right. So if there is an association in one way there should be the other way to.
+
+Yeah. But the units are different. Yeah. That's why the coefficients, uh, should definitely be different.
+
+Yeah. But I assume the the overall model fit was still similar to bottom.
+
+That was very similar. Yeah. And then the coefficients would be different because you.
+
+Okay. Yeah. Yeah. Okay. Yeah. Uh, see you next time.
+
+We are all over. So maybe it's better.
+

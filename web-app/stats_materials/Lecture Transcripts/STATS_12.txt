@@ -1,0 +1,1079 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Good afternoon everybody. This will be the first time of two times that you might see me today.
+
+Lucky. Uh, like. Yes. Um, our last stats two lecture today.
+
+Exciting, right? Uh, some of you are, uh, maybe ready to move on from statistics to other topics.
+
+Some of you will be sad. You know, you're going to miss out on more stats.
+
+We will have a meeting, uh, next week.
+
+I'll say more about that at the end of the lecture today. Um, but for now, we're going to be talking about growth curve modelling.
+
+Slash still mixed models. And yeah, as I already said we are here.
+
+Last lecture. Um, which is uh exciting.
+
+But you know that means that next things are coming soon.
+
+Exams, projects. Um, hopefully a winter break for some of you before getting into your new topics next semester.
+
+Let's, as usual, start with our woo clap questions I have for for you today.
+
+I will give the disclaimer as well that these do feature like full output from the models.
+
+So what shows up on the screen will not be complete.
+
+You'll have to check on your devices to see the full output.
+
+Have any of you checked? Uh, timed it to see if any exams show up there yet.
+
+Yeah. Did you see anything for stats? Yeah.
+
+Okay. Maybe this is also your friendly reminder, too, that you do need to register for your exams if you don't register.
+
+I can't do anything about it. Like, uh.
+
+It's very unfortunate. So do make sure to do that so that you can actually participate in the exams.
+
+Although it looks like stats two is scheduled December 15th.
+
+I don't know if it's just a preview or if it's there for everyone.
+
+So check your time. Edit. And I'm talking about exams because I think maybe at least this first question, maybe the second one too,
+
+might be kind of an example of something that you might get on the exam like here is some are outputs.
+
+Here are four possible. Things that you could interpret from that output.
+
+Which of them is true or which of them is not true? So let's go on and go to the first one.
+
+I will bend it a bit so we can see part of it.
+
+But again, you need to check the full output output on your device.
+
+So this one is asking which of the following has the correct random effect structure based on the information provided here?
+
+About ten more seconds for this one. For the last few. All right.
+
+Let's see. Oh, this one is tricky.
+
+Um. So maybe everyone, uh, guess on this one.
+
+We did cover random slopes at the last part of the lecture last week.
+
+Hello. So the the important thing is thinking about what this random affects structure is telling us when we look at the equation,
+
+but also when we look at the output of our model.
+
+So there's also something missing here, which is the one plus which we saw in most of our examples we did last week.
+
+However, if we do run this with the one plus or without it, we'll end up getting the same, uh, output so that one plus can be redundant.
+
+It's something that our also assumes by default to give us, uh, this structure.
+
+So what this is telling us is that we are getting random intercepts for subjects and random slopes for days for each subject.
+
+And that's part of why I showed you last week how to inspect the coefficients, where we put our model into that coefficients function.
+
+So you could see that the random effect structure what it was doing.
+
+So what I would recommend for you all as well is to try when if you're if you're working on studying this or practising,
+
+um, these mixed models with different random effect structures, just try different formulations here.
+
+You can see examples at some of the links I shared last week. And look at the coefficients and see how they vary based on how you specify these.
+
+So I don't have an example output to go with this. But we would see is that for each subject, uh, we would have a different uh,
+
+intercept and that the days would have a different, uh, slope for each subject.
+
+All right. This one has, like a full set of output, I believe.
+
+So you should be able to scroll through it, I think, on your device,
+
+this one we're looking at from this output, which of the following options would be true?
+
+Can you also still see the fixed effects on yours? Yeah.
+
+Okay. Even if I fully expand, I can't see them.
+
+All right. About ten more seconds for your answer.
+
+Or guess. All right.
+
+So this one was about the fixed effects. Um, if I could show the full output, that would be useful for me to explain it to you.
+
+Um. I'll come back to it, uh, in a second after we finish the other two.
+
+Then I can, uh, close it and go to the full output. Um, but this does give you an idea of, like, if you were given very little information.
+
+Right? So all we have is this output, and it does tell us at least what the model is.
+
+Um, and then this set of, uh, output that we are should hopefully be comfortable by the time you get to the exam.
+
+But of course, by the time you're doing your own analyses, um, sometimes on an exam, you'll be given more information, right?
+
+Like, what does what do these variables actually mean? Uh, that's also something you could expect to.
+
+Okay, so how about this one? True or false? Growth curve model is a type of mixed effect model.
+
+Just a few more seconds. Where? This one. So the answer would be true in this case.
+
+Um, there are other types of growth models that you could do that we're not doing in this
+
+course that might be related to structural equation models or other things like that,
+
+but growth curve models as we use them are a type of mixed effect, which we'll get into shortly.
+
+And then the last one here is what's the main fixed factor in an unconditional growth curve model besides the intercept.
+
+Okay. About ten more seconds. All right.
+
+What have you got? This one. Right. Time. Time is the main.
+
+Fixed factor in an unconditional growth model. What if this said conditional?
+
+Does anyone know what the answer would be then? If it's a conditional growth model.
+
+It is one of the options up here. Any guesses?
+
+I guess it will be a mystery forever. Uh, it's this main independent variable of interest, but we'll unpack that, uh, shortly.
+
+Does it make sense to look at this? Uh. Output together.
+
+Also, can I expand this? This is just not a great way to look at the results.
+
+So in this case it's also omitting the the p values.
+
+Um, but it is that really high t value here.
+
+So greater than 1.96 which is also related to our decision making criterion.
+
+Um, so this interpretation here about the effect of days with this average increase of 10.47 in reaction time,
+
+which is the output across all subjects.
+
+Um, so that's about making sure you understand how to interpret what a fixed effect is,
+
+to look at this output and remember or integrate that this effect, uh, does relate to this outcome.
+
+The reaction there. And how to interpret this information.
+
+So usually there would be something where if it's asking for which one of these is true, some of the values for example might be correct.
+
+But maybe the interpretation is not correct. Um and so on.
+
+Any questions on these questions? Cool.
+
+So. What I want to cover today is basically what is growth curve modelling.
+
+Give you an example to work with today that's going to be just using a straight line.
+
+Um, and then we're going to talk a bit about polynomials, and I'll give you a short example with that,
+
+which you will then work with polynomials of on this one in your practical exercise this week.
+
+Before we talk about reporting and graphing. So I don't have a lot of slides today about, well, 20, including the 2 or 3 that I already showed.
+
+I think it will take a bit more time for you to run these models, um, and interpret them together.
+
+So I want to save more time for the exercises that we'll do together.
+
+But let's look at what we're doing today. That's different from what we did last week.
+
+So. Here is our generalised formula for the mixed effect model, where it looks just like our regression equation.
+
+Except for we can have these, uh, error terms that allow for random intercepts and slopes.
+
+Again, when we have nested data or repeated observations.
+
+And the repeated observations is the important part here, because with growth modelling we tend to be thinking about time.
+
+So time is explicitly included here. So it's a special case of mixed modelling.
+
+That gets back to that question in the quiz already. The focus is on longitudinal or repeated measures.
+
+We always include time. And this is going to be a predictor of our outcome.
+
+And that's the growth part. And we could expand with polynomials like we covered earlier in the semester to have curves.
+
+So that's where we get the idea of like growth curve modelling.
+
+If we don't have a curve then maybe it's just a growth model. Um, this is maybe a bit more semantic,
+
+but I wanted to point out where these come from and how they will relate to the equations that you specify for your, uh, model.
+
+And the important point here is that, you know, before we were looking at our independent variables and raising them to different polynomials,
+
+to say that, oh, it might take a quadratic or cubic shape, the relationship between your independent and dependent variable.
+
+But now it's actually about, uh, polynomials that we raise our time variable to.
+
+And we're saying over time does that have like a linear increasing trend or is it a quadratic trend over time or some other polynomial.
+
+Right. So when should we use growth curves?
+
+Well when you think something changes over time.
+
+Uh, so an example here is looking at some observed data, uh, how it changes from week to week.
+
+This is a placebo group versus, uh, some type of, uh, treatment.
+
+Um, and when you want to look at sort of does this have an effect over time between these groups.
+
+So this is something that kind of came up in the quiz already where I talked about conditional versus unconditional.
+
+I'll say more on that. Uh, soon. But conditional.
+
+It means that you're actually adding in that independent variable besides time.
+
+So you might have just a model that says over time across all of these two groups, what is the pattern of change?
+
+And then you would add in the conditional. Which would then say, okay, is there a difference in the pattern of change over time between the groups?
+
+That's something that we would really be interested to find.
+
+Otherwise, we wouldn't have had experimental groups or treatment groups or things like that.
+
+This is a more cognitive, science oriented, uh, example on, uh, visual search.
+
+Um, which is not exactly time, but increasing sizes of um sets for this visual search task.
+
+These all come from the, uh, the required reading, by the way, Dan Mormon's, uh, book on growth curve modelling.
+
+Uh, so there's plenty of examples in there on when growth curves might be the way to go.
+
+But if you know already I have repeated observations and there's some regular interval of these observations,
+
+like every day, every week, uh, every minute.
+
+That's already a clue that you might want to consider growth curve modelling.
+
+So our process for building growth curves is sort of like this.
+
+Uh, remember that we've gone from this comparison earlier on, especially in stats one where we just want to compare,
+
+say, the means between group one and group two, or between a few groups.
+
+Um, and now we've transitioned more to a model building framework.
+
+And this really applies a lot here for growth curve modelling.
+
+So we might start with our base model, which is just our outcome variable time and a random intercept for subjects.
+
+If we have uh repeated measures for subjects.
+
+So this is the simplest growth model that we could do.
+
+And it's called unconditional. So there you, you're trying to see what is the pattern of change over time.
+
+If I don't know anything else but this information. And then we want to iteratively build on that to see, uh,
+
+do we get a better fitting model if we add polynomials for time, for example, this would still be unconditional.
+
+But then we could add this variable of interest like, uh, a treatment condition, for example.
+
+And then this now becomes a conditional growth model and conditional.
+
+All that means is that the pattern of change over time is is conditional on the group that you're examining.
+
+So that's that's what we have shown here, for example,
+
+where we will then get a change in the estimate of the growth pattern based on your conditional variable.
+
+In this case it's grouping. But it doesn't have to be. Then we could add interaction terms.
+
+Right. So maybe we're interested in is there an interaction between our conditional variable and the pattern of change over time?
+
+Uh, we might have to test is there, uh, random slopes that we should have added to that model?
+
+Um, so this is this is how we might iteratively build on a unconditional sort of baseline growth model to get to some point where we think that,
+
+um, we have gotten a model that fits our data well.
+
+I'll come back to this point in a little bit as well, that we should, of course,
+
+have maybe a theoretical background, too, of why we think there might be a certain pattern of change over time.
+
+Although I would say from my experience in the research, it's really hard for people to do longitudinal studies.
+
+You know, they take a long time, take a lot of resources. So we just don't see a lot of it.
+
+And therefore, it's also hard to have a strong theory about what patterns of change you might predict over time.
+
+Uh, so that's why we might say, well, no one so far has done a longitudinal study in this area.
+
+They haven't done growth curves in this area. What kind of theory should we have then?
+
+Maybe you have a good hunch based on, you know, something related, but maybe not.
+
+So maybe you have to go through this empirical model building process to see then what is the best fitting model?
+
+I'll come back to that a bit more in a later slide. For now, I want you to to give this a try.
+
+So we are going to work with, uh, some chick weight data.
+
+There is a our data file. Where's my mouse?
+
+I don't know. How about this?
+
+Yeah. So this. Our data file should be on canvas under the modules.
+
+You can load that and then this data set is within there.
+
+You can also, as usual, check out what's even in this data set.
+
+I'll tell you though, of course it has the weight for some baby chickens that are given different diet type.
+
+So there's a variable that tells the diet and there's also a time variable.
+
+This data set does have documentation. So if you go to help in R you can also type this in.
+
+And you can actually see more information about it. Try to make uh your growth curve model.
+
+So start with the unconditional growth curve. Then maybe try a conditional and then maybe try one with the interaction.
+
+I would save all of these three models. You can also inspect the output of them.
+
+Um, also I have here of course, try to make some predictions.
+
+So once you understand the data, how do you think the weight will change over time?
+
+Will there be some effect of the different diet types? Will these interact?
+
+Try to make some prediction before you run this. Um, I will give you some time to do this.
+
+Make sure to save them. We're going to use them again in the next exercise.
+
+Uh, but I'll check in with you shortly to see how it's going.
+
+One other thing, too. You can work with, uh, seamless past server as well.
+
+The link should be on canvas if you want to work on the browser instead of your own local or studio.
+
+If you have any issues with anything with me over and I'll try it out.
+
+It's. Would you put it down?
+
+I. By.
+
+Yeah. That way.
+
+Uh. It might be something like.
+
+This is. Something that.
+
+So we. Uh, kids?
+
+If you. Excuse me.
+
+I want to ask. Old.
+
+It's going to. Stuck out.
+
+So what's the big. You'll see.
+
+So efficient. So. That anyone can get the.
+
+Yeah. Anyone stuck with that?
+
+So. That's.
+
+Would you like a yes or no? Technology.
+
+Oh. It's like you.
+
+Yeah. This is. So the file shouldn't be.
+
+To do something. That's fine. That's a bit.
+
+That's the. Just please.
+
+Yeah. So you think you. I love this.
+
+Yeah. The witnesses.
+
+So. Because you this.
+
+Who they. He was.
+
+Kid was. I think if I see.
+
+So do. This.
+
+So I don't know. Much I.
+
+This was another one of kind. People that are.
+
+So. Maybe if you have an idea where he see.
+
+Be vaccinated. Are you giving?
+
+What we do. First of all.
+
+Let's do a quick vote for today's break duration.
+
+Do we need a full 15 minutes today? No one.
+
+Okay. And early and do ten minutes. Yeah.
+
+Ten minutes. Looks like the most. Five minutes only. I think we'll do ten.
+
+Well, we'll do 11.5. So let's just start back at, uh, at 140, and then we'll go over the, uh, the code for this.
+
+God. They were not.
+
+So. Yeah.
+
+Yeah. So the question is.
+
+I. Yeah, I'll say why we're studying instead of getting into some sort of compilation thing.
+
+All right. That was our, uh, break time. Hopefully you are, uh, well braked and ready for some more growth curve modelling.
+
+So this are a data file. It was a bit of a different we I think we had worked with it before.
+
+Maybe in another module or maybe in stats one.
+
+Um, if you hadn't seen it in a while. Uh, it's actually contains a bunch of different data frames, so it actually just loads like an R workspace.
+
+Um, you could load it like this, or you can click in your R studio, the open open file button, and you could, uh, click on it to load it that way.
+
+And then you would have had a bunch of different data frames show up in your working environment, um, which you could then work with.
+
+So in this case, data check. Wait, if it wasn't showing up, should populated there.
+
+And then I added this to just double check what's in there. Right.
+
+So we have the the weight. So this is a value.
+
+You can check out the documentation and help as well to see more about it.
+
+Uh there's a time of memory measurement. I think this was weeks or something.
+
+Then a chicken identifier number and then a certain diet type.
+
+So this is just from the heading. But if we look at the summary we see there are four diet types.
+
+Not totally balanced. Uh, number of observations.
+
+Um, and we can see a bit of the distribution of the weight and the time and the chicken identifier there.
+
+So let's just take a moment to think about this data set.
+
+Right. So it includes the weight of some chickens.
+
+And if you were maybe a farmer and you wanted to see, okay, I could give my chickens different types of diets and see how well they grow.
+
+Um, that could be a reason why you might want to look at these data.
+
+And then you might just want to say, okay, well, if I don't know anything about the diet,
+
+I'm just looking at across the chickens over time, what sort of the trend?
+
+Right. And if you knew that these were, say, newly hatched chickens, you would probably assume that the trend it would be positive, right?
+
+They're not. They're going to go up in weight. How strong that is.
+
+Maybe that depends. Uh. Has anyone raised any chickens before in here?
+
+No. Some maybe you think partially of you.
+
+Maybe your family has some I don't know I have in myself, but, uh, usually they tend to get bigger, right?
+
+Up to a certain point. Um, why do we have this random effect?
+
+Remember we said when we're thinking about this unconditional model, which means we don't have that sort of key independent variable, just have time.
+
+We still want to account for a random intercept for our subject ID in this case, our subject.
+
+Our subject is just the individual chicken.
+
+And in that example up here we had, uh, multiple observations of the weight per chicken up until time 21 I believe.
+
+So then after this goes further on, we have observations from chicken two, chicken three, and so on.
+
+So we're just going to be pulling out those random intercepts per each chicken ID.
+
+So this is our absolute base unconditional model.
+
+Which I specified here and I called it model dot base, amp base.
+
+Uh, you see this is LMR again. Remember, that's the difference with, uh, mixed models, we can't use just our LM function should be lm,
+
+er, um, here I added diet, so this now becomes a conditional model.
+
+Right? We're adding in diet. Why? Well, this is perhaps something that the person who was doing this research wanted to see.
+
+You know, this was their independent variable in their study.
+
+Let's try out these different diets and see which one, uh, you know, gets the chickens to grow better.
+
+Something like that. So this is why it becomes conditional. Uh, I was talking before with one of you that.
+
+Would you ever have diet as a random effect? Maybe if it was something that you weren't really interested in as the main part of your study, right?
+
+Like if you were trying to look at the relationship between exercise and weight while controlling for variation of certain diet types,
+
+you could possibly have a random effect for that. But in this case, we think it's like the main manipulation.
+
+The main thing we want to see is there a fixed effect for it. So ran this model that way, right.
+
+Weight uh, as a function of time plus diet and then adding in the interaction.
+
+So in this case I just put the asterisks here um, and ran that.
+
+So I saw some of you already looked at the output.
+
+I don't have my output here. Right? I just went to exercise two.
+
+So let's come back to the output in a minute. Were there any questions just on this data set and how I set up these models though.
+
+Makes sense. Well. Okay, so this is more or less the same thing that I just showed you.
+
+Uh, except with some figures that I'll also show you how to make those in a little bit.
+
+Um, so remember I said we're doing this kind of model building approach, and we're not farmers.
+
+At least no one admitted to raising lots of chickens. Uh, so maybe we don't have any idea about what the pattern should be over time?
+
+Should diet and time interact? We also don't know what the diets were, but we could try to check if it is here.
+
+Um. I don't think it's as though.
+
+Yeah. So it says 1 to 4 with experimental diets.
+
+We'd have to read the source paper, perhaps to get more information.
+
+So the reason why I set up these. Three models like this is because I'm now going to do this sort of empirical model comparison, right?
+
+If I had a strong theory, then I would have said from the beginning, oh,
+
+I expect that there's going to be an interaction between the pattern of change over time based on the diet, but I don't have that theory.
+
+But I'm going to compare each of these models. So you already saw last week how we can compare mixed models.
+
+Unfortunately for you, it's not new. We can compare the goodness of fit using the log likelihood function.
+
+The thing is that unlike the R squared, it's not that meaningful.
+
+Uh, to interpret the log likelihood itself. Except for that we know that higher log likelihood is an improvement of fit of the model.
+
+And we use this negative to log likelihood, which follows a chi square distribution to get p values.
+
+And remember these have to be nested models that we're comparing.
+
+So that means that the dependent variable must always be the same.
+
+If you're ever trying to put in multiple models that have a different different dependent variable.
+
+Hopefully you'll get an error. Um, it should give you an error if you do that.
+
+Did any of you already try to compare the models? No one, just mostly looking at the output.
+
+So let me give you just a few minutes then to try to compare your three models.
+
+You can use the Anova function to compare them where you enter all of them at once.
+
+You could also try the test performance from the performance package, although when I tested it, I get a base factor.
+
+Which is not what I want. I want the log likelihood. So it's actually test likelihood.
+
+I think you can check the documentation for the right one.
+
+Then once you see which model is the best fitting model, then I would get the summary of that model and try to interpret it.
+
+If you have time. Try adding random slopes as well and see how that compares to your best fitting model.
+
+In the end, whenever you've gotten to this point where you say, okay, I think this model is the best fitting one,
+
+check your assumptions, make sure they look good, and then see if you can make a plot to help support your interpretation of that model.
+
+I'll give you some amount of time to work on all of these steps before we'll go through these together as well.
+
+And then we'll go over a few slides on the polynomial, uh, additions to this.
+
+And you to. Things that are.
+
+Other. This is.
+
+It's just that it's.
+
+It's like five minutes and five. I mean, it's.
+
+Of course. Also in our first year.
+
+Yeah. I'm a bit stuck here.
+
+Well, it's. That so? Yeah.
+
+Yeah, yeah. You know this.
+
+No. It's just.
+
+Yeah. But why is it so much?
+
+So it's there. You can still do. We have Mitch.
+
+It's. Yeah.
+
+What is? Appreciate.
+
+It's a beautiful. That's what I am.
+
+This. Now there's.
+
+This. You know.
+
+Yeah. Yeah. Yeah. It's.
+
+Some of the. No, you.
+
+That's insane. That's. Yes.
+
+But at least you can check. To.
+
+I. Yeah, yeah.
+
+I just want to. Let's take a look together now.
+
+And, uh, then we'll go into the adding some polynomials to this.
+
+Uh, before we wrap up, uh, at least five minutes early.
+
+So I wanted to compare the fit of these first three models, right?
+
+So remember I had my base model, which was just that unconditional model that has this random intercept for chicken ID.
+
+Then I had just two separate effects for time and for diet.
+
+And then I had allowed for the interaction between time and diet.
+
+When I do the Anova for these. We can see systematically what were the models being compared.
+
+Right. And then how well they compare in terms of their log likelihood,
+
+which is where these chi squared values are, uh, estimated from, also based on the degrees of freedom.
+
+So we're seeing actually if the log likelihood of these models is better relative to the other ones, in which case we see both the model,
+
+the conditional model and the conditional model with the interaction are better than the prior models,
+
+even though they have more parameters being estimated.
+
+And we also see here still lower AIC as well.
+
+So you would probably conclude, conclude from this that the model within the interaction term is the better fitting model if you just use this.
+
+I also said you could use test performance, but if you did, anyone try it?
+
+Did you get the base factor from that or did you get output like this?
+
+Uh, okay. So for me, for some reason, it defaulted to base.
+
+It's supposed to detect what's the most, like, the right test to do.
+
+So for me, it wasn't. That's why I did mine manually. So test likelihood ratio.
+
+And then we're still getting this chi square test, just like what we had up here.
+
+So why would you do that? Uh, well, I don't know.
+
+Um, if, you know, if you're just trying to stick with in this sort of family of packages, maybe you just do it this way.
+
+Um, here, you get a bit more of these other metrics, too, that you could compare, uh, but both test, uh, give us the same interpretation.
+
+So that's good. Um, if we compare our performance so we could just extract the performance metrics as well and then compare the R squared.
+
+Does anyone remember the difference between the marginal and conditional r squared for mixed models.
+
+I even. Uh, referred.
+
+They include the ransom? Yeah. Yeah.
+
+Thank you. Yeah. So these ones are essentially what the whole model, including the random effects include.
+
+And this is just our fixed effects. Yeah. This is done sometimes.
+
+Are. Less than I did for. Yeah.
+
+Do you think that. Yeah. It works in a different way than.
+
+Can you repeat that? Uh, so when you use, when you construct a model.
+
+Mhm. Just in fact the r squared is different from where you construct the model with random effects that are so powerful r squared.
+
+Whether it's, uh. Adjusted our.
+
+So you mean if you run a multiple regression that doesn't have any random right?
+
+Yeah. Yeah. So yeah. Yeah. So from.
+
+Well, the remember, the multiple regression is violating the assumption of interdependence of the model.
+
+So the R squared getting that you're getting from an LM function is is not reliable when you're violating this interdependence, uh, assumption.
+
+Uh, well, the the equation for how it's calculated for the linear model is the same as we went over for multiple regression.
+
+But here it's different because, uh, I didn't go over that actually.
+
+But I can get some info later on that. Yeah.
+
+Um, but but those would be different because they are calculated differently,
+
+but also because if you calculate that for this data with independence, uh, interdependence, then it won't be accurate anyways.
+
+Yeah. But you can, uh, you can remember as well that these should be just for fixed effects alone.
+
+But again, if you try it with a linear model that doesn't have any random effects,
+
+then you'll get something different because that isn't the right model to run for those.
+
+But good that you checked. Um, we could also look at the ICC.
+
+Remember that that intro class correlation is telling us about, uh, the relationship within our random effects.
+
+Uh, we do want to see some correlation here.
+
+Otherwise, it tells us that the random effect structure we used maybe is not, uh, it's not really that important.
+
+Uh, we could look at the MSI. So which one has the smallest error?
+
+Again that's that looks like it's our M1. I don't know why it's swapped the order here for these.
+
+Uh, that's a bit strange, but, uh, uh, well, we could make the spider plot here as well.
+
+Plot, compare performance. And then we see that the M1, the one with the interaction, also has the best fit.
+
+So now I finally generate my summary. So my thinking was, at least I think this is sort of a reasonable.
+
+Um, set of models to compare which of those fits best.
+
+Then I will interpret the output, because then I'm confident already that if I'm choosing the best fitting model,
+
+that it would be the one to interpret rather than interpreting along the way, you could do it the other way around.
+
+You could just say, what is my unconditional model? Let me interpret that, uh, and go along further.
+
+But I'm just showing you a different way to think about that. So here we have a lot of random effects.
+
+So we have a lot of fixed effects that are significant. We see an effect the intercept being different from zero.
+
+We see a positive effect for time.
+
+So that's going to be you know, some increase uh and in the chicken weight over time we see all of these other variables.
+
+So what you should know is that this was a factor and our treats are dummy are factors as dummy coded which is why we don't see diet one.
+
+So everything that we learned about dummy coding before applies here.
+
+That these changes are relative to the referent group which would be diet one.
+
+And then the interaction terms here. Also, I'll end up being significant.
+
+But to interpret interactions. Remember we had that whole module on interpreting them.
+
+I would of course say the best thing here is actually to come up with a plot that shows you the predicted pattern for each diet type over time.
+
+And I'll show you that in a second. I will also remind you that if you are struggling to interpret your output,
+
+you could always use the report function to at least get an auto generated interpretation.
+
+I usually use this to, uh, to double check.
+
+Did I interpret it correctly?
+
+So maybe I will generate I will interpret it first, then I will generate the summary and see if it's consistent with what I thought.
+
+Again this may not always be accurate.
+
+Uh, hopefully it is though. Uh, and it wouldn't be typically the way you would report it yourself.
+
+And, and uh, in a scientific paper, it has some of the parts there, but the writing is not, uh, the most interpretable.
+
+Um, let me show you my plot before I come back to this.
+
+So I ended up using ggplot with my chicken weight by time, by weight, and adding a colour for diet.
+
+Um, and adding means and standard error to these points.
+
+Uh, before then adding the fitted values of my best fitting model here and giving it a certain, uh, colour palette.
+
+So I would say if you could. Generate your results and then have a figure to go with them.
+
+It's pretty clear here what the pattern is, right? That all of the chickens increase in weight on average over time, and this varies by diet type.
+
+So if you were a farmer trying to choose which diet to choose to give your chickens, which one would you choose?
+
+Anyone? Uh, maybe just a quick vote. Would you go for number one?
+
+Two. Three.
+
+For. Everyone's going for three.
+
+So you want these chickens that end up with the biggest at the end, I guess.
+
+Um, of course, maybe you would be thinking, oh, well,
+
+I would maybe want to know how much it costs or what am I feeding them, uh, or something that's even longer term.
+
+Like, not just what gives us the biggest chickens, but the healthiest ones.
+
+Um, but of course, we don't have that information. If you are really just trying to look at where they end up.
+
+You would see that it looks like diet three, uh, ends up on average to be, uh, they have a steeper slope, so they gain weight more quickly.
+
+Um, compared to the other ones. But the standard error bars are overlapping at the end.
+
+So it could be that, um, at the end, it's not really different than diet for for example,
+
+I would maybe want to go in and then compare that as well to be confident in that.
+
+Um, so I also just tried adding random slopes for time here.
+
+So this was just like in the, uh, the quiz question today.
+
+Putting time here on the left side of the vertical bar.
+
+Keeping the one plus there. Remember are will interpret it the same whether you have that or not.
+
+Um, and then this will give us, uh, a model that actually fails to converge for me.
+
+Um, which, uh, means that it's, uh, difficult to estimate, uh, the parameters, although it still gives you something.
+
+Uh, but that, to me, it's a warning. It's not an error.
+
+If I was running this analysis myself, I would probably try.
+
+I would probably just go with the simpler model.
+
+Um, otherwise I would try different convergence optimisers, which is beyond the scope of what we're covering.
+
+But of course, you can always copy your warning into a search engine, uh, and see what's recommended to figure out what to do about that.
+
+But but I wanted to include it here because it's quite likely, especially if you're going with, uh, maximal approach that we talked about last week.
+
+And we'll come up again shortly that you will get convergence issues.
+
+And again, usually my approach is to go with the simpler model that has still a very good fit.
+
+Although as you saw here, if you run this, it gives a convergence issue but then does still say it is a better fit.
+
+And if we look at the output, it's pretty similar, although there's a bit of different effects.
+
+Now the diet three has got a significant effect.
+
+This one has become non-significant, so I would be a bit concerned about what's going on with this.
+
+Uh, random slopes for a time.
+
+But so because of the convergence issue, ISO said, please check my assumptions for model one.
+
+There was a bit of something here with, uh, linearity, um, and uh, homogeneity that looked a bit off, but not very bad.
+
+Um, but you can also do this manually, which I wanted to show you as well today.
+
+So rather than relying on the plot, which we saw in some cases can be difficult to generate.
+
+You could check them manually and get some information there as well.
+
+Okay. There's no exercise through today due to time, and you'll work on that in the practical.
+
+So. What do I want to say here?
+
+Uh, basically that. You can compare your models.
+
+You should interpret your output and a good figure, especially for growth curve models, really goes a long way.
+
+And showing that pattern, I think for many of you, maybe when you just looked at these coefficients,
+
+you see whether they're positive or negative, whether they're significant or not.
+
+But when I show you this, then it's much more clear how to interpret those effects.
+
+Now you can change this. Right. So we just had a linear pattern of change over time.
+
+Overall, it seemed all right. We could do everything we did with polynomials in these models.
+
+Again, just expanding our time variable to be a polynomial.
+
+There's some advantages of this. Like we can basically model any pattern of change.
+
+Um, although we need to ensure that that model that we get is the.
+
+Uh, average of the individual models.
+
+So that's why we might then look at those individual coefficients, uh, and make sure that those are matching the overall output of the model.
+
+Keep in mind that we can't extrapolate outside our observed time window.
+
+So this is important. This is the same with, uh, the polynomial regression that we did before.
+
+But it's not forecasting. Right. So we're only training a model on our observed data.
+
+Uh, even if we saw something like a, uh, uh, quadratic curve like this, you might be tempted to say,
+
+oh, well, if I plug in the values out here, uh, then I would expect, you know, something over here.
+
+Um, but but growth models are they're usually not recommended to project outside the time
+
+window that you might want to use a forecasting algorithm or something like that.
+
+So here's that, uh, thing about how to choose polynomial order, whether that's statistical,
+
+like we kind of went through today comparing the improvement of fit based on adding higher order
+
+polynomials and where does it not improve fit or theoretical or just trying up to fourth order?
+
+Because usually most things are not higher than fourth order.
+
+And we can still do orthogonal polynomials here.
+
+So this shows you an example for a growth curve modelling how the orthogonal polynomials will still capture these trends.
+
+They do transform the values though making the direct interpretation harder.
+
+But they can reduce some correlation between the variables.
+
+That might be problematic.
+
+Now, as with our normal, uh, polynomial regression, it can be challenging to interpret directly our, uh, polynomial terms.
+
+I've included this figure from the from the presentation of the author.
+
+Um, to give you, like a rule of thumb, interpretation of the coefficients for each higher, uh, order polynomial term.
+
+But again, the best way is really to simulate sorry two you could simulate them, which I have on the next slide, but also just to plot them.
+
+So in this case you can see for example, uh increasing strength coefficients for linear, quadratic,
+
+cubic and quartic terms and how the increases in those coefficients sort of changes the, uh,
+
+the strength of either the slope of the line, if it's the linear term, the steepness of the quadratic curve,
+
+uh, the multiple points, like the strength of the inflection points here for cubic and quartic.
+
+Right. So that gives you some intuition at least about how to interpret them, although it's going to be relative to your data set.
+
+But but if you found for example.
+
+A conditional model where you saw that there was an interaction between your cubic term and your conditional variable,
+
+and one was stronger than the other. Then you could still use this as a reference to sort of interpret.
+
+Okay, well, the less this lesser coefficient, you know, has maybe a more flattened S curve, whereas the steeper one is more strong.
+
+Okay. I have to skip kind of quickly through the last few slides to get to some wrap up points.
+
+It's recommended to do the maximal approach. I said more on this last week.
+
+So you can just, uh, follow that advice here.
+
+Um, there is an example here on interpreting.
+
+Conditioned by time effects, which is something that would be.
+
+Um, excuse me, very interesting for, uh, these types of analyses.
+
+An example right up, which you can read on your own time, how you would, uh,
+
+write up the analysis that is also, uh, in the text and plotting a nice figure.
+
+Uh, that as well shows sort of like a growth curve with polynomials that that illustrates this change in the pattern there.
+
+So I have one last slide. Um, so for wrapping up the course, please do complete your last practical exercise.
+
+Again, to make sure that you understand how to do these growth curve models.
+
+Next week we will have an exam Q&A session.
+
+Uh, so we will meet I have a couple of slides to wrap up the course mentioned things that we've covered.
+
+Uh, and answer any questions that you will have from the for the exam.
+
+Uh, there's an update in your timetable, so we will meet at 130.
+
+We'll just have an hour. Uh, usually we don't use all of the time anyways.
+
+Keep a keep an eye on canvas for the exam study guide.
+
+I would say make sure to check this study guide before the Q&A session, so that you can come prepared with questions for that session.
+
+If no one has any questions. Then I will say, nice to see you.
+
+I guess there's no questions. Uh, have a nice day. So do come prepared.
+
+Uh, and I'm happy to go over any of the other material that you want to refresh on.
+
+Okay. See some of you later today. And.
+
+I want to say that I really think. It's unfortunate for me.
+
+You know, I know so well that. What. I can for some of y'all.
+
+Yeah. So I have this also. If I was to decide if I would use that as this opportunity.
+
+I can tell you that I need to be honest with you.
+
+You know, at. The. End of August or.
+
+I guess I should wait for this one.
+
+I know it will be honest and there is a year on booked out.
+
+We actually have one chapter as a supplement for this work, but it covers the generalised.
+
+So we talked about creating instance three. But.
+
+I also wanted to ask if maybe there are some research assistantships opportunities for student opportunities,
+
+because I've looked into some of the research that you would have done.
+
+And I found. That they could actually understand, for example, that you cognitivism learning slightly under the dynamic theory.
+
+I actually really like these things.
+
+Uh, what does that mean? Uh, so, uh, that that's really.
+
+Yeah. So right now I don't have any decisions, but they use those discussions very often.
+
+So what I will do, the answer to that question would be possible for themselves to see.
+
+So you can see it. Yeah. I of your mind?
+
+Yeah, I would do that. And I would also just have.
+
+I mean, we could also think of things that we don't have funding, things that you could get started with.
+
+I would appreciate. Against.
+
+This is. Would to that doozy.
+
+Enthusiastic about. I really want to contribute.
+
+Contributing. Being mentioned in the paper.
+
+I just wanted to. A part of something.
+
+Something. Yes, that's. Well, that's, uh.
+
+Yes. We'll find something there. Okay.
+
+I'm sure it'll be on. Of course.
+
+Of course. You will need to have at least eight out of ten to be able to make five.
+
+Yes. Without skipping the. Oh, you're not sorry.
+
+Can you repeat that? If you need to have a face, um.
+
+Greet it. No, no, it's not like an entrance.
+
+Okay, so it's. If you have, you know, there's ten completed.
+
+Yeah. Okay. Great. For eight out of ten. Okay. Uh, but if you don't have a ten, your grade for the practicals.
+
+Just based on how. Okay. And then I suppose maybe I have to submit a common.
+

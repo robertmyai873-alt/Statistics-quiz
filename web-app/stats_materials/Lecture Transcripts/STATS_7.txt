@@ -1,0 +1,1323 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Well. Good afternoon everyone.
+
+Nice that you're able to join here in person. First steps.
+
+Oh, that's a bit of a feedback. Can you hear that?
+
+Or is it just up here? You can hear me, but can you hear that?
+
+Okay. That's okay. Oh. That's testing.
+
+Okay. That's better. I think it was the other microphone there.
+
+Um, we're doing, uh, multiple regression today.
+
+Uh, so let's take a look at like, where we're at in the course. We're now past the halfway point of new content that we're covering.
+
+Uh, so, you know, up until now, we've been revisiting kind of the underpinning parts of our statistical inference that we're trying to,
+
+uh, cover in the course before setting up correlation and regression.
+
+Uh, and we're now just going to be adding complexity, right. So we had simple linear regression two weeks ago.
+
+We looked at how we can centre things and check assumptions of our models.
+
+We're going to add multiple predictors today. Next week sorry not next week week after the break.
+
+We'll do interactions. And then we just add more layers of complexity onto this sort of base modelling framework that we're covering.
+
+Before we get into the multiple regression, uh, please join me on Root Club for three questions.
+
+Let me pull it up here. These ones I have on a timer as well.
+
+There's one I set for two minutes, which actually gives some output.
+
+I think you might have to look at it on your device. I can put everything up at the same time.
+
+But that's the second question. Hello.
+
+I think the second question as well, uh, which gives you an example of some our output is a good idea of like what you could
+
+expect on the exam in terms of here's some output and what can you interpret from it?
+
+Uh, so. Good to keep that in mind when you're trying to think about what your exam might look like.
+
+Come on in. I know we have more than 13.
+
+Okay. Give you about ten more seconds to join before the last of first question.
+
+Otherwise you can still type it in manually. All right, let's see.
+
+First question. So scatterplot of the fitted values of a model versus the residuals can be used to assess which of the following model assumptions.
+
+10s left on this one. All right, let's see how you did.
+
+Uh, interesting. Okay. Uh, this one I put in, I thought that might be a good foil for some of you.
+
+Um, yeah. Yeah. Um, so let's let's look at this real quick.
+
+So linearity of the relationship between the predictor and the outcome.
+
+We could definitely check that one. Almost all of you said that homoscedasticity of the variance.
+
+We also can look at that one. Um, the normality of the outcome variable.
+
+This one we can actually just make a distribution of our outcome variable to see does it look normal or you can just plot the variable itself.
+
+Uh, the main one here is about that linearity of the relationship.
+
+And if you saw, for example, a pattern in that plot, they looked like a curve or some other kind of shape that wasn't sort of evenly distributed.
+
+Uh, then you might have some non-linearity. You might want to test a different, uh, form of model.
+
+And here again, with the homoscedasticity of the variance,
+
+you wanted to see sort of that equally distributed points at all levels of the fitted values.
+
+Couple of you put influential points. We would end, uh, if you remember, from last week, we talked about looking at, uh,
+
+the DF beta using that leave one out approach to the model adjustment of the coefficients.
+
+Um, we're also going to look, uh, and we also looked at, uh, the plots that showed potential outliers.
+
+Um, so this one wouldn't be readily visible in this type of plot.
+
+It wouldn't be the main way you would check that,
+
+although maybe you might see one point that's way off by itself and you might think, what's going on with that one?
+
+Um, but it's not the main way. So nice job on this next one.
+
+You have about two minutes. I'll see how long it takes you to respond, but I want to make sure you try to interpret the output yourselves.
+
+So here you go. Which of the following is true about this output?
+
+And you probably have to look on your device to see it better. 50s left.
+
+You can always guess. All right, 15 seconds left.
+
+Just a good test to see where you're at with this output.
+
+Okay. Let's see how you did. All right.
+
+Well, majority of you got that one right, 50%.
+
+Um, let me see if I can make this a bit easier to see.
+
+Uh, maybe.
+
+Okay, so the first one here was, for every one point increase in the working memory capacity, the predicted reaction time decreases by about 8.75.
+
+And it was statistically significant at P is less than 0.01.
+
+Let's take a look at that. Right. So this is how we can interpret our regression output.
+
+That's that a coefficient here right. And it's negative.
+
+So that's why it's for each one unit increase in this value we would expect you know -8.75 and our reaction time.
+
+And it was less than 0.05 and 0.01.
+
+If it said less than 0.001 than that one wouldn't have been true.
+
+What else did we have? So the intercept indicates that participants with average working memory capacity has an average reaction time of 512.
+
+Let's take a look. So the intercept there is 512 .43.
+
+It's non-zero significant intercept. But why?
+
+Anyone know why this one isn't true? Yeah about that.
+
+It's down to 0 to 0. Point away. Uh.
+
+The reaction. I know the working. Yeah, exactly.
+
+So this intercept would be when working memory capacity is at zero, not the average.
+
+Anyone know what we could do to make that intercept the average of the working memory capacity?
+
+Yeah. Subjectively, from all of the observations.
+
+Yeah. So we could subtract the mean or centre it. Right.
+
+Um, so this is if, if in the question it said we have uh, the working memory capacity centred, then this one would have been true.
+
+That makes sense. Uh, okay.
+
+Here we have multiple R-squared at 0.13 means that 13.2% of the participants had shorter reaction times due to higher working memory capacity.
+
+This R-squared tells us just about that variability in the outcome,
+
+which is the reaction times that we can explain by knowing the working memory capacity.
+
+It doesn't give us information that's directional like shorter or higher things like that.
+
+Right. And then the last one, the F-statistic 8.8, to test whether the slope of the regression line equals one, which was rejected at 0.004.
+
+What does the F-statistic actually test? Anyone remember that one?
+
+I'll pull it back up here to. Anyone.
+
+Might be a good one to revisit then.
+
+Remember we talked about, uh, in our intro to regression, how we get our f statistic in these different sources of sums of squared error.
+
+Uh, and this is basically about whether the model which is fitting a linear line with these predictors is a better fit of the data than the mean.
+
+Okay. So this is not about the slope of the regression line.
+
+That's our individual regression coefficient. Right.
+
+Uh so this t test would tell us about whether the slope of the regression line is equal to some value and not equal to one per se.
+
+Does that make sense? Any questions on this one?
+
+Was it tricky? A little bit for some.
+
+Not too bad. Okay. Uh, one more question for you here.
+
+So what is B sub two and a multiple regression model.
+
+Supposed to be subscript but it doesn't work in blue clap. By the end of the.
+
+Month, people often ask questions like that one.
+
+Uh, okay. Next time I'll add, uh.
+
+Multiple options are possible, so it's clear that one one.
+
+Yeah. Okay, let's see how you did on this one.
+
+Nice. So if you put regression coefficient it's not wrong.
+
+But they are actually partial regression coefficients because of how they're estimated in a model with other regression coefficients.
+
+If you put the intercept that would be b sub zero right.
+
+But we're going to go over this today. Any questions on these?
+
+Okay. So what we're going to cover today is what's the difference between simple versus multiple regression.
+
+Uh, talking a bit more about the beta coefficients.
+
+So standardised ones, they're more important today compared to last week because we'll have multiple predictors.
+
+We're going to spend quite some time on comparing models.
+
+Uh, we're again, if you think back to one of our earlier lectures where we're thinking about building
+
+models and seeing which of these models are like the right description of our data.
+
+So we're going to give you some tools today to think about how we can compare the fit of different models.
+
+And then we'll talk briefly about regression entry methods.
+
+This is a bit of an exploratory or data mining technique.
+
+Um, that I'll say more about when we get there towards the end today.
+
+All right. So hopefully by now everyone is really good at simple regression.
+
+You know that you have an outcome variable with your intercept, uh, with your regression coefficient and some error.
+
+And this tells you about the slope of the line. With multiple regression.
+
+The difference is we're going to have two or more independent variables or predictors.
+
+Those are used synonymously. We're still looking at the relationship between an outcome and some predictors.
+
+We're going to combine them and see a linear combination of these.
+
+And it's going to give us an equation right. For what could be combined to explain our outcome.
+
+And we might use this for a variety of purposes. So.
+
+We thought a bit about prediction. Well, if I know a certain value of my predictors, then I can plug that in and I could get some, uh, output.
+
+That would be a likely prediction. If the model fits well, we might be trying to explain our data.
+
+Right. So, uh, we might have some data we've collected and we have some ideas about what is going on,
+
+but we want to test this model and be able to explain it. And we can also use regression, multiple regression for theory building.
+
+Uh, we can specify specific relationships and interactions that we can then test to see how that fits with our theory.
+
+So. Maybe what I left off here is a bit of exploratory stuff, which will be a bit at the end today.
+
+I would say that's less what you want to use it for, but it could still be possible.
+
+So here is our simple linear regression here.
+
+And then we just expanded here. So now we have our B so to.
+
+Up until however many predictors we add.
+
+Pay attention here to the plus sign because this is how we will input things in R as well.
+
+We're just going to be adding more variables, uh, to our model.
+
+Um, to try to explain our outcome variable, we'll have one partial regression coefficient for each predictor or independent variable.
+
+And r squared now is the proportion of variation in the outcome or dependent variable y.
+
+That's predictable by this set of independent variables the x's.
+
+We're going to also look at the adjusted R squared today.
+
+Um, we'll look at that together in the output. If you remember before we saw two r squared in the output.
+
+Uh, and I said look at this one for now. Uh today we'll look at the other one, but that will be soon.
+
+First, uh. The assumptions. Good news is you already know all of the assumptions.
+
+We already went over them last week. Um. Oh, sorry about that.
+
+Um, so again, that's linearity. That's absence of multicollinearity, homoscedasticity normality and independence.
+
+And this one is what we're going to look a little bit more at.
+
+So the first bit of information for multicollinearity is if you have a really strong correlation between your predictors.
+
+So really strong would be like 0.8 or point nine.
+
+And that could be problematic because it inflates your estimates and your model for error and your coefficients.
+
+And you're putting in kind of like two redundant things that are almost basically almost the same information.
+
+Uh, trying to predict an outcome. But there's another metric we can use called the variance inflation factor.
+
+And this comes out automatically with our check model function that we were using last week.
+
+But I'll just guide you through a bit of how to interpret that.
+
+So if you look at this variance, inflation factor here typically ranges from one to something above ten.
+
+If it's low. And the green arrow will also make it green.
+
+If you use that function less than five then it's no problem.
+
+Moderate between 5 and 10.
+
+Somewhere around here could be some level of correlation that might be concerning, and high collinearity would be red and larger than ten.
+
+With a lot of these assumptions checking it's not always clear what exactly you should do if you violate an assumption.
+
+But in this case, you might remove or combine correlated predictors.
+
+So you could say, well, these two things are highly correlated. Maybe my theory suggests this one is more important.
+
+So I'll keep that one. You could centre or standardise your predictor variables.
+
+This won't remove the collinearity, but it does mathematically solve some issues with numerical instability and estimating coefficients.
+
+An error in the model. And this is a bit what we'll get to at the end today.
+
+You could also try stepwise or regularisation methods.
+
+I think you'll cover regularisation and your machine learning class. Have you already done that yet?
+
+Actually it was like lasso or ridge.
+
+Yeah. Okay. Um, that could be an option to where you would sort of remove variables based on some criteria besides just the correlation.
+
+We're going to look at this together when we get some output. Um, but first I want to go through an example with you for multiple linear regression.
+
+So this is a data set from, uh, from the text on self-concept and academic achievement.
+
+In this example, uh, this is, uh, US centric because there's a grade point average.
+
+So just for your information, the grade point average typically goes from about 1 to 4, with 4.0 being, uh, kind of the top score.
+
+So I guess for you all that would be that you have an average ten across all your courses.
+
+Although I don't know if that's a totally fair comparison because I think, uh.
+
+There are some discrepancies in how tents are given out. But anyways, um, so then we have a couple of things.
+
+So there's your general grade point average across studies your academic achievement which is a rating academic self-concept and general self-concept.
+
+So these are some beliefs about whether you're generally kind of competent or whether you're also academically competent.
+
+Here is a correlation matrix. And here are some descriptives of this data set.
+
+Is there anything that stands out to you? This is highlighted here.
+
+But that's not necessarily important. But what would you take away if you were thinking about some of the assumptions or relationships between these?
+
+Are there any collinearity problems?
+
+Anyone say no. Maybe just raise your hand.
+
+Anyone say yes. Anyone have no idea.
+
+Okay. That's fine. Okay.
+
+So this is a correlation matrix between these four variables right.
+
+And this is highlighted here because let's say we want to predict someone's academic achievement.
+
+And we might use, for example, the general and academic self-concept.
+
+So I would look how high is the correlation between the two predictors, which in this case would be these two.
+
+And none of those are point 7 or 8 or 0.9.
+
+So already from the correlation matrix I would say okay it looks like there's
+
+some correlated variables but nothing too high that I would be concerned about.
+
+If I look here, I get an idea of the the averages of these values.
+
+Right. So, um, I didn't give all of the information about each measurement scale, although you would want to know that if it was your data.
+
+Um, but we see, you know, a difference in the range for the values.
+
+Um, but nothing too concerning. So this would be a good start for.
+
+Okay. I could continue with my analysis. And if we're having a multiple regression model, then we have something that we're trying to predict.
+
+Right. Like in this case Y could be our academic achievement.
+
+And we want to put in this academic self-concept and general self-concept to explain variability and academic achievement.
+
+So there's some hopefully unique variance that's accounted for by each of the separate predictors.
+
+But there's probably some overlap as well. Right.
+
+So this should hopefully remind you of what we were looking back at when we were talking also about the partial uh,
+
+partial correlation, semi partial correlations. Uh, similar idea here except within this model regression model building framework.
+
+So we could have, uh. Uh, for example, build out our equation.
+
+Right? Uh, which if we're trying to predict academic achievement, we'll have academic achievement here.
+
+We'll have some intercept, a coefficient for each of these predictor variables.
+
+And here is some output. Where did I get that?
+
+Well, uh, I'll show you. So in the example code for today, which will be available after class,
+
+I just simulated some variables here to represent these for uh types of variables.
+
+So that doesn't mean there necessarily will be. A relationship between them in this example.
+
+But, uh, you can see that these have those properties, like I showed up there and then I get this output here.
+
+So I did fix the simulation here. So I'll get the same results for each, uh, time I show this, but.
+
+Here we have, you know, estimates for each of these variables.
+
+You see as well that, uh, to run this model, it's simply the same as before where we use the LM function,
+
+we assign it to some variable that we're going to save to do other things with.
+
+We get our academic self-concept plus general self-concept.
+
+And we refer to the data set right. And so now we have something that looks just like what we looked at earlier.
+
+Except now we have at least two predictors.
+
+And we can see for example um whether this is a good model or not.
+
+So that's where these values, uh come from.
+
+And the idea here could be that you could still plug in these specific values to get a prediction of what someone's academic achievement might be.
+
+If you know your intercept and your coefficients,
+
+and you know that someone has a general self-concept of four and academic self-concept of six, whatever that means.
+
+Okay. So. We are still testing this full model, right?
+
+But now we have multiple predictors. We still test R squared to our F test which we look at in the R output.
+
+Some of my betas are not showing up properly. Sorry about that.
+
+And then we can compare also our individual predictors too.
+
+Right. So we look at each partial regression coefficient with these t test in the R output.
+
+And we can also compare these coefficient coefficients with each other.
+
+If we standardise them and get betas. That's not a beta symbol just to be clear, but it should be.
+
+So if I showed you this output.
+
+Would you say that one of these has a stronger effect than the other?
+
+Would you say, for example, academic self-concept is has a more strong effect on academic achievement than general self-concept?
+
+I see a couple nods. Anyone want to say why you think so?
+
+What information is there that's giving you a nod?
+
+Yeah. Thank you. So. So this value, the 1.47, seems to be higher than that.
+
+Yeah. Any go ahead. Or was there anything else or.
+
+That's it? Yeah. Anyone else want to add to. Yeah.
+
+It's been. The p value is smaller, right.
+
+So we have 0.07 versus 0.62. So I would say these ones are not standardised.
+
+So traditionally we could not directly compare them like like you have just done.
+
+But thank you for trying to um. In this case.
+
+These are measured on the same scale though. So uh, at least they're, uh, ranking scale I think from 1 to 7, something like that.
+
+I didn't tell you that before, but if you knew that, then you could say, okay,
+
+the relative change in the outcome variable based on a one unit change in either of these is quite different.
+
+Uh, but there isn't these are not different than zero.
+
+Right. So there's maybe some, uh, overlap, uh, possible this could go from negative to positive.
+
+Uh, if we had some confidence intervals on that estimate. Same as uh, this one to possibly.
+
+So we might, uh, want to standardise them.
+
+Um, but let's take a look here. So if we were asking this question of what is the strongest predictor.
+
+We could also add a third one in there. Um, but we can't always compare them directly, especially if they're using different units.
+
+So in this case, if I added in that GPA variable as a predictor of academic achievement, uh, then all of those units would then be different.
+
+But as we saw, as I just said, you know, maybe the other two are on a 1 to 7 scale, so you could probably compare them directly.
+
+If we add this one in, then no longer for sure.
+
+So we can standardise and get these beta weights.
+
+It's the same as standardising our, uh, variables that we did before.
+
+Um, one thing that's important to remember, right, is if we have our unstandardised coefficient,
+
+that's what R gives us by default when we run it or any other stats program.
+
+It's telling us the amount by which are dependent variable changes.
+
+If we change the independent variable by one unit while keeping the other independent variables constant.
+
+So before we didn't have this reference to what the other variables are doing.
+
+Right. Because we just had one predictor.
+
+And then if we standardise them, then they're now these beta weights which are in units of standard deviation.
+
+So just as an example, a beta value of 1.25 would indicate a change of one standard deviation in the independent variable.
+
+Uh that's 1.25 standard deviations increase while keeping the others constant.
+
+So just remember whether you have unstandardised it's within whatever units the the variable is in.
+
+And if it's standardised it's in standard deviation units.
+
+And this will allow us to sort of compare all of the coefficients.
+
+Yes. In the back, if you come from both, both, you're able to discard any of the other things that I know.
+
+You could. You could do that.
+
+Um, we saw when we did that last week, I think that, uh, that also just changes your interpretation of The Intercept as well as that slope.
+
+So in some cases you I would say actually I have this on the next slide where, um.
+
+You could rescale all of your variables in the model itself, and then get all of your standardised coefficients as output.
+
+But you would typically want to have something that's interpretable first in the original units before then standardising,
+
+uh, to get the beta weights. Yeah.
+
+So I gave this as an example, but as some of you saw while working through that before, it changes your interpretation.
+
+This is the more interpretable way I think. Do them unstandardised and then get standardised coefficients after the fact.
+
+Which in this case I show with the effect size package.
+
+You can then just put your model into that. And this one is going to give us effect size or beta weights and also confidence intervals.
+
+Okay, just one more slide before I turn it over to you to give a try.
+
+So for multiple regression and R, as I already mentioned, we can still use the linear model function lm.
+
+And we just use the plus sign to add in multiple variables to our our model.
+
+So just think of it as building this equation that you think uh is what's going to capture the variability in your data.
+
+You could pull out confidence intervals on your estimates because those aren't by default.
+
+Uh, and that is standard practice to also include confidence intervals.
+
+So you could use this function. And we could also reduce the effect size on the model to get those uh standardised
+
+coefficients with confidence intervals that are standardised or this LM beta function.
+
+I want to turn it over to you to give it a try. This is the album sales to that file and, ah, it's on, uh, the module on canvas for today as well.
+
+Go ahead and load that one in.
+
+Make sure you check out what's in there, because there's some more variables now compared to the last album sales data file.
+
+So take a look at those. Um, what you want to do is then make and save a simple linear regression model predicting album sales from advertising.
+
+Try and interpret the output from that. So this should be more or less what we did before.
+
+Then we want to try and do a multiple regression predicting album sales from advertising and airplay,
+
+and then get some standardised beta estimates and confidence intervals.
+
+And think about how to interpret this, and which predictors have the strongest relationship with the outcome.
+
+I'll give you some time to get started on this, and I'll check in with, uh, with you in a bit.
+
+There's the. We.
+
+Yeah, just. Best.
+
+And they will come. But what if I.
+
+Uh uh. I think, uh, they.
+
+But there. The.
+
+Practice of. Yeah. So that would just be the standard.
+
+Breaking. News.
+
+That's right. It's the.
+
+I feel pretty. Music.
+
+Yeah, that's a good question. Want to second.
+
+It's. So.
+
+Just. That's what you.
+
+It's related to, uh. They would get this right.
+
+They do. This is the.
+
+I think. The age.
+
+Us. Let's.
+
+Listen to the statements. The other.
+
+No, I don't think so.
+
+Yeah. We used to have many stories.
+
+Know. Because was of.
+
+Just. Can be like.
+
+Some. Just. It's.
+
+It's about the usual break time. I see some of you are still working.
+
+I think what I'll propose is we do we resume lecture and, uh, at 145.
+
+So you can take some time for a break or keep working on this exercise, but then I'll go over it together at 145.
+
+And if you're staying around and still working and you want me to come have a look.
+
+Feel free to let me know in up.
+
+New York. Yeah.
+
+Um. If you. No.
+
+Yeah. On.
+
+This. Question.
+
+Is. Which is likely.
+
+Why? Uh, in the 17 years.
+
+Yeah, I think that's too complex for what they teach. What?
+
+You know what it is. Whatever it is.
+
+I don't think so. I really tried to do it by myself.
+
+But at least for me, it's. And there's a.
+
+So I can do it because I like it. So it's very interesting to us.
+
+It's like they say that. Even with without actually knows what you're talking about.
+
+And then I don't suppose I can. Yeah. So.
+
+I think that. It would be nice for people.
+
+Uh, this. Because right now it's no big deal.
+
+It's okay. So now it's kind of. Know.
+
+I think initially, you know. So I just said.
+
+I said, you go to a professor and say that at least you get.
+
+Then I heard several others saying that maybe this time because I really want to put those vertical numbers together,
+
+but they are just too complex because you love yourself.
+
+So this. It's interesting. You know, it's just impossible to convey to the world that it's just my imagination and my choice.
+
+What are you doing? Yeah. This way.
+
+Oh. I'm serious. Yeah, it's like a brain stimulation device.
+
+You. I agree with.
+
+It's time to get back.
+
+To the future. Of coffee.
+
+Together. Okay, so we have this.
+
+So yeah, it's sort of the lights.
+
+Route, you know. You think?
+
+Okay. Uh.
+
+Yeah. I. Mean, we've got.
+
+Some things. Yeah.
+
+Yeah. You're. Right. Um.
+
+So at this point we don't have any pricing information to.
+
+Yeah. That's. A.
+
+This. She lives with nature. Is also.
+
+What do you think you're. Capital.
+
+Yeah. Uh.
+
+Of the. So.
+
+That's what happens. Don't.
+
+It's just. And I just.
+
+You. I just woke up.
+
+Yeah, like it just felt like. We did something and I said that.
+
+It's nice. It's nice. The results.
+
+Yeah, that's. It's.
+
+Just. But.
+
+Those. It's quite.
+
+And I could. I think this.
+
+All right. Uh, hopefully you took a bit of a break.
+
+And if. Or maybe you're still on break and not back yet. Uh, let's take a look at this exercise together.
+
+I'm getting this feedback again. Test.
+
+Hello? Hello. Okay, I'll just have to stand, uh, much further away from this.
+
+Um, so here in this example,
+
+I loaded the album sales two data using reader Lim and I made sure my header was true so that my variables get loaded in properly.
+
+Um, I check out some basic descriptives using the psych described function.
+
+You might have used different ones, like manually checking the mean um, or standard deviation.
+
+Um, so I took a quick look at some of these and they looked okay.
+
+I also made a correlation matrix by just plugging in the whole data frame into the core function.
+
+So here we get this uh, symmetric matrix right.
+
+Anything correlated with itself is going to be one perfect correlation.
+
+But I would look for these few to see. Is there anything that might be problematic for multicollinearity.
+
+Um that would be kind of my first check before I would then do my assumptions checking later.
+
+Here. I got this first model right. So this is just album sales.
+
+That one is what I called it. And linear model sales being predicted by adverts using data equals album sales to.
+
+One of the things I was reminded by when I was, uh, talking with one of you is that if you use the dollar sign reference, uh,
+
+so basically album sales, $2 sign sales, that one won't work with some of the easy stats modelling packages like the effect size.
+
+So if you ran into that problem, that's that's why.
+
+Um, what is what do we have here? So we have a model overall, our f-statistic quite far away from zero.
+
+We see, you know, some information about the degrees of freedom and sample size and a really small p value.
+
+I put, I turned off scientific notation so we could get some more precision here.
+
+One thing I didn't mention yet is that we would typically now look at our adjusted r squared.
+
+So with simple linear regression we'll look at our multiple r squared.
+
+In this case the adjusted has an adjustment based on the number of predictors that you add into your model.
+
+So we have about 33% of the variability in sales is accounted for just by money spent on advertising.
+
+In this example we see that it is positive.
+
+And it's significantly different from zero from judging from the p value than the t value.
+
+And our intercept when we don't spend any on advertising is 134, also significantly different from zero?
+
+So this should look pretty similar to what we had last week. Um, so hopefully you interpreted it something like I just did.
+
+Um. Now if we transition to the multiple regression model.
+
+Same thing. All I added was plus airplay, right?
+
+And I saved it as a different model because later on we want to compare them.
+
+So hopefully you did get to this point. If not, uh, maybe quickly, uh, enter this in so you can use it later.
+
+What do we see? Well, overall we still see.
+
+Now an f-statistic really far from zero degrees of freedom are slightly changed because we now have multiple predictors.
+
+Uh, p value is still very small. And look how much r squared changes.
+
+So from 33% to 62% or 0.62.
+
+And airplay now is a positive predictor that's significantly different from zero as well.
+
+So overall, from just this information,
+
+I would say this is a pretty good model for predicting sales just by knowing how much is spent on advertising and how many hours of airplay.
+
+When you look at these. You could fall into the trap of thinking, oh well, it looks like this value is much larger,
+
+so maybe the effect is much stronger than, uh, for airplay than it is for adverts.
+
+But that's where we need to standardise our and get the beta estimate so we can see.
+
+Sorry. I put this an example of the confidence interval here.
+
+But these are not standardised. So these are relative to these coefficients here.
+
+Right. So these are confidence intervals for this estimate.
+
+And this one is for this estimate. So should have been above this point.
+
+Sorry about that. But if we plug in the effect size, uh, for the model into the effect size function, we get this.
+
+For some reason, my scientific notation is back to haunt me here.
+
+Uh, but we do see that airplay does have a stronger effect.
+
+But it's not that strong, right? Not that much stronger.
+
+It's 0.55 compared to 2.52. Uh, so they're pretty.
+
+I would say they're quite similar sized effects.
+
+Um, which, you know, if you're looking here, you would say, oh, those values are really different, but the units are different.
+
+Right. So um, and we get our confidence intervals here not including zero.
+
+So we see the range, uh, where we could we have our 95% confidence interval on each of these,
+
+or we get the values here to a bit more precision with this function instead.
+
+So. I think we've already interpreted those, and we saw that, well, Airplay has a slightly larger effect size, but they're about the same, right?
+
+Any questions on this output? How to run the multiple regression model?
+
+How to interpret it. Get the beta coefficients.
+
+Okay. Good.
+
+So what changes now is that we actually, uh.
+
+We don't have just a line anymore. I don't know why this is.
+
+It's a bit overlapping. Sorry about that. Um, we don't have just a line.
+
+When we had one predictor, we just have a line, and we have error around that line.
+
+But now when we add in more predictors, of course,
+
+you can envision that we're actually fitting some plane to the data and that the residual is relative to this sort of best fitting plane.
+
+In this case, we can only really do sort of a three dimensional visualisation,
+
+because doing a four dimensional or higher dimensional visualisation, we just don't have good ways to do that.
+
+Um, one thing that could be useful if you're kind of struggling a bit to wrap your head around how this multiple regression is working,
+
+um, in this link, which, uh, it was supposed to be linked in the slides, but it doesn't work.
+
+Um, I'll, I can post this or you can copy it down.
+
+Uh, you can kind of see how correlations between your outcome and your X1 or
+
+correlations in your outcome in X2 or correlations between your two predictors,
+
+how you can adjust this and see changes to, uh, well, here we get, uh, something not possible.
+
+Uh, changes to just the scatterplots and also the regression plane.
+
+Um, this again only helps with two predictors.
+
+Uh, if it's a higher dimensional, uh, space, because you have more predictors and you can't make this same kind of visualisation,
+
+but you can just see now what it looks like for different slopes of planes and so on.
+
+So it's just important to recognise that distinction that with the multiple regression model, it's no longer just a line.
+
+Although we could still plug in our equation in this linear equation, but it now becomes a plane rather than a simple line.
+
+But intercept is still when all of the other predictors are zero, as we mentioned before.
+
+Okay. Model fit. I think model fit is quite important and it helps us get into this model building process, right.
+
+So when you were in your stats one thinking you were mostly doing no hypothesis
+
+testing and seeing as my is there a difference in means between my conditions,
+
+uh, in T-test or in Anova? Right. But now we're actually thinking of like, how good is my model?
+
+And you have these sort of lower level hypotheses baked into that, like the model overall and each predictor.
+
+And that's going to be true for the rest of the class.
+
+So this idea of model fit and the ways that we can look at it are quite important because we are going to be,
+
+you know, as you go on in your career and do more data analysis,
+
+you're going to maybe be building models and seeing how do these models fit,
+
+whether that's in traditional statistics or machine learning or other types of AI models.
+
+Um, model fit is important, and it uses us to like, refine what's in that model and what is what is maybe important for your theory or for your data.
+
+So there's a couple of things that we're going to look at specifically for most of the model comparisons we do.
+
+One is actually we use an Anova function to compare multiple models together.
+
+So before we had this album sales one which only had one predictor, and then we had album sales,
+
+two which had two predictors, and we saw that big change in the R squared.
+
+That was a pretty it was like a doubling of the R squared. So right away we were kind of like, oh this is a big difference.
+
+Um, with the Anova, it's actually going to tell us whether the change in the R squared is significantly different.
+
+If we saw a change from like 0.332 .36.
+
+That's one of those borderline cases where you really would need this kind of thing to see.
+
+Is it actually better to add this predictor? Uh, does it explain a significant amount more of the variability, uh, is what this is comparing.
+
+Right. So whatever the difference is between the two models you're comparing,
+
+it's telling you whether or not you're accounting for a significantly more variability due to those additional things.
+
+So in order to do this you need to have a model where or a set of models where you always have the same outcome variable.
+
+And you traditionally would have some reason for how you enter the variables into those model.
+
+So in this case we just did um, advertising first and then airplay second.
+
+Maybe we had some theory of why one of those was more important than another, and we would compare them.
+
+We can also look at the Akaike information criterion, or AIC, is what it's always referred to.
+
+Smaller AIC values are better. The general formula for AIC for ordinary least squares regression, which is what we use, is shown here,
+
+where you have the number of observations times the natural log of the residual sum of squares,
+
+or sum of the squares error over the observations, plus two times the number of estimated parameters.
+
+So what this does, is it, uh, the lower this value is the better the model fit.
+
+And it's penalised for having more complex models.
+
+So you want to have like a good fitting model that has only the right amount of variables that it needs.
+
+Does not overly complicated. You could use extract AIC, but actually this AIC is also given if you use the performance function.
+
+We can also look at the root mean squared error directly using the performance package.
+
+So this will tell us about the variance of the residuals which is an absolute measure of the fit.
+
+Um so useful for models where we have the aim of prediction.
+
+And again here smaller is better. You can find more details of the I see if you want on this link.
+
+And this one does work. I did fix that one. Um, so I wanted you to give this a try.
+
+How many of you were all able to get, uh, the second model saved at least?
+
+A lot of you. If not. Let me know and I can help you quickly set that up so you can compare them.
+
+What I would like you to do is take that first model that only had one predictor,
+
+and compare that to the model with two predictors with the Anova function.
+
+See what that output tells you. Try to interpret it yourself before we look through it together.
+
+You can then check out the I see for the two models.
+
+Remember you're looking for whichever one has lower AIC.
+
+You can also plot this using plot to compare performance and entering your two models.
+
+Um, I'll also show you how to interpret that in a minute, but it's a spider plot.
+
+And then lastly, let's just check our assumptions for our model like we did last week.
+
+So using Gvm and the check model, do these models uh, actually.
+
+So you should do this on the model that you think is the best fitting model,
+
+because that would be the one that you would say, uh, this is what I'm confident in interpreting.
+
+Then make sure the assumptions are met. So you don't need to do it for both, just whichever one you think is better.
+
+I'll give you some time to get started. Uh, before I'll check in with you.
+
+Did anyone need help getting the two models set up to compare them?
+
+I could come back. So.
+
+Looks like a lot of. So this is all.
+
+You're doing. You're you're using the.
+
+I really believe. It's, uh.
+
+So not the same. And. I would do.
+
+Yeah, those are just the. Data.
+
+Yeah, but, uh, the the coach told me, you know.
+
+Yeah. Right.
+
+Whistle blowers. Mr.
+
+Uh, yeah. So.
+
+The. God knows and understands.
+
+Yes. So?
+
+So this is show you. Yeah.
+
+You know. Was.
+
+I know. So.
+
+That's what. Really see. But the sun.
+
+The absence. Very good.
+
+You know. Federal.
+
+Hey, did you make. Yeah.
+
+So. That's what we think of the season.
+
+But then we still have. And we. We're the focus of this.
+
+And. That's what.
+
+I. Was.
+
+But you. Forget it. It's the universe.
+
+That was created by. So to go there and. Others.
+
+As well. So you know.
+
+So yeah, this is probably the most given.
+
+800. And 11.
+
+Yeah. I think.
+
+Mr. Holmes, you. You know, I was working.
+
+This. But I did not know.
+
+Okay. When. But then you just get this.
+
+But. Right.
+
+Yeah. It with on computer once.
+
+Uh, what do I mean? Like, I have to do exactly the same thing as friends.
+
+I might have. All right, let's take a look together.
+
+Uh, before we cover one additional topic and wrap up after that.
+
+Um. So we wanted to compare our models.
+
+Right. So we have these two models. We. These ones were quite distinct because we had one predictor.
+
+And then we had two predictors. And the change in the R-squared was quite pronounced.
+
+We are not always in such a fortunate position. Um, in this case.
+
+Well, I just loaded these packages beforehand. Um, and I ran this Anova putting in the two models,
+
+and we get some output like this where each row is specific to the model, whichever order you entered it in.
+
+This one has lower degrees of freedom because it has more parameters.
+
+Um, and you can see the sums of squares residual, uh, F-test, which is then used to calculate the p value,
+
+which this F-test is the change in the R-squared accounted for by the models.
+
+Uh, is there a difference between them? Right.
+
+So you would have to then look back to the R-squared for the models to see, uh, which one was the better fit.
+
+But we know that they these two models account for a significant the different amount of variability.
+
+And because we remember that this one, the R-squared went up to 0.62 or something.
+
+That's much more than the 0.33 we saw in this model.
+
+Does that make sense? So if you wanted to say when we add in this other variable Airplay.
+
+The models fit significantly improved because we now account for 62% of the variability in sales compared to 33% while only including adverts.
+
+And you could report your F-test on that difference.
+
+So that's one way we can compare the models to examine the change in the variance accounted for.
+
+We can. Did I already did. Mm.
+
+I guess this is a bit out of order from what I wanted, but that's okay.
+
+Um, well anyways, so here is a look at the Czech model.
+
+Um, I'll come back to the other parts in a second.
+
+Uh, so if we use to Czech model function, we see overall most of these look fairly good.
+
+What am I looking for again here. Well, that tells us. Right. So model predicted line should resemble observed data.
+
+Line should be flat. Or we get this little confidence window like this one.
+
+So shows should follow along the line. There's this confidence bands that include the line.
+
+No problem. All of them look quite good. No clear outliers in there.
+
+And this is where we have that variance inflation factor. Both of these are marked here as low and in green.
+
+So no problem there. GV lemma also says.
+
+All of our assumptions look acceptable, so I would be fine with this model.
+
+Although again, this was supposed to be the best fitting model. So you are meant to check these other things first.
+
+So here I could look at the AIC, which is uh, showing that the album sales two, which includes the two predictors, has a lower AIC.
+
+So that's one info that this model fits better.
+
+You could also plug it into the performance function. It's good to compare these kind of like this.
+
+So you could see even the AIC, which is calculated a bit differently than this function, which is good to know.
+
+Um, this one still shows album two, um, a lower AIC.
+
+We see that change in the R squared there between the two or adjusted r squared.
+
+Sorry. And then Rmse is lower here for the second model.
+
+So we saw that F-test that showed a significant, significant change in the variability accounted for.
+
+We knew which r squared was higher. And then we can also used AIC being lower and Rmse being lower as a reason to say this model fits better.
+
+That's the one we will use to describe our data. And then yeah, I had that in there duplicated this one.
+
+Here is plot compare performance of the two models.
+
+Spider plot where the values are all rescaled.
+
+So remember I said smaller AIC smaller Rmse would be a better fitting model in this case.
+
+Whatever is to the outer edges of the spider plot is the one indicating better fit.
+
+Uh, so this is showing the values roughly for album sales relative to the values for album sales to,
+
+uh, where all of them seem to be performing better.
+
+There's a couple extra ones here, the BIC in the Sigma that we didn't cover and, uh, some weighted AIC values.
+
+So this could be good just for a quick visualisation, especially if you're actually trying to look at four models, five models at once.
+
+You could see quickly how they compare before you then look at the specific values.
+
+Any questions on interpreting model fit indices?
+
+No. Okay. So I have one more thing to cover for today.
+
+Uh, a few more slides. And, uh, so there's different ways to build our regression model.
+
+What we did today was hierarchical, right? We put in one variable how much spent on advertising.
+
+We ran that model. And then we said, well, we have another variable.
+
+Let's put that in another model. Often people will do this hierarchical formation based on theory where you enter your variables at certain stages.
+
+It could be that you have a reason, theoretical reason why you want one variable to be the first one.
+
+You think it should have the most impact before you then test a model that adds in another variable.
+
+Or it could be you want to see what's the association before we add in possible interaction terms, which is what we'll get into next week.
+
+Um, so this is one way you could also just say here are all of my independent variables.
+
+Let me put them all into the model at the same time. This is a simultaneous forced entry.
+
+Um, and that might be an approach to analysing your data.
+
+You may also have strong theory for this to begin with. Like these are the five variables that are my theory suggest predict my outcome.
+
+Um, that's another option. The last one, uh, which is stepwise.
+
+Um. These two are kind of related.
+
+Uh, but it's more of a data mining exploratory, often considered questionable research practice to do.
+
+The reason why I show it is that some of you get more into data science type techniques after this course.
+
+Um, so you get used to this kind of thinking, but if you're more on the we want to have strong theory and predictions before we test them side,
+
+you know, you should definitely avoid the stepwise approach, but I'll just show it to you anyways for today.
+
+So one of the things that's important to keep in mind is a resolution on that is quite poor.
+
+Sorry about that. Um, is that especially when we get into larger and larger data sets, if you're doing some kind of data science project,
+
+you know you need a large sample size in order to be able to detect different size effects.
+
+And and so you might use some type of stepwise method to inject or decide how to include other predictors in your model.
+
+So this is you can use like step I see from this mash package which you can then specify a method of forward or back sorry forward or backward.
+
+Uh and the idea here is that backward puts in all of your variables and then iteratively test taking them out.
+
+And whether that improves the AIC or you could do forward which iteratively adds them and sees if it improves the AIC.
+
+So you can see how this is sort of an exploratory data mining technique that will just give you whatever model optimises this AIC parameter,
+
+which could be useful for exploration of large data sets where you have no existing theory.
+
+Hopefully you're not in that camp, but it happens. It also can be quick and computationally cheap way of doing model selection, right?
+
+So if you have 20 variables and a really large data set and you just put them into this function,
+
+it will tell you which are the ones that give the best AIC.
+
+Problems could be overfitting. So you might then need to take some other technique like um, cross-validation to try to check this.
+
+It doesn't have any theory. You'll get biased estimates from doing this right, because it's meant to inflate your, um,
+
+or it's meant to ensure that your AIC is as small as possible, and that can then inflate the error and your type one error rates, for example.
+
+See you next time. Right. So there's a lot of iterative models being run and compared.
+
+And then that is our multiple comparisons problem right.
+
+So better alternatives would be regularisation like Lasso Ridge elastic net.
+
+We're not covering those in this class because you should have them elsewhere.
+
+Um. So you should just know that stepwise exist.
+
+You probably shouldn't use it. But if you, uh, if you need to, these are some cases where it would be useful.
+
+Otherwise I would recommend trying those. And you can read more about it.
+
+Uh, at in this paper that's linked here. So I had one last example here.
+
+Um, I think we had a short break.
+
+Not even a real break today. So I will leave this one for you to try.
+
+Um, but it was meant for you to try out this stepwise method, um, and try to see if it gives you,
+
+uh, you know, a better result than what you saw with the prior model.
+
+The spoiler is that it does, but that's just because it actually keeps the other variable in the data set also in there.
+
+So you could have done that from the beginning as well. Um, so you'll see in my example that I go through, uh, just this last exercise,
+
+this should be available after class and just kind of go through the full comparison again and interpret that.
+
+Okay, so you will have a break next week. Some of you have midterms.
+
+Some of you maybe not. Uh, we're going to get into interactions when we come back.
+
+Right. So we're adding in multiple variables. We did that today.
+
+But variables can interact and have differential effects.
+
+And it does get a bit complicated.
+
+There's a web page that you should check out before we meet in two weeks, but hopefully you do well on your midterms.
+
+In the meantime, get a bit of a break after that, and then come back fresh for the next part of the semester.
+
+And I will see you all next time then. Yeah.
+
+Let me just mute this real quick. So a lower latency means better models.
+
+Yeah. Okay. Then there's fibre block. Yes.
+
+Uh, which one is the better model? Like the one that is smaller or one of the bigger.
+
+So the meta. So we scales them all. So it takes like the inverse.
+
+Yeah. So it never takes up most space and uh, up to the next.
+
+So then one model like one one says that the model two is better than the one, the model one's better or it was consistent.
+
+So if I. Let us know. You think?
+
+So going to take a look at the values here. So the values that I have put on greyscale.
+
+So I'll go to that lower values and lower uh and then some other ones.
+
+But you can see that's a little better because it's lower and lower.
+
+Oh but then here it's just inverting the position.
+
+So it's showing like whatever takes up the most space here will be uh.
+
+They're not always has their food. Sometimes it's like our square is big, but then yeah, the other one is so yeah.
+
+So then like in performance the battery's dead.
+
+Or these. But if you plot it, then it will be whichever one is excluded.
+
+That does not make sense. How are you?
+

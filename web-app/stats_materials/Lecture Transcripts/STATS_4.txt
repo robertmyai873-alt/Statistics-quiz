@@ -1,0 +1,1321 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Uh, hopefully you don't forget. About that one.
+
+I don't know if. Yeah. Oh.
+
+Yeah. Yeah.
+
+Good afternoon. I think it's afternoon. Yep.
+
+Can you hear me? All right. In the back? Yeah, it's kind of loud in here.
+
+We are here for some more correlation today.
+
+We got almost to correlation last week. If you remember we stopped at covariance.
+
+So I will kind of pick up just a few slides back from where we ended last week.
+
+Uh, before we get to our actual correlation coefficient.
+
+Um, and after we cover this material today, we're going to be moving into regression.
+
+There's of course a connection between correlation and regression.
+
+I'll point out a bit today, but then you can see lots of regression for the next month's, uh, month and a half or so, all regression stuff.
+
+So, uh, it's going to be hopefully you'll be really big fans of regression by the end.
+
+Otherwise, you may be sick of it, but, uh, let's see how it goes.
+
+Um, first, I have just a few questions for you today.
+
+Um. We'll clap. Three questions. Maybe some tricky ones will see how it goes.
+
+I'll give you, uh, a minute or so to, uh, get ready.
+
+Hello. Come on in. Come on in.
+
+We're just about to start the first question. I.
+
+Shall I give you a second to, uh, to scan? Yeah. Okay.
+
+Hello. Oh, yeah.
+
+Yeah. All right. We're going to go on to the first one. If you just came in you can still type in the code after.
+
+So which of the following test statistics do we use to test the hypothesis and the Pearson's correlation?
+
+We look at d, r, t or f in Pearson correlation.
+
+Almost everyone's in. I'll give you ten more seconds for the last few.
+
+All right. Oh, that one looks painful.
+
+So so r is the correlation coefficient for Pearson.
+
+But the test statistic is t from the t distribution.
+
+We didn't cover it yet but it was in the reading. Uh but I will go back over this today.
+
+Uh f or d d is in the test statistic.
+
+It was an effect size we used. Um, so for the two of you who got this right.
+
+Nice job. How about this one?
+
+This one? You might have to do a bit of calculation. So researcher analyses the relationship between income in euros and years of education,
+
+finding a covariance of €500 a year given a standard deviation of annual income is 10,000,
+
+and the standard deviation of years is two years of education.
+
+What do you think the correlation is? I'll give you a bit longer to reread this and see how you would calculate it from the information.
+
+If anyone wants a calculator, someone left one behind here. All right.
+
+I'll give you about ten more seconds to put in your answer or your guess.
+
+All right. Okay.
+
+So the majority not that answer did get this one right.
+
+So we didn't get to what to do with our taco variation.
+
+Last week we ended right with the correlation value.
+
+Still haven't figured out how to stop this from popping up even though all notifications are off.
+
+But, uh, that's my life right now. Um, yeah.
+
+So how do how do we get here? What do we have to do with our covariance?
+
+Some of you got it right. Anyone? What did you do here? Any volunteers or was it just a wild guess?
+
+I heard someone talking about. It's like over in this direction.
+
+Yeah. Yes.
+
+Yeah. So we take the product of the two standard deviations here, and we divide our covariance value by the what.
+
+What's another word for that. Anyone know what we could call it?
+
+Uh, standardising. And we are going to look at that as well today.
+
+If you put this one. This should have been the easy one to rule out, because we said last time the correlation goes from positive 1 to -1.
+
+So we should know that something outside that range is the easy one to get rid of.
+
+So does that make sense? So if we take 500 and we divide it by 20,000, which is basically the product of these two, we will get this 0.025.
+
+Do you think that's a strong correlation. Maybe you raise a hands medium.
+
+Fairly weak to nonexistent correlation. Yeah, it's pretty close to zero, right?
+
+So it's not very strong at all. Got one more question.
+
+So which of the following would be a good reason to calculate a partial correlation coefficient?
+
+Is that because the effect size is large, the r squared is marginal.
+
+The data are ordinal, or to account for influence of a third variable.
+
+Come on in. Hello.
+
+We're just doing our last question here. About ten more seconds for your final answers.
+
+All right. So a lot of you did get this one right.
+
+Partial correlation. We're going to unpack that more today. But it's often that our correlation is a bivariate measure right.
+
+We have two variables. We think they're related. But we really know the world is often more complex than that.
+
+So in this case we know at least one third variable might be related to the might influence the relationship between two.
+
+And a partial correlation is one way we can look at that, but we will look at it more together today.
+
+Any questions on this before I move back to the slides?
+
+Okay. So we were a few slides past this when we ended last week.
+
+Right. We were looking at these this potential relationship between the number of advertisements and packets sold.
+
+Uh, and we calculated all these deviations from the means for each variable.
+
+Right. So we got the mean and the standard deviation.
+
+Um, and we revisited this idea of the variance to set up the covariance.
+
+Right. So the variance is basically the sum of the each observations difference from the mean divided by the number of observations over one.
+
+And we square these right. So that uh, if they're positive or negative they won't be cancelling each other out.
+
+And our covariance right was similar but expanded because we had two variables.
+
+And we're not squaring them anymore because we're getting the product of these.
+
+Hopefully this is a reminder of the end of last week. We looked at this example two if I recall correctly, where we then plug in each of these values,
+
+these differences from the mean, multiply them towards each other and they're all summed up over n minus one.
+
+So we had five observations. So four here.
+
+And we get that 4.25. And that's where we ended right.
+
+We said what does that mean. Well we can see that it's at least seems to be a positive value.
+
+Um, but the problem with the covariance right, is that it's.
+
+Always in the units of measurement that we're putting in there.
+
+So especially if we have units of measurement that are very different between the two variables, we're correlating.
+
+We can never actually directly interpret that covariance.
+
+And that's why we look at the correlation coefficient, which is what we call standardising it.
+
+So that we can look at any correlation coefficient and know what it means.
+
+Um. I skipped over this, but I'll show you in a second.
+
+I would rather save some time for, uh, some of the other exercises.
+
+Um, but. So we can standardise things.
+
+And we looked at this example already, which was basically dividing our covariance by the two standard deviations of our variables.
+
+And that's that's simply what we do. Um.
+
+When we're thinking about how to implement this, we're going to check it ourselves,
+
+because we don't just want to trust the stats professor or the stats textbook.
+
+We want to make sure things work as they should do.
+
+So in this case, we could actually standardise our variables beforehand and then calculate the covariates.
+
+And then we should get our correlation coefficient. Or we could just use a correlation function in R and get that.
+
+And we just want to sometimes check these things to make sure they're being calculated as we expect they should.
+
+Right. So to standardise it always means dividing by the standard deviation of both variables.
+
+If you're doing it for the correlation coefficient to standardise a variable, it's the same thing.
+
+You make the mean of that variable zero.
+
+That's also converting it into z scores right. Hopefully you remember that from stats one.
+
+Um. So this is what it would look like, right? So, ah.
+
+Which is our Pearson correlation coefficient.
+
+We could just take the covariance of x and Y, which are two variables, and divide that by the product of the two standard deviation.
+
+So that's what we saw in the quiz question to start with.
+
+We could expand it of course where we have that whole covariance equation with the standard deviation here multiplied there.
+
+So if we took that 4.25 that we saw in the example before, and we get these standard deviations, which I'll just go back real quick.
+
+You can see those with those values here. We get 0.87.
+
+Do you think this is a strong correlation? Raise your hands.
+
+Maybe. Yeah. Weak correlation.
+
+No one thinks it's weak. Okay? Right. So we know now that the correlation can be from minus one to positive one,
+
+and that minus one or positive one is a perfect negative or positive correlation if it's exactly this value.
+
+But we have 0.87, that's pretty close 2 to 1.
+
+So if you remember when you were guessing the correlation last week,
+
+you saw those scatterplots and you are thinking about how well does it kind of fit a trend or a line.
+
+And the more sort of dispersed they were, the lower your correlation was probably going to be.
+
+And the more close to that line that it was, the stronger it was.
+
+So this is pretty strong. I think what I will do is I will just show you this reworked and real quick,
+
+because I think the other exercises are a bit more, uh, we'll need a bit more time.
+
+So I'm using this R markdown format again, which just as a reminder, if you forgot the code that I use during lecture is available after lecture.
+
+So be sure to check that out. And you can see.
+
+Here. There's, there will be two files.
+
+One is just the R markdown and then one is the HTML.
+
+So the rendered version like you do with your practicals as well.
+
+Or you should at least. So I want to I did this, uh, correlation by hand or showed some examples that were worked out.
+
+But if we do our functions, we can test. Is this actually giving us the same answer.
+
+And we can put in these variables manually ads and packets.
+
+We can apply the covariance function as in packets.
+
+Doesn't matter which order we put them in. You can see that we still get the same 4.25.
+
+We could standardise them. Right. So here I'm just creating a standardised variable by changing the name and putting them into the scale function,
+
+which is the one that hopefully you remember. Standardise this are variables.
+
+And then if I take the covariance of those standardised variables I get the .87.
+
+One one something, something. And if I just.
+
+Uh, did the correlation. We all get the same thing.
+
+Oh, that's a bit further ahead. I think that I wanted. So does.
+
+Does that make sense when we're doing the steps of getting the covariance.
+
+How it's based on these deviations for each variable.
+
+We've standardised that covariance to get our correlation test.
+
+When we have a value like this, that's, uh, pretty clearly a strong value.
+
+Sometimes we can think, oh, these are just correlated, right? But when we have smaller values like 0.01 or 0 point.
+
+One five. You know, we might want to be able to test the hypothesis.
+
+Are these different from zero? Like, is there likely to be a correlation in the population from our sample?
+
+Because remember, even if we get this really strong value we want to.
+
+We did this from a sample we only had. What was it?
+
+Five observations. Right? Probably not a really good sample size, especially for correlation.
+
+So we can do some hypothesis testing. I'll show you that in a second.
+
+But let's recap this. So always between minus one and positive one.
+
+If it's zero then there's no relationship. No evidence of a correlation.
+
+Wrong. Wrong place. Um. And the ah that correlation.
+
+Pearson's correlation coefficient. It is an effect size measure.
+
+So hopefully you remember sort of what a rule of thumb effect size means.
+
+So if you have plus or -0.1 that's a small effect 0.3 medium 0.5 large effect.
+
+What what is it? If I have 0.45 would you say that.
+
+That's large. Yeah.
+
+Anyone think it's a medium? It could be medium.
+
+So hopefully you remember as well from stats one that when you're interpreting effect sizes,
+
+these rule of thumb interpretations, they aren't sort of like some ground truth per se.
+
+It's an approximation, right? So if you get 0.45 you could maybe call it a large effect.
+
+Um, if you think it's close enough to, to that large effect range, um,
+
+you could always be conservative and round down and say it's, oh, it's a bit of a medium sized effect or a strong medium effect.
+
+So that's up to kind of your interpretation. Don't try to oversell it, but uh, you have to use your judgement.
+
+And one other thing before we look at the testing is the r squared.
+
+So in this case we have little r squared.
+
+But it's related to the big r squared uh which we use in our regression modelling that we'll get to next week.
+
+But if you square the value of your correlation.
+
+You'll get the proportion of variance that's shared by the two variables.
+
+So you can see that in the figure here. If you think about some variability uh Venn diagram I guess then we'll see.
+
+Sort of this is the sort of overlapping variability between the two.
+
+This will be important to know for regression modelling when we get to that next week,
+
+because our R-squared tells us how much of the variability in our outcome variable which will be y is explained by our predictor variables like x.
+
+So we'll be wanting to be able to explain something about y using x or x2 x3, but that will come back next week.
+
+There's a lot of ways to do correlation testing. And or we could just use this correlation function like we just did.
+
+One advantage here is that we can specify these non-parametric versions, which I will cover in a bit today.
+
+And you could also throw in a bunch of variables, not just two, and get a whole correlation matrix.
+
+If you really have a hypothesis about correlation, you know probably will want to try the correlation test,
+
+which will then allow us to get our p values in our confidence interval.
+
+So we can say, is that correlation different than zero or not?
+
+Have. How many of you have, uh, generated a correlation matrix before anyone?
+
+No. Okay. So. We're covering correlation right now, and we're talking about it in a hypothesis testing framework.
+
+And that can be useful. But when you get to your thesis, for example, you probably aren't going to only do a correlation, right.
+
+It's a relatively simple analysis. And while it is a type of inferential statistics, sometimes it actually becomes a bit more of a descriptive metric.
+
+Like you might have a large data set,
+
+and you need to check your correlation properties to be able to set up some more complex models that you want to test.
+
+So we'll come back to that when we get to regression more and we talk about problems if you have too many correlated variables in the model.
+
+But for now we'll keep it at let's just test is there evidence of a correlation or not.
+
+So we can use this quarter test function. And the null hypothesis is that the correlation in the population is zero.
+
+Right. So then we're going to compare that correlation value that we get to zero.
+
+And we're going to use the t distribution. We could also specify the direction right.
+
+So we could use the alternative argument in this function and say less or greater.
+
+If we think it's a positive correlation we would say greater.
+
+And if it's negative we would say less. And then we will get our p value and confidence intervals and we can interpret them.
+
+So I would like you to give this a try. Although since I skipped the last.
+
+Um, give me a one second. I will just adapt this real quick.
+
+Okay. Phew. One extra step.
+
+So you need to create the variable yourself first these two variables and then try out the correlation test function on them.
+
+But I would like you to actually see what happens when you don't specify a direction.
+
+And when you do specify so negative to positive, usually you wouldn't test all of these.
+
+But I want us to look at that in this kind of small sample.
+
+So I'll give you a few minutes to get started on this before I check in with you.
+
+And then we'll go through it together. And of course, if you have a prediction already, we already saw what the value was,
+
+so you could say which one you think is likely to be the case before you run it.
+
+Let's just. Oh.
+
+You can choose. Create a district.
+
+Yep. One.
+
+This. Did you?
+
+Get some things. So we can say something.
+
+So we. 75.
+
+Percent of people that. It's a.
+
+Just. So when I was trying.
+
+Any of these? Things.
+
+Receive calls to you.
+
+Thank you very much.
+
+So I was reading. Yeah, but.
+
+Education. Is what it is.
+
+What it is.
+
+Because it's. Less than zero.
+
+And there we go. It's very funny. So.
+
+Just 40% of the time, it's.
+
+Just because he or she is close to the.
+
+It's said that it's clear. That students as.
+
+Well. As business.
+
+Intelligence. Agencies.
+
+As. As.
+
+That's what they. Say.
+
+So where are you?
+
+And if you should go? That's what I was just trying to say.
+
+The only thing that. Or things like.
+
+That. But I.
+
+Feel like. I just don't.
+
+Like it. Here's what you.
+
+Need to. Let me know what you.
+
+Think. Of this.
+
+It's not. Yeah.
+
+Okay. Okay.
+
+Let's go. Well, yes.
+
+That's. But let's take a look over there so we can, uh, cover a lot more interesting things.
+
+So I saw for some of you, this was pretty easy.
+
+Some of you still trying to remember how to use AR.
+
+Uh, and, of course, maybe, um, you know, I was showing you just kind of the rendered version,
+
+but then you miss out a bit of the dynamics of doing it on your own.
+
+So, you know, if we want to just run a couple lines of code, I use control and enter on windows to just run those.
+
+Or you can highlight them and click run up here. Right. So just a reminder.
+
+But you you would want to make sure you know your variables get put over here into your working environment so that R knows they're there.
+
+And you can then do things like calculate the covariance on them.
+
+I'm doing Ctrl enter again here. Covariance there.
+
+Right. Um, I'll swap back here to, uh, my HTML version, though.
+
+So we saw some interesting things. I got to see some of you who were able to run this.
+
+No problem. So first one I don't specify any arguments.
+
+And then by default I'm getting a two sided test. We notice right away that we get that same 0.87 value.
+
+We're getting quite a high T value. So you would think if we had that kind of 1.96 cut off in mind, that usually is the case for many t distributions.
+
+That would be significant. But it is slightly above our 0.05 threshold.
+
+Right. So with this one we would also see that zero is included in our confidence interval.
+
+Right. So that gives us some kind of conflicting information that uh well I thought the correlation was strong.
+
+My T value is pretty high, but my p value is above the Cut-Off and my confidence interval includes zero.
+
+So actually, if I just had this information, I would be a bit okay,
+
+I don't know actually how to make sense of that because the information is a bit conflicting with what I would expect.
+
+This is partially due to the fact that this is such a small sample,
+
+and the degrees of freedom here are really small, so it changes that shape of the the T distribution.
+
+Usually we will have a much larger degrees of freedom. And then these cut-offs that we usually use of 1.96 usually hold up.
+
+But this is I wanted to give you this example so you could see what happens when you.
+
+Specify a directional hypothesis, right? So if I say less, then look what happens to my p value here.
+
+So before it was 0.054 and now I'm getting 0.97.
+
+Does any can anyone tell me how come it got so large.
+
+Yeah, I love this morning as well. So it's.
+
+And that's why. The interpretation is correct, but I'm looking for something just a little bit more about how do we get that p value.
+
+Do you know? Well, remember, our p value, right is really just the area under the curve relative to our test statistic.
+
+Right? So if I don't have a, uh r t distribution, but imagine it's right here.
+
+Right. And our t value is like over here.
+
+Actually let me just I'll just swap back real quick.
+
+Uh. If I still have the slides.
+
+Wow. Okay.
+
+My zoom is failing here. Sorry about that.
+
+Yes. Right? So let's just let's pretend this is the T distribution and we got that value of three.
+
+If we specify that less then we're getting this entire area under the curve right.
+
+So from that value of three all of this. That's why our p value is almost one.
+
+Because we have almost the entire curve.
+
+When we had it as two sided we were getting like the the little tail here and the little tail here above the value of three.
+
+So that's where we got the 0.054. And what happened when we specified that it was greater?
+
+We see it 0.02. So this is sort of the value that you get.
+
+And being more specific about what your predictions are, right?
+
+If you if you really don't have any idea from the literature what the relationship is between your variables,
+
+then you have to default to two sided and you will have a slightly larger p value.
+
+If you have a directional prediction that is correct, then you will be.
+
+Getting a smaller p value. But again, in this case two, we see it no longer includes zero in the confidence interval.
+
+Um. But this is a really small sample, but it's just meant to show you, again,
+
+some intuition about where this p value is coming from and how that relates to which directionality.
+
+We specify our hypothesis. Does that make sense?
+
+So good to know when you can, what direction you think the relationship is.
+
+Um, sometimes you don't, so you just do two sided. Um, yeah.
+
+Oh. Skipped ahead a bit. Uh, so.
+
+This is just one example, different data set that you will maybe look at later today if we have time.
+
+Um, there's a lot of ways to report correlations. In this case this is a data set looking at exam performance.
+
+And this is an example of a correlation matrix. So there's three variables here exam performance anxiety level and revise or like time spent studying.
+
+And uh and we see. Something about the matrix is it's symmetric often.
+
+So something correlated with itself should be one.
+
+Right. And then we see and -0.4 for positive four and -0.7.
+
+So if we had this and these are the p values.
+
+This is an example of using a different one of those different correlation functions.
+
+These are getting rounded to zero although they are really small.
+
+But we could say exam performance was significantly correlated with exam anxiety with our Pearson R is equal to 0.44.
+
+That's uh, this one. Sorry.
+
+-0.44. That's here. And time spent revising 0.4.
+
+And the time spent revising was also correlated with exam anxiety.
+
+-0.71 Ops were less than 0.001.
+
+So that's one way we could do it. It's much better, of course, if we added in our exact p values.
+
+In this case, there may be too small that we would put like 0.000001, and in which case we would take up a lot of space for zeros in our write up.
+
+We don't need to do that. We could also add confidence intervals for these correlations.
+
+So then we have some idea on the the variability of those.
+
+And we can interpret them as well. Okay, it's break time before we get to non-parametric correlation and then partial correlation.
+
+Uh, how are we feeling today for a full 15 minutes break?
+
+Only a few of you. Ten minutes. Everyone likes ten minutes.
+
+Is it just because we end early or ten minutes is just the right amount?
+
+Okay, let's go with ten minutes. Again, sorry to those of you on the 15 minutes side, I will get you a 15 one of these base, I promise.
+
+Yes. That's. Nice.
+
+So do. I look if I go.
+
+Against this. Yeah.
+
+Looks like. I didn't think that you would have a.
+
+Nice. Little.
+
+Wine with your. Yeah, yeah. Why did.
+
+You do that? I'd like to see you.
+
+Again? We'd have to let.
+
+You have a place. Oh, okay.
+
+Okay. I heard some issues. Yeah.
+
+What's the deal? They.
+
+I. I no.
+
+I mean, it's grace and then it's up to you, but.
+
+But instead of. With what?
+
+That's right. Right.
+
+So I was like.
+
+And actually, I was gonna say that.
+
+The. Years. I was telling everybody and then I.
+
+Was. Like.
+
+Oh, this. Is so sad.
+
+I was just saying. You know, it's.
+
+My. Last.
+
+Year. And it's just you and others.
+
+It's just. It was something else.
+
+But the play was based on that because. I'm quite into it.
+
+I do. Don't like these things here.
+
+Yeah. Yeah.
+
+Yeah. Yeah. Yeah.
+
+Yeah. Yeah.
+
+Well, yeah, I think so.
+
+Yeah. Let's say, let's say for like.
+
+Oh I think, you know you know.
+
+So I don't know.
+
+It makes total sense. But it's not out of danger.
+
+I was very doubtful. Yeah.
+
+How about you? This is so cool.
+
+So nice. So.
+
+What's up? Yeah. You know, I figured, I figured.
+
+Thank you so much for joining.
+
+Us. Oh, you.
+
+So. Most of us are.
+
+I don't. Feel like it's very difficult to feel like you don't have.
+
+To basis. For each other.
+
+There is no. I was very.
+
+So. I'm.
+
+Gonna have some. Yeah, I.
+
+Like. This.
+
+Yeah. Yeah. Well, I suppose.
+
+So, you know. I think it's always good to be nice.
+
+I mean, yeah. Yeah.
+
+This is, I say.
+
+I see you all here. Thank you.
+
+First of all, it's. No.
+
+Yeah. They say.
+
+Things. You know, I think so.
+
+Yeah, I think so. Yeah.
+
+Okay. I, I think to.
+
+How is that possible? Yes.
+
+Yes. All right. That's our ten minute break that majority requested.
+
+I will favour the minority. One day, I promise. So.
+
+So far, we looked at Pearson correlation. Right.
+
+And there are some assumptions of Pearson correlation, like the ones that I've listed here that it's maybe normally distributed.
+
+Or interval or ratio? Scale. How could I check if my variables are normally distributed?
+
+Any ideas? I know.
+
+Yeah. So we can make a histogram and we could see how they are shaped.
+
+Does it look like our normal distribution or not. Interval a ratio scale.
+
+That would be actually just looking at the values themselves right.
+
+So we could we could use R if we're doing our stats.
+
+And we can plug in variables that are not normally distributed or not interval of ratio scale.
+
+And R isn't necessarily going to give us in the functions that we use a warning that says warning your data is not normally distributed.
+
+Right. So we have to make sure we check these things before we run our analysis.
+
+But when we have cases where we don't meet these assumptions, we can actually have alternatives.
+
+So in stats one you learn some nonparametric test that you could use.
+
+For example, if your data didn't meet the assumptions for T-test or Anova.
+
+In this case we have Spearman's rho and Kendall's tau that are non-parametric correlations that you can use for the course.
+
+I don't expect you to know all about how they're calculated.
+
+You can click on the links in the slides to look more at those if you like.
+
+It's more about when they are appropriate, for example, when you don't meet the assumptions of the data.
+
+So in this case, you could see that rho for Spearman's rho it's based on ranked data.
+
+So you could see it's actually based on comparing how two variables might be in their ranking.
+
+So whether it's first or second or third or fourth.
+
+And this is good particularly for cases where you have outliers, which maybe when you saw, uh, the guess the correlation game last week,
+
+you might have seen some cases where there was some value off on its own that maybe skewed your interpretation of what the correlation might be.
+
+So if you have outliers or ordinal data, if the data are already in a ranking kind of format, this is a good one.
+
+And if you have a really small sample.
+
+So maybe like we only had five in our sample in the analysis we just did, maybe this would be more appropriate for that one.
+
+We're not going into the equation for this one, but it's based on like concordant and discordant pairs.
+
+So rather than comparing the ranks, it's about seeing the sort of pattern of the concordance of them.
+
+But again, the main thing you should remember here is that it's should perform well for small samples.
+
+So what do I do if I ran my my Pearson correlation and I am excited, I see there's a strong correlation.
+
+It was what I predicted. But then I make some histograms of my data and I say, well, they're really skewed or really, uh, slightly cathartic.
+
+You know, if you remember that one. Uh, and then I think, okay, what what can I do?
+
+Right. Well, then I could try one of these analyses, or maybe I would have checked what they look like before I ran the correlation.
+
+That's even better. And I will see what interpretation I get of those.
+
+I want you to try that. Uh, now. So there's a data set on canvas.
+
+Uh, I'll just show you so everyone sees it together.
+
+If. Well, I will try to show you.
+
+Or did we lose? Uh oh. Okay, I think we're back.
+
+All right. Sorry about that. Under modules module four, there's two data sets Biggest Liar Dudette and exam dot anxiety dot CSV.
+
+We'll work with those. We have two more exercises today. So already you should see if you looked at the short description here.
+
+These are. This is based on a British TV show I think a competition.
+
+I'm not totally up to speed on a lot of British culture, but the idea here is that there is a competition.
+
+You have ranks where the competition in terms of whether they were first, second, third and how creative they were.
+
+Um, so a maximum score of 60. I want you to try to make a prediction about the relationship between position in the competition,
+
+in the creativity level and test it using these non-parametric correlation.
+
+So in the core test, you can look at the arguments if you need to be reminded how to do that.
+
+But you can specify which method to you. So you could have done Pearson, but I'd like you to try out these two and see what you observe.
+
+I'll give you a bit to get started. If you're struggling, you can always wave me over to nudge you in the right direction.
+
+Otherwise I'll come around shortly. The data format might also be a bit tricky because we you haven't worked with that in a while.
+
+I'm pretty sure you have some for stats one, but um, if you need help with that, let me know.
+
+Local farmers. I.
+
+The. Once.
+
+Sometimes. Doesn't really.
+
+This. Yeah.
+
+So here we. As you say.
+
+Know. But can you?
+
+This. Is it going to?
+
+Yeah. I.
+
+Know, but. You just looking to do.
+
+If you have. And just because.
+
+Yeah. So that is in the Bible.
+
+Yeah. And it doesn't say. You know.
+
+Like that you. You know.
+
+The. What?
+
+Just. To.
+
+Yeah. That's my thinking.
+
+Like. Since he was.
+
+Something. You know, it's.
+
+We have. But I said.
+
+Apart from. All right.
+
+It looks like many of you were able to make some progress.
+
+Not everyone that I went by was able to finish it,
+
+but I want to make sure we have some time to look at this together and still cover partial correlations.
+
+Um, I gave you a data format you don't often see.
+
+Usually you will get a CSV or something, but every now and then I come across some file in the dot that some other data format in this case read.
+
+That table worked for me. Um, you could also use the import data function in the interface.
+
+And ah, maybe someone else found a different solution that worked.
+
+Um.
+
+So here we have to refer to our data frame rate and enter our variables to do the correlation test between position in the competition and creativity.
+
+And I'm specifying here the method Spearman and the alternative less.
+
+So the idea here was I was thinking that it was a negative correlation.
+
+Right? Like the lower your rank in the competition, which lower in this case is actually better, right?
+
+If you're number one, it's a lower value than if you're 30 or something.
+
+Um, will be negatively correlated with creativity.
+
+That was my reasoning at least. Um, and we see the Spearman's rank or Kendall output here.
+
+I'll put them both on the screen. So, especially if I was running these two tests because I saw these data were ordinal.
+
+Right? There are rank. Uh, I would be trying to make sure that I'm getting convergent information, that I would make the same interpretation.
+
+Right. Um, so I do see that the correlation values are not identical.
+
+And that's partially because there are different metrics like the rho versus the tau, but they are about -0.3 or 0.37.
+
+So they're both in the same direction which is comforting.
+
+And our p values are both small smaller than 0.01.
+
+So in this case, you know, both of them would say that there's we could reject the null hypothesis.
+
+Uh, the true kind of correlation is likely less than zero.
+
+You don't have to worry too much about the test statistics for these.
+
+Again, it's more about for these non-parametric ones.
+
+When are they useful to to check relative to using the normal Pearson correlation?
+
+So hopefully you can see, um. Just with the general correlation test, how we can use different types of data,
+
+specify which method we're doing, which alternative hypothesis we want to test.
+
+If we don't specify any of these by default, we're going to get a Pearson.
+
+That's two sided, right? Any questions?
+
+Yeah. What did you. So that it would get rid of the warning of, uh, that, uh, that was coming up for a p value calculation.
+
+Didn't you get that one? Or maybe it was so. Yeah, yeah.
+
+Um, so I think I saw that, and then I checked the arguments and then, uh, then it just it shows up nicer on the, uh, HTML.
+
+Any other questions?
+
+So for correlation testing, this is kind of a general function that I would often use if I was doing that hypothesis test right of.
+
+Is this correlation different than zero? So for the last, uh.
+
+Well, we have 25 minutes or so. Um.
+
+I want to remind you that, you know, correlation is not a causal interpretation.
+
+Even if we do a partial correlation, which we'll talk about next.
+
+This is one example from the uh, uh.
+
+Excuse me. What did you say? Um, you know what?
+
+You already covered this in that course. Yes. Thank you.
+
+Um, you can check out the link for lots of spurious correlations.
+
+There are some funny ones in there. This is just showing an example of ice cream sales and shark attacks.
+
+You might look at them and think, oh, these are very related and they may be correlated.
+
+But you know, eating ice cream isn't going to cause you to be more likely to be attacked by a shark.
+
+There could be other factors going on, like the time of year and other activities you do.
+
+So part of this is related to the third variable problem.
+
+Like there are other things that might be contributing to that relationship.
+
+We're not going to go too much into causality in today.
+
+But of course there's other things like temporal precedence. That's one of the conditions for causality.
+
+Um, so causal language is something that you have to be really careful with in scientific writing.
+
+Um, if you say something causes this or this leads to this, um, you know,
+
+a lot of scientists kind of react to, to that, that you don't have a causal relationship.
+
+You have a correlational relationship or regression. Maybe it's predictive, but it still isn't these right conditions for causality.
+
+So just be careful with that. Uh, as you go forward.
+
+So now we have a bit of a messy slide here, but I want to introduce you to the idea of partial and semi partial correlations.
+
+This connect to regression modelling. When we do multiple variables as a predictor of an outcome.
+
+Maybe just focus on this side first.
+
+So thinking about if we wanted to understand a variable in this case how well are you going to perform on the exam.
+
+You know that might be correlated with how much exam anxiety you have.
+
+Do any of you get a bit stressed when it's time to take a test?
+
+Some of you. Yeah.
+
+And then maybe, you know, on a normal time at home you're doing your you're practising your stats and you're like, this is going great.
+
+And you get at the test and it's like all of that stuff you learn, it's just not accessible to you.
+
+Of course, it could also be correlated with how much time you spend studying.
+
+Um, and we see this overlap here.
+
+Right. That's that squared r squared that we were looking at earlier.
+
+So there should be some overlap in the variability.
+
+If we were within a regression framework we would be able to say like oh,
+
+I could use exam anxiety to account for 19 19.4% of the variability in exam performance.
+
+Or in this case, I could use the metric of how much time you spent studying or revising, uh, to to account for 15.7% of exam performance.
+
+And then there's probably this spot here where they overlap.
+
+Right? So, uh, that both of these account for some of the same portion of variability in exam performance.
+
+And it's cases like these that we might want to, um, have a partial or semi partial correlation.
+
+I would say actually we probably just want to have a regression model where we have the interaction between these two, but we're not there yet.
+
+The idea behind these is that, uh,
+
+we can sort of account for the variability that's overlapping between them and sort of rule it out in our correlation.
+
+So we we essentially just adjust our correlation values based on the information we have about the other association.
+
+So here our partial correlation is about the relationship between two variables
+
+when controlling for the effect that a third variable has on them both.
+
+Whereas this one is about only, uh, only controlling for the third variable on one of the variables.
+
+And you can see that in the equations here, uh, where these are correlation values between variables.
+
+So this is meant to be correlation between y and x1 or y and x2 or between x1 and x2.
+
+And it's adjusted based on this correlation between y and x2 and y.
+
+I'm sorry x1 and x2. The more important thing isn't necessarily exact.
+
+The exact calculation, although it's there if you want to go into the math for it.
+
+The important thing is about looking at how that source of variability is getting
+
+to adjust the estimate of the correlation for the partial or semi partial.
+
+I have this, uh, shown in a different way here.
+
+So partial correlation with this kind of calculation that we have here is going to be giving us sort of what's the correlation between this.
+
+Well accounting for the overlap in the correlations with these.
+
+Or in this case it would we would have one less of these.
+
+And we have to specify this for example when we do it in our.
+
+You can look at more details about these calculations if you want, in the video that I have linked here.
+
+I will save you from having to watch that today though.
+
+There's a couple ways to do partial correlations. Uh, a common one is to use this pipe correlation package.
+
+Using this peak or dot test. So almost like we had before but with the p uh, and then we have to specify now three variables.
+
+It's a bit confusing because the common equations like this are with like a y and then an x1 and x2.
+
+Whereas a lot of the way that we, the materials that we have are about x, y and z.
+
+So we would say x and y are maybe the main variables, and z is the one that you want to control for.
+
+If we look back at this example. Would you say?
+
+Like what would be the two main variables and then the one you want to control for just that idea of like controlling for something?
+
+Make sense? Which?
+
+Which would you say? Or someone want to say? Which to our most important to you?
+
+You think? Any ideas?
+
+Or is that a bit too abstract? Maybe it depends.
+
+Right. What your research focuses. For you.
+
+Maybe you can control how much time you spend studying, but you can't really control how much anxiety you have.
+
+Uh, so then you might say, well, I can I can choose how much to study.
+
+So these could be your, your Ta. And then you want to just control for the influence that anxiety might have on those variables.
+
+That could be one idea.
+
+So controlling in like a statistical sense often means it's not your key variable that you're interested in looking at the relationship for,
+
+but you want to account for it because you know it is important or may be related.
+
+Um, but it's it's kind of up to the researcher to indicate what,
+
+what and why they're kind of controlling or accounting for some third variable in these analyses.
+
+So this is one way we could use this function.
+
+Uh, we could just put in our x, y and z.
+
+And with this peak or as the partial correlation, uh.
+
+You know, we're getting the really the correlation between time spent revising or studying and
+
+exam performance while controlling for the effect that anxiety has on both of these.
+
+The correlation between them and we get this .13 p value pretty large.
+
+Um test statistic here. Sample size Pearson method.
+
+We could look at uh semi partial correlation using the SP core.
+
+So same sort of thing. Although here uh we are specifying just the Z and it's the relationship with the y variable the second variable.
+
+So in this case it does matter which where you enter them because we're leaving out one of those relationships.
+
+So you want to make sure that you enter it the right way.
+
+So, um. So we see here .13.
+
+In this case, 0.09, when we only account for that one relationship.
+
+But they still aren't saying that they're significant partial correlations.
+
+Right. Do you, uh, do you want to give this a test yourself?
+
+Yeah. Okay, so the exam anxiety anxiety file was there on the modules.
+
+Um, there's some variables in there. Exam anxiety and revise.
+
+I'll give you a few minutes to give it a try. You could just specify again using you can more or less depending how you load that data.
+
+Use the code example here. See if you get the same result as me or something different.
+
+Um, so you should have about 5 or 6 minutes to try this out before we have a few things to wrap up on.
+
+What's more valuable? Absolutely.
+
+This. This one is also. It's so nice.
+
+So what are we missing for this conversation? So talk to us.
+
+And so. Something.
+
+So it's. The design of the experiment. It's interesting in the example that.
+
+You know of. So are.
+
+How's it going for you? I see some red over here because it's.
+
+Okay. Just. Yeah, that's always a good start.
+
+For that night. So.
+
+So I would use. Like.
+
+Got. You can also.
+
+And we. She's.
+
+Uh. Well have. Okay.
+
+Sorry. I'm not used to.
+
+I. Know exactly.
+
+I just know that. Well, it's not going to be.
+
+Just what it says. It just says loading.
+
+Loading. Loading.
+
+Loading. Loading. Loading. Loading.
+
+Okay. All right. I know that was a bit of a short amount of time for this exercise.
+
+So if you want to make sure afterwards that you can go through it.
+
+Um, you can also check my solution that I post uh, here that's available after class.
+
+This was a CSV. So you see that I'm loading csvs just by specifying my path, sometimes making sure to refer to this package.
+
+Um, and you can ignore that part for now.
+
+Uh, so here just specifying exactly what I had in the slides.
+
+Right. Looking at this partial correlation, getting that value or the semi partial correlation.
+
+Getting this set of values. In practice you probably won't do the partial and semi partial correlations much because again like I said
+
+we're covering this because it kind of forms the basis for actually how we get to our regression coefficients.
+
+Um, but it's it's good to know that you can do this when you want to account for that third variable.
+
+If you have more variables, then we will need to move to a different kind of framework.
+
+Did any of you already cover the easy stats family of packages in R for in stats one?
+
+Maybe some of you looks kind of familiar.
+
+There's a correlation package in the easy stats, which has some nice functions, for example for just giving you a full correlation matrix.
+
+So also, uh, some nice plotting of the correlation matrix.
+
+So here looking at exam exam anxiety and revision and giving some nice colours to those.
+
+Um, and also one where you can specify partial correlations.
+
+The calculations for this package are different than the ones that we just did.
+
+So you would see maybe you notice already these values are a bit different than the ones that we just estimated,
+
+and that's based on a different calculation. So if you were using some partial correlations in the future,
+
+you want to make sure to specify where you're which functions you're using to estimate them.
+
+But this is sometimes. So if you're using, uh. You're using your correlation matrix method to try to get an idea of what's going on in this data set,
+
+to then set it up for maybe your modelling that you're going to do later.
+
+You might just do something like this rather than going and doing Cauchy test for every single variable in your relationship.
+
+This does give you the correlation, and it does have p values that are indicated here by the asterisks, you know, less than 0.05 or less than 0.001.
+
+I put something like this in the slides too, but you can check it there.
+
+So, um, just to wrap up for correlations, there can be positive or negative.
+
+If you see a 2.5 value for a correlation, you should know something went wrong.
+
+Right. Because it goes only from minus one to positive one.
+
+There can be small, medium, or large. Correlation is never equal to causation.
+
+Nonparametric alternatives to the Pearson correlation exist if your data are not normally distributed or they're non interval or non ratio,
+
+and we can account for a third variable and some ways with partial and semi partial correlations.
+
+Next week we're going to go our Intro to regression.
+
+Chapter 15 of the Navarro text is great to get up to speed on that.
+
+And I hope you will attend your practical sessions this week.
+
+Thank you and see you next time. To.
+
+Fix that. No one else. Me.
+
+And you see? They say that. Yeah. No, I mean yeah.
+
+I it's like. Know.
+
+I don't. Know.
+
+So. Let's get into the partial correlation test.
+
+What do the p values are extremely difficult to test.
+
+So, uh, we saw the one with the semi partial formation and the pass the correlation.
+
+Uh, what does it mean that the p value changes from one to the other?
+
+So I think it's actually kind of like the test of is this or not.
+
+Yeah. Yeah. They were much higher than. Yeah.
+
+Yeah. So that means like right. Maybe if you just do the correlation between the between the two variables.
+
+Yeah. It was less than 1.5. But when you account for that third variable.
+
+Yeah. And then it's no longer than zero.
+
+That won't always be the case. But if you have. But.
+
+I'll turn it around. Yeah. So.
+
+So remember that, like our square.
+
+Yeah. So essentially we're kind of getting smaller here.
+
+Like if we had removed all of that in the beginning of this year.
+
+And then, then if it's a smaller one,
+
+there's a chance that that second so that that's so we can be more confident in a way like, well these are correlated.
+
+But this is also correlated. Yeah. If we account for that then it is just that correlation that you see if you have a sum of.
+
+Yeah, yeah. Thank you.
+
+Bye bye. See you next time. Thanks. No, thanks. Yeah.
+
+Obviously, I want you to.
+

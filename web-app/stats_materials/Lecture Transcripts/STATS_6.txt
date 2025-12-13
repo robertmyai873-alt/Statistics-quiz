@@ -1,0 +1,1427 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+I. Good afternoon everyone.
+
+Nice to see you here for stats two. Today we're going to be going into more regression.
+
+Hopefully you're ready for that. Uh we're going to start with some regression.
+
+We're going to look at a categorical case of regression. We're going to talk about centring and assumptions.
+
+Um, this is, uh, what we're going to cover, which is what I just mentioned.
+
+But before we do that, let's just do a few quiz questions, see what you remember about regression so far.
+
+Give you a moment to, uh, get joined in. Think there's.
+
+Uh, five questions today. Welcome.
+
+All right, let's, uh, take a look at the first question.
+
+If you're just coming in, you can still type in the code from the top.
+
+So if we observed, uh, -0.03, correlation between hours of daylight and mood, which of the following could you conclude from just that information?
+
+Hello. 10s left.
+
+Got the timer on today. Well, everyone is already in.
+
+Oh, just one more edit. Okay, so, uh, actually, majority of you said there's a negative relationship between the hours of daylight and mood.
+
+I thought there's not enough information provided. If you said this one.
+
+Five of you, I guess. What other information would you want to have?
+
+Yeah, you would be value. Right.
+
+So we see the effect size right. Our correlation can be interpreted as an effect.
+
+Um but we don't have the p value. Any other things.
+
+Yeah. Yeah. Confidence interval. What would you be looking for in the confidence interval.
+
+Yeah, right. So with just this information, it's it would be a very small effect size.
+
+And we, we don't actually know if there is a relationship there because we don't have our test statistic.
+
+And our p value that would tell us is this different than zero and that confidence
+
+interval that would show here's sort of the estimated range going from our sample uh,
+
+to the population.
+
+So if you said it's negative that's like that's good in the sense you got to the first point, which is you interpret the negative sign.
+
+But we need to think a bit beyond that in terms of how strong this correlation is.
+
+Um, and it's very weak if it, if it exists at all.
+
+Right. So not enough information. Um, if you said there's no relationship, this is likely to be the case if we think that this is close to zero.
+
+But again, we don't have all of that information to make this inference that we would want to make that we can't just from that correlation alone.
+
+Okay. So next one then.
+
+And if you're just coming in, you can still type in the code. So what is B subzero?
+
+We'll clap. Doesn't let me do subscript here. Um what does that mean in the regression equation?
+
+Five more seconds. Six more. Well. All right.
+
+So a lot of you put the y intercept. That's the good, good correct answer there.
+
+Um, correlation coefficient. Not quite right at all.
+
+Regression coefficient. What would it be if it was the regression coefficient.
+
+What would this be instead? Any guesses?
+
+Yeah. Um, well, r squared would be.
+
+Hmm. Not quite, but. Good guess. Thank you. Um.
+
+Anyone else? What? What would this term be instead?
+
+If it was the regression coefficient of the predictor? Yeah.
+
+Whether it's. Yeah.
+
+So it would be B or beta depending on whether it was, uh, unstandardised or standardised.
+
+And we would have a different value for the subscript. Right. So we would have one.
+
+Yeah. Um, and that's, that's what we've covered so far.
+
+Just simple linear regression. So we only have one. And the spoiler alert for the coming module not after today is they will have,
+
+you know, one or 2 or 3 depending how many x predictors we put into the model.
+
+So regression coefficient is going to be b sub one through.
+
+And depending on how many predictors we have. And b sub zero is always our y intercept.
+
+And we're going to look today at how we can kind of interpret more about our y intercept uh in a couple of different kind of context.
+
+Okay, so how about this one? True or false? All regression models use a straight line to describe the data.
+
+All right. I think I put that one only on 30s. So this one is false.
+
+When we expand our regression model to have multiple predictors, then we're actually fitting a plane to the data rather than just a straight line.
+
+We'll get into that in the coming weeks. Uh, also later on we're going to look at fitting different curves with regression.
+
+So quadratic or different polynomial trends.
+
+That's uh later on as well. So not always a straight line.
+
+Although one of the assumptions we're going to talk about today is that there is a linear relationship between our predictor and our outcome.
+
+But we'll get we'll come back to that too. Okay. I got two more.
+
+So how about this one. The slope of a regression line can be which of the following.
+
+10s left. All right.
+
+Everyone's in. So. Okay, well, 100%.
+
+That's great. Uh. What would it look like if it was undefined?
+
+Anyone know? Yeah, yeah.
+
+Um, and zero, you know, would just be a totally horizontal line.
+
+So in principle, if there was no relationship, uh, we could get the zero, uh, as a slope for that line.
+
+Otherwise, we can get undefined where we cannot estimate the slope because it's completely vertical.
+
+Otherwise, most of the cases we'll see it's.
+
+Positive or negative, even if it's ever so slight.
+
+So if you have some problems with your model, uh, running,
+
+then maybe it's because the slope can be undefined, but you probably would have spotted that.
+
+All right, uh, already in advance, because you will inspect your data before you do your analysis.
+
+Right? Okay. Last one. So what does the R-squared tell us?
+
+Select whichever one is most correct. Last few seconds here.
+
+Oh, we missed just one of you, I guess. All right. Too slow.
+
+Um. R-squared. Right. It's how much of the variance in the outcome variable is explained by our overall model.
+
+Right.
+
+So we really want to think about, uh, that kind of Venn diagram in our mind where we're trying to explain the variability in our outcome variable.
+
+And we're using other predictor variables to try to account for all of the variability in the outcome.
+
+If we had a R squared of 1 or 100%, then we would know everything about our outcome variable.
+
+We would have a really good model, probably most often in cognitive and social science and behavioural science area, as we see sometimes 10% or 20%.
+
+And that's still like a reasonable effect. But obviously the more we can explain, the better.
+
+Um. Some of you said if there's a relationship between your predictor and outcome.
+
+So this one is partially true, right?
+
+If there is no relationship, uh, then r squared would probably be zero.
+
+Um, although we do have an intercept in our model as well.
+
+Right. So that intercept does explain some of the variability.
+
+But then the predictor or predictors that we include also um do tell us that and how much error is in your model.
+
+Remember if we we talked about last week the different sources of error with sums of squares and how we get to our r squared.
+
+So it does tell us something about the error although inversely.
+
+Right. So how much. If you take like the inverse of the r squared, then that's how much is unexplained by your model.
+
+Um, so those two would be kind of partially correct. But our main interpretation is this one about the variability.
+
+I think you all did pretty good on this. So I guess you're, uh, doing well with regression so far.
+
+Yeah. Maybe you didn't even sign in because you had no idea.
+
+But then I don't know. Um, any questions on this before I switch back to slides?
+
+No. Okay. Um, just so you know, for today in the, uh, we're going to work with a data set.
+
+Uh, let me just show you here. So we're going to work again with the exam anxiety from the correlation module.
+
+So you can make sure you have that ready. And there's also one in here.
+
+Driving dot csv. We're going to use that one towards the end if we have time.
+
+So if you want to get those, uh, loaded up. Okay.
+
+So we we already saw that.
+
+We're kind of describing the equation for a line.
+
+Uh, we're trying to estimate this line from our data, and we're have some amount of error.
+
+And we saw how those different sources of error go into our model and allow us to get our f-statistic,
+
+uh, and our p values and degrees of freedom and things like that.
+
+We looked at how to interpret some output.
+
+So this is the same one from last week. Right. And just to refresh you all, we kind of start from the bottom to see from here the overall model fit.
+
+Right. So our f-statistic whether that's close to zero or not, this should tell us something about the predictors and the sample size of the model.
+
+Our p value allows us to make our decision relative to the alpha that we typically use of 0.05 or less multiple r squared.
+
+This is what we're going with for now. We'll get to adjusted in the coming weeks.
+
+But we can also interpret this as a percentage. Right.
+
+So 33% of the variability in our outcome, which in this case was sales is predicted by our model.
+
+Then we can interpret the individual parts of the model right.
+
+The intercept and the predictor variables and whether the what those values are.
+
+This is our regression coefficient. This is our intercept value.
+
+Then we have our test statistics error and p values right.
+
+We're going to look at a lot of these. So hopefully you can interpret these.
+
+If you're struggling still with interpreting it. Then today during the exercises let me know.
+
+We can look at them together. Remember we can also sort of use our model to just make predictions by plugging in values.
+
+And for those of you who like linear algebra,
+
+I put a couple links in here so you can actually see that the way that we estimate these is really just based on matrix operations.
+
+Uh, for the regression equation with our data set, our outcomes and our predictors and the coefficients and then some error.
+
+So you don't take linear algebra for for nothing, I guess.
+
+All right. We're going to look at this example together. So this is a bit new because we're now looking at a categorical predictor.
+
+Um you might have seen some of this as well.
+
+When you were doing your practical exercise. You had categorical variables in there.
+
+But I'm not sure if you analyse them. So categorical variables right.
+
+We often divide things into categories.
+
+We're actually going to have another module that's more specifically on different ways to think about categories.
+
+But for today we're just looking at dummy coding. How many of you have heard of dummy coding already?
+
+A couple of you. Um, you probably already worked with categorical variables when you did Anova and stats one, right?
+
+Yeah. So essentially we just add.
+
+Well, I will ask you for those who said that they know dummy coding, what kind of values do we use in dummy coding?
+
+Anyone remember? Yeah.
+
+Zero and one. Yeah. Excellent.
+
+And this is important for us because we're going to think about how our regression equation changes, whether that variable takes on a value of 0 or 1.
+
+Right. So for this case, if we were looking at the effect of gender in this case there's two options only.
+
+Um, then we could see, for example, if there's a relationship between gender as a category and vocal pitch.
+
+Right. There's alternative coding systems like affect coding.
+
+And we'll leave that for a future day. Okay. So this is an example that's from the reading for today.
+
+Just kind of recreating it. You can see we can create these uh, pitch variables.
+
+We can create our data frame which looks something like that.
+
+And we can use this contrast function to actually see how is our treating my categorical variable.
+
+So we could actually look there and see, oh, it is treating it as a zero and one.
+
+And this is important because our zero is going to be our reference category.
+
+Right. So we have to interpret our output relative to that reference category.
+
+You'll see what I mean uh on the next slide. But we could change that to so we could do relevel.
+
+And then we could change it so that the other category was the referent with the zero versus the one.
+
+So it makes sense.
+
+So the reason why we need to do this is because we may need to do this, is because it's all about how we interpret our coefficients.
+
+So there's a lot going on here. Just take a look first.
+
+Uh, here at the I don't know why I'm using the laser when I can just point.
+
+Um, so here we get our predictor variable, which is this part.
+
+And then the second part is our, uh, is referring to actually which category this is indicating.
+
+So this is using the first option which was. Female coded as zero.
+
+And then in that case our intercept is actually our average of that category.
+
+So the average vocal pitch for the category of female in this case is 22.6.
+
+Sorry 226.3Hz. And then the male category here is -98Hz from that.
+
+So if you took the mean for example, of the male category, you would see it's 128.
+
+Or if the difference you would reproduce that. Um, -98.
+
+But I started here just to explain this. But we could look of course, at the overall model.
+
+Right. So here. See you later. Guess this was an interesting for you.
+
+Um, we are explaining quite a lot of the variability there.
+
+Right. But we only have very few data points. Only six.
+
+Um, so we need to interpret this quite cautiously.
+
+Right. Um, really high f value, p value even lower than 0.001.
+
+So this does account for a lot of the variability that you could say.
+
+There's probably a strong effect for this category of gender or sex.
+
+Uh, in terms of explaining the vocal pitch in this matter if scenario.
+
+So when we do categorical regression we're actually really looking at still the averages.
+
+So in many ways this is equivalent to doing uh an Anova or a t test between groups.
+
+But we can put it within the regression framework and still interpret it this way and
+
+still build on the levels of complexity of adding other predictors and so on to it.
+
+Does this make sense? How to kind of interpret these these dummy code categories and how they would be interpreted.
+
+So it's a bit different. It is still a slope, but it doesn't really make sense to interpret it as a slope in this case for categories.
+
+Because if you plot this, which I think you should do in a little bit,
+
+you'll see actually that there's just kind of there's not really a line anymore.
+
+Right. You have values according to the two categories.
+
+I should have put this in the slides, but I have it in the analysis in the second.
+
+Okay. I want to give you some time to try this out. See if it makes sense to you by by doing it.
+
+So with this, examine anxiety data. Don't know why I'm doing a microphone in here.
+
+Um, I thought I'd change this one.
+
+It should be a CSV now, so it's a bit easier.
+
+But the exam anxiety data maybe you still have it loaded. Um, check out this data, see what it looks like.
+
+Uh, I would like you to look at the relationship between the exam anxiety and the gender variable that's in that data set.
+
+Maybe make a prediction about whether you think there's a relationship between these or not,
+
+and then try it with the LM function and then interpret the output using the summary function on the model.
+
+I'll give you some time to work on this. You're going to need this model finished to do the other exercises.
+
+So I'll make sure everyone kind of gets, uh, to that point, um, with this one.
+
+And I'll check in with you, uh, shortly. The is.
+
+Did you? It might be that.
+
+It's silly. Right? That was. As soon as I can.
+
+I think. This.
+
+So. So what I did when I started.
+
+Angeles areas. Also.
+
+So. Because. Um.
+
+Up to 50% of the. Well, this.
+
+You got? Just. She's got us.
+
+That's. It's.
+
+Don't suppose. Us.
+
+That's really strange. Yeah. That's because.
+
+It's. Yes.
+
+Zero. This is like the second.
+
+Yeah, I. So this is a jurisdiction.
+
+It's just. Yeah.
+
+So do. Thanks so much for being with us.
+
+This evening. Back on my nightstand.
+
+Oh, I didn't know you. Well, if you don't want to follow this.
+
+Yeah. So. Yeah.
+
+Why didn't I? It's just my.
+
+Yeah. You know.
+
+I know this. If you ask.
+
+Yeah. Yeah.
+
+Homelessness. Yeah.
+
+That's how. Yeah.
+
+Well. But it's just like, uh, those.
+
+You just find. I think it's just because of the number of these posters.
+
+That's. That.
+
+You can just been. You know.
+
+God. This happens to Daniels.
+
+It's like you just know that you don't.
+
+Similar. So if you.
+
+From the. Oxygen first place.
+
+It's been. Like what you do.
+
+Are you really not that important? Yeah.
+
+There are certain. Was.
+
+Anyone still trying to get their model running.
+
+Everyone is good because you'll need it for the next steps.
+
+Okay, let's take a look at this together.
+
+So I have just my HTML rendering from my R markdown.
+
+And I said, well, I wanted to check out first, uh, what the the data look like.
+
+If you made a plot of them, you would probably already see if you plotted like the mean anxiety level by gender.
+
+They're pretty similar. And these error bars are pretty overlapping.
+
+So by inspecting a bit of the data, I already made a prediction that there's probably not,
+
+um, a difference or relationship between gender and anxiety for this data set.
+
+I ran my model, so that was LM anxiety with the tilde gender, and I saved it, right, so that I could inspect it later.
+
+I use summary on the model and get the output here.
+
+So we we, uh, we start right by checking out the overall model, and we see a really small f value.
+
+Our degrees of freedom they fit with. If you looked at how much, how big the data set was and how many predictors are in there.
+
+P value is really close to one, right? So already this tells us the model doesn't do better than the mean at explaining the variability in anxiety.
+
+R squared is super small. And then if we look at our intercept.
+
+And our, uh, predictor. Can anyone tell me what the mean of the mean anxiety of the female group is from this output?
+
+Yeah. Yeah.
+
+So? So remember what we get here. If we know we have a categorical predictor, we can always interpret our intercept as the mean of the other group.
+
+If we only have one categorical predictor and that this is the value.
+
+You could essentially add to this value as the mean for the the mail group.
+
+Right. So on average the anxiety is 74.3 for female group and 74.38 for the male group.
+
+Right. This is different than zero. But this is not a significant difference.
+
+Uh, so the model doesn't fit well and there doesn't seem to be any effect.
+
+And that fits with what I saw when I looked at this bar graph as well.
+
+Right. Does this make sense?
+
+Yeah. Cool. Um.
+
+I'll cover one more thing. Uh. Real quick.
+
+And then we'll have a break. So.
+
+In some cases we might need to do centring for our variables because we might have an intercept that isn't that meaningful, right?
+
+Before, we were just looking at anxiety was 74.
+
+Maybe we know that that scale goes to 100. In which case we could interpret that 74 as relatively high in terms of the range.
+
+But. If we had something, if we had something like this, where we were looking back again at vocal pitch and we had age as our predictor.
+
+Well then when age is zero, we're going to get a value here for our intercept.
+
+But does it make sense? Are you are you zero?
+
+And being unborn and, uh, having some vocal pitch?
+
+Maybe that one doesn't make sense.
+
+So there's some cases where you might want to do centring so that you actually adjust what your intercept will be, which will then be, uh, the mean.
+
+Does that make sense? So this is more of an interpretive thing.
+
+You don't.
+
+There's some cases where it's really recommended, but often if it's just oh, I want to interpret my intercept as something informative about my data.
+
+Because when the predictor is zero it doesn't make sense.
+
+You could do centring uh, to get a different value, which I have an example of how to do that here.
+
+Right. So you could just take your variable. So this is creating a new one that I just called H.C. for age centred.
+
+And you just subtract the mean from each value of that variable.
+
+And then I reran the model with the age centred variable instead of just the age variable.
+
+And then get this output. So now you get the average vocal pitch as the intercept instead of the.
+
+Vocal pitch when age is zero. And in this case, you know, it shouldn't really change.
+
+Um, sort of the effect. Right.
+
+Um, if there's an effect of age, it should be there, whether the variables are centred or not, because we're just subtracting the mean.
+
+So they should still be distributed in the same, uh, way.
+
+Um, but then we can interpret our intercept a bit differently.
+
+We'll do some other things with centring later on when we get to mixed models.
+
+Um, but for now, it's just we just want to think of it as some way to sort of make our intercept more meaningful.
+
+If we have a case where our predictor is zero, that doesn't make sense.
+
+And we could check this. I had it here too. We could check that that estimate is now the mean of the local pitch.
+
+So it depends on cases where you think it's important to interpret your intercept.
+
+Um, sometimes we don't really care what the intercept is. It's just there for, you know, making sure we can predict our data.
+
+Well. Other times we do want to interpret it like what is the average?
+
+Or when this variable is zero, what do I expect?
+
+Kind of like the sales example I showed earlier where we could say, what if we don't spend any money on advertising?
+
+How much do we make in sales? Yeah. Because.
+
+So it would be the mean of all of the pitch values.
+
+Right. I.
+
+Here that this graph. Uh, still. Let's suppose that.
+
+Yeah. On the y axis we look at the age of old that age.
+
+These could be different. Yeah.
+
+So we I think when we do this, we lose that information about the variability in the age observations.
+
+Right. So if we look at the calculation uh.
+
+Well, we are just adjusting the age variable by centring it.
+
+So that's that is uh, it's changing the average to being zero for that.
+
+Right? Zero like the zero on the x axis.
+
+Hmm. Yeah, yeah.
+
+That's right on the x axis. Axis zero is the age of the age.
+
+Yeah. Yeah, each of their own sample size because they knew each.
+
+I think we are. Yeah. But it's the same, right?
+
+So like here I'm plugging in the pitch variable. And if you just take all the values of pitch and get the mean of that, then it is this value still.
+
+So I think both of those interpretations are correct.
+
+Yeah. Okay, uh, break time.
+
+Before we get into assumptions. How many of you are wanting a full 15 minute break?
+
+Oh, enthusiastic hand there. Ten minutes and five and five minutes early.
+
+Five minutes short break. I think the 15 minutes was really enthusiastic.
+
+Let's do 14 and we'll start back at 145. Just in time for break, I think.
+
+On the way to cross my mind. If you.
+
+You know, I would, you know. Yeah.
+
+Yeah. Because.
+
+First of all. I know, that's just.
+
+To make a decision. I.
+
+Uh, it's, uh. It's it's. I.
+
+You know, just. Um, it's.
+
+I think. It's like the other day.
+
+I don't like this relationship. Like you.
+
+And, um. Just like my girlfriend.
+
+I. That by myself.
+
+I'm not looking for. In my life I could.
+
+Live with someone. Yeah, yeah.
+
+Yeah. You're going get. I mean, I don't really.
+
+What people are doing here. They are waking up.
+
+That's their. Questions?
+
+Comments? Yeah, yeah.
+
+Like. Mr.
+
+That's what I was doing. Parable of.
+
+They didn't. They.
+
+Himself. Any size. I put in a lot more.
+
+Yeah, yeah. So you. I mean.
+
+I think I should. Yeah.
+
+I got. Uh, just.
+
+Like, uh. Yeah, that was really good lecture.
+
+And there. There to make it.
+
+Uh, as I like being a kid myself.
+
+Uh. Oh. Yes. Us.
+
+You know this stuff. Yeah.
+
+You get the feeling you get. I think it's not.
+
+Like. That is.
+
+Kids I with.
+
+So you. There.
+
+Are. A lot of a.
+
+Yeah. Yeah, yeah. And that. But here's this.
+
+Exercise. Uh.
+
+Yeah, yeah. Just just something. That you're like.
+
+I don't know, I guess. Yeah, I guess. That's.
+
+Sorry. That's okay. Yeah, we just did.
+
+We were competitive. We did, like, so much stuff.
+
+So, no. Is it just me? Yeah. So it's like, yeah, that's the limit for this.
+
+Um, so on the left is the outcome, in the right is to the other one that was going to do a lot of stuff in here.
+
+Opinion. About the.
+
+So the formula you can see here right.
+
+So in this case where we're trying to explain anxiety.
+
+So that's our outcome on the left side of the formula. Yeah.
+
+And also the left side. Is that what's going on. Yes that's right.
+
+Yeah I use like all the way along. And did your model run then.
+
+And I don't know if I need extra switches and then. Yeah.
+
+So we can have a regression with a categorical outcome.
+
+We have to use logistic regression because it's a different function to estimate this change.
+
+So that's that's a good point. So the outcome is always on the left.
+
+So if you look at if you look back as well at just our equation right.
+
+Um then you'll see our outcome is our lives at the end.
+
+And so always on the left side. And then everything else is the integral of this on the right side.
+
+And when we get to multiple regression you'll see that we just expand that right side.
+
+So maybe we would have gender plus something else and then those on the right side.
+
+And I think I'm just gonna.
+
+I guess I should be. Oh, yeah, I guess so.
+
+We'll see, we'll see. Yeah.
+
+Um. Uh. So. There's a. They assign a separate.
+
+You are supposed to have. The example of this provision.
+
+So you don't have to sort of like me. Yeah, yeah, yeah, yeah.
+
+It's kind of strange to, you know.
+
+And that. So much older.
+
+Yeah. Yeah. Yeah, yeah.
+
+Doesn't sound like a good idea. To us.
+
+Right. Yeah.
+
+Yeah, yeah. I know, and I also like.
+
+Said the rules. This is license plate?
+
+Yes. Yes. There are obviously some students here.
+
+Yeah, exactly. I think it's. A syllabus committee set.
+
+I think that's nice. I think. They consider the fact that they will, because I do not believe that.
+
+For Christ's sake! Um.
+
+Uh. And also like a feather that comes out of.
+
+Yeah yeah yeah. Yeah.
+
+Yeah. And I just.
+
+Any sense? Yeah.
+
+Breaking news. Yeah, I mean, I got a.
+
+20 minutes. The.
+
+So. And also like.
+
+Welcome. Yeah, it's a bit of a mess with, uh.
+
+And, uh. Okay. Uh, that's our 14.5 ish minute break.
+
+Um. Let's continue. We're going to go into assumptions of regression.
+
+So all of you by now in stats one have done some assumptions checking.
+
+Where in your process of doing your stats, did you check assumptions before?
+
+Can anyone remember? When did you do that?
+
+Like in which part of doing your analyses or inspecting the data?
+
+Mm. The for profit model or.
+
+You know. Uh, pass the filter which model to use because, uh, that's.
+
+Yeah. So in one case, you may check things before you run a model.
+
+So you might recall t test assumed some kind of normally distributed data.
+
+So you would check beforehand where your data normally distributed or not.
+
+And if they were you could do your t test. And if they weren't then you would do your non-parametric equivalent.
+
+Right. Um, so with regression it's a bit different because there are some other things that we can only look at after we do the model.
+
+Um, so I'm going to go through kind of these assumptions, and then I'll show you some examples of how you can check them.
+
+Um, and we'll talk a little bit about when you might check them.
+
+Right. Um, but the first assumption that we'll go over is linearity.
+
+And there's kind of the general assumption which maybe you make to begin with, that's your outcome variable,
+
+or your dependent variable is the result of a linear combination of the predictors or your independent variables.
+
+So on the one hand this is something that could be conceptual, right.
+
+Like you you wouldn't be trying a regression to begin with unless you thought that there would be this potentially linear relationship between them.
+
+So that's when you could do a bit conceptually before, but we can also check it afterwards.
+
+Right. So we could look at our residuals plot.
+
+So uh with our regression model we get fitted values versus residual values.
+
+And we can plot those. Uh, actually there's a bit of code here on the bottom plot fitted.
+
+And this is the model versus residuals that gives us this scatter plot.
+
+Um, and we can add a line here.
+
+What you would want to be looking for, actually, is that there isn't a clear pattern in this, uh, residuals versus fitted values plot.
+
+So if you saw something like this, then it actually looks like maybe it's not a linear, uh, pattern, um, but maybe curvilinear.
+
+So this we'll come back to this later on when we get to polynomials.
+
+But I would probably try to fit a polynomial model instead to this one.
+
+If you see not a clear pattern here or they're relatively evenly distributed, that's a good indicator that you haven't violated the assumption.
+
+So generally when you do this, you're just trying to see is there like a different trend when you look at the fit versus the residuals.
+
+So there's a pattern in the error. And if there is then maybe you violated this assumption.
+
+Now, this is a good point, uh, to, to talk about when you were doing stats one and you looked for if your data were normally distributed,
+
+for example, how did you know what what did you what did you do then?
+
+If anyone remembers. Yeah.
+
+Thanks. So you could do another test to see.
+
+Is it different from normal or not? That's nice, because then you actually have a clear kind of, uh, test to tell you yes or no,
+
+but you also check the plots, maybe to write like, oh, it does this eyeballing it, does it look normal?
+
+In this case. For now, what I'm showing you is the visual inspection method.
+
+Right? And, uh, there's some subjectivity to that.
+
+There's always some subject subjectivity anyways, to our stats.
+
+But in this case, uh, you know, it's up to visual interpretation.
+
+Next one is collinearity. So I'm not going to say too much on this today because this is going to be mostly important when we add multiple predictors.
+
+So far we've only looked at one predictor at a time.
+
+But if we add in multiple variables that are highly correlated, that can give us problems in the estimates from our model.
+
+Um, so you could, for example, look at a correlation matrix of your different predictor variables.
+
+If you saw something like this between two predictors.
+
+Um, there's going to be some other things I show you for this in the future module.
+
+But it's something to keep in mind if your predictor variables are highly correlated, you could have a problem of collinearity between them.
+
+That is an assumption of your model that could be violated. Okay, Homoscedasticity got that one right on the first try.
+
+Um, so this is an assumption that we have, and it means, right,
+
+that the variance of our data should be approximately equal across the range of predicted values.
+
+Oh, sorry. So if we look over here and we're looking again at, uh, fit versus the residuals, uh,
+
+we see in this case, well, there's, that's kind of like a evenly distributed point cloud.
+
+Whereas here we have like less variability around this range of predicted values and then more variability as we fan out here.
+
+So what we would be looking for is something that's kind of evenly distributed.
+
+Notice as well that you can check two assumptions with the same plot, right.
+
+These are the same kinds of plots. As what I showed here, right?
+
+Plotting the fit versus the residual. So this one it has a check mark, right.
+
+But I would really hope that your data set is bigger than that because, uh, well, this one you could say, well,
+
+it's kind of evenly distributed, but maybe there's something going on here, like there's more variability here than there is here.
+
+It's a bit uncertain, right? But keep in mind, if you see some kind of at a certain range of the fitted values, the variability looks different.
+
+You could be violating homoscedasticity. Normality of our residuals.
+
+So before we looked at the normality of our variables, right before we ran an analysis, here we can look at a histogram for the residuals.
+
+So this is another reason why we save our model.
+
+So we can do other things with it like check our assumptions.
+
+Um so we can look at the residuals of that model. Or we could do a QQ plot.
+
+And in this case we would just want to see uh,
+
+approximately normal histogram or kind of variation along the quartiles that, that, that roughly fits the line.
+
+I don't have like a negative example on this one.
+
+Hopefully you remember if you have like something that's highly skewed or something very uniform, um, then that would be a problematic example.
+
+And what about for the Q-q plot? What would you if you had a problem with this one, what would it look like?
+
+Any ideas? Any new volunteers.
+
+New, new volunteers. Thank you for your enthusiasm. I really appreciate it.
+
+Anyone else.
+
+Well, if I said that it should approximately be on the line, then things that are obviously deviating from that line would be problematic, right?
+
+So maybe you see in the end something that's coming like straight up or really far off the line, something that's just nowhere near the line.
+
+Okay, now it's going to get a bit more complicated. Most of these are kind of things you've already seen a bit before.
+
+We might have influential points.
+
+How many of you have already thought about outliers before?
+
+And that's most of you. You probably thought about outliers in terms of them being in like the tail end of your distribution.
+
+Right? You thought maybe an outlier was three standard deviations above the mean.
+
+So it's a very extreme value. Maybe.
+
+What did any of you do with outliers before? Any ideas what you do with them?
+
+Yeah. Yeah.
+
+So you could just say this looks like an outlier. Get out of here.
+
+I'm not going to include you in my analysis. Any other ideas?
+
+You could keep it in there and then compare the analysis with and without the outliers.
+
+So. I also, when I have outliers, you know, I want to have some kind of notes or something from my experiment that I ran about,
+
+or why did this kind of rare value show up to begin with?
+
+Because when we think about our distribution, it is possible that we get kind of extreme values that are in those tail ends of the distribution.
+
+They're just not that probable to observe.
+
+Um, so I would want to have kind of a more rationale for it not just being, oh, it's an extreme value, but there's a reason why it happened.
+
+Because there was a technical malfunction in my experiment or something.
+
+Anyways, um. Things are a bit different here with regression, because we don't want to just define our outliers as something that's,
+
+um, just kind of a rare the observed value or extreme value.
+
+We actually want to identify them in terms of their influence on our model performance.
+
+So we use change one or leave one out diagnostics.
+
+Have any of you heard of something like that before? You haven't had machine learning yet.
+
+Officially, right? Yeah, yeah. Mhm.
+
+Yeah. When you train the model on everything.
+
+Yeah, that's. Yeah.
+
+Yeah. So that's the the same thing here. So when I use this the f beta function, that's one way to check for influential points.
+
+And what we actually get is a new set of coefficients for our model.
+
+Uh, so essentially we would say if we leave out the first value in our data set,
+
+how does our intercept change and how does our age variable change if we leave out the second observation in our data set?
+
+How does the intercept change? How does the regression coefficient for age change and so on.
+
+Right. So it's it's rerunning the model by leaving out each data point and giving you these values
+
+that tell you how it changes and what you cannot see when you just look at this output is.
+
+Is that change big enough to be concerned?
+
+You need to then look at the actual output from the model.
+
+And what you would be wanting to see is, um, does it change the sign of the coefficients.
+
+Right. So if our, if our intercept was maybe three.
+
+And then we see if we leave out 0.1 now, our intercept will now be -0.3.
+
+Does that make sense?
+
+So it's how our coefficients we estimate in the that we see in the summary from the model will change if we leave out this point.
+
+So first we check how those values look in terms of does the sign change.
+
+And you would know okay I thought maybe it's a positive value or positive association.
+
+And now it's negative or vice versa. And then we use this criteria here like half of the absolute value of the coefficients.
+
+Um so that would mean something like if I had a coefficient that was maybe well these are all pretty small,
+
+but if I had something that was like 0.2 and my model output, and then I see that it's going to change by 0.1, then that's sort of okay.
+
+It's changed the estimate on that effect by at least half the absolute value.
+
+And what, what uh, this is an example here of what it could look like, that you have a lot of values here.
+
+And this would be the slope with these potentially outliers or influential ones.
+
+And if you remove them then you would have like a very different slope.
+
+So that would be a big change. Does this make sense?
+
+This one's a bit. I think when you look at these coefficients yourself.
+
+It's always a bit tricky at first.
+
+And I think by default I haven't found a function yet that sort of flags these and tells you which ones meet those criteria.
+
+You could write a little bit of code to do that yourself.
+
+If you do, then you can, uh, you can share it with me.
+
+Um, but so just to wrap up, we wrap up on this point, you know,
+
+we're seeing how our coefficients from the model would change as we leave each data point out.
+
+And we have to compare these values from the DFO data to our model summary.
+
+Okay. There's last assumption that we're going to cover is independence.
+
+It's it's marked as important, although all of them are, to varying degrees, important.
+
+Um, but this one we can actually check, uh, by looking at plots or things like that.
+
+Um. What we could see, uh, is actually by looking at the data set.
+
+So if we each observation should be independent, right?
+
+Um, if we had, like, six observations from the same participant.
+
+Then we we cannot have this, uh, assumption of independence.
+
+Right? Because there's a dependence in all of those observations coming from the same person.
+
+This could give us spurious results or meaningless p values,
+
+but it's something that we have to consider in the experimental design or data collection.
+
+We can resolve this if we use mixed models, which will come back to almost at the end of the semester.
+
+Um, but it's just something that you have to know kind of in advance.
+
+Are my observations independent of each other or not?
+
+Any questions on assumptions? Okay.
+
+I want you to try this out. So you've already ran a model.
+
+Hopefully you saved that model. This was the relationship between exam anxiety and gender.
+
+And I would just like you to try to look at the plots, see if you can plot, for example, the fitted versus the residuals.
+
+Um, see if you violate the linearity or homoscedasticity assumption.
+
+Make a histogram or q-q plot of the residuals and try out the DF beta.
+
+See if you see any influential data points. I'll give you a bit of time for this before I check in.
+
+I still have quite some other things to cover, so I won't give you as long for this as as before.
+
+Also maybe a tip as some of you tried this last time as well.
+
+I think you did plot and you put your model in there and you saw that it gives you like 3 or 4 plots automatically.
+
+Some of those can be used for these two. You have the right one.
+
+Yeah. So the main difference is. It is so.
+
+That was right. Yeah. Obviously.
+
+It's. Yeah, that's.
+
+There are other variables. Yeah.
+
+Actually. Really? There.
+
+What it's like to see.
+
+Yeah. I keep forgetting about.
+
+This. Yeah.
+
+I think. Yeah.
+
+Yeah. Yeah.
+
+We must be cheering. Professional cyclists.
+
+I was imagining. So because.
+
+It does? Yeah.
+
+I. Only.
+
+It is. By.
+
+Yeah. And you.
+
+Together. Time.
+
+You wouldn't believe. So.
+
+Of. And so.
+
+I think, you know the. Reason to pick up the.
+
+Good. Honest. You know.
+
+I guess I don't know that little. Oh my goodness. How?
+
+It will probably. It's.
+
+A collection of faces made by. It's obvious.
+
+To bring it up. At some point in the.
+
+Yes, sometimes. In this.
+
+It was. And you can ask the question.
+
+Yeah. Okay, so let's take a look at this, uh, together.
+
+Um, I think a lot of you made some good progress on this, even if you didn't finish.
+
+But I will show you there's some easier ways to check the assumptions, too.
+
+Um, a lot of you I saw had a plot like this.
+
+If you plot your model fitted parts of the model versus the residuals.
+
+This allows us to check the linearity assumption. And the homeless could ask this to you.
+
+Right? Um, it seemed like a lot of you thought this looks a bit strange.
+
+And that's probably because the examples I showed you had points that were evenly distributed around the right.
+
+And here we have these two columns of, uh, of values.
+
+But this is because we have categorical predictors, right.
+
+And if we think back to what those values were.
+
+So these are actually at the means of those groups.
+
+We saw like 74.3 plus the 0.08.
+
+Uh we saw that effect in our model output. So when we're looking at this,
+
+a categorical variable is a bit of an exception to thinking about things being totally distributed equally in this plot.
+
+But you can still look at how they're sort of distributed in these two columns.
+
+And if they're approximately the same, then it's probably okay for the almost good as tested the assumption.
+
+Yeah. So also many of you saw a histogram that looked like this.
+
+Looks a bit skewed, right? Quite a bit skewed. So maybe not normally distributed residuals.
+
+And that I just plugged in a histogram of the residuals for my model q-q plot.
+
+So I would I would actually probably want to put maybe that line in there to make it look, uh, more easy to see that.
+
+This kind of if you imagine just a line, of course depends on the scaling, but this kind of deviates from that line.
+
+So again more info that the residuals are not normally distributed.
+
+I didn't. Did anyone also check the DF betas? I didn't talk to anyone that did see an answer.
+
+Um. So again here we would want to look back.
+
+So let's just take an example. So minus two for the intercept.
+
+That's actually really small. So these are probably no problem.
+
+Let's double check our. So .08.
+
+So we would be looking for something that's at least 0.04 in our data.
+
+A lot of these seem to be higher than that. So those could be potentially influential data points.
+
+Um, quite a few actually. Yeah.
+
+So what would you do in that case? Then you could consider.
+
+How valid are my model results? Um, let me just make sure that was the last one.
+
+Yeah. So I what I would then do next if I came away from this and I saw, okay, well, some of my assumptions seemed okay.
+
+Some of them were not so okay. Maybe have influential data points.
+
+What should I do next? Well, you can use a function to tell you whether the assumptions are acceptable or not.
+
+These don't totally 1 to 1 map with what I showed you before, but you can interpret them approximately like this.
+
+Although if you're going to use this, it's best to of course read the original paper and see the new ones.
+
+But for now, for today.
+
+If we use Gvm, which is in its own package, you can plug in your model to that and you will get this sort of global check of the assumptions.
+
+So this one tells us approximately if the linearity is fine and it tells us, uh, it gives us a test statistic value and a p value.
+
+And if they're significant in this case, then it would be that the assumptions was not acceptable.
+
+Skewness here also relates to normality kurtosis as well,
+
+but to some degree it picks up a bit on influential data points, not as meaningfully as the DF betas.
+
+And another thing I'll show you in a second. And um, the link function.
+
+So this was something that came up on the break, um, a bit.
+
+But that this will tell us. So if you actually put in your model in the wrong order, if you put in gender as the outcome, in anxiety as the predictor,
+
+you probably got an error because you can have a categorical outcome variable in linear regression.
+
+You need to use logistic regression, which you will learn about in another course.
+
+So this is kind of telling you is your dependent variable really continuous or is it actually more categorical.
+
+So if it gets borderline categorical, it could mean as well that there's there's a problem in your model.
+
+But this one's a bit, uh, less important because sometimes we analyse things like, uh,
+
+Likert scales, you know, which are seven point rating scales which are pseudo continuous, but.
+
+And then here we have heteroscedasticity and whether that's acceptable or not.
+
+So this is for that vocal pitch and age centred model.
+
+In this case it showed. They all seem to be fine.
+
+But I have this in big text right. Like don't blindly trust like the algorithm to tell you whether your model is good or not.
+
+That's why I had to check things kind of manually first, um, before then doing this.
+
+So I often will check things both ways myself.
+
+And I think, how are we on time? Okay.
+
+Um. Just swapping the order here.
+
+There's another technique that I often use as well.
+
+So you can use the check underscore model function from the performance R package.
+
+Also need to make sure to install and load that one before you can use this.
+
+And then you can usually plug in your model into that one.
+
+And notice how it actually gives us some nicer looking plots than we already looked at that tell us here about our linearity,
+
+influential observations, normality of residuals for both of these and homogeneity of variance.
+
+So actually this function and the one I just showed you are usually my go to rather than plotting them kind of manually.
+
+Um, I had to do that because I want you to kind of know how to refer to those parts of the model, the residuals, the fit.
+
+Uh, so, you know, kind of what's going into these. But these are also really useful because it tells you kind of what to look for, right?
+
+So linearity, your reference line should be flat and horizontal and you have a not very flat line in this example.
+
+And it gives you that reference. But it also has this cone of uh confidence.
+
+And here also reference lines should be flat and horizontal.
+
+That's certainly not um, but you would see for example, in this case your homogeneity.
+
+There's much more variability over here than there is over here.
+
+Um, influential observations. If you have points that are following outside of the contour lines, that could be an influential data point.
+
+Uh, but then again, I would actually either refer to which specific data it is and then check the DF betas, um,
+
+and see about removing them and, and whether the model is giving you much different results within without.
+
+And then here we see the q-q plot and this histogram. So we could see kind of conforming to the normal curve or not.
+
+Okay so these are a bit quicker ways to check right?
+
+You can run the one function and say acceptable or not.
+
+Or you can check model and get these plots all at once.
+
+We still, since we had our full break today.
+
+Um. Let's look through these together.
+
+Uh, so for the models we just ran, if you want, you can still run it yourself.
+
+Uh, so the next exercise would have been to try out the GLM on the model you just made.
+
+Try out the check model. Let's look together.
+
+So here we see the global state skewness and kurtosis all not satisfied,
+
+which is pretty consistent with what we would have thought from the plots we already inspected.
+
+I hope if you're not lost. Heteroscedasticity is all right.
+
+The link function is all right. Let's see if we get the same information from the check model.
+
+So sometimes uh sometimes this one is a bit tricky depending on your plotting window and stuff whether you can actually see things.
+
+So when I do this one, um, within r, uh, if it's not in my markdown,
+
+sometimes I really need to expand my plotting window like something like this so I could actually see what's happening.
+
+So if you run into some issues trying to run it yourself, maybe try that.
+
+In this case, it's a bit squished in the HTML, but.
+
+You can see the linearity. Oof! That looks, uh, not very flat.
+
+Same with homogeneity of variance. Those are like almost the same, but inverted.
+
+This one looks a bit strange, right? Uh, but it's also this kind of categorical one.
+
+Um, and it's giving us these leverage scores. So again, I would probably go back and double check manually my DF betas for this one,
+
+although we saw that there was quite a lot there that looked like an issue.
+
+And then here these values are quite far from the the green line.
+
+So what would you conclude from this model?
+
+At least in checking the assumptions. I'll go back to the model output first.
+
+So on the one hand, we know kind of how we can interpret.
+
+The test statistics for the overall model. Right.
+
+And the individual predictors and the intercept.
+
+But then we see this information that we violated quite a few assumptions.
+
+Right. So and that case, I wouldn't be very confident in any interpretations that I make from the model.
+
+Although the model wasn't a good fit to begin with and it didn't show there was a relationship and then it didn't meet some of the assumptions.
+
+So. Basically, you can't really conclude much, right?
+
+It's kind of inconclusive. But it's good to see an example that is not so clear cut every now and then, right where,
+
+uh, the some assumptions are met and some aren't, um, checking multiple ways,
+
+uh, to see if you get the same information, if you get kind of the same information from multiple angles, that's sort of what makes me confident.
+
+And whatever interpretations I would try to make in this case, I would conclude, you know, there doesn't seem to be a relationship between gender and,
+
+uh, anxiety about the exam, although without the assumptions being met, I might consider that there's a different association to test.
+
+Maybe that relationship might be curvilinear, or the distribution is different and it would need another type of modelling.
+
+Does that make sense? Okay.
+
+So I had one more full test. I think you might work on this anyways, in the practical for this week.
+
+If you want, you can already kind of go through and test out with this different data set.
+
+All this stuff we covered today for two different models checking the output and interpreting it, uh, looking at the assumptions.
+
+And then my solution also has the solution for this.
+
+So you could check it after you try it yourself on your own time.
+
+Today we looked at linear regression still with one sim one predictor.
+
+But now we've done both a continuous and a categorical and talked about how you interpret them differently.
+
+Talked about centring to get at maybe a meaningful intercept assumptions of regression and these two ways to check it.
+
+But actually the third, which was doing the plots manually and for next week, uh, we're going to do multiple regression.
+
+So this is the chapter seven reading for next week.
+
+We're just going to add multiple variables into our model and see how that changes our interpretations.
+
+I'll end there and, uh, see you all next week. But.
+
+You really think because you like.
+
+Let me get. I think.
+
+So I think I have to go. If you take that.
+
+So it's. Yeah.
+
+And now we need to optimise and just play with expectations.
+
+So yeah that's what I want to say. Like right now we need to optimise the basic.
+
+So we can start making more complex versions.
+
