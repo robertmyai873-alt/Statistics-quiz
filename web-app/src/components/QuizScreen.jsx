@@ -253,7 +253,7 @@ const QuizScreen = ({ onFinish, questions, onBack }) => {
                                         }}>
                                             {String.fromCharCode(65 + index)}
                                         </div>
-                                        <span style={{ fontSize: '1rem', lineHeight: '1.4' }}>{option}</span>
+                                        <span style={{ fontSize: '1rem', lineHeight: '1.4' }}>{formatText(option)}</span>
                                         <div style={{ width: '24px' }}>
                                             {statusClass === 'correct' && <CheckCircle size={20} color="#48BB78" />}
                                             {statusClass === 'incorrect' && <XCircle size={20} color="#F56565" />}

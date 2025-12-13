@@ -1,0 +1,1888 @@
+{
+  "timestamp": "2025-12-13T23:07:52.172Z",
+  "stats": {
+    "totalMC": 358,
+    "longestIsCorrect": 172,
+    "extremeBias": [],
+    "severeBias": [],
+    "moderateBias": [
+      {
+        "id": 8,
+        "question": "Which concept corresponds to the following definition?\n\n*A function that gives the probability that ...",
+        "correctLength": 38,
+        "avgIncorrectLength": 25,
+        "lengthDiff": 13,
+        "isLongestCorrect": true,
+        "maxLength": 38,
+        "minLength": 19,
+        "options": [
+          {
+            "text": "Binomial Distribution",
+            "length": 21,
+            "isCorrect": false
+          },
+          {
+            "text": "Probability Density Function (PDF)",
+            "length": 34,
+            "isCorrect": false
+          },
+          {
+            "text": "Cumulative Distribution Function (CDF)",
+            "length": 38,
+            "isCorrect": true
+          },
+          {
+            "text": "Normal Distribution",
+            "length": 19,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "question": "What does the function `pnorm(1.96)` return in R?...",
+        "correctLength": 57,
+        "avgIncorrectLength": 42,
+        "lengthDiff": 15,
+        "isLongestCorrect": true,
+        "maxLength": 57,
+        "minLength": 35,
+        "options": [
+          {
+            "text": "The probability density at Z = 1.96",
+            "length": 35,
+            "isCorrect": false
+          },
+          {
+            "text": "The cumulative probability (area to the left) of Z = 1.96",
+            "length": 57,
+            "isCorrect": true
+          },
+          {
+            "text": "A random number from a normal distribution",
+            "length": 42,
+            "isCorrect": false
+          },
+          {
+            "text": "The Z-score corresponding to the 1.96th percentile",
+            "length": 50,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 104,
+        "question": "Which of the following describes a Normal Distribution?...",
+        "correctLength": 46,
+        "avgIncorrectLength": 35,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 46,
+        "minLength": 33,
+        "options": [
+          {
+            "text": "It is discrete and bimodal. methodology",
+            "length": 39,
+            "isCorrect": false
+          },
+          {
+            "text": "It is continuous, symmetric, and \"bell-shap...",
+            "length": 46,
+            "isCorrect": true
+          },
+          {
+            "text": "It is always skewed to the right.",
+            "length": 33,
+            "isCorrect": false
+          },
+          {
+            "text": "It describes binary outcomes only.",
+            "length": 34,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 111,
+        "question": "If a distribution has \"heavy tails\" (high kurtosis), it means:...",
+        "correctLength": 50,
+        "avgIncorrectLength": 39,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 50,
+        "minLength": 36,
+        "options": [
+          {
+            "text": "There are more frequent extreme values (outlier...",
+            "length": 50,
+            "isCorrect": true
+          },
+          {
+            "text": "The distribution is very flat. methodology",
+            "length": 42,
+            "isCorrect": false
+          },
+          {
+            "text": "The distribution is skewed to the left.",
+            "length": 39,
+            "isCorrect": false
+          },
+          {
+            "text": "The mean is smaller than the median.",
+            "length": 36,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 127,
+        "question": "A researcher stands outside the cafeteria and asks whoever walks by to answer a survey. This is an e...",
+        "correctLength": 32,
+        "avgIncorrectLength": 18,
+        "lengthDiff": 14,
+        "isLongestCorrect": true,
+        "maxLength": 32,
+        "minLength": 15,
+        "options": [
+          {
+            "text": "Stratified Sampling",
+            "length": 19,
+            "isCorrect": false
+          },
+          {
+            "text": "Random Sampling",
+            "length": 15,
+            "isCorrect": false
+          },
+          {
+            "text": "Opportunity/Convenience Sampling",
+            "length": 32,
+            "isCorrect": true
+          },
+          {
+            "text": "Systematic Sampling",
+            "length": 19,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 161,
+        "question": "In a two-tailed test with $\\alpha = 0.05$, the critical region contains:...",
+        "correctLength": 48,
+        "avgIncorrectLength": 37,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 48,
+        "minLength": 34,
+        "options": [
+          {
+            "text": "The top 5% of the distribution. methodology",
+            "length": 43,
+            "isCorrect": false
+          },
+          {
+            "text": "The bottom 5% of the distribution.",
+            "length": 34,
+            "isCorrect": false
+          },
+          {
+            "text": "The extreme 2.5% on both ends of the distribu...",
+            "length": 48,
+            "isCorrect": true
+          },
+          {
+            "text": "The middle 95% of the distribution.",
+            "length": 35,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 168,
+        "question": "If you have a very large sample size, even very small effects can become:...",
+        "correctLength": 25,
+        "avgIncorrectLength": 15,
+        "lengthDiff": 10,
+        "isLongestCorrect": true,
+        "maxLength": 25,
+        "minLength": 6,
+        "options": [
+          {
+            "text": "Statistically significant",
+            "length": 25,
+            "isCorrect": true
+          },
+          {
+            "text": "Practically significant",
+            "length": 23,
+            "isCorrect": false
+          },
+          {
+            "text": "Non-significant",
+            "length": 15,
+            "isCorrect": false
+          },
+          {
+            "text": "Biased",
+            "length": 6,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 178,
+        "question": "To standardize covariance and turn it into a correlation coefficient, you divide it by:...",
+        "correctLength": 41,
+        "avgIncorrectLength": 30,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 41,
+        "minLength": 26,
+        "options": [
+          {
+            "text": "The sample size ($N$). methodology",
+            "length": 34,
+            "isCorrect": false
+          },
+          {
+            "text": "The product of the standard deviations...",
+            "length": 41,
+            "isCorrect": true
+          },
+          {
+            "text": "The mean of the variables.",
+            "length": 26,
+            "isCorrect": false
+          },
+          {
+            "text": "The variance of the variables.",
+            "length": 30,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 191,
+        "question": "If you see a correlation matrix where the diagonal values are all 1.0, this is because:...",
+        "correctLength": 39,
+        "avgIncorrectLength": 28,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 39,
+        "minLength": 25,
+        "options": [
+          {
+            "text": "Every variable is perfectly correlat...",
+            "length": 39,
+            "isCorrect": true
+          },
+          {
+            "text": "The calculation is wrong.",
+            "length": 25,
+            "isCorrect": false
+          },
+          {
+            "text": "The p-values are 1.0. methodology",
+            "length": 33,
+            "isCorrect": false
+          },
+          {
+            "text": "There is multicollinearity.",
+            "length": 27,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 239,
+        "question": "`dfbeta` statistics are used to:...",
+        "correctLength": 41,
+        "avgIncorrectLength": 30,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 41,
+        "minLength": 28,
+        "options": [
+          {
+            "text": "Calculate degrees of freedom.",
+            "length": 29,
+            "isCorrect": false
+          },
+          {
+            "text": "Assess how much regression coefficient...",
+            "length": 41,
+            "isCorrect": true
+          },
+          {
+            "text": "Standardize the betas. methodology",
+            "length": 34,
+            "isCorrect": false
+          },
+          {
+            "text": "Test for heteroscedasticity.",
+            "length": 28,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 247,
+        "question": "A Variance Inflation Factor (VIF) value of 15 indicates:...",
+        "correctLength": 32,
+        "avgIncorrectLength": 20,
+        "lengthDiff": 12,
+        "isLongestCorrect": true,
+        "maxLength": 32,
+        "minLength": 16,
+        "options": [
+          {
+            "text": "No collinearity.",
+            "length": 16,
+            "isCorrect": false
+          },
+          {
+            "text": "Moderate collinearity.",
+            "length": 22,
+            "isCorrect": false
+          },
+          {
+            "text": "Severe (high) multicollinearity.",
+            "length": 32,
+            "isCorrect": true
+          },
+          {
+            "text": "Perfect independence.",
+            "length": 21,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 249,
+        "question": "Which R function compares two nested models to see if adding variables significantly improves fit?...",
+        "correctLength": 23,
+        "avgIncorrectLength": 10,
+        "lengthDiff": 13,
+        "isLongestCorrect": true,
+        "maxLength": 23,
+        "minLength": 8,
+        "options": [
+          {
+            "text": "`summary()`",
+            "length": 11,
+            "isCorrect": false
+          },
+          {
+            "text": "`anova(model1, model2)`",
+            "length": 23,
+            "isCorrect": true
+          },
+          {
+            "text": "`cor.test()`",
+            "length": 12,
+            "isCorrect": false
+          },
+          {
+            "text": "`plot()`",
+            "length": 8,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 260,
+        "question": "In the equation $Y = b_0 + b_1X + b_2Z + b_3(X \\times Z)$, what does $b_3$ represent?...",
+        "correctLength": 33,
+        "avgIncorrectLength": 23,
+        "lengthDiff": 10,
+        "isLongestCorrect": true,
+        "maxLength": 33,
+        "minLength": 21,
+        "options": [
+          {
+            "text": "The main effect of X.",
+            "length": 21,
+            "isCorrect": false
+          },
+          {
+            "text": "The main effect of Z.",
+            "length": 21,
+            "isCorrect": false
+          },
+          {
+            "text": "The interaction effect (change...",
+            "length": 33,
+            "isCorrect": true
+          },
+          {
+            "text": "The intercept. methodology",
+            "length": 26,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 261,
+        "question": "How do you specify an interaction between `age` and `education` in an R formula?...",
+        "correctLength": 31,
+        "avgIncorrectLength": 17,
+        "lengthDiff": 14,
+        "isLongestCorrect": true,
+        "maxLength": 31,
+        "minLength": 17,
+        "options": [
+          {
+            "text": "`age + education`",
+            "length": 17,
+            "isCorrect": false
+          },
+          {
+            "text": "`age * education` (or `age +...",
+            "length": 31,
+            "isCorrect": true
+          },
+          {
+            "text": "`age / education`",
+            "length": 17,
+            "isCorrect": false
+          },
+          {
+            "text": "`age - education`",
+            "length": 17,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 278,
+        "question": "Which plot is used to detect outliers based on leverage and residuals?...",
+        "correctLength": 36,
+        "avgIncorrectLength": 25,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 36,
+        "minLength": 22,
+        "options": [
+          {
+            "text": "Residuals vs Leverage (Cook's dis...",
+            "length": 36,
+            "isCorrect": true
+          },
+          {
+            "text": "Histogram of outcome. approach",
+            "length": 30,
+            "isCorrect": false
+          },
+          {
+            "text": "Boxplot of predictors.",
+            "length": 22,
+            "isCorrect": false
+          },
+          {
+            "text": "Scatterplot of X vs Y.",
+            "length": 22,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 282,
+        "question": "In `ggplot2`, adding a regression line to a scatterplot is done with:...",
+        "correctLength": 28,
+        "avgIncorrectLength": 14,
+        "lengthDiff": 14,
+        "isLongestCorrect": true,
+        "maxLength": 28,
+        "minLength": 12,
+        "options": [
+          {
+            "text": "`geom_smooth(method = \"lm\")`",
+            "length": 28,
+            "isCorrect": true
+          },
+          {
+            "text": "`geom_line()`",
+            "length": 13,
+            "isCorrect": false
+          },
+          {
+            "text": "`geom_bar()`",
+            "length": 12,
+            "isCorrect": false
+          },
+          {
+            "text": "`geom_boxplot()`",
+            "length": 16,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 283,
+        "question": "A researcher reports: \"$b = 0.5, t(100) = 1.5, p = .14$\". What is the conclusion?...",
+        "correctLength": 43,
+        "avgIncorrectLength": 33,
+        "lengthDiff": 10,
+        "isLongestCorrect": true,
+        "maxLength": 43,
+        "minLength": 29,
+        "options": [
+          {
+            "text": "The effect is significant. methodology",
+            "length": 38,
+            "isCorrect": false
+          },
+          {
+            "text": "The effect is not statistically signific...",
+            "length": 43,
+            "isCorrect": true
+          },
+          {
+            "text": "The sample size is too small.",
+            "length": 29,
+            "isCorrect": false
+          },
+          {
+            "text": "There is a strong relationship.",
+            "length": 31,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 288,
+        "question": "Interpreting Output:\n**Is multicollinearity a problem here?**...",
+        "correctLength": 34,
+        "avgIncorrectLength": 22,
+        "lengthDiff": 12,
+        "isLongestCorrect": true,
+        "maxLength": 34,
+        "minLength": 12,
+        "options": [
+          {
+            "text": "Yes, values are \\> 1.",
+            "length": 21,
+            "isCorrect": false
+          },
+          {
+            "text": "No, values are well below 5 or 10.",
+            "length": 34,
+            "isCorrect": true
+          },
+          {
+            "text": "Yes, because they are not equal.",
+            "length": 32,
+            "isCorrect": false
+          },
+          {
+            "text": "Cannot tell.",
+            "length": 12,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 292,
+        "question": "What is the correct syntax to extract coefficients from a saved model object `fit`?...",
+        "correctLength": 29,
+        "avgIncorrectLength": 17,
+        "lengthDiff": 12,
+        "isLongestCorrect": true,
+        "maxLength": 29,
+        "minLength": 15,
+        "options": [
+          {
+            "text": "`fit$coefficients` or `coe...",
+            "length": 29,
+            "isCorrect": true
+          },
+          {
+            "text": "`fit$residuals`",
+            "length": 15,
+            "isCorrect": false
+          },
+          {
+            "text": "`fit$r.squared`",
+            "length": 15,
+            "isCorrect": false
+          },
+          {
+            "text": "`fit$p.value` approach",
+            "length": 22,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 296,
+        "question": "To compare the relative importance of predictors in a model, you should look at:...",
+        "correctLength": 34,
+        "avgIncorrectLength": 23,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 34,
+        "minLength": 18,
+        "options": [
+          {
+            "text": "Unstandardized $b$ coefficients.",
+            "length": 32,
+            "isCorrect": false
+          },
+          {
+            "text": "Standardized $\\beta$ coefficients.",
+            "length": 34,
+            "isCorrect": true
+          },
+          {
+            "text": "The p-values only.",
+            "length": 18,
+            "isCorrect": false
+          },
+          {
+            "text": "The standard errors.",
+            "length": 20,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 300,
+        "question": "Question: When including a quadratic term (`I(x^2)`) in a linear model in R, what other term *must* ...",
+        "correctLength": 33,
+        "avgIncorrectLength": 21,
+        "lengthDiff": 12,
+        "isLongestCorrect": true,
+        "maxLength": 33,
+        "minLength": 18,
+        "options": [
+          {
+            "text": "The cubic term (`I(x^3)`)",
+            "length": 25,
+            "isCorrect": false
+          },
+          {
+            "text": "The lower-order linear term (`x`)",
+            "length": 33,
+            "isCorrect": true
+          },
+          {
+            "text": "An interaction term",
+            "length": 19,
+            "isCorrect": false
+          },
+          {
+            "text": "A random intercept",
+            "length": 18,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 318,
+        "question": "Question: What does the term `(1 | School/Class)` imply in a mixed model formula?...",
+        "correctLength": 53,
+        "avgIncorrectLength": 38,
+        "lengthDiff": 15,
+        "isLongestCorrect": true,
+        "maxLength": 53,
+        "minLength": 33,
+        "options": [
+          {
+            "text": "Random intercepts for School only.",
+            "length": 34,
+            "isCorrect": false
+          },
+          {
+            "text": "Random intercepts for Class only.",
+            "length": 33,
+            "isCorrect": false
+          },
+          {
+            "text": "Nested random effects: Classes nested within Schools.",
+            "length": 53,
+            "isCorrect": true
+          },
+          {
+            "text": "Crossed random effects between School and Class.",
+            "length": 48,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 330,
+        "question": "Question: Why do we typically use the `lmerTest` package in addition to `lme4`?...",
+        "correctLength": 37,
+        "avgIncorrectLength": 25,
+        "lengthDiff": 12,
+        "isLongestCorrect": true,
+        "maxLength": 37,
+        "minLength": 23,
+        "options": [
+          {
+            "text": "To make better plots. approach",
+            "length": 30,
+            "isCorrect": false
+          },
+          {
+            "text": "To get p-values for the fixed effe...",
+            "length": 37,
+            "isCorrect": true
+          },
+          {
+            "text": "To run Bayesian models.",
+            "length": 23,
+            "isCorrect": false
+          },
+          {
+            "text": "To handle missing data.",
+            "length": 23,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 334,
+        "question": "Question: What does a \"Conditional\" Growth Model include that an Unconditional one does not?...",
+        "correctLength": 30,
+        "avgIncorrectLength": 19,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 30,
+        "minLength": 16,
+        "options": [
+          {
+            "text": "Random intercepts.",
+            "length": 18,
+            "isCorrect": false
+          },
+          {
+            "text": "A time variable.",
+            "length": 16,
+            "isCorrect": false
+          },
+          {
+            "text": "Covariates or predictors of...",
+            "length": 30,
+            "isCorrect": true
+          },
+          {
+            "text": "Error terms. methodology",
+            "length": 24,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 363,
+        "question": "Question:** **[Mock R Output]\nObservation 3 has a hat value of 0.60 (much higher than others). What ...",
+        "correctLength": 42,
+        "avgIncorrectLength": 31,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 42,
+        "minLength": 23,
+        "options": [
+          {
+            "text": "It is an outlier in the Y direction.",
+            "length": 36,
+            "isCorrect": false
+          },
+          {
+            "text": "It has high leverage (outlier in X space).",
+            "length": 42,
+            "isCorrect": true
+          },
+          {
+            "text": "It has high influence (Cook's D).",
+            "length": 33,
+            "isCorrect": false
+          },
+          {
+            "text": "It is perfectly normal.",
+            "length": 23,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 365,
+        "question": "Question: In a polynomial regression `y ~ x + I(x^2)`, you decide to center `x` (i.e., `x_centered =...",
+        "correctLength": 47,
+        "avgIncorrectLength": 37,
+        "lengthDiff": 10,
+        "isLongestCorrect": true,
+        "maxLength": 47,
+        "minLength": 34,
+        "options": [
+          {
+            "text": "It changes the shape of the curve.",
+            "length": 34,
+            "isCorrect": false
+          },
+          {
+            "text": "It changes the $R^2$ of the model.",
+            "length": 34,
+            "isCorrect": false
+          },
+          {
+            "text": "It reduces the correlation (multicollinearit...",
+            "length": 47,
+            "isCorrect": true
+          },
+          {
+            "text": "It makes the model non-linear. methodology",
+            "length": 42,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 370,
+        "question": "Question: You want to predict `Vocabulary` growth in children (ages 2 to 10). You expect growth to b...",
+        "correctLength": 33,
+        "avgIncorrectLength": 22,
+        "lengthDiff": 11,
+        "isLongestCorrect": true,
+        "maxLength": 33,
+        "minLength": 20,
+        "options": [
+          {
+            "text": "The Intercept methodology",
+            "length": 25,
+            "isCorrect": false
+          },
+          {
+            "text": "The Linear Time slope",
+            "length": 21,
+            "isCorrect": false
+          },
+          {
+            "text": "The Quadratic Time slope (`I(T...",
+            "length": 33,
+            "isCorrect": true
+          },
+          {
+            "text": "The Random Intercept",
+            "length": 20,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 383,
+        "question": "Question: A researcher uses a 10th-order polynomial for a dataset with 20 points. What is the likely...",
+        "correctLength": 29,
+        "avgIncorrectLength": 16,
+        "lengthDiff": 13,
+        "isLongestCorrect": true,
+        "maxLength": 29,
+        "minLength": 10,
+        "options": [
+          {
+            "text": "Underfitting.",
+            "length": 13,
+            "isCorrect": false
+          },
+          {
+            "text": "Overfitting (modeling noise).",
+            "length": 29,
+            "isCorrect": true
+          },
+          {
+            "text": "Perfect fit (good thing).",
+            "length": 25,
+            "isCorrect": false
+          },
+          {
+            "text": "Linearity.",
+            "length": 10,
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 384,
+        "question": "Question: If the `t-value` for a fixed effect in `lmer` is 1.5, is it statistically significant at a...",
+        "correctLength": 27,
+        "avgIncorrectLength": 16,
+        "lengthDiff": 12,
+        "isLongestCorrect": true,
+        "maxLength": 27,
+        "minLength": 4,
+        "options": [
+          {
+            "text": "Yes.",
+            "length": 4,
+            "isCorrect": false
+          },
+          {
+            "text": "No (Needs to be \\> \\~1.96).",
+            "length": 27,
+            "isCorrect": true
+          },
+          {
+            "text": "Yes, because it's positive.",
+            "length": 27,
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  "biasedQuestions": [
+    {
+      "id": 103,
+      "question": "What does the function `pnorm(1.96)` return in R?...",
+      "correctLength": 57,
+      "avgIncorrectLength": 42,
+      "lengthDiff": 15,
+      "isLongestCorrect": true,
+      "maxLength": 57,
+      "minLength": 35,
+      "options": [
+        {
+          "text": "The probability density at Z = 1.96",
+          "length": 35,
+          "isCorrect": false
+        },
+        {
+          "text": "The cumulative probability (area to the left) of Z = 1.96",
+          "length": 57,
+          "isCorrect": true
+        },
+        {
+          "text": "A random number from a normal distribution",
+          "length": 42,
+          "isCorrect": false
+        },
+        {
+          "text": "The Z-score corresponding to the 1.96th percentile",
+          "length": 50,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 318,
+      "question": "Question: What does the term `(1 | School/Class)` imply in a mixed model formula?...",
+      "correctLength": 53,
+      "avgIncorrectLength": 38,
+      "lengthDiff": 15,
+      "isLongestCorrect": true,
+      "maxLength": 53,
+      "minLength": 33,
+      "options": [
+        {
+          "text": "Random intercepts for School only.",
+          "length": 34,
+          "isCorrect": false
+        },
+        {
+          "text": "Random intercepts for Class only.",
+          "length": 33,
+          "isCorrect": false
+        },
+        {
+          "text": "Nested random effects: Classes nested within Schools.",
+          "length": 53,
+          "isCorrect": true
+        },
+        {
+          "text": "Crossed random effects between School and Class.",
+          "length": 48,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 127,
+      "question": "A researcher stands outside the cafeteria and asks whoever walks by to answer a survey. This is an e...",
+      "correctLength": 32,
+      "avgIncorrectLength": 18,
+      "lengthDiff": 14,
+      "isLongestCorrect": true,
+      "maxLength": 32,
+      "minLength": 15,
+      "options": [
+        {
+          "text": "Stratified Sampling",
+          "length": 19,
+          "isCorrect": false
+        },
+        {
+          "text": "Random Sampling",
+          "length": 15,
+          "isCorrect": false
+        },
+        {
+          "text": "Opportunity/Convenience Sampling",
+          "length": 32,
+          "isCorrect": true
+        },
+        {
+          "text": "Systematic Sampling",
+          "length": 19,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 261,
+      "question": "How do you specify an interaction between `age` and `education` in an R formula?...",
+      "correctLength": 31,
+      "avgIncorrectLength": 17,
+      "lengthDiff": 14,
+      "isLongestCorrect": true,
+      "maxLength": 31,
+      "minLength": 17,
+      "options": [
+        {
+          "text": "`age + education`",
+          "length": 17,
+          "isCorrect": false
+        },
+        {
+          "text": "`age * education` (or `age +...",
+          "length": 31,
+          "isCorrect": true
+        },
+        {
+          "text": "`age / education`",
+          "length": 17,
+          "isCorrect": false
+        },
+        {
+          "text": "`age - education`",
+          "length": 17,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 282,
+      "question": "In `ggplot2`, adding a regression line to a scatterplot is done with:...",
+      "correctLength": 28,
+      "avgIncorrectLength": 14,
+      "lengthDiff": 14,
+      "isLongestCorrect": true,
+      "maxLength": 28,
+      "minLength": 12,
+      "options": [
+        {
+          "text": "`geom_smooth(method = \"lm\")`",
+          "length": 28,
+          "isCorrect": true
+        },
+        {
+          "text": "`geom_line()`",
+          "length": 13,
+          "isCorrect": false
+        },
+        {
+          "text": "`geom_bar()`",
+          "length": 12,
+          "isCorrect": false
+        },
+        {
+          "text": "`geom_boxplot()`",
+          "length": 16,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 8,
+      "question": "Which concept corresponds to the following definition?\n\n*A function that gives the probability that ...",
+      "correctLength": 38,
+      "avgIncorrectLength": 25,
+      "lengthDiff": 13,
+      "isLongestCorrect": true,
+      "maxLength": 38,
+      "minLength": 19,
+      "options": [
+        {
+          "text": "Binomial Distribution",
+          "length": 21,
+          "isCorrect": false
+        },
+        {
+          "text": "Probability Density Function (PDF)",
+          "length": 34,
+          "isCorrect": false
+        },
+        {
+          "text": "Cumulative Distribution Function (CDF)",
+          "length": 38,
+          "isCorrect": true
+        },
+        {
+          "text": "Normal Distribution",
+          "length": 19,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 249,
+      "question": "Which R function compares two nested models to see if adding variables significantly improves fit?...",
+      "correctLength": 23,
+      "avgIncorrectLength": 10,
+      "lengthDiff": 13,
+      "isLongestCorrect": true,
+      "maxLength": 23,
+      "minLength": 8,
+      "options": [
+        {
+          "text": "`summary()`",
+          "length": 11,
+          "isCorrect": false
+        },
+        {
+          "text": "`anova(model1, model2)`",
+          "length": 23,
+          "isCorrect": true
+        },
+        {
+          "text": "`cor.test()`",
+          "length": 12,
+          "isCorrect": false
+        },
+        {
+          "text": "`plot()`",
+          "length": 8,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 383,
+      "question": "Question: A researcher uses a 10th-order polynomial for a dataset with 20 points. What is the likely...",
+      "correctLength": 29,
+      "avgIncorrectLength": 16,
+      "lengthDiff": 13,
+      "isLongestCorrect": true,
+      "maxLength": 29,
+      "minLength": 10,
+      "options": [
+        {
+          "text": "Underfitting.",
+          "length": 13,
+          "isCorrect": false
+        },
+        {
+          "text": "Overfitting (modeling noise).",
+          "length": 29,
+          "isCorrect": true
+        },
+        {
+          "text": "Perfect fit (good thing).",
+          "length": 25,
+          "isCorrect": false
+        },
+        {
+          "text": "Linearity.",
+          "length": 10,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 247,
+      "question": "A Variance Inflation Factor (VIF) value of 15 indicates:...",
+      "correctLength": 32,
+      "avgIncorrectLength": 20,
+      "lengthDiff": 12,
+      "isLongestCorrect": true,
+      "maxLength": 32,
+      "minLength": 16,
+      "options": [
+        {
+          "text": "No collinearity.",
+          "length": 16,
+          "isCorrect": false
+        },
+        {
+          "text": "Moderate collinearity.",
+          "length": 22,
+          "isCorrect": false
+        },
+        {
+          "text": "Severe (high) multicollinearity.",
+          "length": 32,
+          "isCorrect": true
+        },
+        {
+          "text": "Perfect independence.",
+          "length": 21,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 288,
+      "question": "Interpreting Output:\n**Is multicollinearity a problem here?**...",
+      "correctLength": 34,
+      "avgIncorrectLength": 22,
+      "lengthDiff": 12,
+      "isLongestCorrect": true,
+      "maxLength": 34,
+      "minLength": 12,
+      "options": [
+        {
+          "text": "Yes, values are \\> 1.",
+          "length": 21,
+          "isCorrect": false
+        },
+        {
+          "text": "No, values are well below 5 or 10.",
+          "length": 34,
+          "isCorrect": true
+        },
+        {
+          "text": "Yes, because they are not equal.",
+          "length": 32,
+          "isCorrect": false
+        },
+        {
+          "text": "Cannot tell.",
+          "length": 12,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 292,
+      "question": "What is the correct syntax to extract coefficients from a saved model object `fit`?...",
+      "correctLength": 29,
+      "avgIncorrectLength": 17,
+      "lengthDiff": 12,
+      "isLongestCorrect": true,
+      "maxLength": 29,
+      "minLength": 15,
+      "options": [
+        {
+          "text": "`fit$coefficients` or `coe...",
+          "length": 29,
+          "isCorrect": true
+        },
+        {
+          "text": "`fit$residuals`",
+          "length": 15,
+          "isCorrect": false
+        },
+        {
+          "text": "`fit$r.squared`",
+          "length": 15,
+          "isCorrect": false
+        },
+        {
+          "text": "`fit$p.value` approach",
+          "length": 22,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 300,
+      "question": "Question: When including a quadratic term (`I(x^2)`) in a linear model in R, what other term *must* ...",
+      "correctLength": 33,
+      "avgIncorrectLength": 21,
+      "lengthDiff": 12,
+      "isLongestCorrect": true,
+      "maxLength": 33,
+      "minLength": 18,
+      "options": [
+        {
+          "text": "The cubic term (`I(x^3)`)",
+          "length": 25,
+          "isCorrect": false
+        },
+        {
+          "text": "The lower-order linear term (`x`)",
+          "length": 33,
+          "isCorrect": true
+        },
+        {
+          "text": "An interaction term",
+          "length": 19,
+          "isCorrect": false
+        },
+        {
+          "text": "A random intercept",
+          "length": 18,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 330,
+      "question": "Question: Why do we typically use the `lmerTest` package in addition to `lme4`?...",
+      "correctLength": 37,
+      "avgIncorrectLength": 25,
+      "lengthDiff": 12,
+      "isLongestCorrect": true,
+      "maxLength": 37,
+      "minLength": 23,
+      "options": [
+        {
+          "text": "To make better plots. approach",
+          "length": 30,
+          "isCorrect": false
+        },
+        {
+          "text": "To get p-values for the fixed effe...",
+          "length": 37,
+          "isCorrect": true
+        },
+        {
+          "text": "To run Bayesian models.",
+          "length": 23,
+          "isCorrect": false
+        },
+        {
+          "text": "To handle missing data.",
+          "length": 23,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 384,
+      "question": "Question: If the `t-value` for a fixed effect in `lmer` is 1.5, is it statistically significant at a...",
+      "correctLength": 27,
+      "avgIncorrectLength": 16,
+      "lengthDiff": 12,
+      "isLongestCorrect": true,
+      "maxLength": 27,
+      "minLength": 4,
+      "options": [
+        {
+          "text": "Yes.",
+          "length": 4,
+          "isCorrect": false
+        },
+        {
+          "text": "No (Needs to be \\> \\~1.96).",
+          "length": 27,
+          "isCorrect": true
+        },
+        {
+          "text": "Yes, because it's positive.",
+          "length": 27,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 104,
+      "question": "Which of the following describes a Normal Distribution?...",
+      "correctLength": 46,
+      "avgIncorrectLength": 35,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 46,
+      "minLength": 33,
+      "options": [
+        {
+          "text": "It is discrete and bimodal. methodology",
+          "length": 39,
+          "isCorrect": false
+        },
+        {
+          "text": "It is continuous, symmetric, and \"bell-shap...",
+          "length": 46,
+          "isCorrect": true
+        },
+        {
+          "text": "It is always skewed to the right.",
+          "length": 33,
+          "isCorrect": false
+        },
+        {
+          "text": "It describes binary outcomes only.",
+          "length": 34,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 111,
+      "question": "If a distribution has \"heavy tails\" (high kurtosis), it means:...",
+      "correctLength": 50,
+      "avgIncorrectLength": 39,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 50,
+      "minLength": 36,
+      "options": [
+        {
+          "text": "There are more frequent extreme values (outlier...",
+          "length": 50,
+          "isCorrect": true
+        },
+        {
+          "text": "The distribution is very flat. methodology",
+          "length": 42,
+          "isCorrect": false
+        },
+        {
+          "text": "The distribution is skewed to the left.",
+          "length": 39,
+          "isCorrect": false
+        },
+        {
+          "text": "The mean is smaller than the median.",
+          "length": 36,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 161,
+      "question": "In a two-tailed test with $\\alpha = 0.05$, the critical region contains:...",
+      "correctLength": 48,
+      "avgIncorrectLength": 37,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 48,
+      "minLength": 34,
+      "options": [
+        {
+          "text": "The top 5% of the distribution. methodology",
+          "length": 43,
+          "isCorrect": false
+        },
+        {
+          "text": "The bottom 5% of the distribution.",
+          "length": 34,
+          "isCorrect": false
+        },
+        {
+          "text": "The extreme 2.5% on both ends of the distribu...",
+          "length": 48,
+          "isCorrect": true
+        },
+        {
+          "text": "The middle 95% of the distribution.",
+          "length": 35,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 178,
+      "question": "To standardize covariance and turn it into a correlation coefficient, you divide it by:...",
+      "correctLength": 41,
+      "avgIncorrectLength": 30,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 41,
+      "minLength": 26,
+      "options": [
+        {
+          "text": "The sample size ($N$). methodology",
+          "length": 34,
+          "isCorrect": false
+        },
+        {
+          "text": "The product of the standard deviations...",
+          "length": 41,
+          "isCorrect": true
+        },
+        {
+          "text": "The mean of the variables.",
+          "length": 26,
+          "isCorrect": false
+        },
+        {
+          "text": "The variance of the variables.",
+          "length": 30,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 191,
+      "question": "If you see a correlation matrix where the diagonal values are all 1.0, this is because:...",
+      "correctLength": 39,
+      "avgIncorrectLength": 28,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 39,
+      "minLength": 25,
+      "options": [
+        {
+          "text": "Every variable is perfectly correlat...",
+          "length": 39,
+          "isCorrect": true
+        },
+        {
+          "text": "The calculation is wrong.",
+          "length": 25,
+          "isCorrect": false
+        },
+        {
+          "text": "The p-values are 1.0. methodology",
+          "length": 33,
+          "isCorrect": false
+        },
+        {
+          "text": "There is multicollinearity.",
+          "length": 27,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 239,
+      "question": "`dfbeta` statistics are used to:...",
+      "correctLength": 41,
+      "avgIncorrectLength": 30,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 41,
+      "minLength": 28,
+      "options": [
+        {
+          "text": "Calculate degrees of freedom.",
+          "length": 29,
+          "isCorrect": false
+        },
+        {
+          "text": "Assess how much regression coefficient...",
+          "length": 41,
+          "isCorrect": true
+        },
+        {
+          "text": "Standardize the betas. methodology",
+          "length": 34,
+          "isCorrect": false
+        },
+        {
+          "text": "Test for heteroscedasticity.",
+          "length": 28,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 278,
+      "question": "Which plot is used to detect outliers based on leverage and residuals?...",
+      "correctLength": 36,
+      "avgIncorrectLength": 25,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 36,
+      "minLength": 22,
+      "options": [
+        {
+          "text": "Residuals vs Leverage (Cook's dis...",
+          "length": 36,
+          "isCorrect": true
+        },
+        {
+          "text": "Histogram of outcome. approach",
+          "length": 30,
+          "isCorrect": false
+        },
+        {
+          "text": "Boxplot of predictors.",
+          "length": 22,
+          "isCorrect": false
+        },
+        {
+          "text": "Scatterplot of X vs Y.",
+          "length": 22,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 296,
+      "question": "To compare the relative importance of predictors in a model, you should look at:...",
+      "correctLength": 34,
+      "avgIncorrectLength": 23,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 34,
+      "minLength": 18,
+      "options": [
+        {
+          "text": "Unstandardized $b$ coefficients.",
+          "length": 32,
+          "isCorrect": false
+        },
+        {
+          "text": "Standardized $\\beta$ coefficients.",
+          "length": 34,
+          "isCorrect": true
+        },
+        {
+          "text": "The p-values only.",
+          "length": 18,
+          "isCorrect": false
+        },
+        {
+          "text": "The standard errors.",
+          "length": 20,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 334,
+      "question": "Question: What does a \"Conditional\" Growth Model include that an Unconditional one does not?...",
+      "correctLength": 30,
+      "avgIncorrectLength": 19,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 30,
+      "minLength": 16,
+      "options": [
+        {
+          "text": "Random intercepts.",
+          "length": 18,
+          "isCorrect": false
+        },
+        {
+          "text": "A time variable.",
+          "length": 16,
+          "isCorrect": false
+        },
+        {
+          "text": "Covariates or predictors of...",
+          "length": 30,
+          "isCorrect": true
+        },
+        {
+          "text": "Error terms. methodology",
+          "length": 24,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 363,
+      "question": "Question:** **[Mock R Output]\nObservation 3 has a hat value of 0.60 (much higher than others). What ...",
+      "correctLength": 42,
+      "avgIncorrectLength": 31,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 42,
+      "minLength": 23,
+      "options": [
+        {
+          "text": "It is an outlier in the Y direction.",
+          "length": 36,
+          "isCorrect": false
+        },
+        {
+          "text": "It has high leverage (outlier in X space).",
+          "length": 42,
+          "isCorrect": true
+        },
+        {
+          "text": "It has high influence (Cook's D).",
+          "length": 33,
+          "isCorrect": false
+        },
+        {
+          "text": "It is perfectly normal.",
+          "length": 23,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 370,
+      "question": "Question: You want to predict `Vocabulary` growth in children (ages 2 to 10). You expect growth to b...",
+      "correctLength": 33,
+      "avgIncorrectLength": 22,
+      "lengthDiff": 11,
+      "isLongestCorrect": true,
+      "maxLength": 33,
+      "minLength": 20,
+      "options": [
+        {
+          "text": "The Intercept methodology",
+          "length": 25,
+          "isCorrect": false
+        },
+        {
+          "text": "The Linear Time slope",
+          "length": 21,
+          "isCorrect": false
+        },
+        {
+          "text": "The Quadratic Time slope (`I(T...",
+          "length": 33,
+          "isCorrect": true
+        },
+        {
+          "text": "The Random Intercept",
+          "length": 20,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 168,
+      "question": "If you have a very large sample size, even very small effects can become:...",
+      "correctLength": 25,
+      "avgIncorrectLength": 15,
+      "lengthDiff": 10,
+      "isLongestCorrect": true,
+      "maxLength": 25,
+      "minLength": 6,
+      "options": [
+        {
+          "text": "Statistically significant",
+          "length": 25,
+          "isCorrect": true
+        },
+        {
+          "text": "Practically significant",
+          "length": 23,
+          "isCorrect": false
+        },
+        {
+          "text": "Non-significant",
+          "length": 15,
+          "isCorrect": false
+        },
+        {
+          "text": "Biased",
+          "length": 6,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 260,
+      "question": "In the equation $Y = b_0 + b_1X + b_2Z + b_3(X \\times Z)$, what does $b_3$ represent?...",
+      "correctLength": 33,
+      "avgIncorrectLength": 23,
+      "lengthDiff": 10,
+      "isLongestCorrect": true,
+      "maxLength": 33,
+      "minLength": 21,
+      "options": [
+        {
+          "text": "The main effect of X.",
+          "length": 21,
+          "isCorrect": false
+        },
+        {
+          "text": "The main effect of Z.",
+          "length": 21,
+          "isCorrect": false
+        },
+        {
+          "text": "The interaction effect (change...",
+          "length": 33,
+          "isCorrect": true
+        },
+        {
+          "text": "The intercept. methodology",
+          "length": 26,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 283,
+      "question": "A researcher reports: \"$b = 0.5, t(100) = 1.5, p = .14$\". What is the conclusion?...",
+      "correctLength": 43,
+      "avgIncorrectLength": 33,
+      "lengthDiff": 10,
+      "isLongestCorrect": true,
+      "maxLength": 43,
+      "minLength": 29,
+      "options": [
+        {
+          "text": "The effect is significant. methodology",
+          "length": 38,
+          "isCorrect": false
+        },
+        {
+          "text": "The effect is not statistically signific...",
+          "length": 43,
+          "isCorrect": true
+        },
+        {
+          "text": "The sample size is too small.",
+          "length": 29,
+          "isCorrect": false
+        },
+        {
+          "text": "There is a strong relationship.",
+          "length": 31,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    },
+    {
+      "id": 365,
+      "question": "Question: In a polynomial regression `y ~ x + I(x^2)`, you decide to center `x` (i.e., `x_centered =...",
+      "correctLength": 47,
+      "avgIncorrectLength": 37,
+      "lengthDiff": 10,
+      "isLongestCorrect": true,
+      "maxLength": 47,
+      "minLength": 34,
+      "options": [
+        {
+          "text": "It changes the shape of the curve.",
+          "length": 34,
+          "isCorrect": false
+        },
+        {
+          "text": "It changes the $R^2$ of the model.",
+          "length": 34,
+          "isCorrect": false
+        },
+        {
+          "text": "It reduces the correlation (multicollinearit...",
+          "length": 47,
+          "isCorrect": true
+        },
+        {
+          "text": "It makes the model non-linear. methodology",
+          "length": 42,
+          "isCorrect": false
+        }
+      ],
+      "severity": "MODERATE"
+    }
+  ]
+}

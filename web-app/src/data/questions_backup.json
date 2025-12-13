@@ -37,7 +37,7 @@
     "type": "mc",
     "question": "What is the best definition for **T-statistic**?",
     "options": [
-      "The rejection of a true null hypothesis (false positive). (additional context) (a",
+      "The rejection of a true null hypothesis (false positive).",
       "A ratio of the departure of the estimated value of a parameter from its hypothesized value to its standard error.",
       "An inferential statistic used to assess the equality of variances for a variable calculated for two or more groups.",
       "The probability of rejecting the null hypothesis when it is true (alpha)."
@@ -73,7 +73,7 @@
       "A continuous probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence.",
       "Two events are independent if the occurrence of one does not affect the probability of occurrence of the other.",
       "A function that describes the relative likelihood for a continuous random variable to take on a given value.",
-      "The long-run average value of repetitions of the same experiment it represents. (additional context"
+      "The long-run average value of repetitions of the same experiment it represents."
     ],
     "answer": 0,
     "explanation": "**Normal Distribution** is defined as: A continuous probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence.",
@@ -85,7 +85,7 @@
     "options": [
       "The theory that the distribution of sample means approximates a normal distribution as the sample size becomes larger.",
       "A subset of a statistical population in which each member of the subset has an equal probability of being chosen.",
-      "The standard deviation of the sampling distribution of a statistic. (additional context) (additional c",
+      "The standard deviation of the sampling distribution of a statistic.",
       "A type of non-probability sampling that involves the sample being drawn from that part of the population that is close to hand."
     ],
     "answer": 0,
@@ -125,7 +125,7 @@
       "A phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy.",
       "A non-parametric measure of rank correlation (statistical dependence between the rankings of two variables).",
       "The assumption that the variance of the error term in a regression model is constant.",
-      "A measure of the linear correlation between two sets of data. (additional context) ("
+      "A measure of the linear correlation between two sets of data."
     ],
     "answer": 0,
     "explanation": "**Multicollinearity** is defined as: A phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy.",
@@ -329,7 +329,7 @@
       "Random Variable",
       "Standard Deviation",
       "Variance",
-      "The total area under a Probability Density Function curve is always 1."
+      "Probability Density Function (PDF)"
     ],
     "answer": 3,
     "explanation": "The definition describes **Probability Density Function (PDF)**.",
@@ -412,9 +412,9 @@
     "question": "What is the best definition for **Spurious Correlation**?",
     "options": [
       "A non-parametric measure of rank correlation (statistical dependence between the rankings of two variables).",
-      "The assumption that the variance of the error term in a regression model is constant. (additional context) (addition",
+      "The assumption that the variance of the error term in a regression model is constant.",
       "A phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy.",
-      "A relationship in which two or more events or variables are associated but not causally related,"
+      "A relationship in which two or more events or variables are associated but not causally related, due to either coincidence or the presence of a certain third, unseen factor."
     ],
     "answer": 3,
     "explanation": "**Spurious Correlation** is defined as: A relationship in which two or more events or variables are associated but not causally related, due to either coincidence or the presence of a certain third, unseen factor.",
@@ -730,7 +730,7 @@
     "question": "What is the best definition for **R-squared**?",
     "options": [
       "A statistical measure that represents the proportion of the variance for a dependent variable that's explained by an independent variable.",
-      "A measure of the linear correlation between two sets of data. (additional context) (additional conte",
+      "A measure of the linear correlation between two sets of data.",
       "A phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy.",
       "The assumption that the variance of the error term in a regression model is constant."
     ],
@@ -802,7 +802,7 @@
     "type": "mc",
     "question": "What is the best definition for **Sampling Bias**?",
     "options": [
-      "The probability distribution of a given random-sample-based statistic. (additional context) (add",
+      "The probability distribution of a given random-sample-based statistic.",
       "A bias in which a sample is collected in such a way that some members of the intended population have a lower or higher sampling probability than others.",
       "A method of sampling from a population which can be partitioned into subpopulations (strata).",
       "A type of non-probability sampling that involves the sample being drawn from that part of the population that is close to hand."
@@ -835,10 +835,10 @@
     "type": "mc",
     "question": "What is the best definition for **Levene's Test**?",
     "options": [
-      "A test of normality in frequentist statistics. (additional context) (additional context) (a",
+      "A test of normality in frequentist statistics.",
       "The probability of correctly rejecting the null hypothesis when it is false (1 - Beta).",
       "The probability of obtaining test results at least as extreme as the results actually observed, assuming that the null hypothesis is correct.",
-      "An inferential statistic used to assess the equality of variances for a variable calculated for two or"
+      "An inferential statistic used to assess the equality of variances for a variable calculated for two or more groups."
     ],
     "answer": 3,
     "explanation": "**Levene's Test** is defined as: An inferential statistic used to assess the equality of variances for a variable calculated for two or more groups.",
@@ -1150,7 +1150,7 @@
     "question": "Which of the following describes a Normal Distribution?",
     "options": [
       "It is discrete and bimodal.",
-      "It is continuous, symmetric, and \"bell-shaped\" (follows the Empirical Rule).",
+      "It is continuous, symmetric, and \"bell-shaped.\"",
       "It is always skewed to the right.",
       "It describes binary outcomes only."
     ],
@@ -1220,7 +1220,7 @@
     "question": "What does the `set.seed(123)` function do in R?",
     "options": [
       "It randomizes the order of your dataframe.",
-      "It ensures that random number generation is reproducible (same seed = same results).",
+      "It ensures that random number generation is reproducible.",
       "It installs the \"seed\" package.",
       "It calculates the standard error."
     ],
@@ -1277,7 +1277,7 @@
     "options": [
       "An event that can be broken down into smaller parts.",
       "The entire sample space.",
-      "A single outcome of an experiment (e.g.,",
+      "A single outcome of an experiment (e.g., rolling a specific number on a die).",
       "The probability of zero."
     ],
     "answer": 2,
@@ -1291,7 +1291,7 @@
     "options": [
       "T-test",
       "Correlation",
-      "ANOVA (Analysis of Variance) and Regression.",
+      "ANOVA (Analysis of Variance)",
       "Binomial test"
     ],
     "answer": 2,
@@ -1361,7 +1361,7 @@
     "options": [
       "To prove that our data is correct.",
       "To calculate the exact population parameters.",
-      "To estimate how likely our sample data is,",
+      "To estimate how likely our sample data is, given a specific hypothesis.",
       "To avoid doing math."
     ],
     "answer": 2,
@@ -1388,7 +1388,7 @@
     "question": "The \"Law of Large Numbers\" suggests that:",
     "options": [
       "Larger samples will always have a normal distribution.",
-      "As the number of trials increases, the sample mean gets closer to the expected value.",
+      "As the number of trials increases, the sample mean gets closer to the expected value (population mean).",
       "You need at least 100 participants for any study.",
       "Smaller samples are more accurate."
     ],
@@ -1487,7 +1487,7 @@
     "options": [
       "You want to avoid all bias.",
       "The population is very large and easy to access.",
-      "The population is hard to reach (e.g., rare diseases,",
+      "The population is hard to reach (e.g., rare diseases, hidden communities).",
       "You want to ensure equal gender representation."
     ],
     "answer": 2,
@@ -1499,7 +1499,7 @@
     "type": "mc",
     "question": "Stratified sampling involves:",
     "options": [
-      "Dividing the population into subgroups (strata) and",
+      "Dividing the population into subgroups (strata) and sampling proportionally from them.",
       "Sampling whoever is available.",
       "Asking participants to recruit their friends.",
       "Selecting every $n$-th person from a list."
@@ -1555,7 +1555,7 @@
     "type": "mc",
     "question": "The Central Limit Theorem states that as sample size increases, the sampling distribution of the mean will:",
     "options": [
-      "Approach a normal distribution, regardless of the population distribution shape.",
+      "Approach a normal distribution, regardless of the population's shape.",
       "Become more skewed.",
       "Have a larger standard deviation.",
       "Identically match the population distribution."
@@ -1599,7 +1599,7 @@
     "options": [
       "There is a 95% chance the sample mean is between 45 and 55.",
       "95% of the data points lie between 45 and 55.",
-      "If we replicated the study many times, 95% of the calculated intervals would contain the true mean.",
+      "If we replicated the study many times, 95% of the calculated intervals would contain the true population mean.",
       "The true mean is definitely 50."
     ],
     "answer": 2,
@@ -1682,7 +1682,7 @@
     "question": "What is the primary goal of inferential statistics in CSAI?",
     "options": [
       "To describe the sample data perfectly.",
-      "To use sample data to make generalizations about a larger population.",
+      "To use sample data to make generalizations about a population.",
       "To calculate the mean of a population directly.",
       "To eliminate all sampling error."
     ],
@@ -1696,7 +1696,7 @@
     "question": "Which R function was used in the lecture to calculate confidence intervals for the mean?",
     "options": [
       "`meanCI()`",
-      "`ciMean()` (from `lsr` package) or `t.test()`.",
+      "`ciMean()` (from `lsr` package)",
       "`confint()`",
       "`get_CI()`"
     ],
@@ -1724,7 +1724,7 @@
     "question": "Bias in sampling occurs when:",
     "options": [
       "The sample size is too small.",
-      "The sample does not accurately reflect the population (some members have lower/higher probability of selection).",
+      "The sample does not accurately reflect the characteristics of the population.",
       "You use random sampling.",
       "You calculate the mean instead of the median."
     ],
@@ -1751,7 +1751,7 @@
     "type": "mc",
     "question": "In the \"Taco Literacy\" example from the lecture, finding that 72% of 1000 people are taco illiterate vs 43% of 10,000 people suggests:",
     "options": [
-      "The first sample was likely biased or",
+      "The first sample was likely biased or had high sampling error.",
       "Taco literacy decreased over time.",
       "The standard deviation increased.",
       "The population parameter changed."
@@ -1780,7 +1780,7 @@
     "question": "The Null Hypothesis ($H_0$) usually states that:",
     "options": [
       "There is a strong relationship between variables.",
-      "There is no effect, no difference, or the relationship is zero.",
+      "There is no effect, no difference, or the relationship is zero in the population.",
       "The alternative hypothesis is false.",
       "The sample mean equals the sample median."
     ],
@@ -1795,7 +1795,7 @@
     "options": [
       "You reject the null hypothesis when it is actually true (False Positive).",
       "You fail to reject the null hypothesis when it is actually false (False Negative).",
-      "Your sample size is too small. (additional contex",
+      "Your sample size is too small.",
       "You use a T-test instead of a Z-test."
     ],
     "answer": 0,
@@ -1808,7 +1808,7 @@
     "question": "A Type II error occurs when:",
     "options": [
       "You reject the null hypothesis when it is true.",
-      "You fail to reject the null hypothesis when it is actually false (False Negative).",
+      "You fail to reject the null hypothesis when there is actually a real effect (False Negative).",
       "The p-value is less than 0.05.",
       "The effect size is large."
     ],
@@ -1850,7 +1850,7 @@
     "question": "Cohen’s d is a measure of:",
     "options": [
       "Statistical significance",
-      "Effect size (standardized mean difference).",
+      "Effect size (standardized mean difference)",
       "Variance explained",
       "Sampling error"
     ],
@@ -1892,7 +1892,7 @@
     "question": "If you perform multiple statistical tests (e.g., 20 t-tests) on the same data, you increase the risk of:",
     "options": [
       "Type II error",
-      "Type I error (Family-wise error rate).",
+      "Type I error (Family-wise error rate)",
       "Standard error",
       "Sampling bias"
     ],
@@ -1933,7 +1933,7 @@
     "type": "mc",
     "question": "Statistical Power is defined as:",
     "options": [
-      "The probability of rejecting a false null hypothesis (1 - Beta).",
+      "The probability of rejecting a false null hypothesis ($1 - \\beta$).",
       "The probability of making a Type I error.",
       "The size of the effect.",
       "The standard deviation of the sampling distribution."
@@ -1962,7 +1962,7 @@
     "question": "Why do T-distributions have \"heavier tails\" than the Z-distribution?",
     "options": [
       "Because they are skewed.",
-      "To account for the extra uncertainty introduced by estimating the population standard deviation from the sample.",
+      "To account for the extra uncertainty introduced by estimating the population SD from the sample.",
       "Because they are used for large sample sizes.",
       "Because they are used for binary data."
     ],
@@ -1990,7 +1990,7 @@
     "question": "If a 95% Confidence Interval for a mean difference includes 0 (e.g., [-2, 5]), what can you conclude?",
     "options": [
       "The difference is statistically significant at p < 0.05.",
-      "The difference is NOT statistically significant (at alpha = 0.05).",
+      "The difference is NOT statistically significant at p < 0.05.",
       "The effect size is large.",
       "You have made a Type I error."
     ],
@@ -2018,7 +2018,7 @@
     "question": "The \"Alternative Hypothesis\" ($H_1$) usually corresponds to:",
     "options": [
       "The status quo.",
-      "The research prediction (e.g.,",
+      "The research prediction (e.g., there IS an effect).",
       "A calculation error.",
       "The alpha level."
     ],
@@ -2032,7 +2032,7 @@
     "question": "Which package was used in the slides to calculate Cohen's d?",
     "options": [
       "`ggplot2`",
-      "`psych` (specifically `cohen.d`) or `lsr`.",
+      "`psych` (specifically `cohen.d`)",
       "`stats`",
       "`lsr`"
     ],
@@ -2088,7 +2088,7 @@
     "question": "In the \"Mad Men\" example from the slides, the conclusion \"Nope, just super drunk\" implies:",
     "options": [
       "The hypothesis was supported.",
-      "The hypothesis was rejected (Null Hypothesis of no relationship was false), or it was a Spurious Correlation.",
+      "The hypothesis was rejected (Null result).",
       "The correlation was 1.0.",
       "A Type I error occurred."
     ],
@@ -2116,7 +2116,7 @@
     "question": "If you run a Z-test in R using `BSDA::z.test`, you must calculate or know \\_\\_\\_\\_\\_\\_ beforehand.",
     "options": [
       "The sample mean only.",
-      "The population standard deviation (sigma).",
+      "The population standard deviation ($\\sigma$).",
       "The p-value.",
       "The correlation coefficient."
     ],
@@ -2157,9 +2157,9 @@
     "type": "mc",
     "question": "Which of the following is TRUE about correlation?",
     "options": [
-      "Correlation implies causation. (additional context",
+      "Correlation implies causation.",
       "A correlation of 0 means there is definitely no relationship (linear or non-linear).",
-      "Correlation measures the strength and direction of a linear relationship between two variables.",
+      "Correlation measures the strength and direction of a linear relationship.",
       "Pearson's $r$ is robust to outliers."
     ],
     "answer": 2,
@@ -2172,7 +2172,7 @@
     "question": "Covariance differs from correlation because:",
     "options": [
       "Covariance is standardized.",
-      "Covariance depends on the units of measurement, whereas correlation is standardized.",
+      "Covariance depends on the units of measurement of the variables.",
       "Covariance is always between -1 and 1.",
       "Covariance is used for ordinal data."
     ],
@@ -2186,7 +2186,7 @@
     "question": "To standardize covariance and turn it into a correlation coefficient, you divide it by:",
     "options": [
       "The sample size ($N$).",
-      "The product of the standard deviations of the two variables.",
+      "The product of the standard deviations of the two variables ($s_x s_y$).",
       "The mean of the variables.",
       "The variance of the variables."
     ],
@@ -2200,7 +2200,7 @@
     "question": "Calculating $r^2$ (the coefficient of determination) tells you:",
     "options": [
       "The direction of the relationship.",
-      "The proportion of variance in one variable that is predictable from the other variable.",
+      "The proportion of variance in one variable shared/explained by the other.",
       "The statistical significance of the relationship.",
       "The causal effect."
     ],
@@ -2241,7 +2241,7 @@
     "type": "mc",
     "question": "A Semi-Partial Correlation between X and Y, controlling for Z, removes the influence of Z from:",
     "options": [
-      "Only one of the variables (usually the predictor/IV) and the third variable.",
+      "Only one of the variables (usually the predictor/IV).",
       "Both X and Y.",
       "The outcome variable only.",
       "The error term only."
@@ -2283,7 +2283,7 @@
     "type": "mc",
     "question": "\"Spurious correlations\" (like ice cream sales and shark attacks) usually occur due to:",
     "options": [
-      "A third variable (confounder) that influences both observed variables.",
+      "A third variable (confounder) influencing both variables.",
       "Small sample sizes.",
       "Type II errors.",
       "Non-linear relationships."
@@ -2298,7 +2298,7 @@
     "question": "If you run `cor.test(x, y, alternative = \"greater\")`, you are testing:",
     "options": [
       "A two-tailed hypothesis ($r \\neq 0$).",
-      "A one-tailed hypothesis that the correlation is positive.",
+      "A one-tailed hypothesis that the correlation is positive ($r > 0$).",
       "A one-tailed hypothesis that the correlation is negative ($r < 0$).",
       "The null hypothesis that $r = 0$."
     ],
@@ -2339,7 +2339,7 @@
     "type": "mc",
     "question": "In the lecture example about exam anxiety, exam performance, and revision time, a Partial correlation was used to:",
     "options": [
-      "See the relationship between Exam and",
+      "See the relationship between Exam and Revision while controlling for Anxiety.",
       "See if Anxiety causes poor performance.",
       "Calculate the mean of the exam scores.",
       "Rank the students."
@@ -2367,7 +2367,7 @@
     "type": "mc",
     "question": "If you see a correlation matrix where the diagonal values are all 1.0, this is because:",
     "options": [
-      "Every variable is perfectly correlated with itself (r = 1).",
+      "Every variable is perfectly correlated with itself.",
       "The calculation is wrong.",
       "The p-values are 1.0.",
       "There is multicollinearity."
@@ -2523,7 +2523,7 @@
     "options": [
       "The relationship between variables is linear and data are normally distributed.",
       "The sample size is large (\\>100) and data are ratio scale.",
-      "The data are ordinal (ranked) or the relationship is monotonic but",
+      "The data are ordinal (ranked) or the relationship is monotonic but non-linear.",
       "You want to predict the exact value of Y from X."
     ],
     "answer": 2,
@@ -2578,9 +2578,9 @@
     "question": "Interpreting Output:\n**Based on the output above, which conclusion is correct?**",
     "options": [
       "There is a significant positive relationship between stress and performance.",
-      "There is a significant negative relationship; as stress increases,",
+      "There is a significant negative relationship; as stress increases, performance tends to decrease.",
       "The relationship is not statistically significant ($p > .05$).",
-      "Stress causes poor performance. (additional context) (ad"
+      "Stress causes poor performance."
     ],
     "answer": 1,
     "explanation": "Check the R output to identify the correct correlation coefficient and p-value.",
@@ -2595,7 +2595,7 @@
     "options": [
       "$r = 1$",
       "$r \\neq 0$",
-      "$\\rho = 0$ (The population correlation coefficient is zero).",
+      "$\\rho = 0$ (The population correlation is zero)",
       "$\\mu_1 = \\mu_2$"
     ],
     "answer": 2,
@@ -2608,7 +2608,7 @@
     "question": "Semi-partial correlation differs from partial correlation because:",
     "options": [
       "It controls for a third variable on *both* the predictor and criterion.",
-      "It controls for a third variable on *only* the predictor (or only the outcome), not both.",
+      "It controls for a third variable on *only* the predictor (or only the criterion), not both.",
       "It is used only for non-parametric data.",
       "It yields a higher value than the zero-order correlation."
     ],
@@ -2665,7 +2665,7 @@
     "options": [
       "The true correlation is likely 0.35.",
       "The correlation is statistically significant.",
-      "The correlation is not statistically significant (since the interval includes 0).",
+      "The correlation is not statistically significant because the interval includes zero.",
       "There is a strong negative relationship."
     ],
     "answer": 2,
@@ -2735,10 +2735,10 @@
     "type": "mc",
     "question": "What is the residual ($e_i$) for a data point?",
     "options": [
-      "The difference between the observed Y and the predicted Y ($Y_i - \\hat{Y}_i$).",
+      "The difference between the observed Y and the predicted Y ($\\hat{Y}$).",
       "The difference between the observed X and the mean of X.",
       "The distance from the intercept to the data point.",
-      "The variance of the model. (additional conte"
+      "The variance of the model."
     ],
     "answer": 0,
     "explanation": "**Residual**: Observed Y - Predicted Y.",
@@ -2778,7 +2778,7 @@
     "question": "If the F-statistic in a simple regression is significant ($p < .05$), this means:",
     "options": [
       "The intercept is not zero.",
-      "The model explains significantly more variance than an intercept-only model.",
+      "The model explains significantly more variance than the intercept-only (mean) model.",
       "The relationship is non-linear.",
       "Homoscedasticity is met."
     ],
@@ -2793,7 +2793,7 @@
     "options": [
       "The error in the regression model.",
       "The improvement of the regression model over the mean.",
-      "The total variability in the outcome variable (before accounting for predictors).",
+      "The total variability in the outcome variable (difference from the mean).",
       "The sum of the squared residuals."
     ],
     "answer": 2,
@@ -2807,7 +2807,7 @@
     "options": [
       "$R^2$",
       "F-statistic",
-      "Residual Standard Error (RSE) or Standard Error of the Estimate.",
+      "Residual Standard Error (RSE)",
       "Adjusted $R^2$"
     ],
     "answer": 2,
@@ -2841,7 +2841,7 @@
     "answer": 0,
     "explanation": "**Confidence Interval (CI)**: Interval that captures the true parameter in 95% of repeated samples (for 95% CI). NOT '95% chance parameter is here'.\n\nAnswer Key: $5 \\pm 2(1)$",
     "id": 224,
-    "codeSnippet": "Coefficients:\n            Estimate Std. Error t value Pr(>|t|)\n(Intercept)  10.000      2.000   5.000  0.001 ** hours_study   5.000      1.000   5.000  0.001 **",
+    "codeSnippet": "Coefficients:\nEstimate Std. Error t value Pr(>|t|)\n(Intercept)  10.000      2.000   5.000  0.001 ** hours_study   5.000      1.000   5.000  0.001 **",
     "codeOutput": "Output hidden for quiz mode",
     "module": "Module 5: Intro to Regression (Simple Linear)"
   },
@@ -2864,7 +2864,7 @@
     "question": "Which package in R is commonly used to obtain standardized coefficients (`std.beta`)?",
     "options": [
       "`ggplot2`",
-      "`effectsize` or `QuantPsyc` (specifically `lm.beta`).",
+      "`effectsize` or `QuantPsyc`",
       "`readr`",
       "`tibble`"
     ],
@@ -2892,7 +2892,7 @@
     "question": "Why is the intercept sometimes meaningless in interpreting data?",
     "options": [
       "Because it is always zero.",
-      "Because a predictor value of 0 might be impossible or meaningless in the real world.",
+      "Because a predictor value of 0 might be impossible or outside the range of data (e.g., age = 0).",
       "Because it has a large standard error.",
       "Because it is not a standardized coefficient."
     ],
@@ -2920,7 +2920,7 @@
     "question": "After centering `age` to the mean, the intercept represents:",
     "options": [
       "The predicted Y when age is 0.",
-      "The predicted Y for a person with the average age.",
+      "The predicted Y for a person with average age.",
       "The average age of the sample.",
       "The slope of age."
     ],
@@ -2948,7 +2948,7 @@
     "question": "Influential data points that have a disproportionate impact on the regression line are best detected using:",
     "options": [
       "The histogram of residuals.",
-      "Cook’s Distance or Leverage vs.",
+      "Cook’s Distance or Leverage vs. Residuals plot.",
       "The $R^2$ value.",
       "The F-statistic."
     ],
@@ -2990,7 +2990,7 @@
     "question": "Interpreting Output:\n**What does this output suggest?**",
     "options": [
       "The model assumptions are acceptable.",
-      "At least one regression assumption has been violated (e.g., Normality of residuals).",
+      "At least one regression assumption has been significantly violated.",
       "The model is a perfect fit.",
       "You should proceed without changes."
     ],
@@ -3007,7 +3007,7 @@
     "options": [
       "Normality",
       "Linearity",
-      "Independence of observations (needs study design context).",
+      "Independence of observations",
       "Homoscedasticity"
     ],
     "answer": 2,
@@ -3020,7 +3020,7 @@
     "question": "Independence of errors is usually violated when:",
     "options": [
       "The sample size is small.",
-      "Data are collected from the same subjects (repeated measures) or clustered groups.",
+      "Data are collected from the same subjects over time (repeated measures).",
       "The variables are not normally distributed.",
       "There are outliers."
     ],
@@ -3034,7 +3034,7 @@
     "question": "Using `check_model()` from the `performance` package generates:",
     "options": [
       "A summary table of coefficients.",
-      "A dashboard of visual plots checking regression assumptions (Normality, Homoscedasticity, etc.).",
+      "A dashboard of visual plots checking various assumptions (collinearity, normality, etc.).",
       "A new regression model with better fit.",
       "The AIC score."
     ],
@@ -3048,7 +3048,7 @@
     "question": "`dfbeta` statistics are used to:",
     "options": [
       "Calculate degrees of freedom.",
-      "Assess how much regression coefficients change if a specific case is removed (measure of influence).",
+      "Assess how much regression coefficients would change if a specific case were removed.",
       "Standardize the betas.",
       "Test for heteroscedasticity."
     ],
@@ -3069,7 +3069,7 @@
     "answer": 3,
     "explanation": "**Dummy Coding**: 0s and 1s. k-1 dummies for k levels.\n\nAnswer Key: $Intercept + Slope = 50 + 10 = 60$",
     "id": 240,
-    "codeSnippet": "Coefficients:\n               Estimate\n(Intercept)    50.0\ngroupTreatment 10.0",
+    "codeSnippet": "Coefficients:\nEstimate\n(Intercept)    50.0\ngroupTreatment 10.0",
     "codeOutput": "Output hidden for quiz mode",
     "module": "Module 6: More Regression & Assumptions"
   },
@@ -3106,7 +3106,7 @@
     "question": "Homoscedasticity means:",
     "options": [
       "The residuals are normally distributed.",
-      "The variance of the residuals is constant across all levels of the predictor(s).",
+      "The variance of the residuals is constant across all levels of the predicted values.",
       "The predictor variables are uncorrelated.",
       "The relationship is linear."
     ],
@@ -3120,9 +3120,9 @@
     "question": "In the multiple regression equation $Y = b_0 + b_1X_1 + b_2X_2 + \\dots$, $b_1$ is interpreted as:",
     "options": [
       "The correlation between Y and $X_1$.",
-      "The predicted change in Y for a 1-unit increase in $X_1$,",
+      "The predicted change in Y for a 1-unit increase in $X_1$, holding all other predictors constant.",
       "The predicted change in Y for a 1-unit increase in $X_1$, ignoring other predictors.",
-      "The standardized effect size. (additional context"
+      "The standardized effect size."
     ],
     "answer": 1,
     "explanation": "**Regression Equation**: Y = b0 + b1*X + e. Intercept + Slope.",
@@ -3134,7 +3134,7 @@
     "question": "Why do we prefer Adjusted $R^2$ over Multiple $R^2$ in multiple regression?",
     "options": [
       "Adjusted $R^2$ is always higher.",
-      "Multiple $R^2$ increases with every predictor added,",
+      "Multiple $R^2$ increases with every predictor added, even useless ones; Adjusted $R^2$ penalizes model complexity.",
       "Adjusted $R^2$ is easier to calculate.",
       "Multiple $R^2$ cannot be interpreted as variance explained."
     ],
@@ -3176,14 +3176,14 @@
     "question": "Interpreting Output:\n**Which conclusion is supported?**",
     "options": [
       "Both predictors significantly predict the outcome.",
-      "$X_1$ is a significant predictor, but $X_2$ is not.",
+      "$X_1$ is a significant predictor, but $X_2$ is not (controlling for $X_1$).",
       "$X_2$ is a better predictor than $X_1$.",
       "The intercept is not significant."
     ],
     "answer": 1,
     "explanation": "Evaluate the model comparison metrics (AIC, BIC, or ANOVA results).",
     "id": 248,
-    "codeSnippet": "Coefficients:\n            Estimate Std. Error t value Pr(>|t|)\n(Intercept)   10.0      2.0      5.00   <.001\nX1             3.0      0.5      6.00   <.001\nX2             0.1      0.5      0.20    0.84",
+    "codeSnippet": "Coefficients:\nEstimate Std. Error t value Pr(>|t|)\n(Intercept)   10.0      2.0      5.00   <.001\nX1             3.0      0.5      6.00   <.001\nX2             0.1      0.5      0.20    0.84",
     "codeOutput": "Output hidden for quiz mode",
     "module": "Module 7: Multiple Regression & Assumptions"
   },
@@ -3206,7 +3206,7 @@
     "question": "When comparing non-nested models or checking model fit penalizing for complexity, which metric is best?",
     "options": [
       "$SS_{Total}$",
-      "AIC (Akaike Information Criterion) or BIC.",
+      "AIC (Akaike Information Criterion) - lower is better.",
       "F-statistic.",
       "Pearson's r."
     ],
@@ -3220,7 +3220,7 @@
     "question": "Interpreting Output (Model Comparison):\n**What does this ANOVA table tell us?**",
     "options": [
       "Model 1 is significantly better than Model 2.",
-      "Adding `airplay` (Model 2) significantly reduced the residual sum of squares compared to Model 1.",
+      "Adding `airplay` (Model 2) significantly reduced the error (RSS) and improved model fit.",
       "There is no significant difference between the models.",
       "Model 2 explains less variance."
     ],
@@ -3228,14 +3228,14 @@
     "explanation": "**anova(m1, m2)**: Performs LRT in R for nested models.",
     "id": 251,
     "codeSnippet": "Model 1: sales ~ adverts\nModel 2: sales ~ adverts + airplay",
-    "codeOutput": "     Res.Df    RSS Df Sum of Sq      F    Pr(>F)\n1       198 862264\n2       197 492362  1    369902  148.0 < 2.2e-16 ***",
+    "codeOutput": "Res.Df    RSS Df Sum of Sq      F    Pr(>F)\n1    198 862264\n2    197 492362  1    369902  148.0  < 2.2e-16 ***",
     "module": "Module 7: Multiple Regression & Assumptions"
   },
   {
     "type": "mc",
     "question": "Stepwise regression (e.g., backward elimination) is criticized because:",
     "options": [
-      "It relies on p-values/AIC rather than theory,",
+      "It relies on p-values/AIC rather than theory, leading to overfitting and biased estimates.",
       "It is computationally impossible in R.",
       "It always yields the worst $R^2$.",
       "It cannot handle categorical variables."
@@ -3263,7 +3263,7 @@
     "type": "mc",
     "question": "In a standard Spider Plot (radar chart) for model performance, usually:",
     "options": [
-      "Points further out indicate better fit or higher values on that metric.",
+      "Points further out indicate better fit (for metrics where higher is better) or worse fit (depending on scaling). *(Note: Lectures suggest outer edges indicate better fit when appropriately scaled.)*",
       "It only shows $R^2$.",
       "It shows residuals.",
       "It maps the linear relationship."
@@ -3278,7 +3278,7 @@
     "question": "If you add a predictor to a model and the $R^2$ goes up but the AIC also goes up (gets worse), this suggests:",
     "options": [
       "The new predictor is extremely important.",
-      "The new predictor does not justify the added complexity (penalty for extra parameters outweighs fit improvement).",
+      "The new predictor does not justify the added complexity (it's overfitting).",
       "The calculation is wrong.",
       "The sample size is too large."
     ],
@@ -3306,7 +3306,7 @@
     "question": "If two predictors are perfectly correlated ($r = 1.0$), the regression model:",
     "options": [
       "Will work perfectly.",
-      "Will fail to estimate unique coefficients (Singularity / Perfect Multicollinearity).",
+      "Will fail to estimate unique coefficients (singularity/error).",
       "Will assign equal weights to both.",
       "Will have an $R^2$ of 0."
     ],
@@ -3320,7 +3320,7 @@
     "question": "The \"Hierarchical Entry\" method in regression means:",
     "options": [
       "The computer decides the order.",
-      "You enter variables in blocks/steps based on theoretical order.",
+      "You enter variables in blocks/steps based on theoretical grounds.",
       "You enter all variables at once.",
       "You only interpret the highest p-value."
     ],
@@ -3349,7 +3349,7 @@
     "options": [
       "The main effect of X.",
       "The main effect of Z.",
-      "The interaction effect (change in the slope of X associated with a 1-unit increase in Z).",
+      "The interaction effect (change in slope of X given Z).",
       "The intercept."
     ],
     "answer": 2,
@@ -3362,7 +3362,7 @@
     "question": "How do you specify an interaction between `age` and `education` in an R formula?",
     "options": [
       "`age + education`",
-      "`age * education` (or `age + education + age:education`).",
+      "`age * education` (or `age + education + age:education`)",
       "`age / education`",
       "`age - education`"
     ],
@@ -3375,7 +3375,7 @@
     "type": "mc",
     "question": "Interpreting Output:\n**The interaction term is positive ($0.5$). This suggests that as social `support` increases:**",
     "options": [
-      "The negative effect of `stress` on the outcome becomes *less negative* (weaker) as support increases.",
+      "The negative effect of `stress` on the outcome becomes *weaker* (less negative/more positive).",
       "The negative effect of `stress` becomes *stronger* (more negative).",
       "There is no effect of stress.",
       "Support decreases the outcome."
@@ -3383,7 +3383,7 @@
     "answer": 0,
     "explanation": "**Interaction Term**: X1 * X2.\n\nAnswer Key: Slope of stress is -2. As support goes up, we add $0.5 \\times Support$ to the slope. $-2 + 0.5 = -1.5$, which is less negative.",
     "id": 262,
-    "codeSnippet": "Coefficients:\n               Estimate Std. Error t value Pr(>|t|)\n(Intercept)        50.0      5.0     10.0   <.001\nstress             -2.0      0.5     -4.0   <.001\nsupport             3.0      0.5      6.0   <.001\nstress:support      0.5      0.1      5.0   <.001",
+    "codeSnippet": "Coefficients:\nEstimate Std. Error t value Pr(>|t|)\n(Intercept)        50.0      5.0     10.0   <.001\nstress             -2.0      0.5     -4.0   <.001\nsupport             3.0      0.5      6.0   <.001\nstress:support      0.5      0.1      5.0   <.001",
     "codeOutput": "Output hidden for quiz mode",
     "module": "Module 8: Interactions"
   },
@@ -3392,7 +3392,7 @@
     "question": "When an interaction is significant, how should you interpret the \"main effects\" ($b_1, b_2$)?",
     "options": [
       "As global averages that apply to everyone.",
-      "As conditional effects (simple slopes) when the other variable is 0.",
+      "As conditional effects (simple slopes) when the *other* predictor is 0.",
       "They should be ignored completely.",
       "They are now standardized."
     ],
@@ -3406,7 +3406,7 @@
     "question": "What is a \"Simple Slopes Analysis\"?",
     "options": [
       "Running a regression with only one variable.",
-      "Probing an interaction by examining the slope of one predictor at specific levels of the moderator.",
+      "Probing an interaction by examining the slope of X at specific levels of Z (e.g., -1 SD, Mean, +1 SD).",
       "Plotting the residuals.",
       "Calculating the simple mean."
     ],
@@ -3419,7 +3419,7 @@
     "type": "mc",
     "question": "In R, which package is commonly used to probe and plot interactions (e.g., `sim_slopes` or `interact_plot`)?",
     "options": [
-      "`interactions` or `jtools`.",
+      "`interactions` or `jtools`",
       "`gvlma`",
       "`MASS`",
       "`base`"
@@ -3448,7 +3448,7 @@
     "question": "Why is centering continuous predictors recommended when testing interactions?",
     "options": [
       "It turns the variables into categorical ones.",
-      "It reduces multicollinearity between the main effects and the interaction term.",
+      "It reduces multicollinearity between the main effects and the interaction term, and makes the main effects interpretable (effect at the mean).",
       "It increases the sample size.",
       "It ensures normality."
     ],
@@ -3462,7 +3462,7 @@
     "question": "Interpreting Output (Visual):\n*(Imagine a plot where the slope of X on Y is positive for the \"High Z\" group, flat for \"Medium Z\", and negative for \"Low Z\".)*\n**This is an example of:**",
     "options": [
       "A spurious correlation.",
-      "A crossover (disordinal) or significant interaction.",
+      "A crossover (disordinal) or significant interaction where the direction of effect changes.",
       "Homoscedasticity.",
       "A main effect only."
     ],
@@ -3475,7 +3475,7 @@
     "type": "mc",
     "question": "To decompose an interaction involving a categorical variable (e.g., `Treatment` vs `Control`) and a continuous variable (`Dose`), you would look at:",
     "options": [
-      "The slope of `Dose` for the Treatment group vs. the Control group.",
+      "The slope of `Dose` for the Treatment group vs. the slope of `Dose` for the Control group.",
       "The mean of Dose.",
       "The correlation between Treatment and Control.",
       "The intercept only."
@@ -3504,7 +3504,7 @@
     "question": "If you have a significant interaction, do you need to keep the main effects in the model?",
     "options": [
       "No, remove them to save degrees of freedom.",
-      "Yes, for hierarchical, marginality,",
+      "Yes, for hierarchical, marginality, and interpretability reasons.",
       "Only if they are significant.",
       "Only the intercept matters."
     ],
@@ -3517,7 +3517,7 @@
     "type": "mc",
     "question": "Using the `emmeans` package helps you to:",
     "options": [
-      "Calculate Estimated Marginal Means and",
+      "Calculate Estimated Marginal Means and compare simple slopes.",
       "Calculate the mean of the residuals.",
       "Run a stepwise regression.",
       "Create dummy variables."
@@ -3531,7 +3531,7 @@
     "type": "mc",
     "question": "\"Johnson-Neyman\" intervals are used to:",
     "options": [
-      "Find the specific range of the moderator where the effect of the focal predictor is significant.",
+      "Find the specific range of the moderator Z where the slope of X is significant.",
       "Detect outliers.",
       "Calculate VIF.",
       "Normalize the data."
@@ -3560,7 +3560,7 @@
     "question": "`confint(model)` in R provides:",
     "options": [
       "The confidence intervals for the predicted values.",
-      "The confidence intervals for the regression coefficients.",
+      "The confidence intervals for the regression coefficients ($b$).",
       "The correlation matrix.",
       "The R-squared value."
     ],
@@ -3573,7 +3573,7 @@
     "type": "mc",
     "question": "When reporting multiple regression results, which statistics are essential?",
     "options": [
-      "$b$ (or $\\beta$), SE, t, p,",
+      "$b$ (or $\\beta$), SE, t, p, and model $R^2$/F.",
       "Only the p-values.",
       "Only the $R^2$.",
       "The raw data frame."
@@ -3599,7 +3599,7 @@
     "type": "mc",
     "question": "Which plot is used to detect outliers based on leverage and residuals?",
     "options": [
-      "Residuals vs Leverage (Cook's distance) plot.",
+      "Residuals vs Leverage (Cook's distance lines).",
       "Histogram of outcome.",
       "Boxplot of predictors.",
       "Scatterplot of X vs Y."
@@ -3614,7 +3614,7 @@
     "question": "If `lm()` output shows `NA` for a coefficient, it usually means:",
     "options": [
       "The variable had no effect.",
-      "Perfect multicollinearity (singularity) or the variable is a constant.",
+      "Perfect multicollinearity (singularity); the variable provides redundant information.",
       "The variable is categorical.",
       "The sample size is too big."
     ],
@@ -3627,7 +3627,7 @@
     "type": "mc",
     "question": "Interpreting `summary()`:** The bottom line says `F-statistic: 50 on 2 and 97 DF, p-value: < 2.2e-16`.\n**What does the `2 and 97 DF` refer to?**",
     "options": [
-      "2 predictors ($df_{mod}$) and 97 residual degrees of freedom.",
+      "2 predictors ($df_{mod}$) and 97 residual degrees of freedom ($N-K-1$).",
       "2 observations and 97 variables.",
       "2 models compared.",
       "An error in calculation."
@@ -3641,7 +3641,7 @@
     "type": "mc",
     "question": "How do you interpret a standardized intercept?",
     "options": [
-      "The value of Y when all predictors are at their mean (0 for standardized).",
+      "The value of Y when all predictors are at their mean (0).",
       "It is always 0.",
       "It represents the correlation.",
       "It is the mean of Y."
@@ -3670,7 +3670,7 @@
     "question": "A researcher reports: \"$b = 0.5, t(100) = 1.5, p = .14$\". What is the conclusion?",
     "options": [
       "The effect is significant.",
-      "The effect is not statistically significant (p > 0.05).",
+      "The effect is not statistically significant.",
       "The sample size is too small.",
       "There is a strong relationship."
     ],
@@ -3698,7 +3698,7 @@
     "question": "Which of the following is a measure of effect size in regression?",
     "options": [
       "p-value",
-      "$f^2$ (Cohen's $f^2$) or",
+      "$f^2$ (Cohen's $f^2$) or $R^2$.",
       "Degrees of freedom.",
       "The intercept."
     ],
@@ -3712,7 +3712,7 @@
     "question": "Parsimony in model building means:",
     "options": [
       "Adding as many variables as possible.",
-      "Choosing the simplest model that explains the data adequately.",
+      "Choosing the simplest model that explains the data well (e.g., lower AIC).",
       "Maximizing $R^2$ at all costs.",
       "Using complex interactions."
     ],
@@ -3755,7 +3755,7 @@
     "type": "mc",
     "question": "To visualize a 3D regression plane (2 predictors, 1 outcome) in R, which packages were mentioned/useful?",
     "options": [
-      "`scatterplot3d` or `rgl`.",
+      "`scatterplot3d` or `rgl` (though 3D plots are often hard to interpret).",
       "`dplyr`",
       "`tidyr`",
       "`stringr`"
@@ -3770,7 +3770,7 @@
     "question": "If you want to predict an outcome Y based on Group (A, B, C), and \"A\" is the reference, the coefficient for \"B\" represents:",
     "options": [
       "The mean of group B.",
-      "The difference between mean of B and",
+      "The difference between mean of B and mean of A.",
       "The difference between B and C.",
       "The average of all groups."
     ],
@@ -3797,7 +3797,7 @@
     "type": "mc",
     "question": "What is the correct syntax to extract coefficients from a saved model object `fit`?",
     "options": [
-      "`fit$coefficients` or `coef(fit)`.",
+      "`fit$coefficients` or `coef(fit)`",
       "`fit$residuals`",
       "`fit$r.squared`",
       "`fit$p.value`"
@@ -3811,7 +3811,7 @@
     "type": "mc",
     "question": "A \"suppressor variable\" in multiple regression is one that:",
     "options": [
-      "Has no correlation with the outcome but increases the predictive power of another variable by removing irrelevant variance.",
+      "Has no correlation with the criterion but increases the $R^2$ by suppressing variance in another predictor.",
       "Decreases the $R^2$.",
       "Is an outlier.",
       "Violates assumptions."
@@ -3826,7 +3826,7 @@
     "question": "If you have 5 predictors and $N=20$, you likely have:",
     "options": [
       "High statistical power.",
-      "Overfitting / poor power (rule of thumb violation).",
+      "Overfitting / poor power (rule of thumb is usually 10-15 participants per predictor).",
       "A perfect model.",
       "Multicollinearity."
     ],
@@ -3840,7 +3840,7 @@
     "question": "In a report, you write: \"$F(2, 147) = 4.56, p = .012$\". What does the \"2\" represent?",
     "options": [
       "Sample size.",
-      "Regression degrees of freedom (number of predictors).",
+      "Regression degrees of freedom ($K$, number of predictors).",
       "Residual degrees of freedom.",
       "The intercept."
     ],
@@ -3930,7 +3930,7 @@
     "question": "Question:** **[Mock R Output]\nBased on the sign of the quadratic term (`I(chocolate^2)`), how would you describe the shape of the relationship?",
     "options": [
       "U-shaped (Convex; happiness decreases then increases)",
-      "Inverted U-shaped (Concave; happiness rises then falls).",
+      "Inverted U-shaped (Concave; happiness increases then decreases)",
       "Linear positive",
       "Linear negative"
     ],
@@ -3965,7 +3965,7 @@
     "answer": 0,
     "explanation": "p-value 0.015 \\< 0.05).",
     "id": 303,
-    "codeSnippet": "Coefficients:\n            Estimate Std. Error t value Pr(>|t|)\n(Intercept)      50.00     5.00    10.00  < 2e-16 ***\nTime              5.00     1.00     5.00  1.2e-05 ***\nI(Time^2)         0.50     0.20     2.50   0.015 *",
+    "codeSnippet": "Coefficients:\nEstimate Std. Error t value Pr(>|t|)\n(Intercept)      50.00     5.00    10.00  < 2e-16 ***\nTime              5.00     1.00     5.00  1.2e-05 ***\nI(Time^2)         0.50     0.20     2.50   0.015 *",
     "codeOutput": "Output hidden for quiz mode",
     "module": "Module 10: Multiple Regression with Polynomials"
   },
@@ -3974,7 +3974,7 @@
     "question": "Question: What is a primary statistical issue often encountered when adding raw polynomial terms (e.g., $x$, $x^2$, $x^3$) to a regression model?",
     "options": [
       "Heteroscedasticity",
-      "Multicollinearity (high correlation between x, x^2, x^3).",
+      "Multicollinearity (high correlation between terms)",
       "Non-normality of residuals",
       "Autocorrelation"
     ],
@@ -4016,12 +4016,12 @@
       "The estimate for `poly(x, 2)1`",
       "The estimate for `poly(x, 2)2`",
       "The t-value for the intercept",
-      "The $R^2$ of the model (not shown,"
+      "The $R^2$ of the model (not shown, but implied as a property)"
     ],
     "answer": 3,
     "explanation": "Coefficients change, but the variance explained ($R^2$) and overall model fit do not).",
     "id": 307,
-    "codeSnippet": "Call: lm(formula = y ~ poly(x, 2), data = df)\n...\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)\n(Intercept)  20.00     0.50     40.00  <2e-16\npoly(x, 2)1   5.00     1.00      5.00  <2e-16\npoly(x, 2)2  -3.00     1.00     -3.00   0.004",
+    "codeSnippet": "Call: lm(formula = y ~ poly(x, 2), data = df)\n...\nCoefficients:\nEstimate Std. Error t value Pr(>|t|)\n(Intercept)  20.00     0.50     40.00  <2e-16\npoly(x, 2)1   5.00     1.00      5.00  <2e-16\npoly(x, 2)2  -3.00     1.00     -3.00   0.004",
     "codeOutput": "Output hidden for quiz mode",
     "module": "Module 10: Multiple Regression with Polynomials"
   },
@@ -4046,7 +4046,7 @@
     "question": "Question: If the p-value in the ANOVA table comparing a linear and quadratic model was **0.35**, what would you conclude?",
     "options": [
       "The quadratic term significantly improves model fit.",
-      "The quadratic term does not significantly improve model fit.",
+      "The quadratic term does not significantly improve model fit; stick with the linear model.",
       "The linear term is not significant.",
       "You should try a cubic model."
     ],
@@ -4075,7 +4075,7 @@
     "options": [
       "Theoretical prediction of a curve (e.g., Yerkes-Dodson).",
       "Residual plots show a non-linear pattern.",
-      "To extrapolate predictions far outside the observed range of data.",
+      "To extrapolate predictions far outside the observed range of data (forecasting).",
       "To account for non-linear trends within the range of your data."
     ],
     "answer": 2,
@@ -4088,7 +4088,7 @@
     "question": "Question: In a mixed model, what distinguishes a **fixed effect** from a **random effect**?",
     "options": [
       "Fixed effects vary by subject; random effects are constant.",
-      "Fixed effects estimate population-level parameters; random effects estimate subject-specific deviations.",
+      "Fixed effects estimate population-level parameters; random effects estimate variance/deviations around that mean for specific groups.",
       "Fixed effects are for categorical variables; random effects are for continuous variables.",
       "Fixed effects are optional; random effects are mandatory."
     ],
@@ -4201,7 +4201,7 @@
     "type": "mc",
     "question": "Question: What does an ICC of 0.80 (from the previous question) indicate?",
     "options": [
-      "80% of the variance in the outcome is due to differences between groups (clusters).",
+      "80% of the variance in the outcome is due to differences *between* subjects.",
       "80% of the variance is due to measurement error (residual).",
       "The subjects are not correlated.",
       "You should definitely use a simple linear regression."
@@ -4223,7 +4223,7 @@
     "answer": 1,
     "explanation": "The Intercept (250.00) represents the value when Day=0.",
     "id": 321,
-    "codeSnippet": "Fixed effects:\n            Estimate Std. Error t value\n(Intercept)  250.00    10.00     25.00\nDay           10.00     2.00      5.00",
+    "codeSnippet": "Fixed effects:\nEstimate Std. Error t value\n(Intercept)  250.00    10.00     25.00\nDay           10.00     2.00      5.00",
     "codeOutput": "Output hidden for quiz mode",
     "module": "Module 11: Mixed Models"
   },
@@ -4247,7 +4247,7 @@
     "options": [
       "Subjects with higher baseline intercepts tend to have steeper positive slopes.",
       "Subjects with higher baseline intercepts tend to have lower/more negative slopes.",
-      "The model did not converge. (additional context) (",
+      "The model did not converge.",
       "Day is negatively correlated with the outcome."
     ],
     "answer": 1,
@@ -4263,7 +4263,7 @@
     "options": [
       "It should increase.",
       "It should stay exactly the same.",
-      "It should decrease (variance is \"explained\" by the fixed effect).",
+      "It should decrease (variance is \"explained away\").",
       "It should become negative."
     ],
     "answer": 2,
@@ -4290,7 +4290,7 @@
     "question": "Question: If you see the warning \"Singular fit\" in R output for an `lmer` model, what does it usually mean?",
     "options": [
       "The model fits the data perfectly (R^2 = 1).",
-      "The random effects structure is too complex for the data (variance near 0).",
+      "The random effects structure is too complex for the data (e.g., variance near 0 or -1/1 correlation).",
       "You have too many outliers.",
       "You should add more random slopes."
     ],
@@ -4348,7 +4348,7 @@
     "question": "Question: Why do we typically use the `lmerTest` package in addition to `lme4`?",
     "options": [
       "To make better plots.",
-      "To get p-values for the fixed effects (using Satterthwaite approximation).",
+      "To get p-values for the fixed effects output.",
       "To run Bayesian models.",
       "To handle missing data."
     ],
@@ -4362,7 +4362,7 @@
     "question": "Question: A Growth Curve Model (GCM) is essentially a special case of which type of model?",
     "options": [
       "ANOVA",
-      "Mixed-Effects Model (Multilevel Model).",
+      "Mixed-Effects Model (Multilevel Model)",
       "Chi-Square Test",
       "Logistic Regression"
     ],
@@ -4405,7 +4405,7 @@
     "options": [
       "Random intercepts.",
       "A time variable.",
-      "Covariates or predictors of change (time-invariant or time-varying).",
+      "Covariates or predictors of interest (e.g., Treatment Group) to explain differences in growth patterns.",
       "Error terms."
     ],
     "answer": 2,
@@ -4418,7 +4418,7 @@
     "question": "Question: If you want to model a non-linear trajectory over time in a GCM, what do you usually add?",
     "options": [
       "More subjects.",
-      "Polynomial terms for Time (e.g., Time^2).",
+      "Polynomial terms for Time (e.g., $Time^2$, $Time^3$).",
       "More random effects.",
       "A control group."
     ],
@@ -4439,7 +4439,7 @@
     "answer": 1,
     "explanation": "The main effect of Time represents the slope for the reference group).",
     "id": 336,
-    "codeSnippet": "Fixed effects:\n            Estimate Std. Error t value\n(Intercept)  100.00     2.00     50.00\nTime           5.00     0.50     10.00\nGroupB        10.00     3.00      3.33\nTime:GroupB   -2.00     0.70     -2.85",
+    "codeSnippet": "Fixed effects:\nEstimate Std. Error t value\n(Intercept)  100.00     2.00     50.00\nTime           5.00     0.50     10.00\nGroupB        10.00     3.00      3.33\nTime:GroupB   -2.00     0.70     -2.85",
     "codeOutput": "Output hidden for quiz mode",
     "module": "Module 12: Growth Curve Modeling"
   },
@@ -4476,7 +4476,7 @@
     "question": "Question:** **[Mock R Output]\nHow would you describe the average growth trajectory based on these fixed effects?",
     "options": [
       "Linear increase forever.",
-      "Increases initially, but the rate of growth slows down (decelerates).",
+      "Increases initially, but the rate of increase slows down/flattens over time (concave down).",
       "Decreases initially, then increases (U-shape).",
       "Flat line."
     ],
@@ -4492,9 +4492,9 @@
     "question": "Question: In the model `score ~ Time + (Time | Subject)`, what does the random effect `(Time | Subject)` allow for?",
     "options": [
       "Each subject to have their own starting point (intercept) ONLY.",
-      "Each subject to have their own starting point AND their own rate of change.",
+      "Each subject to have their own starting point AND their own rate of change (slope).",
       "Each subject to have their own rate of change ONLY (intercept is fixed).",
-      "Time to vary randomly. (additional context) (additio"
+      "Time to vary randomly."
     ],
     "answer": 1,
     "explanation": "The random slope (Time | Subject) allows the effect of Time (rate of change) to vary across subjects.",
@@ -4505,7 +4505,7 @@
     "type": "mc",
     "question": "Question: Why might you center the `Time` variable (e.g., set the start to 0) in a Growth Curve Model?",
     "options": [
-      "To make the intercept interpretable as the status at the beginning of the study.",
+      "To make the intercept interpretable as the \"starting status.\"",
       "To eliminate random effects.",
       "It is required by the `lmer` function.",
       "To increase the p-value."
@@ -4520,7 +4520,7 @@
     "question": "Question:** **[Mock R Output]\nIf the variance for `Time` were 0, what would that imply?",
     "options": [
       "Everyone starts at the same score.",
-      "Everyone changes at the exact same rate (no individual differences in slope).",
+      "Everyone changes at the exact same rate over time (no individual difference in growth).",
       "There is no measurement error.",
       "The model is invalid."
     ],
@@ -4548,7 +4548,7 @@
     "question": "Question: What is the \"maximal\" random effects structure usually recommended for GCM (if it converges)?",
     "options": [
       "Random intercepts only.",
-      "Random intercepts and random slopes for all within-subject factors.",
+      "Random intercepts and random slopes for Time (and any within-subject factors).",
       "No random effects.",
       "Random slopes only."
     ],
@@ -4562,7 +4562,7 @@
     "question": "Question: If your maximal model fails to converge, what is a common pragmatic next step?",
     "options": [
       "Give up and use ANOVA.",
-      "Simplify the random effects (e.g.,",
+      "Simplify the random effects (e.g., remove the random slope or the correlation).",
       "Add more fixed effects.",
       "Increase the alpha level."
     ],
@@ -4591,7 +4591,7 @@
     "options": [
       "Simple Linear Regression (`lm`)",
       "Multiple Regression (`lm` with dummies)",
-      "Mixed-Effects Model (`lmer`) with random intercepts for Classrooms.",
+      "Mixed-Effects Model (`lmer`) with random intercept for Classroom.",
       "Chi-square test."
     ],
     "answer": 2,
@@ -4633,7 +4633,7 @@
     "options": [
       "AIC",
       "ANOVA (Likelihood Ratio Test)",
-      "You cannot directly compare them using AIC/BIC if outcomes differ.",
+      "You cannot directly compare them using standard fit indices like AIC/ANOVA.",
       "R-squared"
     ],
     "answer": 2,
@@ -4646,7 +4646,7 @@
     "question": "Question: What is the \"Null Ritual\"?",
     "options": [
       "A statistical test for zero variance.",
-      "The mindless checking of p < 0.05 without considering effect size or context.",
+      "The mindless checking of p \\< 0.05 without considering effect sizes, CIs, or theory.",
       "A method for handling missing data.",
       "Setting all intercepts to null."
     ],
@@ -4702,7 +4702,7 @@
     "options": [
       "Yes, because p \\> 0.05.",
       "Yes, because W is not 1.",
-      "No, because p > 0.05, we fail to reject the null hypothesis of normality.",
+      "No, because p \\> 0.05, we fail to reject the null hypothesis of normality.",
       "No, Shapiro-Wilk is for homogeneity of variance."
     ],
     "answer": 2,
@@ -4717,7 +4717,7 @@
     "question": "Question:** **[Mock R Output]\nIs there a multicollinearity problem here?",
     "options": [
       "No, all values are below 10.",
-      "Yes, x3 has a VIF of 8.5, which is notably high (rule of thumb > 5 or 10).",
+      "Yes, x3 has a VIF of 8.5, which is notably high.",
       "Yes, x1 is too low.",
       "VIF measures outliers, not collinearity."
     ],
@@ -4733,7 +4733,7 @@
     "question": "Question: A researcher finds that `Income` predicts `Happiness` linearly. However, they suspect that for very high incomes, happiness levels off (asymptotic). Which model limitation does polynomial regression (e.g., quadratic) share with linear regression regarding this specific \"leveling off\" theory?",
     "options": [
       "It cannot model curves.",
-      "Polynomials tend to curve back down or",
+      "Polynomials tend to curve back down or shoot up at the tails rather than truly plateauing (asymptotic).",
       "It assumes equal variance."
     ],
     "answer": 1,
@@ -4760,9 +4760,9 @@
     "question": "Question:** **[Mock R Output - Interaction in GCM]\nReference is Diet1. What does `Time:Diet3` = 4.00 mean?",
     "options": [
       "Diet3 chicks are 4 grams heavier than Diet1 chicks at the start.",
-      "Diet3 chicks grow at a rate 4 units *faster* per time unit than Diet1 (reference).",
+      "Diet3 chicks grow at a rate 4 units *faster* per time unit than Diet1 chicks.",
       "Diet3 chicks grow at a rate of 4 units per time unit total.",
-      "Diet3 has no effect. (additional context)"
+      "Diet3 has no effect."
     ],
     "answer": 1,
     "explanation": "The interaction term indicates the difference in slope relative to the reference group.",
@@ -4776,7 +4776,7 @@
     "question": "Question: You run a mixed model and get: `boundary (singular) fit: see ?isSingular`. What is a likely cause?",
     "options": [
       "The fixed effects are not significant.",
-      "The random effects variance is estimated to be zero or effectively zero.",
+      "The random effects variance is estimated to be effectively zero (or correlations are -1/1).",
       "You have too much data.",
       "The residuals are not normal."
     ],
@@ -4861,7 +4861,7 @@
     "type": "mc",
     "question": "Question:** **[Mock R Output]\nWhat does \"Satterthwaite's method\" refer to?",
     "options": [
-      "A method for estimating degrees of freedom in mixed models.",
+      "A method for estimating degrees of freedom to calculate p-values in mixed models.",
       "A method for calculating R-squared.",
       "A method for outlier detection.",
       "A type of plot."
@@ -4878,7 +4878,7 @@
     "question": "Question: If you are analyzing repeated measures data (e.g., 3 time points per person) using `lm()` (standard regression), which assumption are you definitely violating?",
     "options": [
       "Linearity.",
-      "Independence of observations (residuals are correlated).",
+      "Independence of observations.",
       "Normality.",
       "Homoscedasticity."
     ],
@@ -4921,7 +4921,7 @@
     "options": [
       "The Intercept",
       "The Linear Time slope",
-      "The Quadratic Time slope (`I(Time^2)`).",
+      "The Quadratic Time slope (`I(Time^2)`)",
       "The Random Intercept"
     ],
     "answer": 2,
@@ -4948,7 +4948,7 @@
     "question": "Question: When reporting a Growth Curve Analysis, what is crucial to include besides the p-values?",
     "options": [
       "The raw data for every participant.",
-      "The type of polynomial used, the random effects structure, and fit indices.",
+      "The type of polynomial used, the random effects structure, and parameter estimates.",
       "The name of the computer used.",
       "Only the R-squared."
     ],
@@ -4976,7 +4976,7 @@
     "question": "Question:** **[Mock R Output - Orthogonal Polynomials]\nCan you interpret the coefficient `50.0` as \"the increase in outcome for a 1-unit increase in Time\"?",
     "options": [
       "Yes.",
-      "No, because orthogonal polynomials are on a transformed scale, not the raw units."
+      "No, because orthogonal polynomials transform the variable scale."
     ],
     "answer": 1,
     "explanation": "Orthogonal polynomials are transformed and uncorrelated, so coefficients don't represent simple unit changes in the raw variable.",
@@ -4990,7 +4990,7 @@
     "question": "Question: Which function from the `performance` package can you use to check model performance metrics (like $R^2$, AIC, ICC) all at once?",
     "options": [
       "`summary()`",
-      "`model_performance()` or",
+      "`model_performance()` or `check_model()`",
       "`plot()`",
       "`anova()`"
     ],
@@ -5019,7 +5019,7 @@
     "type": "mc",
     "question": "Question: What is a \"Random Slope\"?",
     "options": [
-      "It allows the relationship between a predictor and outcome to vary across groups.",
+      "It allows the relationship between a predictor and the outcome to vary across groups (e.g., different subjects show different growth rates).",
       "It allows the mean of the outcome to vary across groups.",
       "It is the error term.",
       "It is a fixed constant."
@@ -5034,7 +5034,7 @@
     "question": "Question: In the equation $Y_{si} = b_{0s} + b_{1s}Time_i + e_{si}$, if $b_{1s} = b_1 + S_{1s}$, what does $S_{1s}$ represent?",
     "options": [
       "The fixed slope for the whole population.",
-      "The random deviation of subject $s$'s slope from the overall average slope.",
+      "The random deviation of subject $s$'s slope from the population slope.",
       "The intercept.",
       "The residual error."
     ],
@@ -5062,7 +5062,7 @@
     "question": "Question: What does `REML=FALSE` (Maximum Likelihood) allow you to do that `REML=TRUE` does not?",
     "options": [
       "Get accurate variance estimates.",
-      "Compare models with different **fixed effects** structure.",
+      "Compare models with different **fixed effects** using Likelihood Ratio Tests (ANOVA).",
       "Run the model faster.",
       "Ignore assumptions."
     ],
@@ -5076,7 +5076,7 @@
     "question": "Question:** **[Mock R Output]\nThere is a high correlation (-0.85) between the `Time` and `Time2` (quadratic) estimates. What does this suggest?",
     "options": [
       "The model is wrong.",
-      "This is essential multicollinearity; centering Time would reduce it.",
+      "This is essential multicollinearity, common in raw polynomial regression. Centering time might help.",
       "Time causes Time2.",
       "You should drop Time2."
     ],
@@ -5091,7 +5091,7 @@
     "type": "mc",
     "question": "Question: Why is it dangerous to interpret the main effect of `Time` in a model where the interaction `Time:Diet` is significant?",
     "options": [
-      "Because the effect of Time depends on which Diet the subject is in.",
+      "Because the effect of Time depends on which Diet the chick is on.",
       "Because Time is not real.",
       "Because the p-values are wrong.",
       "You should always interpret main effects regardless of interactions."
@@ -5147,7 +5147,7 @@
     "question": "Question:** **[Mock R Output]\nWhat can you conclude about the effect of Treatment?",
     "options": [
       "It is statistically significant.",
-      "It is not statistically significant (95% CI includes 0).",
+      "It is not statistically significant (interval contains 0).",
       "The effect size is exactly 0.",
       "The effect is negative."
     ],
@@ -5177,7 +5177,7 @@
     "question": "Question: You want to check if a random slope for `Day` improves your model `m0`.\n`m0 <- lmer(y ~ Day + (1|Subj))`\n`m1 <- lmer(y ~ Day + (1 + Day|Subj))`\n`anova(m0, m1)` yields p = 0.60.\nWhat do you do?",
     "options": [
       "Keep the random slope (m1) because more complex is better.",
-      "Stick with the simpler model (m0) because the random slope did not significantly improve fit.",
+      "Stick with the simpler model (m0) because the random slope didn't significantly improve fit.",
       "Change the fixed effects."
     ],
     "answer": 1,
@@ -5191,7 +5191,7 @@
     "options": [
       "Only the fixed effects.",
       "Only the variance components.",
-      "The sum of fixed effects + random effects for each group (BLUPs).",
+      "The sum of fixed effects + random effects deviations for each group (individual-level coefficients).",
       "The p-values."
     ],
     "answer": 2,
@@ -5203,7 +5203,7 @@
     "type": "mc",
     "question": "Question: What does the function `fixef(model)` return?",
     "options": [
-      "The fixed effects estimates (population averages).",
+      "The fixed effects estimates only (population averages).",
       "The random effects.",
       "The residuals."
     ],
@@ -5271,8 +5271,8 @@
     "question": "Question: Which is a valid reason to use a **conditional** R-squared?",
     "options": [
       "To see how much variance the fixed effects explain alone.",
-      "To see how much variance the *entire* model (including random effects) explains.",
-      "To calculate p-values. (additional cont"
+      "To see how much variance the *entire* model (including subject differences) explains.",
+      "To calculate p-values."
     ],
     "answer": 1,
     "explanation": "Conditional R-squared measures variance explained by both fixed and random effects.",
@@ -5299,7 +5299,7 @@
     "options": [
       "High positive.",
       "High negative.",
-      "Zero (by definition of orthogonality).",
+      "Zero (by definition of orthogonal).",
       "Unknown."
     ],
     "answer": 2,
@@ -5307,112 +5307,6 @@
     "id": 397,
     "codeSnippet": "(Intercept)   100\nPoly(Time,2)1  10\nPoly(Time,2)2  -5",
     "codeOutput": "Output hidden for quiz mode",
-    "module": "Module 13: Course Wrap-up & Integration"
-  },
-  {
-    "type": "mc",
-    "question": "Based on the following R output for a simple linear regression predicting `sales` from `adverts`, what is the predicted increase in sales for every 1 unit increase in `adverts`?",
-    "options": [
-      "134.14 units",
-      "0.096 units",
-      "9.56 units",
-      "0.33 units"
-    ],
-    "answer": 1,
-    "explanation": "**Regression Coefficient**: The estimate for `adverts` (0.096) represents the slope: the change in the outcome for a 1-unit change in the predictor.",
-    "id": 398,
-    "codeSnippet": "Call:\nlm(formula = sales ~ adverts, data = album2)\n\nCoefficients:\n(Intercept)      adverts  \n  134.140        0.096  ",
-    "codeOutput": "Coefficients:\n             Estimate Std. Error t value Pr(>|t|)    \n(Intercept) 1.341e+02  7.537e+00  17.799   <2e-16 ***\nadverts     9.612e-02  9.632e-03   9.979   <2e-16 ***",
-    "module": "Module 5: Intro to Regression (Simple Linear)"
-  },
-  {
-    "type": "mc",
-    "question": "In the summary output below, what does the `Multiple R-squared: 0.3346` tell us?",
-    "options": [
-      "The model explains approximately 33.5% of the variance in sales.",
-      "The correlation between sales and adverts is 0.33.",
-      "The model has 33.5% error.",
-      "The p-value is 0.335."
-    ],
-    "answer": 0,
-    "explanation": "**R-squared**: Represents the proportion of variance in the outcome explained by the model (0.3346 = 33.46%).",
-    "id": 399,
-    "codeSnippet": "> summary(model)\n...\nResidual standard error: 65.99 on 198 degrees of freedom\nMultiple R-squared:  0.3346,\tAdjusted R-squared:  0.3313 \nF-statistic: 99.59 on 1 and 198 DF,  p-value: < 2.2e-16",
-    "module": "Module 5: Intro to Regression (Simple Linear)"
-  },
-  {
-    "type": "mc",
-    "question": "You run a regression predicting `vocal_pitch` from `gender` (where Female = 0, Male = 1). Based on the output, what is the average vocal pitch for the Female group?",
-    "options": [
-      "226.33 Hz",
-      "128.33 Hz",
-      "98.00 Hz",
-      "0.00 Hz"
-    ],
-    "answer": 0,
-    "explanation": "**Categorical Intercept**: When the predictor is 0 (Female), the Intercept (226.33) represents the mean of that group.",
-    "id": 400,
-    "codeSnippet": "Call:\nlm(formula = pitch ~ gender, data = df)\n\nCoefficients:\n(Intercept)      gender1  \n     226.33       -98.00  ",
-    "module": "Module 6: Categorical Predictors"
-  },
-  {
-    "type": "mc",
-    "question": "In the same model (pitch ~ gender), what does the coefficient for `gender1` (-98.00) represent?",
-    "options": [
-      "The average pitch of the Male group.",
-      "The difference in average pitch between the Male group and the Female group.",
-      "The standard deviation of the Male group.",
-      "The intercept for the Female group."
-    ],
-    "answer": 1,
-    "explanation": "**Dummy Coding Slope**: The coefficient represents the difference in means between the category coded as 1 and the reference category (0). Mean(Male) = Intercept + Slope = 226.33 - 98.00 = 128.33.",
-    "id": 401,
-    "codeSnippet": "Coefficients:\n             Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   226.33       8.43   26.85 2.15e-06 ***\ngender1       -98.00      11.92   -8.22 0.00119 ** ",
-    "module": "Module 6: Categorical Predictors"
-  },
-  {
-    "type": "mc",
-    "question": "Referencing the output of `contrasts(df$gender)` below, which category is the Reference Group?",
-    "options": [
-      "Female",
-      "Male",
-      "Both",
-      "Neither"
-    ],
-    "answer": 0,
-    "explanation": "**Reference Group**: The category row with all zeros (or the one not shown as a column, depending on display) is the reference. Here, 'Female' maps to 0.",
-    "id": 402,
-    "codeSnippet": "> contrasts(df$gender)\n       Male\nFemale    0\nMale      1",
-    "module": "Module 6: Categorical Predictors"
-  },
-  {
-    "type": "mc",
-    "question": "If you center the predictor `Age` (subtracting the mean) and rerun the regression `pitch ~ Age_Cent`, how does the interpretation of the Intercept change?",
-    "options": [
-      "It doesn't change.",
-      "It now represents the predicted pitch when Age is 0 (newborn).",
-      "It now represents the predicted pitch for a person of *average* age.",
-      "The intercept becomes zero."
-    ],
-    "answer": 2,
-    "explanation": "**Centering**: When X is centered, 0 represents the mean. Thus, the intercept becomes the predicted Y at the mean of X.",
-    "id": 403,
-    "codeSnippet": "> df$Age_Cent <- scale(df$Age, center=TRUE, scale=FALSE)\n> lm(pitch ~ Age_Cent, data = df)",
-    "module": "Module 6: Categorical Predictors"
-  },
-  {
-    "type": "mc",
-    "question": "Based on the F-statistic output below, is the overall model statistically significant?",
-    "options": [
-      "Yes, p < 0.05",
-      "No, p > 0.05",
-      "Cannot tell without the Alpha level.",
-      "Yes, because the F-statistic is negative."
-    ],
-    "answer": 0,
-    "explanation": "**F-test Significance**: The p-value (6.2e-07) is far less than 0.05, indicating the model explains significantly more variance than the null model.",
-    "id": 404,
-    "codeSnippet": "Residual standard error: 5.2 on 48 degrees of freedom\nMultiple R-squared:  0.45\nF-statistic: 19.6 on 2 and 48 DF,  p-value: 6.2e-07",
     "module": "Module 13: Course Wrap-up & Integration"
   }
 ]

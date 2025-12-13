@@ -1,0 +1,947 @@
+[
+  {
+    "id": 104,
+    "question": "Which of the following describes a Normal Distribution?",
+    "explanation": "**Normal Distribution**: Symmetric, bell-shaped continuous distribution defined by mean and SD. approx 68% data within 1 SD, 95% within 2 SD.",
+    "truncated_option": "It is continuous, symmetric, and \"bell-shap...",
+    "option_index": 1
+  },
+  {
+    "id": 109,
+    "question": "What does the `set.seed(123)` function do in R?",
+    "explanation": "**set.seed()**: Initializes random number generator for reproducibility. Same seed = same random numbers.",
+    "truncated_option": "It ensures that random number generation is...",
+    "option_index": 1
+  },
+  {
+    "id": 111,
+    "question": "If a distribution has \"heavy tails\" (high kurtosis), it means:",
+    "explanation": "**Kurtosis**: Measure of tailedness. High kurtosis (leptokurtic) = heavy tails, potential outliers.",
+    "truncated_option": "There are more frequent extreme values (outlier...",
+    "option_index": 0
+  },
+  {
+    "id": 114,
+    "question": "The F-distribution is most commonly associated with which statistical test?",
+    "explanation": "**F-distribution**: Used in ANOVA and regression to compare variances or models. Ratio of two chi-squares.",
+    "truncated_option": "ANOVA (Analysis of Var...",
+    "option_index": 2
+  },
+  {
+    "id": 121,
+    "question": "The \"Law of Large Numbers\" suggests that:",
+    "explanation": "**Law of Large Numbers**: As sample size increases, sample mean converges to population mean.",
+    "truncated_option": "As the number of trials increases, the sample mean gets...",
+    "option_index": 1
+  },
+  {
+    "id": 133,
+    "question": "The Central Limit Theorem states that as sample size increases, the sampling distribution of the mean will:",
+    "explanation": "**Sample**: The subset of the population you actually collect data from.",
+    "truncated_option": "Approach a normal distribution, regardless...",
+    "option_index": 0
+  },
+  {
+    "id": 136,
+    "question": "A 95% Confidence Interval (CI) of [45, 55] means:",
+    "explanation": "**Confidence Interval (CI)**: Interval that captures the true parameter in 95% of repeated samples (for 95% CI). NOT '95% chance parameter is here'.",
+    "truncated_option": "If we replicated the study many times, 95% of the...",
+    "option_index": 2
+  },
+  {
+    "id": 142,
+    "question": "What is the primary goal of inferential statistics in CSAI?",
+    "explanation": "**Goal of Inferential Stats**: Generalize from sample to population.",
+    "truncated_option": "To use sample data to make generalizations about a...",
+    "option_index": 1
+  },
+  {
+    "id": 143,
+    "question": "Which R function was used in the lecture to calculate confidence intervals for the mean?",
+    "explanation": "**cor() function**: Calculates correlation in R.",
+    "truncated_option": "`ciMean()` (from `lsr`...",
+    "option_index": 1
+  },
+  {
+    "id": 145,
+    "question": "Bias in sampling occurs when:",
+    "explanation": "**Sampling Bias**: Systematic error where sample does not represent population.",
+    "truncated_option": "The sample does not accurately reflect the...",
+    "option_index": 1
+  },
+  {
+    "id": 146,
+    "question": "If you increase your sample size from 50 to 500, the confidence interval will likely:",
+    "explanation": "**Sample**: The subset of the population you actually collect data from.",
+    "truncated_option": "Become narrower (more pr...",
+    "option_index": 1
+  },
+  {
+    "id": 149,
+    "question": "The Null Hypothesis ($H_0$) usually states that:",
+    "explanation": "**Null Hypothesis (H0)**: Assumption of No Effect, No Difference, or r = 0.",
+    "truncated_option": "There is no effect, no difference, or the relationship...",
+    "option_index": 1
+  },
+  {
+    "id": 150,
+    "question": "A Type I error occurs when:",
+    "explanation": "**Type I Error (Alpha)**: False Positive. Rejecting H0 when it's True. Risk = α.",
+    "truncated_option": "You reject the null hypothesis when it is actually true...",
+    "option_index": 0
+  },
+  {
+    "id": 151,
+    "question": "A Type II error occurs when:",
+    "explanation": "**Type I Error (Alpha)**: False Positive. Rejecting H0 when it's True. Risk = α.",
+    "truncated_option": "You fail to reject the null hypothesis when...",
+    "option_index": 1
+  },
+  {
+    "id": 154,
+    "question": "Cohen’s d is a measure of:",
+    "explanation": "**Cohen's d**: Effect size for means. Standardized difference. 0.2 small, 0.5 medium, 0.8 large.",
+    "truncated_option": "Effect size (standardized mean...",
+    "option_index": 1
+  },
+  {
+    "id": 157,
+    "question": "If you perform multiple statistical tests (e.g., 20 t-tests) on the same data, you increase the risk of:",
+    "explanation": "**Distributions for Categorical Data**: Chi-square is often used for categorical/count data analysis.",
+    "truncated_option": "Type I error (Family-wise...",
+    "option_index": 1
+  },
+  {
+    "id": 160,
+    "question": "Statistical Power is defined as:",
+    "explanation": "**Statistical Power**: Probability of correctly rejecting false H0. Power = 1 - β.",
+    "truncated_option": "The probability of rejecting a false null hypothes...",
+    "option_index": 0
+  },
+  {
+    "id": 161,
+    "question": "In a two-tailed test with $\\alpha = 0.05$, the critical region contains:",
+    "explanation": "**Critical Region**: The area in the tails where we reject H0. Split between tails for 2-tailed.",
+    "truncated_option": "The extreme 2.5% on both ends of the distribu...",
+    "option_index": 2
+  },
+  {
+    "id": 162,
+    "question": "Why do T-distributions have \"heavier tails\" than the Z-distribution?",
+    "explanation": "**F-distribution**: Used in ANOVA and regression to compare variances or models. Ratio of two chi-squares.",
+    "truncated_option": "To account for the extra uncertainty introduced...",
+    "option_index": 1
+  },
+  {
+    "id": 164,
+    "question": "If a 95% Confidence Interval for a mean difference includes 0 (e.g., [-2, 5]), what can you conclude?",
+    "explanation": "**Confidence Interval (CI)**: Interval that captures the true parameter in 95% of repeated samples (for 95% CI). NOT '95% chance parameter is here'.",
+    "truncated_option": "The difference is NOT statistically significant...",
+    "option_index": 1
+  },
+  {
+    "id": 167,
+    "question": "Which package was used in the slides to calculate Cohen's d?",
+    "explanation": "**Cohen's d**: Effect size for means. Standardized difference. 0.2 small, 0.5 medium, 0.8 large.",
+    "truncated_option": "`psych` (specifical...",
+    "option_index": 1
+  },
+  {
+    "id": 170,
+    "question": "The \"p-value\" represents:",
+    "explanation": "**Expected Value vs Observation**: Differences between observed data and expected value are due to sampling error (chance), assuming H0 is true.",
+    "truncated_option": "The probability of obtaining the observed data (or more...",
+    "option_index": 1
+  },
+  {
+    "id": 171,
+    "question": "In the \"Mad Men\" example from the slides, the conclusion \"Nope, just super drunk\" implies:",
+    "explanation": "**Mad Men Example**: Correlation implies causation fallacy or 'Just Drunk' = Spurious/Chance.",
+    "truncated_option": "The hypothesis was rejected (Null...",
+    "option_index": 1
+  },
+  {
+    "id": 173,
+    "question": "If you run a Z-test in R using `BSDA::z.test`, you must calculate or know \\_\\_\\_\\_\\_\\_ beforehand.",
+    "explanation": "**t.test()**: Function for T-test in R.",
+    "truncated_option": "The population standard deviatio...",
+    "option_index": 1
+  },
+  {
+    "id": 176,
+    "question": "Which of the following is TRUE about correlation?",
+    "explanation": "**Strong Correlation**: Closer to -1 or +1. 0.85 is Strong.",
+    "truncated_option": "Correlation measures the strength and direction of a linear...",
+    "option_index": 2
+  },
+  {
+    "id": 177,
+    "question": "Covariance differs from correlation because:",
+    "explanation": "**Covariance**: Unstandardized measure of joint variability. Hard to interpret magnitude.",
+    "truncated_option": "Covariance depends on the units of measuremen...",
+    "option_index": 1
+  },
+  {
+    "id": 178,
+    "question": "To standardize covariance and turn it into a correlation coefficient, you divide it by:",
+    "explanation": "**Covariance**: Unstandardized measure of joint variability. Hard to interpret magnitude.",
+    "truncated_option": "The product of the standard deviations...",
+    "option_index": 1
+  },
+  {
+    "id": 179,
+    "question": "Calculating $r^2$ (the coefficient of determination) tells you:",
+    "explanation": "**Partial Coefficient**: Slope of X1 holding X2 constant.",
+    "truncated_option": "The proportion of variance in one variable...",
+    "option_index": 1
+  },
+  {
+    "id": 182,
+    "question": "A Semi-Partial Correlation between X and Y, controlling for Z, removes the influence of Z from:",
+    "explanation": "**Partial Correlation**: Correlation between X and Y controlling for Z on BOTH.",
+    "truncated_option": "Only one of the variables (usua...",
+    "option_index": 0
+  },
+  {
+    "id": 185,
+    "question": "\"Spurious correlations\" (like ice cream sales and shark attacks) usually occur due to:",
+    "explanation": "**Spurious Correlation**: Third variable causes relationship (e.g. Ice cream & Shark attacks).",
+    "truncated_option": "A third variable (confounder)...",
+    "option_index": 0
+  },
+  {
+    "id": 186,
+    "question": "If you run `cor.test(x, y, alternative = \"greater\")`, you are testing:",
+    "explanation": "**t.test()**: Function for T-test in R.",
+    "truncated_option": "A one-tailed hypothesis that the correlation is positive...",
+    "option_index": 1
+  },
+  {
+    "id": 191,
+    "question": "If you see a correlation matrix where the diagonal values are all 1.0, this is because:",
+    "explanation": "**Correlation Matrix**: Table of correlations between all pairs.",
+    "truncated_option": "Every variable is perfectly correlat...",
+    "option_index": 0
+  },
+  {
+    "id": 203,
+    "question": "Which of the following is TRUE about the coefficient of determination ($R^2$) in a simple correlation context?",
+    "explanation": "**Simple Random Sampling**: Every member of population has equal chance of selection.",
+    "truncated_option": "It represents the percent of variance in one variable shared...",
+    "option_index": 0
+  },
+  {
+    "id": 207,
+    "question": "What is the null hypothesis for a standard Pearson correlation test?",
+    "explanation": "**Null Hypothesis (H0)**: Assumption of No Effect, No Difference, or r = 0.",
+    "truncated_option": "$\\rho = 0$ (The popula...",
+    "option_index": 2
+  },
+  {
+    "id": 208,
+    "question": "Semi-partial correlation differs from partial correlation because:",
+    "explanation": "**Partial Correlation**: Correlation between X and Y controlling for Z on BOTH.",
+    "truncated_option": "It controls for a third variable on *only* the predictor (or only...",
+    "option_index": 1
+  },
+  {
+    "id": 211,
+    "question": "A correlation of $r = 0$ implies:",
+    "explanation": "**r = 0**: No LINEAR relationship (could be U-shaped).",
+    "truncated_option": "No *linear* relationship exists between...",
+    "option_index": 1
+  },
+  {
+    "id": 212,
+    "question": "If you run `cor.test()` and get a confidence interval of $[-0.10, 0.35]$, what can you conclude?",
+    "explanation": "**cor.test()**: Tests significance of correlation.",
+    "truncated_option": "The correlation is not statistically significant...",
+    "option_index": 2
+  },
+  {
+    "id": 214,
+    "question": "In the simple linear regression equation $Y_i = b_0 + b_1X_i + \\epsilon_i$, what does $b_0$ represent?",
+    "explanation": "**Regression Equation**: Y = b0 + b1*X + e. Intercept + Slope.\n\nAnswer Key: The intercept b_0 represents the predicted value of Y when X is 0.",
+    "truncated_option": "The Y-intercept (value of Y when X...",
+    "option_index": 2
+  },
+  {
+    "id": 217,
+    "question": "What is the residual ($e_i$) for a data point?",
+    "explanation": "**Residual**: Observed Y - Predicted Y.",
+    "truncated_option": "The difference between the observed Y and the predicted...",
+    "option_index": 0
+  },
+  {
+    "id": 220,
+    "question": "If the F-statistic in a simple regression is significant ($p < .05$), this means:",
+    "explanation": "**F-statistic**: Tests if whole model is better than null model.",
+    "truncated_option": "The model explains significantly more...",
+    "option_index": 1
+  },
+  {
+    "id": 221,
+    "question": "Total Sum of Squares ($SS_T$) represents:",
+    "explanation": "**R-squared**:  (Related to SS_T).",
+    "truncated_option": "The total variability in the outcome variable...",
+    "option_index": 2
+  },
+  {
+    "id": 222,
+    "question": "Which metric represents the average deviation of the residuals (in the units of the outcome variable)?",
+    "explanation": "**Residual**: Observed Y - Predicted Y.",
+    "truncated_option": "Residual Standard Erro...",
+    "option_index": 2
+  },
+  {
+    "id": 225,
+    "question": "Standardized regression coefficients ($\\beta$) allow you to:",
+    "explanation": "**Standardized Regression**: Mean=0, SD=1 for all vars.",
+    "truncated_option": "Compare the strength of predictors measu...",
+    "option_index": 1
+  },
+  {
+    "id": 226,
+    "question": "Which package in R is commonly used to obtain standardized coefficients (`std.beta`)?",
+    "explanation": "**z.test package**: `BSDA` package contains `z.test`.",
+    "truncated_option": "`effectsize` or `Qua...",
+    "option_index": 1
+  },
+  {
+    "id": 228,
+    "question": "Why is the intercept sometimes meaningless in interpreting data?",
+    "explanation": "**Intercept (b0)**: Predicted Y when X = 0.",
+    "truncated_option": "Because a predictor value of 0 might be impossib...",
+    "option_index": 1
+  },
+  {
+    "id": 230,
+    "question": "After centering `age` to the mean, the intercept represents:",
+    "explanation": "**Centering**: Essential for raw polynomials to reduce multicollinearity.",
+    "truncated_option": "The predicted Y for a person with...",
+    "option_index": 1
+  },
+  {
+    "id": 235,
+    "question": "Interpreting Output:\n**What does this output suggest?**",
+    "explanation": "Interpret the coefficients and significance levels from the summary output.",
+    "truncated_option": "At least one regression assumption has been...",
+    "option_index": 1
+  },
+  {
+    "id": 236,
+    "question": "Which assumption cannot be checked just by looking at a plot of the model residuals?",
+    "explanation": "**Residual**: Observed Y - Predicted Y.\n\nAnswer Key: Need to know study design",
+    "truncated_option": "Independence of observa...",
+    "option_index": 2
+  },
+  {
+    "id": 237,
+    "question": "Independence of errors is usually violated when:",
+    "explanation": "**Independence Violation**: Clustered/Time-series data violates this.",
+    "truncated_option": "Data are collected from the same subjects...",
+    "option_index": 1
+  },
+  {
+    "id": 238,
+    "question": "Using `check_model()` from the `performance` package generates:",
+    "explanation": "**z.test package**: `BSDA` package contains `z.test`.",
+    "truncated_option": "A dashboard of visual plots checking...",
+    "option_index": 1
+  },
+  {
+    "id": 239,
+    "question": "`dfbeta` statistics are used to:",
+    "explanation": "**DFBETAS**: Change in ONE coefficient if case removed.",
+    "truncated_option": "Assess how much regression coefficient...",
+    "option_index": 1
+  },
+  {
+    "id": 242,
+    "question": "What does the `relevel()` function do?",
+    "explanation": "**cor() function**: Calculates correlation in R.",
+    "truncated_option": "It changes the reference category...",
+    "option_index": 1
+  },
+  {
+    "id": 243,
+    "question": "Homoscedasticity means:",
+    "explanation": "**Homoscedasticity**: Constant variance of residuals across X.",
+    "truncated_option": "The variance of the residuals is constant...",
+    "option_index": 1
+  },
+  {
+    "id": 248,
+    "question": "Interpreting Output:\n**Which conclusion is supported?**",
+    "explanation": "Evaluate the model comparison metrics (AIC, BIC, or ANOVA results).",
+    "truncated_option": "$X_1$ is a significant predictor, but $X_2$ is not...",
+    "option_index": 1
+  },
+  {
+    "id": 250,
+    "question": "When comparing non-nested models or checking model fit penalizing for complexity, which metric is best?",
+    "explanation": "**Nested Models**: One model is a subset of the other (e.g., dropped a term).",
+    "truncated_option": "AIC (Akaike Information...",
+    "option_index": 1
+  },
+  {
+    "id": 251,
+    "question": "Interpreting Output (Model Comparison):\n**What does this ANOVA table tell us?**",
+    "explanation": "**anova(m1, m2)**: Performs LRT in R for nested models.",
+    "truncated_option": "Adding `airplay` (Model 2) significantly reduced the...",
+    "option_index": 1
+  },
+  {
+    "id": 254,
+    "question": "In a standard Spider Plot (radar chart) for model performance, usually:",
+    "explanation": "**Q-Q Plot**: Checks Normality of residuals.",
+    "truncated_option": "Points further out indicate better...",
+    "option_index": 0
+  },
+  {
+    "id": 255,
+    "question": "If you add a predictor to a model and the $R^2$ goes up but the AIC also goes up (gets worse), this suggests:",
+    "explanation": "**AIC**: Akaike Information Criterion. Lower is better. Penalizes parameter count.",
+    "truncated_option": "The new predictor does not justify the...",
+    "option_index": 1
+  },
+  {
+    "id": 257,
+    "question": "If two predictors are perfectly correlated ($r = 1.0$), the regression model:",
+    "explanation": "**Regression Equation**: Y = b0 + b1*X + e. Intercept + Slope.",
+    "truncated_option": "Will fail to estimate unique coefficie...",
+    "option_index": 1
+  },
+  {
+    "id": 258,
+    "question": "The \"Hierarchical Entry\" method in regression means:",
+    "explanation": "**Hierarchical Regression**: Adding blocks of predictors.",
+    "truncated_option": "You enter variables in blocks/steps based on...",
+    "option_index": 1
+  },
+  {
+    "id": 259,
+    "question": "An interaction effect occurs when:",
+    "explanation": "**Interaction Effect**: Effect of X1 depends on X2.",
+    "truncated_option": "The effect of one predictor on the outcome depends...",
+    "option_index": 1
+  },
+  {
+    "id": 260,
+    "question": "In the equation $Y = b_0 + b_1X + b_2Z + b_3(X \\times Z)$, what does $b_3$ represent?",
+    "explanation": "**Regression Equation**: Y = b0 + b1*X + e. Intercept + Slope.",
+    "truncated_option": "The interaction effect (change...",
+    "option_index": 2
+  },
+  {
+    "id": 261,
+    "question": "How do you specify an interaction between `age` and `education` in an R formula?",
+    "explanation": "**SEM Formula**: SEM = σ / √N.",
+    "truncated_option": "`age * education` (or `age +...",
+    "option_index": 1
+  },
+  {
+    "id": 262,
+    "question": "Interpreting Output:\n**The interaction term is positive ($0.5$). This suggests that as social `support` increases:**",
+    "explanation": "**Interaction Term**: X1 * X2.\n\nAnswer Key: Slope of stress is -2. As support goes up, we add $0.5 \\times Support$ to the slope. $-2 + 0.5 = -1.5$, which is less negative.",
+    "truncated_option": "The negative effect of `stress` on the outcome...",
+    "option_index": 0
+  },
+  {
+    "id": 263,
+    "question": "When an interaction is significant, how should you interpret the \"main effects\" ($b_1, b_2$)?",
+    "explanation": "**Significant t-test for Slope**: Predictor significantly predicts outcome.",
+    "truncated_option": "As conditional effects (simple slopes) when...",
+    "option_index": 1
+  },
+  {
+    "id": 264,
+    "question": "What is a \"Simple Slopes Analysis\"?",
+    "explanation": "**Simple Slopes**: Slope of X1 at specific levels of X2.",
+    "truncated_option": "Probing an interaction by examining the...",
+    "option_index": 1
+  },
+  {
+    "id": 265,
+    "question": "In R, which package is commonly used to probe and plot interactions (e.g., `sim_slopes` or `interact_plot`)?",
+    "explanation": "**Q-Q Plot**: Checks Normality of residuals.",
+    "truncated_option": "`interactions` or ...",
+    "option_index": 0
+  },
+  {
+    "id": 267,
+    "question": "Why is centering continuous predictors recommended when testing interactions?",
+    "explanation": "**Centering**: Essential for raw polynomials to reduce multicollinearity.",
+    "truncated_option": "It reduces multicollinearity between the...",
+    "option_index": 1
+  },
+  {
+    "id": 268,
+    "question": "Interpreting Output (Visual):\n*(Imagine a plot where the slope of X on Y is positive for the \"High Z\" group, flat for \"Medium Z\", and negative for \"Low Z\".)*\n**This is an example of:**",
+    "explanation": "**Mad Men Example**: Correlation implies causation fallacy or 'Just Drunk' = Spurious/Chance.",
+    "truncated_option": "A crossover (disordinal) or sig...",
+    "option_index": 1
+  },
+  {
+    "id": 269,
+    "question": "To decompose an interaction involving a categorical variable (e.g., `Treatment` vs `Control`) and a continuous variable (`Dose`), you would look at:",
+    "explanation": "**Distributions for Categorical Data**: Chi-square is often used for categorical/count data analysis.",
+    "truncated_option": "The slope of `Dose` for the Treatment...",
+    "option_index": 0
+  },
+  {
+    "id": 273,
+    "question": "\"Johnson-Neyman\" intervals are used to:",
+    "explanation": "**Johnson-Neyman**: Finds regions of significance for moderator.",
+    "truncated_option": "Find the specific range of...",
+    "option_index": 0
+  },
+  {
+    "id": 275,
+    "question": "`confint(model)` in R provides:",
+    "explanation": "**summary(model)**: Shows coefficients, R2, F-test.",
+    "truncated_option": "The confidence intervals for the regression...",
+    "option_index": 1
+  },
+  {
+    "id": 278,
+    "question": "Which plot is used to detect outliers based on leverage and residuals?",
+    "explanation": "**Residual**: Observed Y - Predicted Y.",
+    "truncated_option": "Residuals vs Leverage (Cook's dis...",
+    "option_index": 0
+  },
+  {
+    "id": 279,
+    "question": "If `lm()` output shows `NA` for a coefficient, it usually means:",
+    "explanation": "**lm()**: Linear Model function in R.",
+    "truncated_option": "Perfect multicollinearity (singularity)...",
+    "option_index": 1
+  },
+  {
+    "id": 280,
+    "question": "Interpreting `summary()`:** The bottom line says `F-statistic: 50 on 2 and 97 DF, p-value: < 2.2e-16`.\n**What does the `2 and 97 DF` refer to?**",
+    "explanation": "**F-statistic**: Tests if whole model is better than null model.",
+    "truncated_option": "2 predictors ($df_{mod}$) and 97...",
+    "option_index": 0
+  },
+  {
+    "id": 281,
+    "question": "How do you interpret a standardized intercept?",
+    "explanation": "**Intercept (b0)**: Predicted Y when X = 0.",
+    "truncated_option": "The value of Y when all predictor...",
+    "option_index": 0
+  },
+  {
+    "id": 283,
+    "question": "A researcher reports: \"$b = 0.5, t(100) = 1.5, p = .14$\". What is the conclusion?",
+    "explanation": "**Reporting Results**: b, SE, t, p, R2.",
+    "truncated_option": "The effect is not statistically signific...",
+    "option_index": 1
+  },
+  {
+    "id": 284,
+    "question": "If you run a regression and the residuals are not normally distributed, what might you consider?",
+    "explanation": "**Residual**: Observed Y - Predicted Y.",
+    "truncated_option": "Bootstrapping or transforming the dependent...",
+    "option_index": 0
+  },
+  {
+    "id": 286,
+    "question": "Parsimony in model building means:",
+    "explanation": "**Parsimony**: Simpler model is better (if fit is similar).",
+    "truncated_option": "Choosing the simplest model that explains...",
+    "option_index": 1
+  },
+  {
+    "id": 289,
+    "question": "To visualize a 3D regression plane (2 predictors, 1 outcome) in R, which packages were mentioned/useful?",
+    "explanation": "**Regression Equation**: Y = b0 + b1*X + e. Intercept + Slope.",
+    "truncated_option": "`scatterplot3d` or ...",
+    "option_index": 0
+  },
+  {
+    "id": 292,
+    "question": "What is the correct syntax to extract coefficients from a saved model object `fit`?",
+    "explanation": "**summary(model)**: Shows coefficients, R2, F-test.",
+    "truncated_option": "`fit$coefficients` or `coe...",
+    "option_index": 0
+  },
+  {
+    "id": 293,
+    "question": "A \"suppressor variable\" in multiple regression is one that:",
+    "explanation": "**Multiple Regression**: Predicting Y from multiple Xs.",
+    "truncated_option": "Has no correlation with the...",
+    "option_index": 0
+  },
+  {
+    "id": 294,
+    "question": "If you have 5 predictors and $N=20$, you likely have:",
+    "explanation": "**Adding Predictors**: R-squared always increases (or stays same). Adjusted R-squared might drop.",
+    "truncated_option": "Overfitting / poor power (rule...",
+    "option_index": 1
+  },
+  {
+    "id": 295,
+    "question": "In a report, you write: \"$F(2, 147) = 4.56, p = .012$\". What does the \"2\" represent?",
+    "explanation": "The first number in F(df1, df2) represents the degrees of freedom for the model (predictors).",
+    "truncated_option": "Regression degrees of freedom...",
+    "option_index": 1
+  },
+  {
+    "id": 301,
+    "question": "Question:** **[Mock R Output]\nBased on the sign of the quadratic term (`I(chocolate^2)`), how would you describe the shape of the relationship?",
+    "explanation": "Negative quadratic coefficient indicates a downward-opening curve).",
+    "truncated_option": "Inverted U-shaped (Concave; happiness...",
+    "option_index": 1
+  },
+  {
+    "id": 304,
+    "question": "Question: What is a primary statistical issue often encountered when adding raw polynomial terms (e.g., $x$, $x^2$, $x^3$) to a regression model?",
+    "explanation": "Raw polynomials are highly correlated with each other, causing multicollinearity.",
+    "truncated_option": "Multicollinearity (high correla...",
+    "option_index": 1
+  },
+  {
+    "id": 309,
+    "question": "Question: If the p-value in the ANOVA table comparing a linear and quadratic model was **0.35**, what would you conclude?",
+    "explanation": "**anova(m1, m2)**: Performs LRT in R for nested models.",
+    "truncated_option": "The quadratic term does not significantly improve...",
+    "option_index": 1
+  },
+  {
+    "id": 311,
+    "question": "Question: Which is **NOT** a valid reason/use case for polynomial regression?",
+    "explanation": "Polynomials are notoriously bad at extrapolating outside observed data).",
+    "truncated_option": "To extrapolate predictions far outside the observed range of...",
+    "option_index": 2
+  },
+  {
+    "id": 312,
+    "question": "Question: In a mixed model, what distinguishes a **fixed effect** from a **random effect**?",
+    "explanation": "Fixed effects estimate population means; random effects estimate subject-specific deviations.",
+    "truncated_option": "Fixed effects estimate population-level parameters; random effects estimate...",
+    "option_index": 1
+  },
+  {
+    "id": 314,
+    "question": "Question: Why do we use Mixed Models instead of standard Multiple Regression for nested data?",
+    "explanation": "Mixed models account for the correlation of residuals within groups/subjects.",
+    "truncated_option": "To account for non-independence of observations (cluster...",
+    "option_index": 1
+  },
+  {
+    "id": 320,
+    "question": "Question: What does an ICC of 0.80 (from the previous question) indicate?",
+    "explanation": "ICC is the proportion of total variance explained by the grouping structure (between-group variance).",
+    "truncated_option": "80% of the variance in the outcome is due to differences...",
+    "option_index": 0
+  },
+  {
+    "id": 323,
+    "question": "Question:** **[Mock R Output]\nWhat does the correlation of -0.50 tell you?",
+    "explanation": "Negative correlation between Intercept and Slope).",
+    "truncated_option": "Subjects with higher baseline intercepts tend to have...",
+    "option_index": 1
+  },
+  {
+    "id": 324,
+    "question": "Question: Ideally, if you add a fixed predictor to a mixed model that explains a lot of variance in the outcome, what should happen to the **Random Intercept Variance** (compared to the empty/null model)?",
+    "explanation": "Adding a significant predictor explains variance, reducing the unexplained random variance.",
+    "truncated_option": "It should decrease (variance is \"expl...",
+    "option_index": 2
+  },
+  {
+    "id": 326,
+    "question": "Question: If you see the warning \"Singular fit\" in R output for an `lmer` model, what does it usually mean?",
+    "explanation": "Singular fit means the model is overparameterized, often with random variance near zero.",
+    "truncated_option": "The random effects structure is too complex...",
+    "option_index": 1
+  },
+  {
+    "id": 328,
+    "question": "Question: What is $R^2_{conditional}$?",
+    "explanation": "Conditional R-squared includes variance explained by both fixed and random effects.",
+    "truncated_option": "Variance explained by the entire model (fixed +...",
+    "option_index": 1
+  },
+  {
+    "id": 329,
+    "question": "Question:** **[Mock R Output - Model Comparison]\nWhich model is preferred based on this output?",
+    "explanation": "Mod2 has a lower AIC and a significant LRT result, indicating better fit.",
+    "truncated_option": "mod2 (lower AIC and significant Likelihood...",
+    "option_index": 2
+  },
+  {
+    "id": 330,
+    "question": "Question: Why do we typically use the `lmerTest` package in addition to `lme4`?",
+    "explanation": "lmerTest extends lme4 to provide p-values for t-tests.",
+    "truncated_option": "To get p-values for the fixed effe...",
+    "option_index": 1
+  },
+  {
+    "id": 331,
+    "question": "Question: A Growth Curve Model (GCM) is essentially a special case of which type of model?",
+    "explanation": "Growth Curve Models are Multilevel Models applied to longitudinal data.",
+    "truncated_option": "Mixed-Effects Model (Mult...",
+    "option_index": 1
+  },
+  {
+    "id": 332,
+    "question": "Question: What is the defining feature of the data required for Growth Curve Modeling?",
+    "explanation": "Growth models require repeated measures (longitudinal data).",
+    "truncated_option": "It must be longitudinal (repeated measures...",
+    "option_index": 2
+  },
+  {
+    "id": 334,
+    "question": "Question: What does a \"Conditional\" Growth Model include that an Unconditional one does not?",
+    "explanation": "Conditional models includes predictors (covariates) to explain variability in intercepts or slopes.",
+    "truncated_option": "Covariates or predictors of...",
+    "option_index": 2
+  },
+  {
+    "id": 335,
+    "question": "Question: If you want to model a non-linear trajectory over time in a GCM, what do you usually add?",
+    "explanation": "Polynomial terms like Time^2 allow for modeling non-linear curves.",
+    "truncated_option": "Polynomial terms for Time (e...",
+    "option_index": 1
+  },
+  {
+    "id": 338,
+    "question": "Question: Using the output from Question \\#39, how do the intercepts differ between Group A and Group B?",
+    "explanation": "The main effect of GroupB represents the difference at Time=0).",
+    "truncated_option": "Group B starts 10.00 units higher than...",
+    "option_index": 1
+  },
+  {
+    "id": 339,
+    "question": "Question:** **[Mock R Output]\nHow would you describe the average growth trajectory based on these fixed effects?",
+    "explanation": "Positive linear term, negative quadratic term).",
+    "truncated_option": "Increases initially, but the rate of...",
+    "option_index": 1
+  },
+  {
+    "id": 340,
+    "question": "Question: In the model `score ~ Time + (Time | Subject)`, what does the random effect `(Time | Subject)` allow for?",
+    "explanation": "The random slope (Time | Subject) allows the effect of Time (rate of change) to vary across subjects.",
+    "truncated_option": "Each subject to have their own starting point AND their own...",
+    "option_index": 1
+  },
+  {
+    "id": 341,
+    "question": "Question: Why might you center the `Time` variable (e.g., set the start to 0) in a Growth Curve Model?",
+    "explanation": "Centering Time at 0 makes the intercept represent the status at the start of the study.",
+    "truncated_option": "To make the intercept interpretable as...",
+    "option_index": 0
+  },
+  {
+    "id": 342,
+    "question": "Question:** **[Mock R Output]\nIf the variance for `Time` were 0, what would that imply?",
+    "explanation": "Zero variance in Time means all subjects change at the exact same rate.",
+    "truncated_option": "Everyone changes at the exact same rate...",
+    "option_index": 1
+  },
+  {
+    "id": 344,
+    "question": "Question: What is the \"maximal\" random effects structure usually recommended for GCM (if it converges)?",
+    "explanation": "Maximal structure includes random intercepts and random slopes for all within-subject factors.",
+    "truncated_option": "Random intercepts and random slo...",
+    "option_index": 1
+  },
+  {
+    "id": 347,
+    "question": "Question: You have data on students nested within classrooms. You want to predict test scores based on study time. Which model is most appropriate?",
+    "explanation": "Mixed models properly account for the nesting of students within classrooms.",
+    "truncated_option": "Mixed-Effects Model (`lmer`) with random...",
+    "option_index": 2
+  },
+  {
+    "id": 348,
+    "question": "Question: You want to test if the relationship between Stress and Performance is curvilinear (U-shaped). What do you use?",
+    "explanation": "A U-shape is a quadratic relationship, requiring a polynomial term.",
+    "truncated_option": "Polynomial regression (q...",
+    "option_index": 1
+  },
+  {
+    "id": 349,
+    "question": "Question: You measured reaction time for the same subjects at 4 different time points. You want to see if reaction time decreases over time.",
+    "explanation": "Repeated measures over time call for a Growth Curve Model.",
+    "truncated_option": "Growth Curve Model (Mixed Model...",
+    "option_index": 1
+  },
+  {
+    "id": 350,
+    "question": "Question: Which statistic is best for comparing non-nested models (e.g., models with different dependent variables)?",
+    "explanation": "Fit indices like AIC require the same outcome data).",
+    "truncated_option": "You cannot directly compa...",
+    "option_index": 2
+  },
+  {
+    "id": 351,
+    "question": "Question: What is the \"Null Ritual\"?",
+    "explanation": "**Null Hypothesis (H0)**: Assumption of No Effect, No Difference, or r = 0.",
+    "truncated_option": "The mindless checking of p \\< 0.05 without...",
+    "option_index": 1
+  },
+  {
+    "id": 355,
+    "question": "Question:** **[Mock R Output]\nDoes this result suggest a violation of the normality assumption?",
+    "explanation": "A p-value > 0.05 indicates we do not reject the null hypothesis of normality.",
+    "truncated_option": "No, because p \\> 0.05, we fail to reject...",
+    "option_index": 2
+  },
+  {
+    "id": 356,
+    "question": "Question:** **[Mock R Output]\nIs there a multicollinearity problem here?",
+    "explanation": "VIF > 5 or 10 indicates potential multicollinearity issues.",
+    "truncated_option": "Yes, x3 has a VIF of 8.5, which is notabl...",
+    "option_index": 1
+  },
+  {
+    "id": 359,
+    "question": "Question:** **[Mock R Output - Interaction in GCM]\nReference is Diet1. What does `Time:Diet3` = 4.00 mean?",
+    "explanation": "The interaction term indicates the difference in slope relative to the reference group.",
+    "truncated_option": "Diet3 chicks grow at a rate 4 units *faster* per time unit...",
+    "option_index": 1
+  },
+  {
+    "id": 360,
+    "question": "Question: You run a mixed model and get: `boundary (singular) fit: see ?isSingular`. What is a likely cause?",
+    "explanation": "Singular fit usually indicates that the random effects variance is estimated to be near zero or perfectly correlated.",
+    "truncated_option": "The random effects variance is estimated...",
+    "option_index": 1
+  },
+  {
+    "id": 365,
+    "question": "Question: In a polynomial regression `y ~ x + I(x^2)`, you decide to center `x` (i.e., `x_centered = x - mean(x)`). What effect does this typically have?",
+    "explanation": "Centering variables reduces structural multicollinearity between the linear and polynomial terms.",
+    "truncated_option": "It reduces the correlation (multicollinearit...",
+    "option_index": 2
+  },
+  {
+    "id": 366,
+    "question": "Question:** **[Mock R Output]\nWhat does \"Satterthwaite's method\" refer to?",
+    "explanation": "Satterthwaite's method is used to estimate effective degrees of freedom for t-tests in mixed models.",
+    "truncated_option": "A method for estimating degrees of...",
+    "option_index": 0
+  },
+  {
+    "id": 367,
+    "question": "Question: If you are analyzing repeated measures data (e.g., 3 time points per person) using `lm()` (standard regression), which assumption are you definitely violating?",
+    "explanation": "Standard regression assumes independence, which is violated by repeated measures on the same subjects.",
+    "truncated_option": "Independence of observat...",
+    "option_index": 1
+  },
+  {
+    "id": 369,
+    "question": "Question: An ICC of 0 indicates:",
+    "explanation": "An ICC of 0 means there is no variance between groups; all variance is within groups.",
+    "truncated_option": "No clustering (all variance is within groups/...",
+    "option_index": 1
+  },
+  {
+    "id": 370,
+    "question": "Question: You want to predict `Vocabulary` growth in children (ages 2 to 10). You expect growth to be fast at first and then slow down. Which polynomial term coefficient should be **negative** in your model?",
+    "explanation": "A negative quadratic term creates a downward curvature, representing deceleration.",
+    "truncated_option": "The Quadratic Time slope (`I(T...",
+    "option_index": 2
+  },
+  {
+    "id": 372,
+    "question": "Question: When reporting a Growth Curve Analysis, what is crucial to include besides the p-values?",
+    "explanation": "Reporting requirements include the model structure, random effects, and parameter estimates, not just significance.",
+    "truncated_option": "The type of polynomial used, the random...",
+    "option_index": 1
+  },
+  {
+    "id": 374,
+    "question": "Question:** **[Mock R Output - Orthogonal Polynomials]\nCan you interpret the coefficient `50.0` as \"the increase in outcome for a 1-unit increase in Time\"?",
+    "explanation": "Orthogonal polynomials are transformed and uncorrelated, so coefficients don't represent simple unit changes in the raw variable.",
+    "truncated_option": "No, because orth...",
+    "option_index": 1
+  },
+  {
+    "id": 377,
+    "question": "Question: What is a \"Random Slope\"?",
+    "explanation": "Random slopes allow the effect of a predictor to vary by group/subject.",
+    "truncated_option": "It allows the relationship between a predicto...",
+    "option_index": 0
+  },
+  {
+    "id": 378,
+    "question": "Question: In the equation $Y_{si} = b_{0s} + b_{1s}Time_i + e_{si}$, if $b_{1s} = b_1 + S_{1s}$, what does $S_{1s}$ represent?",
+    "explanation": "S_1s is the subject-specific random deviation from the population fixed slope.",
+    "truncated_option": "The random deviation of subject $s$'...",
+    "option_index": 1
+  },
+  {
+    "id": 380,
+    "question": "Question: What does `REML=FALSE` (Maximum Likelihood) allow you to do that `REML=TRUE` does not?",
+    "explanation": "ML (REML=FALSE) is required when comparing models with different fixed effects using LRT.",
+    "truncated_option": "Compare models with different **fixe...",
+    "option_index": 1
+  },
+  {
+    "id": 381,
+    "question": "Question:** **[Mock R Output]\nThere is a high correlation (-0.85) between the `Time` and `Time2` (quadratic) estimates. What does this suggest?",
+    "explanation": "High correlation between polynomial terms usually indicates essential multicollinearity; centering helps.",
+    "truncated_option": "This is essential multicollinea...",
+    "option_index": 1
+  },
+  {
+    "id": 382,
+    "question": "Question: Why is it dangerous to interpret the main effect of `Time` in a model where the interaction `Time:Diet` is significant?",
+    "explanation": "An interaction means the effect of one variable changes depending on the level of the other.",
+    "truncated_option": "Because the effect of Time depends on which Diet the...",
+    "option_index": 0
+  },
+  {
+    "id": 386,
+    "question": "Question:** **[Mock R Output]\nWhat can you conclude about the effect of Treatment?",
+    "explanation": "If the confidence interval includes zero, the effect is not statistically significant.",
+    "truncated_option": "It is not statistically significant...",
+    "option_index": 1
+  },
+  {
+    "id": 388,
+    "question": "Question: You want to check if a random slope for `Day` improves your model `m0`.\n`m0 <- lmer(y ~ Day + (1|Subj))`\n`m1 <- lmer(y ~ Day + (1 + Day|Subj))`\n`anova(m0, m1)` yields p = 0.60.\nWhat do you do?",
+    "explanation": "If the more complex model (m1) is not significantly better (p > 0.05), prefer the simpler model (m0).",
+    "truncated_option": "Stick with the simpler model (m0) because the random...",
+    "option_index": 1
+  },
+  {
+    "id": 389,
+    "question": "Question: What does the function `coef(model)` return for a mixed model?",
+    "explanation": "coef() returns the sum of fixed and random effects for each group.",
+    "truncated_option": "The sum of fixed effects + random...",
+    "option_index": 2
+  },
+  {
+    "id": 390,
+    "question": "Question: What does the function `fixef(model)` return?",
+    "explanation": "fixef() extracts only the fixed effects parameters.",
+    "truncated_option": "The fixed effects estimates...",
+    "option_index": 0
+  },
+  {
+    "id": 395,
+    "question": "Question: Which is a valid reason to use a **conditional** R-squared?",
+    "explanation": "Conditional R-squared measures variance explained by both fixed and random effects.",
+    "truncated_option": "To see how much variance the *entire* model (includ...",
+    "option_index": 1
+  },
+  {
+    "id": 396,
+    "question": "Question: If your residual plot shows a \"fan\" shape (spread increases as fitted values increase), which assumption is violated?",
+    "explanation": "A fan shape in residuals indicates heteroscedasticity, violating the homoscedasticity assumption.",
+    "truncated_option": "Homoscedasticity (Homog...",
+    "option_index": 1
+  },
+  {
+    "id": 397,
+    "question": "Question:** **[Mock R Output]\nBecause this uses orthogonal polynomials, what is the correlation between the estimates for `Poly(Time,2)1` (linear component) and `Poly(Time,2)2` (quadratic component)?",
+    "explanation": "Orthogonal polynomials are constructed to be uncorrelated with each other.",
+    "truncated_option": "Zero (by definition of...",
+    "option_index": 2
+  }
+]

@@ -1,0 +1,115 @@
+const fs = require('fs');
+const path = require('path');
+
+const questions = [
+    {
+        "type": "mc",
+        "question": "Based on the following R output for a simple linear regression predicting `sales` from `adverts`, what is the predicted increase in sales for every 1 unit increase in `adverts`?",
+        "options": [
+            "134.14 units",
+            "0.096 units",
+            "9.56 units",
+            "0.33 units"
+        ],
+        "answer": 1,
+        "explanation": "**Regression Coefficient**: The estimate for `adverts` (0.096) represents the slope: the change in the outcome for a 1-unit change in the predictor.",
+        "id": 10001,
+        "codeSnippet": "Call:\nlm(formula = sales ~ adverts, data = album2)\n\nCoefficients:\n(Intercept)      adverts  \n  134.140        0.096  ",
+        "codeOutput": "Coefficients:\n             Estimate Std. Error t value Pr(>|t|)    \n(Intercept) 1.341e+02  7.537e+00  17.799   <2e-16 ***\nadverts     9.612e-02  9.632e-03   9.979   <2e-16 ***",
+        "module": "Module 5: Intro to Regression (Simple Linear)"
+    },
+    {
+        "type": "mc",
+        "question": "In the summary output below, what does the `Multiple R-squared: 0.3346` tell us?",
+        "options": [
+            "The model explains approximately 33.5% of the variance in sales.",
+            "The correlation between sales and adverts is 0.33.",
+            "The model has 33.5% error.",
+            "The p-value is 0.335."
+        ],
+        "answer": 0,
+        "explanation": "**R-squared**: Represents the proportion of variance in the outcome explained by the model (0.3346 = 33.46%).",
+        "id": 10002,
+        "codeSnippet": "> summary(model)\n...\nResidual standard error: 65.99 on 198 degrees of freedom\nMultiple R-squared:  0.3346,	Adjusted R-squared:  0.3313 \nF-statistic: 99.59 on 1 and 198 DF,  p-value: < 2.2e-16",
+        "module": "Module 5: Intro to Regression (Simple Linear)"
+    },
+    {
+        "type": "mc",
+        "question": "You run a regression predicting `vocal_pitch` from `gender` (where Female = 0, Male = 1). Based on the output, what is the average vocal pitch for the Female group?",
+        "options": [
+            "226.33 Hz",
+            "128.33 Hz",
+            "98.00 Hz",
+            "0.00 Hz"
+        ],
+        "answer": 0,
+        "explanation": "**Categorical Intercept**: When the predictor is 0 (Female), the Intercept (226.33) represents the mean of that group.",
+        "id": 10003,
+        "codeSnippet": "Call:\nlm(formula = pitch ~ gender, data = df)\n\nCoefficients:\n(Intercept)      gender1  \n     226.33       -98.00  ",
+        "module": "Module 6: Categorical Predictors"
+    },
+    {
+        "type": "mc",
+        "question": "In the same model (pitch ~ gender), what does the coefficient for `gender1` (-98.00) represent?",
+        "options": [
+            "The average pitch of the Male group.",
+            "The difference in average pitch between the Male group and the Female group.",
+            "The standard deviation of the Male group.",
+            "The intercept for the Female group."
+        ],
+        "answer": 1,
+        "explanation": "**Dummy Coding Slope**: The coefficient represents the difference in means between the category coded as 1 and the reference category (0). Mean(Male) = Intercept + Slope = 226.33 - 98.00 = 128.33.",
+        "id": 10004,
+        "codeSnippet": "Coefficients:\n             Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   226.33       8.43   26.85 2.15e-06 ***\ngender1       -98.00      11.92   -8.22 0.00119 ** ",
+        "module": "Module 6: Categorical Predictors"
+    },
+    {
+        "type": "mc",
+        "question": "Referencing the output of `contrasts(df$gender)` below, which category is the Reference Group?",
+        "options": [
+            "Female",
+            "Male",
+            "Both",
+            "Neither"
+        ],
+        "answer": 0,
+        "explanation": "**Reference Group**: The category row with all zeros (or the one not shown as a column, depending on display) is the reference. Here, 'Female' maps to 0.",
+        "id": 10005,
+        "codeSnippet": "> contrasts(df$gender)\n       Male\nFemale    0\nMale      1",
+        "module": "Module 6: Categorical Predictors"
+    },
+    {
+        "type": "mc",
+        "question": "If you center the predictor `Age` (subtracting the mean) and rerun the regression `pitch ~ Age_Cent`, how does the interpretation of the Intercept change?",
+        "options": [
+            "It doesn't change.",
+            "It now represents the predicted pitch when Age is 0 (newborn).",
+            "It now represents the predicted pitch for a person of *average* age.",
+            "The intercept becomes zero."
+        ],
+        "answer": 2,
+        "explanation": "**Centering**: When X is centered, 0 represents the mean. Thus, the intercept becomes the predicted Y at the mean of X.",
+        "id": 10006,
+        "codeSnippet": "> df$Age_Cent <- scale(df$Age, center=TRUE, scale=FALSE)\n> lm(pitch ~ Age_Cent, data = df)",
+        "module": "Module 6: Categorical Predictors"
+    },
+    {
+        "type": "mc",
+        "question": "Based on the F-statistic output below, is the overall model statistically significant?",
+        "options": [
+            "Yes, p < 0.05",
+            "No, p > 0.05",
+            "Cannot tell without the Alpha level.",
+            "Yes, because the F-statistic is negative."
+        ],
+        "answer": 0,
+        "explanation": "**F-test Significance**: The p-value (6.2e-07) is far less than 0.05, indicating the model explains significantly more variance than the null model.",
+        "id": 10007,
+        "codeSnippet": "Residual standard error: 5.2 on 48 degrees of freedom\nMultiple R-squared:  0.45\nF-statistic: 19.6 on 2 and 48 DF,  p-value: 6.2e-07",
+        "module": "Module 13: Course Wrap-up & Integration"
+    }
+];
+
+const outputPath = path.join(__dirname, 'extra_r_questions.json');
+fs.writeFileSync(outputPath, JSON.stringify(questions, null, 2));
+console.log(`Successfully created ${outputPath} with ${questions.length} questions.`);
