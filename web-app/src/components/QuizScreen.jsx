@@ -108,132 +108,200 @@ const QuizScreen = ({ onFinish, questions, onBack }) => {
         }
     };
 
-    const progressPercentage = ((currentQuestionIndex) / totalQuestions) * 100;
-
     return (
-        <div style={{ width: '100%', maxWidth: '800px', margin: '0 auto', position: 'relative' }}>
-            {/* Back Button - Fixed/Absolute Top Left */}
+        <div style={{
+            width: '100%',
+            maxWidth: '700px', // Slightly narrower for better focus
+            margin: '0 auto',
+            minHeight: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            padding: '2rem',
+            position: 'relative'
+        }}>
+            {/* Back Button - Cleaner look */}
             <button
                 onClick={onBack}
+                className="glass-panel"
                 style={{
                     position: 'fixed',
-                    top: '40px',
-                    left: '40px',
-                    background: 'white',
-                    border: 'none',
-                    cursor: 'pointer',
-                    color: '#DD6B20',
-                    padding: '10px',
+                    top: '70px',
+                    left: '120px',
+                    padding: '8px 16px',
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    borderRadius: '8px', // Slightly rounded
-                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                    gap: '8px',
+                    color: 'rgba(255,255,255,0.7)',
+                    background: 'rgba(0,0,0,0.2)', // Slightly darker background for contrast against page
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    fontSize: '0.9rem',
+                    transition: 'all 0.2s',
                     zIndex: 1000,
-                    transition: 'transform 0.2s',
-                    fontWeight: 'bold'
+                    backdropFilter: 'blur(10px)'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                aria-label="Back to Menu"
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.color = 'white';
+                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)';
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.color = 'rgba(255,255,255,0.7)';
+                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)';
+                }}
             >
-                <ArrowLeft size={20} style={{ marginRight: '5px' }} />
+                <ArrowLeft size={18} />
                 Back
             </button>
 
-            <div className="progress-bar-container">
-                <div
-                    className="progress-bar-fill"
-                    style={{ width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%` }}
-                />
+            {/* Progress Bar - Integrated look */}
+            <div style={{ marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <span style={{ color: '#94a3b8', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>
+                    {Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100)}%
+                </span>
+                <div style={{
+                    flex: 1,
+                    height: '6px',
+                    background: 'rgba(255,255,255,0.1)',
+                    borderRadius: '3px',
+                    overflow: 'hidden'
+                }}>
+                    <div
+                        style={{
+                            height: '100%',
+                            width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%`,
+                            background: 'linear-gradient(90deg, #DD6B20, #E53E3E)',
+                            transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
+                        }}
+                    />
+                </div>
             </div>
 
             <AnimatePresence mode="wait">
                 <motion.div
                     key={currentQuestionIndex}
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -50 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.3 }}
-                    className="glass-panel"
-                    style={{ textAlign: 'left' }}
                 >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                            <span style={{ color: '#94a3b8', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                                Question {currentQuestionIndex + 1} / {totalQuestions}
+                    {/* Question Card */}
+                    <div className="glass-panel" style={{ padding: '2.5rem', marginBottom: '2rem' }}>
+                        <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between' }}>
+                            <span style={{
+                                color: '#DD6B20',
+                                fontSize: '0.85rem',
+                                fontWeight: '600',
+                                letterSpacing: '1px',
+                                textTransform: 'uppercase'
+                            }}>
+                                Question {currentQuestionIndex + 1} of {totalQuestions}
                             </span>
+                        </div>
+
+                        <h2 style={{
+                            fontSize: '1.4rem',
+                            fontWeight: '500',
+                            marginBottom: '2rem',
+                            lineHeight: '1.5',
+                            color: 'rgba(255,255,255,0.95)'
+                        }}>
+                            {formatText(question.question)}
+                        </h2>
+
+                        {/* Integrated CodeReveal Component */}
+                        {question.codeSnippet && (
+                            <CodeReveal
+                                code={question.codeSnippet}
+                                output={question.codeOutput}
+                            />
+                        )}
+
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                            {options && options.map((option, index) => {
+                                let statusClass = '';
+                                if (isAnswered) {
+                                    if (index === answerIndex) statusClass = 'correct';
+                                    else if (index === selectedOption) statusClass = 'incorrect';
+                                }
+
+                                return (
+                                    <div
+                                        key={index}
+                                        className={`option-card ${selectedOption === index ? 'selected' : ''} ${statusClass}`}
+                                        onClick={() => handleOptionClick(index)}
+                                        style={{
+                                            pointerEvents: isAnswered ? 'none' : 'auto',
+                                            padding: '1.25rem',
+                                            display: 'grid',
+                                            gridTemplateColumns: 'auto 1fr auto',
+                                            gap: '1rem'
+                                        }}
+                                    >
+                                        <div style={{
+                                            width: '24px',
+                                            height: '24px',
+                                            borderRadius: '6px',
+                                            border: '1px solid rgba(255,255,255,0.3)',
+                                            color: 'rgba(255,255,255,0.5)',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '0.8rem',
+                                            fontWeight: '600'
+                                        }}>
+                                            {String.fromCharCode(65 + index)}
+                                        </div>
+                                        <span style={{ fontSize: '1rem', lineHeight: '1.4' }}>{option}</span>
+                                        <div style={{ width: '24px' }}>
+                                            {statusClass === 'correct' && <CheckCircle size={20} color="#48BB78" />}
+                                            {statusClass === 'incorrect' && <XCircle size={20} color="#F56565" />}
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
 
-                    <h2 style={{ fontSize: '1.5rem', marginBottom: '2rem', lineHeight: '1.4' }}>
-                        {formatText(question.question)}
-                    </h2>
-
-                    {/* Integrated CodeReveal Component */}
-                    {question.codeSnippet && (
-                        <CodeReveal
-                            code={question.codeSnippet}
-                            output={question.codeOutput}
-                        />
-                    )}
-
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                        {options && options.map((option, index) => {
-                            let statusClass = '';
-                            if (isAnswered) {
-                                if (index === answerIndex) statusClass = 'correct';
-                                else if (index === selectedOption) statusClass = 'incorrect';
-                            }
-
-                            return (
-                                <div
-                                    key={index}
-                                    className={`option-card ${selectedOption === index ? 'selected' : ''} ${statusClass}`}
-                                    onClick={() => handleOptionClick(index)}
-                                    style={{ pointerEvents: isAnswered ? 'none' : 'auto' }}
-                                >
-                                    <div style={{
-                                        width: '30px',
-                                        height: '30px',
-                                        borderRadius: '50%',
-                                        background: 'rgba(255,255,255,0.1)',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        marginRight: '1rem',
-                                        flexShrink: 0
-                                    }}>
-                                        {String.fromCharCode(65 + index)}
-                                    </div>
-                                    <span style={{ flex: 1 }}>{option}</span>
-                                    {statusClass === 'correct' && <CheckCircle size={20} color="#22c55e" />}
-                                    {statusClass === 'incorrect' && <XCircle size={20} color="#ef4444" />}
-                                </div>
-                            );
-                        })}
-                        {!options && <p style={{ color: 'red' }}>Error: Options missing for this question.</p>}
-                    </div>
-
+                    {/* Explanation - Decent Look */}
                     {isAnswered && (
                         <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            style={{ marginTop: '2rem', padding: '1.5rem', background: 'white', borderRadius: '16px', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', border: '1px solid #FED7D7' }}
+                            initial={{ opacity: 0, scale: 0.98 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            style={{
+                                padding: '1.5rem',
+                                background: 'rgba(221, 107, 32, 0.1)', // Very subtle orange
+                                borderLeft: '4px solid #DD6B20',
+                                borderRadius: '4px', // Cleaner, less rounded than the card
+                                marginBottom: '2rem'
+                            }}
                         >
-                            <h4 style={{ margin: '0 0 0.5rem 0', color: '#DD6B20', fontSize: '1.1rem' }}>Explanation</h4>
-                            <p style={{ margin: 0, color: '#C05621' }}>{formatText(question.explanation)}</p>
+                            <h4 style={{ margin: '0 0 0.5rem 0', color: '#DD6B20', fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                                Explanation
+                            </h4>
+                            <p style={{ margin: 0, color: 'rgba(255,255,255,0.9)', lineHeight: '1.6' }}>
+                                {formatText(question.explanation)}
+                            </p>
                         </motion.div>
                     )}
 
-                    <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'flex-end' }}>
+                    <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                         <motion.button
                             className="btn-primary"
                             onClick={handleNext}
                             disabled={!isAnswered}
-                            whileHover={{ scale: isAnswered ? 1.05 : 1 }}
-                            whileTap={{ scale: isAnswered ? 0.95 : 1 }}
-                            style={{ opacity: isAnswered ? 1 : 0.5, cursor: isAnswered ? 'pointer' : 'not-allowed', display: 'flex', alignItems: 'center', gap: '8px' }}
+                            whileHover={{ scale: isAnswered ? 1.02 : 1 }}
+                            whileTap={{ scale: isAnswered ? 0.98 : 1 }}
+                            style={{
+                                opacity: isAnswered ? 1 : 0.5,
+                                cursor: isAnswered ? 'pointer' : 'not-allowed',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '8px',
+                                padding: '14px 28px',
+                                fontSize: '1rem'
+                            }}
                         >
                             {currentQuestionIndex === totalQuestions - 1 ? 'Finish Quiz' : 'Next Question'}
                             <ArrowRight size={18} />
@@ -244,6 +312,7 @@ const QuizScreen = ({ onFinish, questions, onBack }) => {
             </AnimatePresence>
         </div>
     );
+
 };
 
 export default QuizScreen;

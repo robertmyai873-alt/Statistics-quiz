@@ -14,8 +14,13 @@ function App() {
 
   // Initialize stats from localStorage
   const [userStats, setUserStats] = useState(() => {
-    const saved = localStorage.getItem('ml_quiz_stats');
-    return saved ? JSON.parse(saved) : { totalScore: 0, modulesCompleted: 0, completedModuleNames: [] };
+    try {
+      const saved = localStorage.getItem('ml_quiz_stats');
+      return saved ? JSON.parse(saved) : { totalScore: 0, modulesCompleted: 0, completedModuleNames: [] };
+    } catch (error) {
+      console.error("Failed to parse user stats:", error);
+      return { totalScore: 0, modulesCompleted: 0, completedModuleNames: [] };
+    }
   });
 
   const startQuiz = () => {
