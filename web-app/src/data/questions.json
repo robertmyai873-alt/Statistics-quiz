@@ -5414,5 +5414,1925 @@
     "id": 404,
     "codeSnippet": "Residual standard error: 5.2 on 48 degrees of freedom\nMultiple R-squared:  0.45\nF-statistic: 19.6 on 2 and 48 DF,  p-value: 6.2e-07",
     "module": "Module 13: Course Wrap-up & Integration"
+  },
+  {
+    "id": 405,
+    "type": "mc",
+    "question": "Which of the following arguably represents the most critical reason for checking the assumption of independence of errors in a multiple regression analysis?",
+    "options": [
+      "It ensures that the residuals are normally distributed, which allows for accurate confidence interval construction.",
+      "It confirms that the variance of the residuals is constant across all levels of the predicted values.",
+      "It prevents the underestimation of standard errors, which would otherwise lead to an inflated Type I error rate.",
+      "It guarantees that there is a linear relationship between each predictor variable and the outcome variable."
+    ],
+    "answer": 2,
+    "explanation": "The assumption of independence of errors is crucial because if errors are correlated (e.g., in time-series or clustered data), the standard errors of the coefficients will likely be underestimated. This makes the coefficients appear more significant than they actually are, increasing the risk of Type I errors (false positives).",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 406,
+    "type": "mc",
+    "question": "You are examining a residual plot (residuals vs. fitted values) for a multiple regression model. You observe a distinct funnel shape where the spread of the residuals increases as the fitted values increase. What does this pattern indicate?",
+    "options": [
+      "The assumption of linearity has been violated.",
+      "The assumption of homoscedasticity has been violated.",
+      "The assumption of normality of residuals has been violated.",
+      "The assumption of no perfect multicollinearity has been violated."
+    ],
+    "answer": 1,
+    "explanation": "A funnel or cone shape in the residual vs. fitted values plot is a classic sign of heteroscedasticity (violation of homoscedasticity). It means the variance of the errors is not constant across all levels of the predicted value.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 407,
+    "type": "mc",
+    "question": "In the context of multiple regression, what does the Variance Inflation Factor (VIF) primarily measure?",
+    "options": [
+      "The proportion of variance in the outcome variable explained by the fixed effects alone.",
+      "The extent to which the variance of a regression coefficient is increased due to multicollinearity.",
+      "The influence of a single observation on the overall regression coefficients.",
+      "The distance of an observation from the centroid of the predictor variables."
+    ],
+    "answer": 1,
+    "explanation": "The VIF measures how much the variance of an estimated regression coefficient is increased (\"inflated\") because of Collinearity. A VIF of 1 indicates no correlation, while high values (e.g., > 10) suggest problematic multicollinearity.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 408,
+    "type": "mc",
+    "question": "A researcher finds that the residuals of their regression model are not normally distributed. The sample size is N = 500. How should the researcher proceed?",
+    "options": [
+      "They must transform the outcome variable immediately to achieve normality.",
+      "They should switch to a non-parametric test because validity is compromised.",
+      "They can likely proceed with the analysis as the assumption is robust with large samples.",
+      "They should remove all outliers that are contributing to the non-normality."
+    ],
+    "answer": 2,
+    "explanation": "The assumption of normality of residuals is least critical when the sample size is large (e.g., > 30-50, and certainly 500) due to the Central Limit Theorem, which ensures that the sampling distribution of the coefficients will be approximately normal even if the errors are not.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 409,
+    "type": "mc",
+    "question": "Which of the following diagnostic plots is most appropriate for checking the linearity assumption in multiple regression?",
+    "options": [
+      "A Q-Q plot of the residuals.",
+      "A plot of residuals versus observation order.",
+      "A plot of residuals versus fitted values.",
+      "A histogram of the standardized residuals."
+    ],
+    "answer": 2,
+    "explanation": "A plot of residuals versus fitted values (or residuals vs. predictors) is the primary tool for checking linearity. Patterns such as curves or U-shapes in this plot suggest a non-linear relationship that the linear model has failed to capture.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 410,
+    "type": "mc",
+    "question": "You calculate the Durbin-Watson statistic for your regression model and obtain a value of 0.5. What does this suggest?",
+    "options": [
+      "The residuals are independent and uncorrelated.",
+      "There is a strong positive autocorrelation in the residuals.",
+      "There is a strong negative autocorrelation in the residuals.",
+      "The assumption of homoscedasticity is met."
+    ],
+    "answer": 1,
+    "explanation": "The Durbin-Watson statistic ranges from 0 to 4. A value close to 2 indicates independence. Values approaching 0 indicate positive autocorrelation, while values approaching 4 indicate negative autocorrelation. 0.5 suggests strong positive autocorrelation.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 411,
+    "type": "mc",
+    "question": "Considering the distinction between Marginal R² (R²m) and Conditional R² (R²c) in mixed-effects models, which statement is correct?",
+    "options": [
+      "R²m represents the variance explained by both fixed and random effects.",
+      "R²c is always smaller than R²m.",
+      "The difference between R²c and R²m represents the variance explained by random effects.",
+      "R²m is used to assess the total fit of the model including clustering."
+    ],
+    "answer": 2,
+    "explanation": "Marginal R² (R²m) explains variance due to fixed effects only. Conditional R² (R²c) explains variance due to both fixed and random effects. Therefore, the difference (R²c - R²m) represents the proportion of variance attributable to the random effects (structure/clustering).",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 412,
+    "type": "mc",
+    "question": "Which of the following is an effective strategy for addressing a violation of the homoscedasticity assumption?",
+    "options": [
+      "Adding an interaction term to the model.",
+      "Using Weighted Least Squares (WLS) estimation.",
+      "Centering all continuous predictor variables.",
+      "Increasing the sample size of the study."
+    ],
+    "answer": 1,
+    "explanation": "Weighted Least Squares (WLS) is a specific method designed to handle heteroscedasticity by assigning less weight to observations with higher variance. Transforming the outcome (e.g., log transform) or using robust standard errors are other common solutions.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 413,
+    "type": "mc",
+    "question": "What does a \"tolerance\" value of 0.05 indicate in a multiple regression analysis?",
+    "options": [
+      "The predictor has only 5% of its variance shared with other predictors.",
+      "There is no issue with multicollinearity for this predictor.",
+      "The predictor is almost perfectly correlated with other predictors, indicating a problem.",
+      "The spread of residuals is within 5% of the mean predicted value."
+    ],
+    "answer": 2,
+    "explanation": "Tolerance is calculated as 1/VIF. A low tolerance (e.g., < 0.1 or < 0.2) indicates high multicollinearity. A value of 0.05 corresponds to a VIF of 20, which suggests severe multicollinearity.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 414,
+    "type": "mc",
+    "question": "When checking for influential points, which metric measures the influence of an observation on the fitted values?",
+    "options": [
+      "DFBETAS",
+      "DFFITS",
+      "Variance Inflation Factor",
+      "Mahalanobis Distance"
+    ],
+    "answer": 1,
+    "explanation": "DFFITS measures the influence of an observation on the fitted (predicted) values. DFBETAS measures influence on the regression coefficients themselves. Cook's Distance is a global measure of influence.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 415,
+    "type": "mc",
+    "question": "In a study where students are nested within classrooms, you find that R²m = 0.10 and R²c = 0.45. What is the most appropriate interpretation?",
+    "options": [
+      "The fixed effects (predictors) are very strong, explaining most of the variance.",
+      "The random effects (classrooms) account for a substantial portion of the variance (35%).",
+      "The model is a poor fit because the Marginal R² is so low.",
+      "There is no significant clustering effect, so a simple linear regression would suffice."
+    ],
+    "answer": 1,
+    "explanation": "The difference between R²c (0.45) and R²m (0.10) is 0.35. This means that the random effects (grouping by classroom) explain an additional 35% of the variance in the outcome beyond what the fixed predictors explain, indicating substantial clustering.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 416,
+    "type": "mc",
+    "question": "Which plot is specifically designed to check the assumption of normality of residuals?",
+    "options": [
+      "Scale-location plot",
+      "Residuals vs. Leverage plot",
+      "Q-Q (Quantile-Quantile) plot",
+      "Component-residual plot"
+    ],
+    "answer": 2,
+    "explanation": "A Q-Q plot compares the quantiles of the residuals to the quantiles of a theoretical normal distribution. If the points fall approximately on the diagonal line, the assumption of normality is met.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 417,
+    "type": "mc",
+    "question": "Why is \"No Perfect Multicollinearity\" a required assumption for the mathematical calculation of regression coefficients?",
+    "options": [
+      "High correlation between predictors biases the calculation of the intercept.",
+      "Perfect correlation makes it impossible to invert the design matrix, preventing estimation.",
+      "It ensures that the residuals have a mean of exactly zero.",
+      "It guarantees that there are no outliers in the predictor variables."
+    ],
+    "answer": 1,
+    "explanation": "If there is perfect multicollinearity, the matrix of predictors (X'X) is singular and cannot be inverted. This makes it mathematically impossible to calculate unique Ordinary Least Squares (OLS) estimates for the coefficients.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 418,
+    "type": "mc",
+    "question": "Which of the following scenarios would most likely trigger a violation of the independence assumption?",
+    "options": [
+      "Measuring the height and weight of 100 randomly selected individuals.",
+      "Measuring the test scores of students from 50 different schools.",
+      "Measuring the reaction time of the same participant across 20 different trials.",
+      "Measuring the daily sales of a company over the course of a year."
+    ],
+    "answer": 2,
+    "explanation": "Repeated measures designs (measuring the same person multiple times) and time-series data (option D) are the most common sources of non-independence. Students in schools (option B) also violate independence but are typically handled with mixed models. The repeated trials (option C) are a classic case where errors are likely correlated within the subject.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 419,
+    "type": "mc",
+    "question": "If a researcher identifies a violation of the linearity assumption based on a residual plot, what is a potential remedy?",
+    "options": [
+      "Using robust standard errors.",
+      "Adding polynomial terms (e.g., X²) to the model.",
+      "Removing the intercept from the model.",
+      "Calculating variance inflation factors."
+    ],
+    "answer": 1,
+    "explanation": "Nonlinear patterns in the residuals suggest that the relationship between the predictor and outcome is curvilinear. Adding polynomial terms (quadratic, cubic) allows the model to fit this curve, often correcting the linearity violation.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 420,
+    "type": "mc",
+    "question": "What does the component-residual (CR) plot help to diagnose?",
+    "options": [
+      "The presence of outliers in the Y variable.",
+      "The linearity of the relationship between a specific predictor and the outcome, controlling for others.",
+      "The overall normality of the model residuals.",
+      "The leverage values for each observation."
+    ],
+    "answer": 1,
+    "explanation": "Component-residual (or partial residual) plots are used to check the linearity assumption for a specific predictor variable in a multiple regression model, showing the relationship between that predictor and the outcome after \"adjusting\" for the other predictors.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 421,
+    "type": "mc",
+    "question": "A \"scale-location\" plot (square root of standardized residuals vs. fitted values) is primarily used to check which assumption?",
+    "options": [
+      "Normality",
+      "Linearity",
+      "Homoscedasticity",
+      "Independence"
+    ],
+    "answer": 2,
+    "explanation": "The scale-location plot shows the spread of residuals across the range of fitted values. A horizontal line suggests homoscedasticity (equal variance). A sloped line suggests heteroscedasticity (spread changes with value).",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 422,
+    "type": "mc",
+    "question": "Which of the following values for Cook's distance would generally be considered indicative of an influential point?",
+    "options": [
+      "Values > 0.05",
+      "Values > 1",
+      "Values < 4/n",
+      "Values close to 0"
+    ],
+    "answer": 1,
+    "explanation": "A common rule of thumb is that a Cook's distance greater than 1 indicates a highly influential point. Another stricter cutoff is 4/n. Values close to 0 indicate little influence.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 423,
+    "type": "mc",
+    "question": "When checking for outliers using standardized residuals, what cutoff is commonly used to identify potential outliers?",
+    "options": [
+      "Absolute value > 1.96",
+      "Absolute value > 3",
+      "Absolute value > 0.5",
+      "Absolute value > 10"
+    ],
+    "answer": 1,
+    "explanation": "Standardized (or studentized) residuals follow a t-distribution. Values with an absolute value greater than 3 are typically considered outliers, as they lie 3 standard deviations away from the mean residual (0).",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 424,
+    "type": "mc",
+    "question": "The assumption of \"No Endogeneity\" implies that:",
+    "options": [
+      "The predictor variables are uncorrelated with the error term.",
+      "The predictor variables are uncorrelated with each other.",
+      "The error term has a variance of 1.",
+      "The outcome variable is normally distributed."
+    ],
+    "answer": 0,
+    "explanation": "Endogeneity occurs when a predictor is correlated with the error term (e.g., due to omitted variable bias). The assumption that predictors are exogenous (uncorrelated with errors) is necessary for causal interpretation of coefficients.",
+    "module": "Study-Guide-1",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 425,
+    "type": "mc",
+    "question": "What is the primary advantage of using the Interquartile Range (IQR) method for outlier detection over Z-scores?",
+    "options": [
+      "It is computationally easier to calculate.",
+      "It is more robust to non-normal distributions and extreme values.",
+      "It allows for the identification of multivariate outliers.",
+      "It assumes the data follows a perfect normal distribution."
+    ],
+    "answer": 1,
+    "explanation": "The IQR method uses quartiles (Q1 and Q3) which are not influenced by extreme values, unlike the mean and standard deviation used in Z-scores. This makes the IQR method more robust, especially for skewed distributions.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 426,
+    "type": "mc",
+    "question": "Which of the following measures quantifies the leverage of an observation in a regression analysis?",
+    "options": [
+      "Studentized Residuals",
+      "Hat Values",
+      "Cook's Distance",
+      "DFFITS"
+    ],
+    "answer": 1,
+    "explanation": "Leverage is measured by \"hat values\" (from the hat matrix). It indicates how far an observation's predictor values are from the mean of the predictor values. High leverage points have unusual combinations of predictors.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 427,
+    "type": "mc",
+    "question": "When is it most appropriate to \"winsorize\" an outlier?",
+    "options": [
+      "When you want to completely remove the observation from the dataset to improve R².",
+      "When the outlier represents a clear data entry error that cannot be corrected.",
+      "When you want to reduce the influence of an extreme value while retaining the observation.",
+      "When the sample size is very large and the outlier has no impact."
+    ],
+    "answer": 2,
+    "explanation": "Winsorizing involves replacing extreme values with less extreme values (e.g., the 95th percentile). This approach is useful when you want to keep the data point (preserving sample size) but reduce its disproportionate impact on the model estimates.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 428,
+    "type": "mc",
+    "question": "In a regression model `Y = b0 + b1*X1 + b2*X2 + b3*(X1*X2)`, what does the coefficient `b3` represent?",
+    "options": [
+      "The average effect of X1 on Y.",
+      "The change in the effect of X1 on Y for a one-unit increase in X2.",
+      "The effect of X1 when X2 is zero.",
+      "The correlation between X1 and X2."
+    ],
+    "answer": 1,
+    "explanation": "In an interaction model, the interaction coefficient (`b3`) represents the change in the slope of one predictor (X1) for a one-unit increase in the moderator (X2). It quantifies how the relationship between X1 and Y depends on X2.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 429,
+    "type": "mc",
+    "question": "You run a \"Simple Slopes Analysis\" after finding a significant interaction. What is the main goal of this analysis?",
+    "options": [
+      "To test if the interaction term itself is significant.",
+      "To determine the effect of the predictor at specific, meaningful levels of the moderator.",
+      "To remove the non-significant main effects from the model.",
+      "To check for multicollinearity between the main effects and the interaction term."
+    ],
+    "answer": 1,
+    "explanation": "Simple slopes analysis allows you to probe a significant interaction by testing the significance of the predictor's slope at specific values of the moderator (e.g., mean, +1 SD, -1 SD). This helps interpret *where* and *how* the effect changes.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 430,
+    "type": "mc",
+    "question": "Which technique specifically identifies the exact range of moderator values for which the effect of the predictor is statistically significant?",
+    "options": [
+      "Simple Slopes Analysis",
+      "The Pick-a-Point Approach",
+      "The Johnson-Neyman Technique",
+      "Hierarchical Linear Modeling"
+    ],
+    "answer": 2,
+    "explanation": "The Johnson-Neyman technique (or regions of significance) calculates the precise values of the moderator where the simple slope of the predictor transitions from non-significant to significant, providing a more comprehensive view than testing just a few points.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 431,
+    "type": "mc",
+    "question": "What is a key benefit of centering continuous variables before creating an interaction term?",
+    "options": [
+      "It transforms the distribution of the variables to be normal.",
+      "It reduces the multicollinearity between the main effects and the interaction term.",
+      "It increases the R-squared of the model.",
+      "It eliminates the need for checking homoscedasticity."
+    ],
+    "answer": 1,
+    "explanation": "Interaction terms (product of two variables) are often highly correlated with the main effects (the variables themselves). Mean centering the variables before multiplying them reduces this structural multicollinearity, stabilizing the coefficient estimates and making the intercept more interpretable.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 432,
+    "type": "mc",
+    "question": "In the model `Salary = 30000 + 2000(Experience) + 1500(Education) + 300(Experience × Education)`, how do you interpret the coefficient `300`?",
+    "options": [
+      "For every year of Education, starting salary increases by $300.",
+      "The effect of Experience on Salary increases by $300 for each additional year of Education.",
+      "Experience and Education are correlated by 0.30.",
+      "People with both Experience and Education earn $300 more on average."
+    ],
+    "answer": 1,
+    "explanation": "The interaction coefficient (300) indicates that the \"return on experience\" is not constant; it depends on education. specifically, for each additional unit of Education, the slope of Experience (the salary increase per year of experience) goes up by 300.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 433,
+    "type": "mc",
+    "question": "If an interaction between a categorical variable (Treatment vs. Control) and a continuous variable (Age) is NOT significant, what does this imply?",
+    "options": [
+      "The treatment is ineffective for all ages.",
+      "The effect of the treatment is constant across all ages.",
+      "You should drop the main effects of Treatment and Age from the model.",
+      "There is a non-linear relationship between Age and the outcome."
+    ],
+    "answer": 1,
+    "explanation": "A non-significant interaction suggests that the slopes are parallel. This means the relationship between Treatment and the outcome does not depend on Age; the treatment effect is the same for young and old participants.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 434,
+    "type": "mc",
+    "question": "Mahalanobis Distance is particularly useful for detecting outliers in which scenario?",
+    "options": [
+      "When you have a single predictor variable.",
+      "When checking for non-normality of residuals.",
+      "When you need to account for correlations between multiple variables.",
+      "When the sample size is small (< 30)."
+    ],
+    "answer": 2,
+    "explanation": "Mahalanobis distance measures the distance of a point from the centroid of a multivariate distribution, taking into account the covariance (correlations) among the variables. It is ideal for detecting multivariate outliers that might not be outliers on any single variable alone.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 435,
+    "type": "mc",
+    "question": "What is the primary reason for performing a sensitivity analysis with and without outliers?",
+    "options": [
+      "To allow you to choose the result that best fits your hypothesis.",
+      "To accurately calculate the required sample size for future studies.",
+      "To assess the robustness of your results and determine if outliers drive the conclusion.",
+      "To prove that the outliers were result of measurement error."
+    ],
+    "answer": 2,
+    "explanation": "Sensitivity analysis (comparing results with and without outliers) allows researchers to see how much influence the outliers have. If the main conclusions remain the same, the results are \"robust.\" If they change, the outliers are influential and must be handled/discussed carefully.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 436,
+    "type": "mc",
+    "question": "In a \"Categorical × Continuous\" interaction model, what does the coefficient for the categorical variable (main effect) represent?",
+    "options": [
+      "The average difference between groups across all levels of the continuous variable.",
+      "The difference between groups when the continuous variable is zero.",
+      "The difference in slopes between the groups.",
+      "The overall intercept of the model."
+    ],
+    "answer": 1,
+    "explanation": "In a regression with an interaction, the main effects are \"conditional.\" The coefficient for the categorical variable represents the group difference strictly when the other predictor (continuous) is 0 (or at its mean if centered). It is no longer the \"average\" difference.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 437,
+    "type": "mc",
+    "question": "Visual inspection of a boxplot allows you to identify outliers as points that fall:",
+    "options": [
+      "Beyond the whiskers (typically 1.5 * IQR).",
+      "Outside the 95% confidence interval of the mean.",
+      "More than 2 standard deviations from the median.",
+      "Outside the range of the normal distribution curve."
+    ],
+    "answer": 0,
+    "explanation": "In a standard boxplot, the \"whiskers\" extend to the most extreme data point that is no more than 1.5 times the Interquartile Range (IQR) from the box. Points beyond these whiskers are plotted individually as potential outliers.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 438,
+    "type": "mc",
+    "question": "Why might you choose to conduct a \"Pick-a-Point\" analysis instead of the Johnson-Neyman technique?",
+    "options": [
+      "When the Johnson-Neyman technique fails to converge.",
+      "When testing specific, theoretically meaningful values (e.g., clinically significant cutoffs) is more relevant than finding a region.",
+      "When the moderator is a categorical variable.",
+      "When you want to avoid calculating standard errors."
+    ],
+    "answer": 1,
+    "explanation": "While Johnson-Neyman is more comprehensive, Pick-a-Point is often chosen when there are specific values of the moderator that have practical meaning (e.g., a \"pass\" score on a test, or a specific dosage), making the interpretation more relevant to the applied context.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 439,
+    "type": "mc",
+    "question": "If you observe a \"U-shape\" in your residual plot, it suggests that:",
+    "options": [
+      "You have a significant interaction effect.",
+      "You are missing a quadratic trend (non-linearity) in your model.",
+      "Your residuals are perfectly normal.",
+      "You have severe multicollinearity."
+    ],
+    "answer": 1,
+    "explanation": "A U-shaped (or inverted U-shaped) pattern in the residuals vs. fitted values plot is a classic indicator that the linear model has failed to capture a non-linear (curvilinear) relationship. Adding a squared term (X²) is often the solution.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 440,
+    "type": "mc",
+    "question": "When interpreting a regression model with an interaction `Y ~ X1 * X2`, if the interaction term is significant, why should you be cautious about interpreting the main effects?",
+    "options": [
+      "The main effects are likely calculated incorrectly.",
+      "The main effects are meaningless because they only apply when the other variable is 0.",
+      "Statistical significance of main effects is always inflated in interaction models.",
+      "You must remove the main effects to interpret the interaction."
+    ],
+    "answer": 1,
+    "explanation": "When an interaction is present, the \"main effect\" coefficients are actually \"simple effects\" conditional on the other variable being 0. Interpreting them as global \"main effects\" (like in ANOVA) is misleading because the effect of X1 represents its effect *specifically* for the case where X2=0.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 441,
+    "type": "mc",
+    "question": "Which of the following is NOT a valid reason to remove an outlier?",
+    "options": [
+      "It is a data entry error (e.g., age = 150).",
+      "It is a result of equipment malfunction.",
+      "The participant does not belong to the target population (e.g., took the wrong test).",
+      "The observation reduces the statistical significance of your primary hypothesis."
+    ],
+    "answer": 3,
+    "explanation": "Removing an outlier simply to achieve significance (p-hacking) is a violation of research ethics. Removal must be justified by valid reasons like error, measurement failure, or population ineligibility, not by the desire for a specific result.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 442,
+    "type": "mc",
+    "question": "Standardized residuals are generally considered more reliable than raw residuals for outlier detection because:",
+    "options": [
+      "They are always positive, making comparison easier.",
+      "They account for the units of measurement, allowing for a standard cutoff (like ±3).",
+      "They automatically correct for heteroscedasticity.",
+      "They are not influenced by the mean of the distribution."
+    ],
+    "answer": 1,
+    "explanation": "Raw residuals depend on the scale of the variable (e.g., dollars vs. millions of dollars). Standardized residuals divide the raw residual by its standard deviation, putting them on a Z-score-like scale where universal cutoffs (like >3) can be applied regardless of the original units.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 443,
+    "type": "mc",
+    "question": "For a continuous moderator in a simple slopes analysis, what are the standard default values used to probe the interaction?",
+    "options": [
+      "Minimum, Median, Maximum",
+      "Mean, Mean + 1 SD, Mean - 1 SD",
+      "25th, 50th, and 75th percentiles",
+      "0, 1, and 100"
+    ],
+    "answer": 1,
+    "explanation": "The most common convention (suggested by Aiken & West) for probing interactions with continuous moderators is to test the simple slope at the Mean, one Standard Deviation above the Mean (+1 SD), and one Standard Deviation below the Mean (-1 SD).",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 444,
+    "type": "mc",
+    "question": "Which influence diagnostic combines information about both the size of the residual (outlier-ness) and the leverage (unusual predictors)?",
+    "options": [
+      "Tolerance",
+      "VIF",
+      "Cook's Distance",
+      "Eigenvalues"
+    ],
+    "answer": 2,
+    "explanation": "Cook's Distance is a summary measure of influence that accounts for both how far an observation is from the regression line (large residual) and how far it is from the center of the predictor space (high leverage). High Cook's D indicates a point that substantially changes the model estimates.",
+    "module": "Study-Guide-2",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 445,
+    "type": "mc",
+    "question": "In a multiple regression model, what is the key difference between Dummy Coding and Unweighted Effect Coding regarding the intercept?",
+    "options": [
+      "In Dummy Coding, the intercept represents the grand mean; in Effect Coding, it represents the reference group mean.",
+      "In Dummy Coding, the intercept represents the reference group mean; in Effect Coding, it represents the grand mean.",
+      "In Dummy Coding, the intercept is always 0; in Effect Coding, it is the mean of the first group.",
+      "There is no difference; the intercept always represents the value when all predictors are zero."
+    ],
+    "answer": 1,
+    "explanation": "In Dummy Coding (reference group coding), the intercept is the mean of the specific reference group (coded as 0s). In Unweighted Effect Coding, the intercept represents the unweighted grand mean of all the group means combined.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 446,
+    "type": "mc",
+    "question": "When using Orthogonal Polynomials (e.g., `poly(X, 2)` in R) in a regression model, what is the interpretation of the linear term coefficient?",
+    "options": [
+      "It represents the instantaneous slope of the curve at X=0.",
+      "It represents the correlation between X and X^2.",
+      "It represents the overall linear trend in the data, independent of the quadratic trend.",
+      "It represents the value of Y when X is at its minimum."
+    ],
+    "answer": 2,
+    "explanation": "A key property of orthogonal polynomials is that the terms are uncorrelated. This means the linear coefficient captures the \"linear\" component of the relationship, the quadratic coefficient captures the \"U-shape,\" and they can be interpreted (and tested) independently of each other.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 447,
+    "type": "mc",
+    "question": "You are analyzing a study with 4 distinct treatment groups. If you want to use Dummy Coding, how many dummy variables must you create to include \"Treatment\" in your regression model?",
+    "options": [
+      "1",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "To represent a categorical variable with *k* levels, you need *k-1* dummy variables. One group serves as the reference and is defined by having 0 on all dummy variables. Therefore, for 4 groups, you need 4-1 = 3 dummy variables.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 448,
+    "type": "mc",
+    "question": "What characteristic must a set of contrasts possess to be considered \"orthogonal\"?",
+    "options": [
+      "The sum of the weights for each contrast must equal 1.",
+      "The sum of the cross-products of the weights for any pair of contrasts must equal zero.",
+      "The contrasts must allow for overlapping comparisons between groups.",
+      "All contrast coefficients must be positive."
+    ],
+    "answer": 1,
+    "explanation": "Orthogonality implies independence. For contrasts to be orthogonal, two conditions must be met: (1) the weights within each contrast sum to zero, and (2) the sum of the products of the corresponding weights for any two contrasts equals zero.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 449,
+    "type": "mc",
+    "question": "Why might a researcher choose to use \"Raw\" polynomials (e.g., `X + X^2`) instead of Orthogonal polynomials?",
+    "options": [
+      "Raw polynomials reduce multicollinearity between terms.",
+      "Raw polynomials provide p-values that are easier to interpret.",
+      "Raw polynomials allow for a direct, intuitive prediction equation (e.g., Y = a + bX + cX^2).",
+      "Raw polynomials automatically center the data."
+    ],
+    "answer": 2,
+    "explanation": "While orthogonal polynomials are better for hypothesis testing due to lack of correlation, raw polynomials produce coefficients that correspond directly to the standard algebraic equation of a curve, making it easier to write out the formula for prediction or plotting outside of R.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 450,
+    "type": "mc",
+    "question": "In a regression with weighted effect coding, what does the intercept represent?",
+    "options": [
+      "The mean of the largest group.",
+      "The simple average of group means (unweighted grand mean).",
+      "The weighted grand mean (accounting for sample sizes of groups).",
+      "The difference between the first and last group."
+    ],
+    "answer": 2,
+    "explanation": "Weighted effect coding is useful when group sizes differ significantly. The intercept reflects the weighted average of the group means (which equals the sample mean of Y), ensuring that larger groups contribute more to the \"baseline\" estimate.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 451,
+    "type": "mc",
+    "question": "If the quadratic term (`X^2`) in a polynomial regression is negative and significant, what shape does the relationship take?",
+    "options": [
+      "A \"U\" shape (convex).",
+      "An \"Inverted U\" shape (concave).",
+      "An S-shape.",
+      "A straight line with a negative slope."
+    ],
+    "answer": 1,
+    "explanation": "The sign of the squared term determines the concavity. A positive coefficient indicates a U-shape (opening up). A negative coefficient indicates an inverted U-shape (opening down), representing a relationship that rises to a peak and then falls.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 452,
+    "type": "mc",
+    "question": "When interpreting the coefficients from a model using Helmert Contrasts, what is each level compared to?",
+    "options": [
+      "The reference group (first level).",
+      "The grand mean of all levels.",
+      "The mean of the subsequent levels.",
+      "The mean of the previous levels."
+    ],
+    "answer": 2,
+    "explanation": "Helmert contrasts compare each level of a factor to the mean of the *subsequent* levels. (Reverse Helmert compares to the mean of *previous* levels). This is useful for ordinal variables or sequential stages.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 453,
+    "type": "mc",
+    "question": "What is the \"Reference Group Problem\" in dummy coding?",
+    "options": [
+      "If accurate dummy codes are not created, the model will fail to run.",
+      "The choice of reference group is arbitrary, but it determines the meaning of all other coefficients.",
+      "The reference group must always be the group with the largest sample size.",
+      "The reference group cannot have a variance of zero."
+    ],
+    "answer": 1,
+    "explanation": "In dummy coding, all coefficients are differences relative to the chosen reference group. Changing the reference group changes all the coefficient values (though not the model fit). Researchers must consciously choose a meaningful reference (e.g., Control) to make interpretation easy.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 454,
+    "type": "mc",
+    "question": "If you include both linear (`poly(X,1)`) and quadratic (`poly(X,2)`) orthogonal terms in a model, and only the quadratic term is significant, what does this imply?",
+    "options": [
+      "The relationship is a perfect straight line.",
+      "The relationship is purely symmetrical U-shaped (or inverted U), with no overall linear trend.",
+      "You should remove the linear term and re-run the model.",
+      "The quadratic term is invalid because the linear term must be significant first."
+    ],
+    "answer": 1,
+    "explanation": "Because orthogonal terms are independent, a non-significant linear term means there is no overall \"tilt\" or linear trend across the data. A significant quadratic term means there is a curve. Together, this implies a symmetrical curve (parabola) centered roughly in the middle of the X range.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 455,
+    "type": "mc",
+    "question": "Which coding scheme allows you to test specific, a priori hypotheses about differences between combinations of groups (e.g., \"Treatments A & B vs. Control\")?",
+    "options": [
+      "Dummy Coding",
+      "Effect Coding",
+      "Contrast Coding",
+      "Probability Coding"
+    ],
+    "answer": 2,
+    "explanation": "Contrast coding gives the researcher total control to define specific comparisons (contrasts) based on theory. You can assign weights to pool groups together (e.g., -1 for Control, 0.5 for A, 0.5 for B) to test complex hypotheses directly.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 456,
+    "type": "mc",
+    "question": "In simple dummy coding with \"Placebo\" as the reference group, what does the coefficient for the \"Drug A\" dummy variable tell you?",
+    "options": [
+      "The total effect of Drug A on the outcome.",
+      "The difference in the mean outcome between Drug A and the Placebo group.",
+      "The difference between Drug A and the overall average of all groups.",
+      "The slope of the relationship between dose and outcome for Drug A."
+    ],
+    "answer": 1,
+    "explanation": "The coefficient for a dummy variable represents the specific difference in means: Mean(Drug A) - Mean(Reference). It tests whether Drug A is significantly different from the Placebo group.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 457,
+    "type": "mc",
+    "question": "When using polynomial regression, why is it typically recommended to fit lower-order terms (e.g., X) even if your hypothesis is about the higher-order term (e.g., X^2)?",
+    "options": [
+      "It is required by the software; R will error otherwise.",
+      "Lower-order terms are necessary to correctly center the curve and allow for a shifted vertex.",
+      "Higher-order terms are always correlated with the intercept.",
+      "It ensures the residuals are normally distributed."
+    ],
+    "answer": 1,
+    "explanation": "A model with only X^2 (`Y = b0 + b2*X^2`) forces the vertex (turning point) of the parabola to be exactly at X=0. Including the linear term X allows the curve to shift left or right, fitting the data wherever the peak/trough actually occurs.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 458,
+    "type": "mc",
+    "question": "For a categorical variable with 3 levels, what is the sum of the weights for any single contrast in a valid contrast coding scheme?",
+    "options": [
+      "1",
+      "0",
+      "N (sample size)",
+      "It depends on the specific contrast."
+    ],
+    "answer": 1,
+    "explanation": "A fundamental rule for any valid contrast is that the sum of the weights assigned to the groups must equal zero. This ensures that the contrast represents a comparison of differences (e.g., +1 vs -1) rather than just a sum of means.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 459,
+    "type": "mc",
+    "question": "You fit a cubic model (`X + X^2 + X^3`) and find that the cubic term is significant. What shape characterizes this relationship?",
+    "options": [
+      "A simple U-shape.",
+      "An S-shape with two potential turning points.",
+      "An exponential growth curve.",
+      "A flat line."
+    ],
+    "answer": 1,
+    "explanation": "A cubic function allows for two changes in direction (two turning points). This creates an S-shape or a \"wave\" pattern. A significant cubic term essentially adds a \"bend\" to the parabola of the quadratic model.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 460,
+    "type": "mc",
+    "question": "When using Unweighted Effect Coding with 3 groups, if the coefficients for Group 1 and Group 2 are `b1` and `b2`, how do you calculate the effect for the 3rd group (the reference/omitted group)?",
+    "options": [
+      "It is simply 0.",
+      "It is `-(b1 + b2)`.",
+      "It is `(b1 + b2) / 2`.",
+      "It is `1 - (b1 + b2)`."
+    ],
+    "answer": 1,
+    "explanation": "In effect coding, the effects must sum to zero across all groups. Therefore, the effect of the omitted group is the negative sum of the estimated coefficients for the other groups: Effect_3 = -(Effect_1 + Effect_2).",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 461,
+    "type": "mc",
+    "question": "How does multicollinearity affect the interpretation of \"Raw\" polynomial coefficients compared to \"Orthogonal\" ones?",
+    "options": [
+      "It has no effect; interpretations are identical.",
+      "Raw coefficients are highly correlated, so the \"Linear\" term no longer represents the simple linear trend but rather the slope at X=0.",
+      "Orthogonal coefficients are harder to interpret because they don't relate to the data.",
+      "Raw coefficients always possess lower standard errors."
+    ],
+    "answer": 1,
+    "explanation": "Because X and X^2 are correlated, in a raw polynomial model, the coefficient for X is conditional: it is the slope of the curve specifically where X=0 (the intercept). In orthogonal polynomials, the linear coefficient represents the independent linear trend across the whole dataset.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 462,
+    "type": "mc",
+    "question": "Which of the following is true about the F-test for a block of dummy variables representing a single categorical predictor with 4 categories?",
+    "options": [
+      "It tests if any single dummy variable is significant.",
+      "It tests the global null hypothesis that there are no differences among any of the 4 group means.",
+      "It tests if the intercept is significantly different from zero.",
+      "It tests if the reference group is different from the grand mean."
+    ],
+    "answer": 1,
+    "explanation": "The \"omnibus\" F-test for the set of dummy variables effectively acts like a One-Way ANOVA. It tests whether the categorical variable *as a whole* explains significant variance. A significant result means *at least* one group differs from another.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 463,
+    "type": "mc",
+    "question": "In R, what is the default coding scheme applied to factor variables in linear models (`lm`)?",
+    "options": [
+      "Effect Coding (`contr.sum`)",
+      "Helmert Coding (`contr.helmert`)",
+      "Dummy Coding (`contr.treatment`)",
+      "Orthogonal Coding (`contr.poly`)"
+    ],
+    "answer": 2,
+    "explanation": "By default, R uses `contr.treatment`, which corresponds to dummy coding. The first level of the factor (alphabetically or numerically) is automatically set as the reference group.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 464,
+    "type": "mc",
+    "question": "What is the primary benefit of using polynomial regression over transforming the data (e.g., log transformation) to handle non-linearity?",
+    "options": [
+      "Polynomials always provide a better fit (higher R^2).",
+      "Polynomials allow you to model non-monotonic relationships (e.g., curves that go up and then down).",
+      "Polynomials require fewer degrees of freedom.",
+      "Transformations are mathematically invalid for regression."
+    ],
+    "answer": 1,
+    "explanation": "Most standard transformations (log, sqrt) are monotonic (they keep going up or keep going down). They can linearize a curve, but they cannot model a relationship that changes direction (like an inverted U-shape peak). Polynomials (quadratic terms) are specifically designed for these non-monotonic bends.",
+    "module": "Study-Guide-3",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 465,
+    "type": "mc",
+    "question": "When comparing non-nested models (e.g., Model A with predictors X1, X2 vs. Model B with predictors X3, X4), which statistic is most appropriate to use?",
+    "options": [
+      "The Likelihood Ratio Test (LRT).",
+      "The F-statistic from the ANOVA table.",
+      "The Akaike Information Criterion (AIC).",
+      "The difference in R-squared values."
+    ],
+    "answer": 2,
+    "explanation": "The Likelihood Ratio Test and F-tests are only valid for nested models (where one model is a subset of the other). For non-nested models, Information Criteria like AIC (or BIC) are the standard tools for comparison, as they balance model fit (likelihood) with model complexity.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 466,
+    "type": "mc",
+    "question": "What is the primary interpretation of the Intraclass Correlation (ICC) in a random intercept model?",
+    "options": [
+      "The correlation between the fixed effects and the random effects.",
+      "The proportion of total variance in the outcome that is attributable to differences between groups (clusters).",
+      "The correlation between two different predictor variables.",
+      "The percentage of variance explained by the fixed predictors alone."
+    ],
+    "answer": 1,
+    "explanation": "The ICC (Intraclass Correlation) ranges from 0 to 1 and represents the ratio of between-group variance to total variance. An ICC of 0.20 means that 20% of the variation in the outcome is due to systematic differences between the groups (e.g., classrooms, schools).",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 467,
+    "type": "mc",
+    "question": "In the context of the Likelihood Ratio Test, what distribution is used to determine the statistical significance of the difference between two models?",
+    "options": [
+      "The t-distribution.",
+      "The F-distribution.",
+      "The Chi-square distribution.",
+      "The Normal distribution."
+    ],
+    "answer": 2,
+    "explanation": "The test statistic for the Likelihood Ratio Test is -2 times the difference in log-likelihoods. This statistic follows a Chi-square distribution with degrees of freedom equal to the difference in the number of parameters between the two models.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 468,
+    "type": "mc",
+    "question": "When fitting a mixed model in R using `lmer`, why is it important to use `REML = FALSE` (Maximum Likelihood) when comparing models with different fixed effects?",
+    "options": [
+      "REML estimates are biased for fixed effects.",
+      "REML assumes the random effects are zero.",
+      "REML maximizes the likelihood of the residuals, making it invalid for comparing models with different fixed structures.",
+      "Maximum Likelihood is faster to compute."
+    ],
+    "answer": 2,
+    "explanation": "REML (Restricted Maximum Likelihood) estimates variance components by factoring out the fixed effects. If you change the fixed effects, the \"data\" REML uses effectively changes, making the likelihoods incomparable. Maximum Likelihood (ML) must be used for LRTs involving fixed effects.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 469,
+    "type": "mc",
+    "question": "A \"Random Intercept\" model implies that:",
+    "options": [
+      "The relationship (slope) between the predictor and outcome is identical for all groups, but the groups have different starting points.",
+      "The relationship (slope) between the predictor and outcome varies across groups.",
+      "The intercept is constrained to be zero for all groups.",
+      "The model does not include any fixed predictors, only random noise."
+    ],
+    "answer": 0,
+    "explanation": "In a random intercept model, each group gets its own intercept (shifting the regression line up or down), but the slope of the predictor lines is forced to be parallel (identical) across all groups.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 470,
+    "type": "mc",
+    "question": "What does a difference in AIC of greater than 10 (ΔAIC > 10) typically indicate?",
+    "options": [
+      "The two models are statistically equivalent.",
+      "The model with the higher AIC has essentially no support compared to the better model.",
+      "The model with the lower AIC is overfitted.",
+      "You should use the BIC instead."
+    ],
+    "answer": 1,
+    "explanation": "Rules of thumb for AIC interpretation suggest that a ΔAIC < 2 indicates substantial support for both models (they are similar), while a ΔAIC > 10 provides very strong evidence against the model with the higher AIC, meaning the lower AIC model is clearly superior.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 471,
+    "type": "mc",
+    "question": "Which of the following is required for two models to be considered \"nested\"?",
+    "options": [
+      "They must define the same random effects structure.",
+      "The parameters of the simpler model must be a subset of the parameters of the more complex model.",
+      "They must have the same R-squared value.",
+      "They must be fitted on different datasets."
+    ],
+    "answer": 1,
+    "explanation": "Nested models exist when one model can be derived simply by constraining parameters of the other model to zero. For example, `Y ~ X1` is nested within `Y ~ X1 + X2`. If the predictors are completely different, they are non-nested.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 472,
+    "type": "mc",
+    "question": "In a mixed model output, if the variance of the \"School\" random effect is 0, what does this suggest?",
+    "options": [
+      "The model failed to converge.",
+      "There is no variation in the outcome between schools; a standard regression model would suffice.",
+      "The fixed effects explain all the variance.",
+      "The schools are all identical in size."
+    ],
+    "answer": 1,
+    "explanation": "A variance of 0 for the random intercept means that there are no systematic differences between the groups (schools). The multi-level structure is unnecessary, and the data could likely be analyzed using standard OLS regression without violating independence assumptions (regarding clustering).",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 473,
+    "type": "mc",
+    "question": "What is the formula for calculating AIC?",
+    "options": [
+      "AIC = -2(Log-Likelihood) + 2(k)",
+      "AIC = R^2 + k",
+      "AIC = 2(Log-Likelihood) - 2(k)",
+      "AIC = Log-Likelihood / n"
+    ],
+    "answer": 0,
+    "explanation": "AIC rewards goodness of fit (high log-likelihood, making the first term more negative) but penalizes complexity (k = number of parameters). The formula is designed to find the sweet spot between fit and parsimony.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 474,
+    "type": "mc",
+    "question": "You fit a random intercept and random slope model `(1 + X | Group)`. You find a strong negative correlation between the random intercepts and random slopes (-0.80). What does this mean?",
+    "options": [
+      "Groups with higher intercepts tends to have steeper positive slopes.",
+      "Groups with higher intercepts tends to have flatter (or more negative) slopes.",
+      "The model is misidentified and should be simplified.",
+      "The random effects are independent."
+    ],
+    "answer": 1,
+    "explanation": "A negative correlation means that as the intercept increases, the slope decreases. For example, in a learning study, students who start with high scores (high intercept) might show slower improvement (lower slope) than students who start low (ceiling effect or regression to the mean).",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 475,
+    "type": "mc",
+    "question": "Why is the Likelihood Ratio Test inappropriate for comparing a model with predictors X1 & X2 against a model with predictors X3 & X4?",
+    "options": [
+      "Because the sample sizes might be different.",
+      "Because the models are non-nested.",
+      "Because you cannot calculate log-likelihood for multiple regression.",
+      "Because the error terms are not normally distributed."
+    ],
+    "answer": 1,
+    "explanation": "The mathematical properties of the standard Likelihood Ratio Test (Chi-square distribution of the difference) only hold when the models are nested. For non-nested comparisons, this test statistic does not follow a known distribution, making the p-value invalid.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 476,
+    "type": "mc",
+    "question": "Which component of a mixed model captures the \"Between-Group\" variance?",
+    "options": [
+      "The residual variance.",
+      "The fixed efffects coefficients.",
+      "The variance of the random intercept.",
+      "The standard error of the intercept."
+    ],
+    "answer": 2,
+    "explanation": "In a random intercept model, the total variance is partitioned into \"variance of the random intercept\" (Between-Group) and \"residual variance\" (Within-Group). The random intercept variance quantifies how much the group means differ from each other.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 477,
+    "type": "mc",
+    "question": "What is the main goal of the \"Principle of Parsimony\" in model selection?",
+    "options": [
+      "To select the model with the highest possible R-squared.",
+      "To select the simplest model that adequately explains the data.",
+      "To include every possible interaction term to avoid bias.",
+      "To maximize the log-likelihood regardless of complexity."
+    ],
+    "answer": 1,
+    "explanation": "Parsimony (Occam's Razor) prefers simpler explanations. In statistical modeling, this means if two models fit the data equally well, the one with fewer parameters (less complex) is preferred to avoid overfitting and improve generalizability.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 478,
+    "type": "mc",
+    "question": "If you perform a Likelihood Ratio Test and get a p-value of 0.001, what is the conclusion?",
+    "options": [
+      "The simpler model is better.",
+      "The more complex model provides a significantly better fit than the simpler model.",
+      "The models are statistically equivalent.",
+      "The more complex model is overfitted."
+    ],
+    "answer": 1,
+    "explanation": "A significant p-value (e.g., < .05) in an LRT rejects the null hypothesis that the additional parameters are zero. It indicates that the improvement in model fit (reduction in deviance) achieved by adding the parameters is too large to be due to chance.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 479,
+    "type": "mc",
+    "question": "Log-Likelihood values are typically:",
+    "options": [
+      "Positive and between 0 and 1.",
+      "Negative, with values closer to 0 (less negative) indicating better fit.",
+      "Negative, with values further from 0 (more negative) indicating better fit.",
+      "Zero."
+    ],
+    "answer": 1,
+    "explanation": "Log-likelihoods are usually negative numbers (log of a probability < 1). A \"higher\" likelihood means a number closer to zero (e.g., -500 is better than -600). It measures how probable the observed data is given the model parameters.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 480,
+    "type": "mc",
+    "question": "When adding a \"Random Slope\" to a mixed model, what assumption are you relaxing?",
+    "options": [
+      "You are no longer assuming the residuals are normal.",
+      "You are no longer assuming that the effect of the predictor is the same for every group.",
+      "You are no longer assuming that the intercepts vary.",
+      "You are removing the fixed effect of the predictor."
+    ],
+    "answer": 1,
+    "explanation": "A fixed slope model assumes the effect of X on Y is universal (same coefficient for everyone). A random slope model relaxes this, allowing the slope coefficient to be different for each group (e.g., the treatment works better in School A than School B).",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 481,
+    "type": "mc",
+    "question": "Which of the following is a limitation of using R-squared for model comparison?",
+    "options": [
+      "It cannot be calculated for linear regression.",
+      "It always increases (or stays the same) when you add more predictors, even if they are useless.",
+      "It penalizes complex models too heavily.",
+      "It implies causation."
+    ],
+    "answer": 1,
+    "explanation": "R-squared is monotonically increasing; adding any variable, no matter how nonsensical, will slightly raise R-squared. This makes it a poor metric for choosing the \"best\" model, necessitating Adjusted R-squared or AIC which penalize complexity.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 482,
+    "type": "mc",
+    "question": "In a mixed model `lmer(score ~ time + (1 | student))`, what does the term `(1 | student)` specify?",
+    "options": [
+      "A fixed effect for student.",
+      "A random intercept for each student.",
+      "A random slope for time.",
+      "A random intercept and random slope."
+    ],
+    "answer": 1,
+    "explanation": "The `1` represents the intercept. The `|` represents the grouping structure. So `(1 | student)` translates to \"allow the intercept (1) to vary randomly by student.\"",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 483,
+    "type": "mc",
+    "question": "When comparing models using Akaike Weights, what does a weight of 0.75 for Model A imply?",
+    "options": [
+      "Model A explains 75% of the variance.",
+      "There is a 75% probability that Model A is the best model among the set of candidate models considered.",
+      "Model A is 75% better than the null model.",
+      "The p-value for Model A is 0.75."
+    ],
+    "answer": 1,
+    "explanation": "Akaike Weights transform the raw AIC differences into conditional probabilities. A weight of 0.75 means that, given the specific set of models tested, there is a 75% chance that Model A is the K-L information-best model.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 484,
+    "type": "mc",
+    "question": "Which scenario is the ideal use-case for a Mixed Linear Model?",
+    "options": [
+      "Determining the effect of Age on Salary in a single cross-sectional survey of 100 people.",
+      "Predicting Coin Flips (Binary outcome).",
+      "Analyzing the effect of a teaching method where students are nested within different classrooms.",
+      "Analyzing time-series stock data to forecast future prices."
+    ],
+    "answer": 2,
+    "explanation": "Mixed models are specifically designed for hierarchical or nested data structures (like students in classrooms) where observations within the same group are likely correlated (violating independence). Option B requires Logistic regression; Option D requires Time Series analysis.",
+    "module": "Study-Guide-4",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 485,
+    "type": "mc",
+    "question": "What is the defining characteristic of a \"Growth Curve Model\"?",
+    "options": [
+      "It must use non-linear regression.",
+      "It models the trajectory of change within individuals over time using repeated measures.",
+      "It only applies to economic data (GDP growth).",
+      "It assumes that all individuals change at exactly the same rate."
+    ],
+    "answer": 1,
+    "explanation": "Growth curve models (or longitudinal multilevel models) use repeated observations of the same individuals to estimate both an average trajectory of change (fixed effect) and individual variations in that trajectory (random effects).",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 486,
+    "type": "mc",
+    "question": "In a linear growth model with \"Time\" coded as 0, 1, 2, 3..., what does the intercept represent?",
+    "options": [
+      "The rate of change per unit of time.",
+      "The average outcome at the final time point.",
+      "The average \"initial status\" or baseline value of the outcome.",
+      "The residual error variance."
+    ],
+    "answer": 2,
+    "explanation": "When time is coded such that the first observation is 0, the intercept term corresponds to the predicted value of the outcome when Time=0. This conceptually represents the \"starting point\" or initial status of the trajectory.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 487,
+    "type": "mc",
+    "question": "If you include a quadratic time term (`Time^2`) in a growth model and its coefficient is positive, what does this indicate about the trajectory?",
+    "options": [
+      "The rate of growth is constant.",
+      "The growth is decelerating (slowing down).",
+      "The growth is accelerating (curving upward) over time.",
+      "The relationship is not significant."
+    ],
+    "answer": 2,
+    "explanation": "In a curve, the quadratic term determines the concavity. A positive coefficient for a squared term indicates a \"U\" shape or upward curvature. If the linear trend is positive, a positive quadratic term means the growth is getting faster and faster (acceleration).",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 488,
+    "type": "mc",
+    "question": "In a mixed model, what does it mean if the Residual Variance is very large compared to the Random Intercept Variance?",
+    "options": [
+      "Most of the variability in the data is due to differences *between* groups.",
+      "Most of the variability in the data is due to differences *within* groups (noise or individual fluctuation).",
+      "The model is a perfect fit.",
+      "The ICC is close to 1."
+    ],
+    "answer": 1,
+    "explanation": "Residual variance captures within-group variability. If this is large relative to the random intercept (between-group) variability, it means the groups are actually quite similar to each other, and most of the \"action\" is happening at the individual level within groups (low ICC).",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 489,
+    "type": "mc",
+    "question": "How is a \"Time-Varying Covariate\" different from a standard predictor in a growth model?",
+    "options": [
+      "It is constant for each individual (e.g., Gender).",
+      "It changes value at each measurement point for the same individual (e.g., Daily Stress).",
+      "It is the outcome variable.",
+      "It is used to define the random slopes."
+    ],
+    "answer": 1,
+    "explanation": "A time-varying covariate (Level 1 predictor) allows for checking whether fluctuations in a predictor *at a specific time point* predict the outcome *at that same time point*, over and above the general growth trend. E.g., \"Is regression on days with higher stress separate from the overall trend?\"",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 490,
+    "type": "mc",
+    "question": "You fit a growth model and find that the random slope variance for \"Time\" is not significantly different from zero. What does this suggest?",
+    "options": [
+      "There is no change over time on average.",
+      "Everyone changes at approximately the same rate.",
+      "The starting points (intercepts) are all the same.",
+      "You should add a cubic term."
+    ],
+    "answer": 1,
+    "explanation": "The random slope variance quantifies individual differences in the rate of change. If it is zero (or non-significant), it implies that although there may be an average trend (fixed effect), every individual follows that same trend line parallel to each other; there is no heterogeneity in growth rates.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 491,
+    "type": "mc",
+    "question": "What is the interpretation of the fixed effect for \"Treatment\" in a growth model `Outcome ~ Time + Treatment + Time*Treatment`?",
+    "options": [
+      "It represents the difference in rates of change between groups.",
+      "It represents the difference between groups at Time = 0 (Initial Status).",
+      "It represents the difference between groups at the final time point.",
+      "It represents the average difference across all time points."
+    ],
+    "answer": 1,
+    "explanation": "In the presence of an interaction with Time (where Time 0 is baseline), the main effect of Treatment represents the group difference specifically when Time = 0. Thus, it tests whether the treatment and control groups started at different levels before the intervention began.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 492,
+    "type": "mc",
+    "question": "Which of the following data structures is best handled by a mixed-effects model rather than a repeated-measures ANOVA?",
+    "options": [
+      "Balanced data with no missing values.",
+      "Data where every participant is measured exactly 3 times at the same intervals.",
+      "Unbalanced data where participants are measured at different irregular time points or have missing observations.",
+      "Cross-sectional data."
+    ],
+    "answer": 2,
+    "explanation": "One of the biggest advantages of mixed models (specifically growth curves) over RM-ANOVA is flexibility. They can handle missing data (under MAR) and participants having measurements at different times (e.g., Month 1, 3 vs Month 2, 4) without equating them or dropping cases.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 493,
+    "type": "mc",
+    "question": "In a growth curve model, if the correlation between the Intercept and the Slope is positive, what does it mean?",
+    "options": [
+      "Individuals with higher starting values tend to grow/increase faster.",
+      "Individuals with higher starting values tend to grow slower (or decline).",
+      "There is no relationship between starting point and growth rate.",
+      "The model is invalid."
+    ],
+    "answer": 0,
+    "explanation": "A positive correlation implies that as one variable increases, so does the other. High Intercept (start high) is associated with High Slope (steep increase). \"The rich get richer\" effect.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 494,
+    "type": "mc",
+    "question": "When would you center the \"Time\" variable at the *midpoint* of the study (e.g., -2, -1, 0, 1, 2)?",
+    "options": [
+      "When you want the intercept to represent the average outcome at the middle of the trajectory rather than the beginning.",
+      "When you want to remove the effect of time.",
+      "It is required for convergence.",
+      "When you have missing data."
+    ],
+    "answer": 0,
+    "explanation": "The intercept always represents the expected value when all predictors are 0. By centering time such that 0 is in the middle, the intercept becomes the estimated outcome at the halfway point of the study, which can sometimes be more stable or meaningful than the initial status.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 495,
+    "type": "mc",
+    "question": "In R's `lmer` syntax, how do you denote that you want a random intercept for \"Subject\" separate from a random intercept for \"Item\" (Crossed Random Effects)?",
+    "options": [
+      "`(1 | Subject / Item)`",
+      "`(1 | Subject) + (1 | Item)`",
+      "`(1 | Subject * Item)`",
+      "`(Subject | Item)`"
+    ],
+    "answer": 1,
+    "explanation": "Crossed random effects (where subjects see multiple items, and items are seen by multiple subjects, independently) are specified by adding two separate random intercept terms: `(1 | Subject)` for participant variance and `(1 | Item)` for stimulus variance.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 496,
+    "type": "mc",
+    "question": "What is the \"Spaghetti Plot\" useful for in longitudinal analysis?",
+    "options": [
+      "Checking for outliers in the residuals.",
+      "Visualizing individual trajectories of change for all participants simultaneously.",
+      "Plotting the single average regression line.",
+      "Testing for normality."
+    ],
+    "answer": 1,
+    "explanation": "A spaghetti plot displays the raw data lines for every single individual in the dataset on one graph. It allows for a visual assessment of individual variability in starting points and slopes before fitting a formal model.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 497,
+    "type": "mc",
+    "question": "Which of the following implies that a \"Fixed Effects Only\" model (standard OLS) would be inappropriate for your data?",
+    "options": [
+      "The Intraclass Correlation (ICC) is 0.01.",
+      "The Likelihood Ratio Test comparing the mixed model to the null model is non-significant.",
+      "The Intraclass Correlation (ICC) is 0.45.",
+      "The residuals are normally distributed."
+    ],
+    "answer": 2,
+    "explanation": "An ICC of 0.45 indicates that 45% of the variance is at the group level (clustering). This is a substantial violation of independence. Ignoring this structure with OLS would lead to severely biased standard errors (Type I error inflation).",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 498,
+    "type": "mc",
+    "question": "If you find that a quadratic growth model fits significantly better than a linear growth model, but the quadratic term is small, what precaution should you take?",
+    "options": [
+      "Discard the quadratic model as trivial.",
+      "Plot the trajectory to ensure the curve is meaningful and not just a result of overfitting a small fluctuation.",
+      "Use the linear model because it is simpler (Parsimony).",
+      "Transform the time variable to a log scale."
+    ],
+    "answer": 1,
+    "explanation": "Statistical significance does not always equal practical significance. With large samples, even tiny curvatures can be \"significant.\" Visualizing the fitted curve ensures that the non-linearity is a real, substantive feature of the data (e.g., a real peak or plateau) rather than a negligible wiggle.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 499,
+    "type": "mc",
+    "question": "What is the \"Unconditional Mean Model\" (or Empty Model) used for in the first step of building a mixed model?",
+    "options": [
+      "To test the hypothesis that the means are zero.",
+      "To calculate the baseline ICC and determine if multi-level modeling is necessary.",
+      "To estimate the fixed effect of the primary predictor.",
+      "To check for outliers."
+    ],
+    "answer": 1,
+    "explanation": "The unconditional mean model contains no predictors, only the random intercept. It partitions the variance into \"Between\" and \"Within\" components, allowing you to calculate the ICC. If ICC is negligible, you might stop there.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 500,
+    "type": "mc",
+    "question": "Which statement accurately describes the interpretation of the intercept in a model with \"Grand Mean Centered\" predictors?",
+    "options": [
+      "The expected outcome for the reference group.",
+      "The expected outcome for an individual with average values on all predictors.",
+      "The average outcome of the entire sample (ignoring predictors).",
+      "The value of Y when X is zero (which may be impossible)."
+    ],
+    "answer": 1,
+    "explanation": "When predictors are centered around the grand mean, a value of 0 represents the average person. Therefore, the intercept represents the predicted outcome for an \"average\" participant, which is often more interpretable than when X=0 is meaningless (e.g., Age=0 or IQ=0).",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 501,
+    "type": "mc",
+    "question": "In a study with students nested in schools, adding a school-level predictor (e.g., \"School Funding\") helps to explain which variance component?",
+    "options": [
+      "The Residual Variance (Within-School).",
+      "The Random Intercept Variance (Between-School).",
+      "The Total Variance equally.",
+      "It depends on the ICC."
+    ],
+    "answer": 1,
+    "explanation": "A Level-2 predictor (School Funding) is constant for all students in a school. Therefore, it can only explain differences *between* schools. It should reduce the variance of the random intercept component.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 502,
+    "type": "mc",
+    "question": "What is the problem with \"Complete Pooling\" (ignoring groups) in data analysis?",
+    "options": [
+      "It overfits the data.",
+      "It assumes that group membership is irrelevant and ignores potential correlation of errors.",
+      "It has too many parameters to estimate.",
+      "It prevents the calculation of R-squared."
+    ],
+    "answer": 1,
+    "explanation": "Complete pooling treats all data as one big independent sample. If clustering exists (e.g., students in classes), this violates the independence assumption, leading to standard errors that are too small and p-values that are too optimistic.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 503,
+    "type": "mc",
+    "question": "What is \"No Pooling\" (running separate regressions for each group)?",
+    "options": [
+      "It is the gold standard for nested data.",
+      "It fails to utilize the shared information across groups, often resulting in noisy estimates for small groups.",
+      "It assumes all groups are identical.",
+      "It is computationally impossible."
+    ],
+    "answer": 1,
+    "explanation": "No pooling means estimating a separate model for every single school/group. While valid, it ignores the commonalities. Small groups will have wild, unreliable estimates. Mixed models (\"Partial Pooling\") strike the balance by borrowing strength across groups.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 504,
+    "type": "mc",
+    "question": "If predictors in a mixed model are correlated with the random effects (Assumption of No Endogeneity violation at the group level), what is a potential solution?",
+    "options": [
+      "Use a fixed effects model (include dummy variables for every group) instead of a random effects model.",
+      "Ignore the correlation; mixed models are robust.",
+      "Add more random slopes.",
+      "Increase the sample size."
+    ],
+    "answer": 0,
+    "explanation": "One of the key assumptions of random effects models is that the random effects are uncorrelated with the fixed predictors. If this is violated (e.g., \"School Quality\" unmeasured random effect is correlated with \"Student SES\"), the estimates are biased. Fixed effects models (controlling for group ID) remove this bias by controlling for all time-invariant group characteristics.",
+    "module": "Study-Guide-5",
+    "codeSnippet": null,
+    "codeOutput": null
+  },
+  {
+    "id": 505,
+    "type": "mc",
+    "question": "**[Mock R Output]** Based on the `lmer` output below, what is the estimated variance of the random intercepts for the `School` grouping factor?",
+    "options": [
+      "5.040",
+      "25.40",
+      "80.15",
+      "4.331"
+    ],
+    "answer": 1,
+    "explanation": "The 'Variance' column for the School (Intercept) group shows 25.40.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Linear mixed model fit by REML ['lmerMod']\nFormula: MathScore ~ SES + (1 | School)\n   Data: student_data\n\nRandom effects:\n Groups   Name        Variance Std.Dev.\n School   (Intercept) 25.40    5.040   \n Residual             80.15    8.953   \nNumber of obs: 2000, groups:  School, 50\n\nFixed effects:\n            Estimate Std. Error t value\n(Intercept)  50.123      0.821   61.05\nSES           4.331      0.150   28.87",
+    "codeOutput": null
+  },
+  {
+    "id": 506,
+    "type": "mc",
+    "question": "**[Mock R Output]** Using the same output above, calculate the Intraclass Correlation Coefficient (ICC) for Schools.",
+    "options": [
+      "0.24",
+      "0.32",
+      "0.76",
+      "0.05"
+    ],
+    "answer": 0,
+    "explanation": "ICC = Variance_School / (Variance_School + Variance_Residual) = 25.40 / (25.40 + 80.15) ≈ 25.40 / 105.55 ≈ 0.24.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Random effects:\n Groups   Name        Variance Std.Dev.\n School   (Intercept) 25.40    5.040   \n Residual             80.15    8.953",
+    "codeOutput": null
+  },
+  {
+    "id": 507,
+    "type": "mc",
+    "question": "**[Mock R Output]** In the following `anova()` comparison between two nested models, is the more complex model (`model2`) significantly better than the simpler model (`model1`)?",
+    "options": [
+      "No, because the AIC of model2 is lower.",
+      "No, because the p-value is greater than 0.05.",
+      "Yes, because the p-value (0.000624) is less than 0.05 and AIC is lower.",
+      "Cannot be determined from this output."
+    ],
+    "answer": 2,
+    "explanation": "The Chi-squared test yields a highly significant p-value (<.001), and the AIC decreased from 1500.2 to 1490.5, indicating `model2` is the better fit.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> anova(model1, model2)\nData: df\nModels:\nmodel1: Y ~ X1\nmodel2: Y ~ X1 + X2\n       npar    AIC    BIC  logLik deviance  Chisq Df Pr(>Chisq)    \nmodel1    3 1500.2 1512.5 -747.10   1494.2                         \nmodel2    4 1490.5 1505.8 -741.25   1482.5 11.703  1   0.000624 ***\n---\nSignif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1",
+    "codeOutput": null
+  },
+  {
+    "id": 508,
+    "type": "mc",
+    "question": "**[Mock R Output]** What does the coefficient for `treatTreatment` represent in the following dummy-coded regression output?",
+    "options": [
+      "The average pain score for the Treatment group.",
+      "The average pain score for the Control (reference) group.",
+      "The difference in average pain score between the Treatment group and the Control group.",
+      "The sum of pain scores for both groups."
+    ],
+    "answer": 2,
+    "explanation": "In dummy coding, the coefficient for the non-reference group represents the difference in means relative to the Reference group (Intercept).",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Call:\nlm(formula = Pain ~ treat, data = clinical_trial)\n\nCoefficients:\n              Estimate Std. Error t value Pr(>|t|)    \n(Intercept)     6.500      0.400  16.250   <2e-16 ***\ntreatTreatment -2.100      0.566  -3.710   0.0003 ***",
+    "codeOutput": null
+  },
+  {
+    "id": 509,
+    "type": "mc",
+    "question": "**[Mock R Output]** Based on the `summary()` of the regression model below, which predictor variable is NOT statistically significant at the alpha = 0.05 level?",
+    "options": [
+      "Age",
+      "Weight",
+      "Height",
+      "All are significant"
+    ],
+    "answer": 1,
+    "explanation": "The p-value for Weight is 0.689, which is much larger than 0.05, indicating it is not statistically significant.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Coefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   10.52       1.20    8.76   < 0.001\nAge            0.45       0.10    4.50   < 0.001\nWeight        -0.02       0.05   -0.40     0.689\nHeight         1.21       0.55    2.20     0.028",
+    "codeOutput": null
+  },
+  {
+    "id": 510,
+    "type": "mc",
+    "question": "**[Mock R Output]** A researcher runs a stepwise AIC model selection. Based on the output below, which model is the \"best\" among those tested (has the lowest AIC)?",
+    "options": [
+      "model_all",
+      "model_dropX1",
+      "model_dropX2",
+      "model_dropX3"
+    ],
+    "answer": 1,
+    "explanation": "AIC values should be minimized. `model_dropX1` has the lowest AIC (448.10) among the candidates.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "df      AIC\nmodel_all      5   450.20\nmodel_dropX1   4   448.10\nmodel_dropX2   4   455.60\nmodel_dropX3   4   449.90",
+    "codeOutput": null
+  },
+  {
+    "id": 511,
+    "type": "mc",
+    "question": "**[Mock R Output]** Interpret the interaction term `AgexConditionB` in this multiple regression output. (Variable `Condition` is dummy coded with Reference = A).",
+    "options": [
+      "The effect of Age on Score is 0.30 units stronger in Condition B than in Condition A.",
+      "The effect of Age on Score is 0.30 units weaker in Condition B than in Condition A.",
+      "The average Score in Condition B is 0.30 units higher than in A.",
+      "Age explains 30% more variance in Condition B."
+    ],
+    "answer": 0,
+    "explanation": "The interaction coefficient (0.30) represents the difference in slopes. It means separate slope for Condition B = Slope A (0.50) + Interaction (0.30) = 0.80. Thus, the age effect is stronger.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Call:\nlm(formula = Score ~ Age * Condition, data = exp_data)\n\nCoefficients:\n              Estimate Std. Error t value Pr(>|t|)\n(Intercept)     20.00       2.00   10.00   < .001\nAge              0.50       0.10    5.00   < .001\nConditionB       5.00       2.50    2.00     .046\nAge:ConditionB   0.30       0.12    2.50     .013",
+    "codeOutput": null
+  },
+  {
+    "id": 512,
+    "type": "mc",
+    "question": "**[Mock R Output]** What does the `Correlation of Fixed Effects` matrix in the `lmer` output tell you?",
+    "options": [
+      "The correlation between the random intercepts and random slopes.",
+      "The correlation between the sampling distributions of the estimates for the Intercept and Time.",
+      "The correlation between the observed variable Time and the Outcome.",
+      "It indicates strong multicollinearity that invalidates the model."
+    ],
+    "answer": 1,
+    "explanation": "This matrix shows the correlation between the *estimates* of the fixed parameters (the uncertainty), not the variables themselves. A high correlation here doesn't necessarily mean multicollinearity between predictors, but rather that the estimates are not independent.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Correlation of Fixed Effects:\n     (Intr)\nTime -0.45",
+    "codeOutput": null
+  },
+  {
+    "id": 513,
+    "type": "mc",
+    "question": "**[Mock R Output]** In the following output for a polynomial regression `lm(Y ~ poly(X, 2))`, what does the `2` indicate in the command?",
+    "options": [
+      "We are controlling for 2 distinct covariates.",
+      "We are fitting a second-degree (quadratic) polynomial.",
+      "We are running the model on 2 separate groups.",
+      "We are raising X to the power of 1/2."
+    ],
+    "answer": 1,
+    "explanation": "The function `poly(X, degree)` generates orthogonal polynomial terms up to the specified degree. `2` means a quadratic model (Linear + Squared terms).",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> model <- lm(Y ~ poly(X, 2), data = df)\n> summary(model)\n...\nCoefficients:\n             Estimate Std. Error t value Pr(>|t|)\n(Intercept)   100.00       1.00  100.00   <2e-16\npoly(X, 2)1    15.00       1.00   15.00   <2e-16\npoly(X, 2)2    -5.00       1.00   -5.00   1.2e-06",
+    "codeOutput": null
+  },
+  {
+    "id": 514,
+    "type": "mc",
+    "question": "**[Mock R Output]** Look at the Shapiro-Wilk test result for the residuals of a regression model. Is the assumption of normality met?",
+    "options": [
+      "No, because p > 0.05.",
+      "Yes, because p > 0.05, we fail to reject the null hypothesis of normality.",
+      "No, because W is close to 1.",
+      "Yes, because the p-value is significant."
+    ],
+    "answer": 1,
+    "explanation": "A non-significant p-value (p > .05) in Shapiro-Wilk means we do NOT have evidence to reject the null hypothesis that distribution is normal. Thus, the assumption is arguably met (or at least not significantly violated).",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> shapiro.test(residuals(model))\n\n\tShapiro-Wilk normality test\n\ndata:  residuals(model)\nW = 0.995, p-value = 0.452",
+    "codeOutput": null
+  },
+  {
+    "id": 515,
+    "type": "mc",
+    "question": "**[Mock R Output]** Which observation would you flag as a potential outlier based on the standardized residuals (`rstandard`) output below?",
+    "options": [
+      "Observation 2",
+      "Observation 3",
+      "Observation 4",
+      "Observation 6"
+    ],
+    "answer": 1,
+    "explanation": "Observation 3 has a standardized residual of 3.45. Values > 3 (or < -3) are typically flagged as potential outliers.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> head(rstandard(model))\n         1          2          3          4          5          6 \n 0.1243566 -0.5632121  3.4521002  1.2003310 -0.9822311  0.0012312",
+    "codeOutput": null
+  },
+  {
+    "id": 516,
+    "type": "mc",
+    "question": "**[Mock R Output]** In the output for `ncvTest()` (Non-constant Variance Score Test), what does a significant p-value indicate?",
+    "options": [
+      "The assumption of linearity is violated.",
+      "The assumption of normality is violated.",
+      "The assumption of homoscedasticity is violated (heteroscedasticity is present).",
+      "The assumption of independence is violated."
+    ],
+    "answer": 2,
+    "explanation": "The null hypothesis of `ncvTest` is constant variance (homoscedasticity). A significant p-value (< .05) rejects this, indicating heteroscedasticity.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> car::ncvTest(model)\nNon-constant Variance Score Test \nVariance formula: ~ fitted.values \nChisquare = 12.55, Df = 1, p = 0.000396",
+    "codeOutput": null
+  },
+  {
+    "id": 517,
+    "type": "mc",
+    "question": "**[Mock R Output]** Consider the output from a regression with Effect Coding (Weights sum to 0). Predictor `Prog` has 3 levels: A, B, C. `Prog1` compares A vs Grand Mean. `Prog2` compares B vs Grand Mean. What is the effect of level C?",
+    "options": [
+      "+1.0",
+      "-5.0",
+      "+5.0",
+      "0.0"
+    ],
+    "answer": 0,
+    "explanation": "In effect coding, the effects sum to zero. Effect_A (2.0) + Effect_B (-3.0) + Effect_C = 0. Therefore, Effect_C = -(2.0 - 3.0) = -(-1.0) = +1.0.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Coefficients:\n(Intercept)  50.0\nProg1        2.0\nProg2        -3.0",
+    "codeOutput": null
+  },
+  {
+    "id": 518,
+    "type": "mc",
+    "question": "**[Mock R Output]** Based on the `confint()` output below, for which predictor does the 95% Confidence Interval include zero (implying non-significance)?",
+    "options": [
+      "X1",
+      "X2",
+      "X3",
+      "Intercept"
+    ],
+    "answer": 1,
+    "explanation": "The interval for X2 spans from -0.50 to +0.80. Since it crosses zero, we cannot exclude the possibility that the true effect is zero at the 95% confidence level.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> confint(model)\n                2.5 %     97.5 %\n(Intercept)  4.50321   10.23122\nX1           1.20011    2.45033\nX2          -0.50431    0.80331\nX3          -3.21000   -1.10022",
+    "codeOutput": null
+  },
+  {
+    "id": 519,
+    "type": "mc",
+    "question": "**[Mock R Output]** You run a Durbin-Watson test to check for autocorrelation. Based on the result, is there evidence of positive autocorrelation?",
+    "options": [
+      "No, D-W statistic is close to 2.",
+      "Yes, D-W statistic is significantly less than 2 (closer to 0).",
+      "Yes, D-W statistic is significantly greater than 2 (closer to 4).",
+      "No, the p-value is not significant."
+    ],
+    "answer": 1,
+    "explanation": "A Durbin-Watson statistic near 2 indicates no autocorrelation. Values approaching 0 indicate positive autocorrelation. 0.68 is low, and the p-value is significant.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> durbinWatsonTest(model)\n lag Autocorrelation D-W Statistic p-value\n   1       0.6543212      0.685432   0.002",
+    "codeOutput": null
+  },
+  {
+    "id": 520,
+    "type": "mc",
+    "question": "**[Mock R Output]** What represents the \"Slope\" of the random effects in this `ranef()` output?",
+    "options": [
+      "The `(Intercept)` column.",
+      "The `SES` column.",
+      "The row names (1, 2, 3).",
+      "There is no random slope in this model."
+    ],
+    "answer": 1,
+    "explanation": "The `SES` column shows the random effect estimates for the SES predictor for each school. This indicates that the slope of SES varies by school.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> ranef(mixed_model)\n$School\n   (Intercept)      SES\n1    2.1032122  0.50321\n2   -1.2033110 -0.10231\n3    0.4431221  0.00032",
+    "codeOutput": null
+  },
+  {
+    "id": 521,
+    "type": "mc",
+    "question": "**[Mock R Output]** Which R function was likely used to produce the following output comparing two models?",
+    "options": [
+      "`summary()`",
+      "`anova()`",
+      "`plot()`",
+      "`predict()`"
+    ],
+    "answer": 1,
+    "explanation": "The `anova()` function in R is the standard method for performing a Likelihood Ratio Test (LRT) comparison between nested mixed models.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Likelihood ratio test\n\nModel 1: score ~ 1 + (1 | student)\nModel 2: score ~ time + (1 | student)\n      #Df  LogLik Df  Chisq Pr(>Chisq)    \nModel 1 3 -2450.2                         \nModel 2 4 -2400.5  1 99.421  < 2.2e-16 ***",
+    "codeOutput": null
+  },
+  {
+    "id": 522,
+    "type": "mc",
+    "question": "**[Mock R Output]** In the following output for a growth model, what indicates that individual variability in growth rates (slopes) is small or non-existent?",
+    "options": [
+      "The Residual variance is 25.0.",
+      "The (Intercept) variance is 100.2.",
+      "The Time variance is 0.00001.",
+      "The correlation is 0.01."
+    ],
+    "answer": 2,
+    "explanation": "The variance for the random slope (`Time`) is extremely close to zero, suggesting that essentially everyone is changing at the same rate, and a random slope may not be needed.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Random effects:\n Groups   Name        Variance  Std.Dev. Corr \n Subject  (Intercept) 100.20000 10.0100       \n          Time          0.00001  0.0032  0.01 \n Residual              25.00000  5.0000",
+    "codeOutput": null
+  },
+  {
+    "id": 523,
+    "type": "mc",
+    "question": "**[Mock R Output]** Based on the `vif()` output, which variable is most problematic for multicollinearity?",
+    "options": [
+      "Age",
+      "SES",
+      "Income",
+      "Education"
+    ],
+    "answer": 2,
+    "explanation": "Income has a VIF of 12.40. A VIF > 10 is a common threshold for determining \"severe\" multicollinearity.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "> vif(model)\n   Age    SES Income Education \n  1.20   2.50  12.40      3.10",
+    "codeOutput": null
+  },
+  {
+    "id": 524,
+    "type": "mc",
+    "question": "**[Mock R Output]** In a logistic regression output ( `glm(family=\"binomial\")` ), how do you interpret the intercept of -2.30?",
+    "options": [
+      "The predicted probability of success when X=0 is -2.30.",
+      "The predicted log-odds of success when X=0 is -2.30.",
+      "The predicted odds ratio is -2.30.",
+      "The threshold for classification is -2.30."
+    ],
+    "answer": 1,
+    "explanation": "Logistic regression models the log-odds (logit). Therefore, the coefficients are in log-odds units. To get probability, you would calculate `exp(-2.30) / (1 + exp(-2.30))`.",
+    "module": "Interpreting-R-output",
+    "codeSnippet": "Coefficients:\n            Estimate Std. Error z value Pr(>|z|)\n(Intercept)   -2.30       0.50   -4.60  < 0.001\nX              0.80       0.20    4.00  < 0.001",
+    "codeOutput": null
   }
 ]
