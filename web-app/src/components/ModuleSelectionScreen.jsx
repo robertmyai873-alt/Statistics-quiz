@@ -48,7 +48,7 @@ const ModuleSelectionScreen = ({ onSelect, userStats }) => {
                 style={{ textAlign: 'center', marginBottom: '3rem' }}
             >
                 <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem', background: 'linear-gradient(135deg, #DD6B20 0%, #E53E3E 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                    Statistics Quiz
+                    Multi-Agent Systems Quiz
                 </h1>
                 <p style={{ color: '#64748b' }}>Select a module to begin your practice</p>
             </motion.div>
